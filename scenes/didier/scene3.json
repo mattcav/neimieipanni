@@ -1,0 +1,44 @@
+{
+	"title": "La mazzetta",
+	"text": "Alla fine del colloquio di lavoro, la persona con cui hai parlato ti fa capire che ci sono tanti pretendenti, ma se gli dai 50€ il posto è tuo. Cosa fai?",
+	"theme": "lavoro",
+	"choices": [
+		{
+			"title": "Paghi",
+			"button": "Paghi",
+			"text": "Cedi a malincuore, ma ti serve quel lavoro.",
+			"happiness": -10,
+			"money": -50,
+			"conseguence": {
+				"type": "normal",
+				"text": "Ottieni subito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
+			}
+		},
+		{
+			"title": "Ti rifiuti",
+			"button": "Ti rifiuti",
+			"text": "Non vuoi cedere al ricatto, ma non sai se otterrai il posto.",
+			"happiness": 0,
+			"money": 0,
+			"conseguence": {
+				"type": "random",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": true,
+						"text": "L'uomo che non hai pagato riesce a danneggiarti. Il lavoro va a un altro."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"text": "Hai avuto paura di perdere il posto, ma il capo non da ascolto al consiglio del selezionatore: sei assunto."
+					}
+				]
+			}
+		}
+	]
+},

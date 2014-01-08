@@ -1,0 +1,147 @@
+[
+	{
+		"title": "L'insulto",
+		"text": "Camminando per strada senti un ragazzo che insulta una donna cinese per il colore della sua pelle. Cosa fai?",
+		"theme": "insulto",
+		"report": {
+			"text": "oltre il 90% delle famiglie con almeno uno straniero possiede un telefono (incluso in cellulare) che, quasi sempre, è ad uso esclusivo.",
+			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
+		},
+		"choices": [
+			{
+				"title": "Tiri dritto",
+				"button": "Tiri dritto",
+				"text": "Non vuoi avere rogne, ma così volti le spalle a chi ha i tuoi stessi problemi.",
+				"happiness": -50,
+				"money": 0,
+				"conseguence": {
+					"text": "La tua giornata scorre tranquilla, ma lo sguardo della donna che non ti sei fermato ad aiutare ti rimane dentro e ti fa sentire in colpa.",
+					"type": "normal"
+				}
+			},
+			
+			{
+				"title": "Ti fermi e lo affronti",
+				"button": "Ti fermi e lo affronti",
+				"text": "Intervieni perché vuoi difendere chi è nella tua stessa condizione.",
+				"happiness": 0,
+				"money": 0,
+
+				"conseguence": {
+					"type": "random",
+					"cases": [
+						{
+							"probability": 30,
+							"happiness": 0,
+							"money": 0,
+							"stop": true,
+							"text": "Il ragazzo insulta anche te e cominciate a litigare. Le urla attirano l'attenzione di una pattuglia. Vieni identificato come clandestino e espulso dall'Italia."
+						},
+						{
+							"probability": 70,
+							"happiness": 20,
+							"money": 0,
+							"stop": false,
+							"text": "Il ragazzo abbassa lo sguardo e se ne va. La donna cinese ti sorride e ti ringrazia. Guadagni 20 punti"
+						}
+					]
+				}
+			}
+		]
+	},
+
+	{
+		"title": "Il lavoro",
+		"text": "Non riesci a trovare un impiego in regola con cui potresti rinnovare il permesso di soggiorno. Ma hai bisogno di soldi e decidi di accettare un lavoro in nero. Cosa scegli?",
+		"theme": "lavoro",
+		"report": {
+			"text": "oltre il 90% delle famiglie con almeno uno straniero possiede un telefono (incluso in cellulare) che, quasi sempre, è ad uso esclusivo.",
+			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
+		},
+		"choices": [
+			{
+				"title": "Lavapiatti",
+				"button": "Lavapiatti",
+				"text": "La paga è bassa, ma il lavoro è poco faticoso e ti lascia il tempo di cercare un impiego in regola.",
+				"happiness": -300,
+				"money": 500,
+				"conseguence": {
+					"type": "normal",
+					"text": "Hai scelto il lavoro che ti porta via meno tempo ma hai paura che i soldi non ti basteranno."
+				}
+			},
+			{
+				"title": "Facchino",
+				"button": "Facchino",
+				"text": "E' una mansione abbastanza pesante, ma la paga è discreta",
+				"happiness": -450,
+				"money": 700,
+				"conseguence": {
+					"type": "normal",
+					"text": "Hai cercato di fare una scelta equilibrata, trovando una via di mezzo tra guadagno e fatica"
+				}
+			},
+			{
+				"title": "Manovale",
+				"button": "Manovale",
+				"text": "Tra i mestieri che puoi trovare è quello pagato meglio ma è faticoso e pericoloso.",
+				"happiness": -600,
+				"money": 900,
+				"conseguence": {
+					"type": "normal",
+					"text": "Il lavoro è pagato meglio degli altri, ma il cantiere non rispetta le norme di sicurezza e sei sempre preoccupato di farti male"
+				}
+			}
+		]
+	},
+	{
+		"title": "La mazzetta",
+		"text": "Alla fine del colloquio di lavoro, la persona con cui hai parlato ti fa capire che ci sono tanti pretendenti, ma se gli dai 50€ il posto è tuo. Cosa fai?",
+		"theme": "mazzetta",
+		"report": {
+			"text": "oltre il 90% delle famiglie con almeno uno straniero possiede un telefono (incluso in cellulare) che, quasi sempre, è ad uso esclusivo.",
+			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
+		},
+		"choices": [
+			{
+				"title": "Paghi",
+				"button": "Paghi",
+				"text": "Cedi a malincuore, ma ti serve quel lavoro.",
+				"happiness": -10,
+				"money": -50,
+				"conseguence": {
+					"type": "normal",
+					"text": "Ottieni ubito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
+				}
+			},
+			{
+				"title": "Ti rifiuti",
+				"button": "Ti rifiuti",
+				"text": "Non vuoi cedere al ricatto, ma non sai se otterrai il posto.",
+				"happiness": 0,
+				"money": 0,
+				"conseguence": {
+					"type": "random",
+					"cases": [
+						{
+							"probability": 50,
+							"happiness": 10,
+							"money": 0,
+							"class":"bad",
+							"stop": true,
+							"text": "L'uomo che non hai pagato riesce a danneggiarti. Il lavoro va a un altro."
+						},
+						{
+							"probability": 50,
+							"happiness": 10,
+							"money": 0,
+							"class":"good",
+							"stop": false,
+							"text": "Hai avuto paura di perdere il posto, ma il capo non da ascolto al consiglio del selezionatore: sei assunto."
+						}
+					]
+				}
+			}
+		]
+	}
+]

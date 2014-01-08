@@ -1,0 +1,49 @@
+{
+	"title": "La scelta della casa",
+	"text": "Devi trovare un posto dove vivere nella nuova città. Che soluzione scegli?",
+	"theme": "casa",
+	"choices":
+	[
+		{
+			"title": "Stanza singola",
+			"button": "Una stanza singola",
+			"text": "È una spesa consistente e dovrai dividere casa, ma avrai la tua indipendenza.",
+			"happiness": 250,
+			"money": -400,
+			"conseguence": {
+				"text": "Hai una stanza tutta tua e sei felice. Ma ora dovrai stare molto attento ai soldi.",
+
+				"type": "trap",
+				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ti arrabbi per questa ingiustizia e devi trovare altro. Perdi 50 punti.",
+				"trapHappiness": -30,
+				"trapMoney": 0
+			}
+		},
+		{
+			"title": "Stanza condivisa",
+			"button": "Una stanza condivisa",
+			"text": "Scegli il posto meno caro, ma dovrai dividere i tuoi spazi",
+			"happiness": 50,
+			"money": -250,
+			"conseguence": {
+				"text": "Hai scelto di spendere meno: lo spazio è limitato ma i coinquilini sono simpatici",
+
+				"type": "trap",
+				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ti arrabbi per questa ingiustizia e devi trovare altro. Perdi 50 punti.",
+				"trapHappiness": -30,
+				"trapMoney": 0
+			}
+		},
+		{
+			"title": "Dormitorio pubblico",
+			"button": "Un dormitorio pubblico",
+			"text": "Non paghi niente, ma è la scelta più umiliante",
+			"happiness": -300,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Ogni sera ti presenti al dormitorio di un'associazione insieme a senza tetto e disperati: ti senti a disagio e non vedi l'ora di andartene"
+			}
+		}
+	]
+},

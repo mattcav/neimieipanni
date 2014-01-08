@@ -1,0 +1,58 @@
+{
+	"title": "L'autobus",
+	"text": "Il lavoro che hai trovato è lontano da casa e devi prendere l’autobus. Cosa scegli di fare?",
+	"theme": "controllore",
+	"choices": [
+		{
+			"title": "Fai l'abbonamento",
+			"button": "Fai l'abbonamento",
+			"text": "È una spesa fissa, ma puoi usare l’autobus anche per uscire la sera.",
+			"happiness": 80,
+			"money": -50,
+			"conseguence": {
+				"text": "Per fare l’abbonamento ti chiedono i documenti e tu come clandestino non li hai.",
+				"type": "trap",
+				"trapText": "Per fare l’abbonamento ti chiedono i documenti e tu come clandestino non li hai.",
+				"trapHappiness": 0,
+				"trapMoney": 0
+			}
+		},
+		{
+			"title": "Usi un trucco",
+			"button": "Usi un trucco",
+			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
+			"happiness": 0,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"cases": [
+					{
+						"probability": 30,
+						"happiness": -1000,
+						"money": -1000,
+						"stop": true,
+						"text": "Il controllore punta subito te per il tuo aspetto. Scopre che sei clandestino e ti denuncia."
+					},
+					{
+						"probability": 70,
+						"happiness": -10,
+						"money": -20,
+						"stop": false,
+						"text": "Scendi dall'autobus appena in tempo. Una signora ti ha visto e commenta «Gli stranieri non pagano mai». Ti vergogni di aver avvalorato un pregiudizio e perdi 10 punti."
+					}
+				]
+			}
+		},	
+		{
+			"title": "Vai a piedi",
+			"button": "Vai a piedi",
+			"text": "Non spendi nulla, ma la fatica si farà sentire.",
+			"happiness": -40,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "MANCA CONSEGUENZA"
+			}
+		}
+	]
+}, 

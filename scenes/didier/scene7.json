@@ -1,0 +1,44 @@
+{
+	"title": "Battuta razzista",
+	"text": "Al lavoro il tuo capo ti chiama usando un nomignolo razzista. Cosa fai?",
+	"theme": "boss",
+	"choices": [
+		{
+			"title": "Fai finta di niente",
+			"button": "Fai finta di niente",
+			"text": "Preferisci non avere problemi col tuo capo, ma sei ferito nell'orgoglio.",
+			"happiness": -60,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "La giornata lavorativa si conclude come tutte le altre. Ma quell'insulto ti rimane dentro e non aver reagito ti avvilisce."
+			}
+		},
+		{
+			"title": "Lo affronti",
+			"button": "Lo affronti",
+			"text": "Prendere posizione ti rende più orgoglioso di te.",
+			"happiness": 0,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"cases": [
+					{
+						"probability": 40,
+						"happiness": -80,
+						"money": 0,
+						"stop": false,
+						"text": "Il capo non vuole passare per razzista. Ma se la lega al dito e da quel momento comincia ad assegnarti i compiti più faticosi. Perdi 100 punti."
+					},
+					{
+						"probability": 60,
+						"happiness": 30,
+						"money": 0,
+						"stop": false,
+						"text": "Il capo ti capisce e si scusa sinceramente. Guadagni 10 punti."
+					}
+				]
+			}
+		}
+	]
+},

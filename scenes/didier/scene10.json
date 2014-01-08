@@ -1,0 +1,44 @@
+{
+	"title": "L'insulto ad un altro",
+	"text": "Camminando per strada senti un ragazzo che insulta una donna cinese per il colore della sua pelle. Cosa fai?",
+	"theme": "cinese",
+	"choices": [
+		{
+			"title": "Tiri dritto",
+			"button": "Tiri dritto",
+			"text": "Non vuoi avere rogne, ma così volti le spalle a chi ha i tuoi stessi problemi.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "La tua giornata scorre tranquilla, ma lo sguardo della donna che non ti sei fermato ad aiutare ti rimane dentro e ti fa sentire in colpa."
+			}
+		},
+		{
+			"title": "Intervieni",
+			"button": "Intervieni",
+			"text": "Ti fermi e lo affronti, vuoi difendere chi è nella tua stessa condizione.",
+			"happiness": 0,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"cases": [
+					{
+						"probability": 70,
+						"happiness": 30,
+						"money": 0,
+						"stop": false,
+						"text": "Il ragazzo abbassa lo sguardo e se ne va. La donna cinese ti sorride e ti ringrazia. Guadagni 20 punti"
+					},
+					{
+						"probability": 30,
+						"happiness": -10000,
+						"money": -10000,
+						"stop": true,
+						"text": "Il ragazzo insulta anche te e cominciate a litigare. Le urla attirano l'attenzione di una pattuglia. Vieni identificato come clandestino e espulso dall'Italia."
+					}
+				]
+			}
+		}
+	]
+},

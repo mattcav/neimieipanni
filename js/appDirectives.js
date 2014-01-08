@@ -1,0 +1,164 @@
+nmpApp.directive('scene', [function () {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attrs, controller) {
+
+			function open () {
+				element.addClass('show').removeClass('leave');
+			}
+
+			function close () {
+				element.addClass('leave').removeClass('show');
+			}
+
+
+			scope.$on('scene:open', open);
+			scope.$on('scene:close', close);
+
+		}
+	};
+}]);
+
+nmpApp.directive('choice', [function () {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attrs, controller) {
+
+			function open() {
+				element.addClass('md-show');
+				$('.md-overlay').addClass('show');
+			}
+
+			function close() {
+				element.removeClass('md-show');
+				$('.md-overlay').removeClass('show');
+			}
+
+			scope.$on('choice:open', open);
+			scope.$on('choice:close', close);
+		}
+	};
+}]);
+
+nmpApp.directive('conseguence', [function () {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attrs, controller) {
+
+			function open() {
+				element.addClass('show');
+			}
+
+			function close() {
+				element.removeClass('show');
+			}
+
+			scope.$on('conseguence:open', open);
+			scope.$on('conseguence:close', close);
+		}
+	};
+}]);
+
+nmpApp.directive('report', [function () {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attrs, controller) {
+
+			function open() {
+				element
+					.addClass('show')
+					.removeClass('leave');
+			}
+
+			function close() {
+				element
+					.removeClass('show')
+					.addClass('leave');
+			}
+
+			scope.$on('report:open', open);
+			scope.$on('report:close', close);
+		}
+	};
+}]);
+
+nmpApp.directive('risk', [function () {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attrs, controller) {
+
+			function open() {
+				element
+					.addClass('show')
+					.removeClass('leave');
+			}
+
+			function close() {
+				element
+					.removeClass('show')
+					.addClass('leave');
+			}
+
+			scope.$on('risk:open', open);
+			scope.$on('risk:close', close);
+		}
+	};
+}]);
+
+nmpApp.directive('variazione', ['player', function (player) {
+
+	var eVar = $('#e-variazione');
+	var hVar = $('#pt-variazione');
+
+	return {
+		restrict: 'A',
+		link: function (scope, element, attrs, controller) {
+
+			function open(event, dH, dM) {
+				if(dH === undefined && dM === undefined) {
+					dH = scope.conseguence.happiness;
+					dM = scope.conseguence.money;
+				}
+
+				console.log("Delta: ", dH, dM);
+
+				scope.variazione = {
+					happiness: {
+						attuale: player.getPlayer().happiness,
+						delta: dH,
+						prima: player.getPlayer().happiness + dH
+					},
+					money: {
+						attuale: player.getPlayer().money,
+						delta: dM,
+						prima: player.getPlayer().money + dM
+					}
+				};
+
+				if(scope.variazione.money.delta != 0)
+					eVar.addClass('go-variazione');
+
+				if(scope.variazione.happiness.delta != 0)
+					hVar.addClass('go-variazione');
+
+				// console.log(scope.variazione);
+
+				element
+					.addClass('show')
+					.removeClass('leave');
+			}
+
+			function close() {
+				element
+					.removeClass('show')
+					.addClass('leave');
+					
+				eVar.removeClass('go-variazione');
+				hVar.removeClass('go-variazione');
+			}
+
+			scope.$on('variazione:open', open);
+			scope.$on('variazione:close', close);
+		}
+	};
+}]);

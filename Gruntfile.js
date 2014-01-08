@@ -15,6 +15,53 @@ module.exports = function(grunt) {
         }        
       }
     },
+    
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+        }
+      }
+    },
+
+     autoprefixer: {
+        single_file: {
+          options: {
+            browsers: ['last 2 version', 'ie 8', 'ie 7']
+          },
+          src: 'css/app.css',
+          dest: 'css/app.css'
+        },
+      },
+
+      concat: {   
+          dist: {
+              src: [
+                  'bower_components/jquery/jquery.js', 
+                  'bower_components/foundation/js/foundation.min.js',
+                  'js/app.js' 
+              ],
+              dest: 'js/build/app.js'
+          }
+      },
+      uglify: {
+          build: {
+              src: 'js/build/app.js',
+              dest: 'js/build/app.min.js'
+          }
+      },
+    // imagemin: {
+    //       dynamic: {
+    //           files: [{
+    //               expand: true,
+    //               cwd: 'images/',
+    //               src: ['**/*.{png,jpg,gif}'],
+    //               dest: 'images/build/'
+    //           }]
+    //       }
+    //   },
+
+
 
     watch: {
       grunt: { files: ['Gruntfile.js'] },
@@ -22,13 +69,27 @@ module.exports = function(grunt) {
       sass: {
         files: 'scss/**/*.scss',
         tasks: ['sass']
+      },
+
+      autoprefixer: {
+        files: 'css/app.css',
+        tasks: ['autoprefixer'],
+        
+      options: {
+          livereload: true,
+        },
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('build', ['sass']);
+
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'connect', 'concat', 'uglify']);
   grunt.registerTask('default', ['build','watch']);
 }

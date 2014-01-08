@@ -1,0 +1,136 @@
+// compressed
+@font-face {
+    font-family: 'PFDinTextCompPro';
+    src: url('../fonts/pfdintextcomppro-thin.eot');
+    src: url('../fonts/pfdintextcomppro-thin.eot') format('embedded-opentype'),
+         url('../fonts/pfdintextcomppro-thin.woff') format('woff'),
+         url('../fonts/pfdintextcomppro-thin.ttf') format('truetype'),
+         url('../fonts/pfdintextcomppro-thin.svg#PFDinTextCompProThin') format('svg');
+    font-style: normal;
+    font-weight:100;   
+}
+
+@font-face {
+    font-family: 'PFDinTextCompPro';
+    src: url('../fonts/pfdintextcomppro-light.eot');
+    src: url('../fonts/pfdintextcomppro-light.eot') format('embedded-opentype'),
+         url('../fonts/pfdintextcomppro-light.woff') format('woff'),
+         url('../fonts/pfdintextcomppro-light.ttf') format('truetype'),
+         url('../fonts/pfdintextcomppro-light.svg#PFDinTextCompProLight') format('svg');
+    font-style: normal;
+    font-weight:300;     
+}
+
+
+@font-face {
+    font-family: 'PFDinTextCompPro';
+    src: url('../fonts/pfdintextcomppro-medium.eot');
+    src: url('../fonts/pfdintextcomppro-medium.eot') format('embedded-opentype'),
+         url('../fonts/pfdintextcomppro-medium.woff') format('woff'),
+         url('../fonts/pfdintextcomppro-medium.ttf') format('truetype'),
+         url('../fonts/pfdintextcomppro-medium.svg#PFDinTextCompProMedium') format('svg');
+       
+    font-style: normal;
+    font-weight:500;   
+}
+
+// Condensed
+@font-face {
+    font-family: 'PFDinTextCondPro';
+    src: url('../fonts/pfdintextcondpro-light.eot');
+    src: url('../fonts/pfdintextcondpro-light.eot') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-light.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-light.ttf') format('truetype'),
+         url('../fonts/pfdintextcondpro-light.svg#PFDinTextCondProLight') format('svg');
+    font-style: normal;
+    font-weight:300;   
+}
+
+
+// icons
+@font-face {
+    font-family: 'nmp';
+    src:url('../fonts/nmp.eot');
+    src:url('../fonts/nmp.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/nmp.woff') format('woff'),
+        url('../fonts/nmp.ttf') format('truetype'),
+        url('../fonts/nmp.svg#nmp') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+    font-family: 'nmp';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-soldi, .icon-clock, .icon-freccia, .icon-arrow-up, .icon-arrow-right, .icon-arrow-left, .icon-alert, .icon-bomb, .icon-bomb-2, .icon-euro, .icon-time, .icon-smile, .icon-frown, .icon-meh, .icon-arrow-right-2 {
+    font-family: 'nmp';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.icon-soldi:before {
+    content: "\e005";
+}
+.icon-clock:before {
+    content: "\e000";
+}
+.icon-freccia:before {
+    content: "\2192";
+}
+.icon-arrow-up:before {
+    content: "\e001";
+}
+.icon-arrow-right:before {
+    content: "\e002";
+}
+.icon-arrow-left:before {
+    content: "\3c";
+}
+.icon-alert:before {
+    content: "\21";
+}
+.icon-bomb:before {
+    content: "\2739";
+}
+.icon-bomb-2:before {
+    content: "\2738";
+}
+.icon-euro:before {
+    content: "\20ac";
+}
+.icon-time:before {
+    content: "\2609";
+}
+.icon-smile:before {
+    content: "\263a";
+}
+.icon-frown:before {
+    content: "\2639";
+}
+.icon-meh:before {
+    content: "\263b";
+}
+.icon-arrow-right-2:before {
+    content: "\3e";
+}
+

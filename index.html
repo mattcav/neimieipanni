@@ -1,163 +1,156 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html ng-app="nmpApp" class="no-js" lang="it" >
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    
+    <title>Nei Miei Panni - Game</title>
+    
     <link rel="stylesheet" href="css/app.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+<body class=" tep" data-ng-class="playerName.toLowerCase()">
+    
+    <div class="row off-canvas-wrap">
+        <div class="inner-wrap">
+            
+            <!-- aside -->
+            <aside id="sidebar" class="player left-off-canvas-menu" role="complementary" data-ng-controller="sidebar">
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
+                <h1 class="player-title">{{ playerName }}</h1>    
+                
+                <img class="player__img" src="images/avatar/{{ playerName.toLowerCase() }}.png" alt="{{ playerName }}">
+                    
+                <section class="player-metrics">
+                    <div class="player-metrics__step">
+                        <section class="ng-binding">
+                            <i aria-hidden="true" class="icon-time"></i>
+                            [{{ scenes.currentIndex+1 }}/{{ scenes.scenes.length }}]
+                        </section>
+                    </div>
 
-        <hr />
+                    <div class="player-metrics__money">
+                        <section class="ng-binding">
+                            <i aria-hidden="true" class="icon-euro"></i>
+                            &euro; {{ player.money }}
+                        </section>
+                    </div>
 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
+                    <div class="player-metrics__points">
+                        <section class="ng-binding">
+                            <i aria-hidden="true" class="icon-smile"></i>
+                            pt {{ player.happiness }} <!-- indicatore pt -->
+                        </section>
+                    </div>
+                </section>
+
+                <section class="helper-buttons">
+
+                    <div class="helper-money" data-ng-repeat="helper in helpers" data-ng-class="helper.class">
+                        <h3 class="helper-buttons__title ng-binding">{{ helper.title }}</h3>
+                        
+                        <p class="helper-buttons__text ng-binding">{{ helper.text }}</p>
+                        
+                        <button data-ng-disabled="helper.disabled" data-ng-click="openHelper($index)" id="helper-1-call">
+                            <span class="show-for-small-only">DAI</span>
+                            <span class="hide-for-small-only ng-binding">{{ helper.title }}</span>
+                        </button>
+                    </div>
+                </section>
+
+                <footer class="unar">
+                    <img class="unar__img" alt="UNAR - Ufficio Nazionale Antidiscriminazioni Razziali" src="images/unar.png">
+                </footer>
+
+
+                <!-- helper modal choice -->
+                <div id="helper" class="helper md-modal md-effect-8" data-ng-class="{'md-show': open.helper}">
+                    <div class="helper__inner md-content">
+                        <h2 class="helper__title">{{ choice.title }}</h2>
+                        <p class="helper__text">{{ choice.text }}</p>
+
+                        <section class="helper__values">
+                            <span>
+                                <i class="icon-euro" aria-hidden="true"></i> {{ choice.money }}€
+                            </span>
+                            <span>
+                                <i class="icon-smile" aria-hidden="true"></i> {{ choice.happiness }}pt
+                            </span>
+                        </section>
+
+                        <section class="helper__buttons">
+                            <button class="helper__go" id="go-thru-1" data-ng-click="getHelper()">OK</button>
+                            <button class="helper__back back-to-scena" data-ng-click="closeHelper()">Indietro</button>
+                        </section>
+                        
+                        <a class="md-close" data-ng-click="closeHelper()">&#215;</a>
+                    </div>
                 </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
+                <!-- helper modal conseguence -->
+                <div id="helper-conseguence" class="helper helper--conseguence md-modal md-effect-8 text-center"  data-ng-class="{'md-show': open.conseguence}">
+                    <div class="helper__inner md-content">
+                        <h2 class="helper__title">{{ conseguence.title }}</h2>
+                        <p class="helper__text">{{ conseguence.text }}</p>
+
+                        <section class="helper__buttons">
+                        <button id="go-thru-1" data-ng-click="closeHelper()">OK</button>
+                        </section>
+                        <a class="md-close" data-ng-click="closeHelper()">&#215;</a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- main section-->
+            <section id="main" role="main" class="main-section" data-ng-controller="game">
+                      
+                <!-- nav trigger 4 small -->
+                <nav class="tab-bar show-for-small-only">
+                  <section class="left-small">
+                    <!-- <i class="icon-freccia" aria-hidden="true"></i> -->
+                    <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+                  </section>
+                    <h1 class="title text-center">{{ playerName }}</h1>
+                </nav>
+
+
+                <!-- INTRODUZIONE block -->
+                <article id="introduzione" class="introduzione small-12 columns text-center" data-scene>
+                    <div class="introduzione__inner small-12 large-7 small-centered columns">
+                        <h2 class="introduzione__title">Il lavoro</h2>
+                        <p class="introduzione__text">Non riesci a trovare un impiego in regola con cui potresti rinnovare il permesso di soggiorno. Ma hai bisogno di soldi e decidi di accettare un lavoro in nero. Cosa scegli?</p>
+
+                        <!-- <section class="introduzione__buttons">
+                            <button ng-repeat="choice in scene.choices" data-ng-click="ui.showChoice.call(this)" ng-disabled="!choice.enabled">{{ choice.button }}</button>
+                        </section> -->
+
+                        <section class="introduzione__buttons">
+                            <!-- ngRepeat: choice in scene.choices --><button ng-disabled="!choice.enabled" data-ng-click="ui.showChoice.call(this)" ng-repeat="choice in scene.choices" class="ng-scope ng-binding">Lavapiatti</button><button ng-disabled="!choice.enabled" data-ng-click="ui.showChoice.call(this)" ng-repeat="choice in scene.choices" class="ng-scope ng-binding">Facchino</button><button ng-disabled="!choice.enabled" data-ng-click="ui.showChoice.call(this)" ng-repeat="choice in scene.choices" class="ng-scope ng-binding">Manovale</button>
+                        </section>
+                    </div>
+                </article>
+            </section> <!-- end #main -->
+        
+
         </div>
-      </div>
     </div>
+    
+    <!-- overlay for modals -->
+    <div class="md-overlay"></div>
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-  </body>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/appConfig.js"></script>
+    <script src="js/appServices.js"></script>
+    <script src="js/appControllers.js"></script>
+    <script src="js/appDirectives.js"></script>
+    <script src="js/appFilters.js"></script>
+</body>
 </html>

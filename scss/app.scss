@@ -1,2 +1,24 @@
+// vars
+@import "fonts";
+@import "colors";
+@import "mixin";
+
+// Foundation stuff
 @import "settings";
 @import "foundation";
+
+// shame?
+@import "modal-fx";
+
+// SMACSS
+@import "base";
+@import "layout";
+@import "modules";
+@import "animations";
+@import "status";
+@import "theme";
+
+
+// extenders
+@import "scelta";
+

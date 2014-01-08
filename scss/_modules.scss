@@ -1,0 +1,162 @@
+%cover-all {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+%box {
+    flex: 1;
+    background-color: rgba($white, 0.95);
+    color: $black;
+    margin-top: 2em;
+    padding: 2em 0.9375em;
+}
+
+%bottom-line {
+    border-bottom: 1px solid $lightGrey;
+}
+%top-line {
+    border-top: 1px solid $grey;
+    padding-top:0.5em;
+}
+
+%scena-text {
+    display: block;
+    margin: 0 auto 1.25em;
+    max-width: 22em;
+    font-weight: 100;
+}
+
+%vertical-rithm {
+    margin-top:0.5rem;
+}
+
+
+// Introduzione block
+.introduzone {
+    @extend %cover-all;
+    perspective: 1300px;
+    //visibility: hidden;
+}
+
+.introduzione__inner {
+    @extend %box;
+}
+
+.introduzione__title {
+    @extend %bottom-line;
+}
+.introduzione__text {
+    @extend %scena-text;
+}
+
+.introduzione__buttons {
+    @extend %bottom-line;
+    button {
+        font-size: 1.125rem;
+        margin-right: 0.5rem;
+    }
+}
+
+//Player block
+.player {
+    color:$white;
+    @include headings() {
+        color:$white;
+    }
+}
+
+.player-title {
+    text-align:center;
+    font-weight:500; 
+}
+
+//Player metrics
+
+.player-metrics {
+   @extend %vertical-rithm;
+   @extend .columns;
+   @extend .text-center;
+    font-size:rem-calc(18);
+}
+
+.player-metrics__step {
+    @include grid-column(
+    $columns:4,
+    $collapse:true
+  );
+}
+
+.player-metrics__money {
+    @include grid-column(
+    $columns:4,
+    $collapse:true
+  );
+}
+
+.player-metrics__points {
+    @include grid-column(
+    $columns:4,
+    $collapse:true
+  );
+}
+
+//Helper buttons
+.helper-buttons {
+    @extend %vertical-rithm;
+    @include grid-column(
+    $columns:12,
+    $collapse:true
+    );
+
+    button {
+        width:100%;
+    }
+}
+
+.helper-money {
+    @extend %top-line;
+    @extend %vertical-rithm;
+    @include grid-column(
+    $columns:12
+    );
+}
+
+.helper-buttons__text {
+    font-weight: 100;
+}
+
+// UNAR
+.unar {
+    @include grid-column(
+        $columns:12
+    );
+    margin:1em 0;
+}
+.unar__img {
+    background-color:$white;
+    width:100%;
+    padding: 0.5em 0.5em 1em;
+}
+
+// Helper modal
+
+.helper {
+    color:$black;
+    @extend .text-center;
+    @include headings() {
+        color:$black;
+    }
+}
+.helper__inner {
+    //background-color:$white;
+}
+.helper__title {
+  @extend %bottom-line;
+}
+.helper__buttons {
+    margin-top:1em;
+    @extend %bottom-line;
+}

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'PFDinTextCompProMedium';
+    src: url('pfdintextcomppro-medium.eot');
+    src: url('pfdintextcomppro-medium.eot') format('embedded-opentype'),
+         url('pfdintextcomppro-medium.woff') format('woff'),
+         url('pfdintextcomppro-medium.ttf') format('truetype'),
+         url('pfdintextcomppro-medium.svg#PFDinTextCompProMedium') format('svg');
+}

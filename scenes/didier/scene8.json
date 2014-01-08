@@ -1,0 +1,44 @@
+{
+	"title": "L'infortuneo sul lavoro",
+	"text": "Il posto dove lavori non rispetta le norme sulla sicurezza. Un giorno cadi e ti fai male ad una gamba. Cosa fai?",
+	"theme": "gamba",
+	"choices": [
+		{
+			"title": "Continui a lavorare",
+			"button": "Continui a lavorare",
+			"text": "Fai finta di niente per non sembrare uno che crea problemi, ma devi sopportare il dolore.",
+			"happiness": -70,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai continuato a lavorare nonostante il dolore per non correre rischi, ma avresti preferito stare a casa."
+			}
+		},
+		{
+			"title": "Vai a casa",
+			"button": "Vai a casa",
+			"text": "Non è colpa tua se ti sei fatto male: pensi di avere almeno diritto a un giorno di riposo per guarire.",
+			"happiness": 0,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": 0,
+						"money": -100,
+						"stop": false,
+						"text": "Il capo ti dice che la tua assenza è stata un problema e ti tratterrà 100 euro dallo stipendio. Sai che è contro la legge, ma come clandestino non sei tutelato."
+					},
+					{
+						"probability": 50,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"text": "Il tuo datore di lavoro ti chiede come stai ed è contento di sapere che sei guarito. Le sue parole ti fanno sentire apprezzato e guadagni 20 punti."
+					}
+				]
+			}
+		}
+	]
+}, 
