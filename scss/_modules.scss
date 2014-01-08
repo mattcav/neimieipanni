@@ -34,31 +34,40 @@
 }
 
 
-// Introduzione block
-.introduzone {
+// Dialog block
+.dialog {
     @extend %cover-all;
     perspective: 1300px;
-    //visibility: hidden;
+    @extend .text-center;
+    @include grid-column(
+        $columns:12
+    );
+    visibility: hidden;
 }
-
-.introduzione__inner {
+.dialog__inner {
     @extend %box;
+    //large-7
+    @include grid-column(
+    $columns:12,
+    $center:true
+    );
 }
-
-.introduzione__title {
+.dialog__title {
     @extend %bottom-line;
 }
-.introduzione__text {
+.dialog__text {
     @extend %scena-text;
 }
-
-.introduzione__buttons {
+.dialog__buttons {
     @extend %bottom-line;
     button {
         font-size: 1.125rem;
         margin-right: 0.5rem;
     }
 }
+
+
+
 
 //Player block
 .player {
@@ -74,7 +83,6 @@
 }
 
 //Player metrics
-
 .player-metrics {
    @extend %vertical-rithm;
    @extend .columns;
@@ -141,22 +149,32 @@
     padding: 0.5em 0.5em 1em;
 }
 
+
+//scelta block
+.scelta {
+    @extend .text-center;
+}
+.scelta__title {
+    @extend %bottom-line;
+}
+.scelta__values {
+    font-size:rem-calc(18);
+    span {
+        margin-right:0.5rem;
+    }
+}
+.scelta__buttons {
+    margin-top:1em;
+    @extend %bottom-line;
+}
+
+
 // Helper modal
 
-.helper {
+.scelta--helper {
     color:$black;
-    @extend .text-center;
     @include headings() {
         color:$black;
     }
 }
-.helper__inner {
-    //background-color:$white;
-}
-.helper__title {
-  @extend %bottom-line;
-}
-.helper__buttons {
-    margin-top:1em;
-    @extend %bottom-line;
-}
+

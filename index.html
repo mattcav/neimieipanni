@@ -13,7 +13,7 @@
   </head>
 
 
-<body class=" tep" data-ng-class="playerName.toLowerCase()">
+<body class="step" data-ng-class="playerName.toLowerCase()">
     
     <div class="row off-canvas-wrap">
         <div class="inner-wrap">
@@ -68,12 +68,12 @@
 
 
                 <!-- helper modal choice -->
-                <div id="helper" class="helper md-modal md-effect-8" data-ng-class="{'md-show': open.helper}">
-                    <div class="helper__inner md-content">
-                        <h2 class="helper__title">{{ choice.title }}</h2>
-                        <p class="helper__text">{{ choice.text }}</p>
+                <div id="helper" class="scelta scelta--helper md-modal md-effect-8" data-ng-class="{'md-show': open.helper}">
+                    <div class="scelta__inner md-content">
+                        <h2 class="scelta__title">{{ choice.title }}</h2>
+                        <p class="scelta__text">{{ choice.text }}</p>
 
-                        <section class="helper__values">
+                        <section class="scelta__values">
                             <span>
                                 <i class="icon-euro" aria-hidden="true"></i> {{ choice.money }}€
                             </span>
@@ -82,7 +82,7 @@
                             </span>
                         </section>
 
-                        <section class="helper__buttons">
+                        <section class="scelta__buttons">
                             <button class="helper__go" id="go-thru-1" data-ng-click="getHelper()">OK</button>
                             <button class="helper__back back-to-scena" data-ng-click="closeHelper()">Indietro</button>
                         </section>
@@ -92,12 +92,12 @@
                 </div>
 
                 <!-- helper modal conseguence -->
-                <div id="helper-conseguence" class="helper helper--conseguence md-modal md-effect-8 text-center"  data-ng-class="{'md-show': open.conseguence}">
-                    <div class="helper__inner md-content">
-                        <h2 class="helper__title">{{ conseguence.title }}</h2>
-                        <p class="helper__text">{{ conseguence.text }}</p>
+                <div id="helper-conseguence" class="scelta scelta--conseguence md-modal md-effect-8 text-center"  data-ng-class="{'md-show': open.conseguence}">
+                    <div class="scelta__inner md-content">
+                        <h2 class="scelta__title">{{ conseguence.title }}</h2>
+                        <p class="scelta__text">{{ conseguence.text }}</p>
 
-                        <section class="helper__buttons">
+                        <section class="scelta__buttons">
                         <button id="go-thru-1" data-ng-click="closeHelper()">OK</button>
                         </section>
                         <a class="md-close" data-ng-click="closeHelper()">&#215;</a>
@@ -108,7 +108,7 @@
             <!-- main section-->
             <section id="main" role="main" class="main-section" data-ng-controller="game">
                       
-                <!-- nav trigger 4 small -->
+                <!-- nav trigger 4 small --> 
                 <nav class="tab-bar show-for-small-only">
                   <section class="left-small">
                     <!-- <i class="icon-freccia" aria-hidden="true"></i> -->
@@ -119,21 +119,54 @@
 
 
                 <!-- INTRODUZIONE block -->
-                <article id="introduzione" class="introduzione small-12 columns text-center" data-scene>
-                    <div class="introduzione__inner small-12 large-7 small-centered columns">
-                        <h2 class="introduzione__title">Il lavoro</h2>
-                        <p class="introduzione__text">Non riesci a trovare un impiego in regola con cui potresti rinnovare il permesso di soggiorno. Ma hai bisogno di soldi e decidi di accettare un lavoro in nero. Cosa scegli?</p>
-
-                        <!-- <section class="introduzione__buttons">
-                            <button ng-repeat="choice in scene.choices" data-ng-click="ui.showChoice.call(this)" ng-disabled="!choice.enabled">{{ choice.button }}</button>
-                        </section> -->
-
-                        <section class="introduzione__buttons">
-                            <!-- ngRepeat: choice in scene.choices --><button ng-disabled="!choice.enabled" data-ng-click="ui.showChoice.call(this)" ng-repeat="choice in scene.choices" class="ng-scope ng-binding">Lavapiatti</button><button ng-disabled="!choice.enabled" data-ng-click="ui.showChoice.call(this)" ng-repeat="choice in scene.choices" class="ng-scope ng-binding">Facchino</button><button ng-disabled="!choice.enabled" data-ng-click="ui.showChoice.call(this)" ng-repeat="choice in scene.choices" class="ng-scope ng-binding">Manovale</button>
+                <article id="introduzione" class="dialog dialog--introduzione" data-scene>
+                    <div class="dialog__inner">
+                        <h2 class="dialog__title">{{ scene.title }}</h2>
+                        <p class="dialog__text">{{ scene.text }}</p>
+                        <section class="dialog__buttons">
+                           <button ng-repeat="choice in scene.choices" data-ng-click="ui.showChoice.call(this)" ng-disabled="!choice.enabled">{{ choice.button }}</button>
                         </section>
                     </div>
                 </article>
-            </section> <!-- end #main -->
+
+                <!-- CONSEGUENZA block -->
+                <article id="conseguenza" class="dialog dialog--conseguenza" data-conseguence data-ng-class="conseguence.class"><!-- aggiungere classi good/mid/bad a seconda del random-->
+                    <div class="dialog__inner">
+                        <h2 class="dialog__title">{{ conseguence.title }}</h2>
+                        <p class="dialog__text">{{ conseguence.text }}</p>
+
+                        <section class="dialog__buttons">
+                            <button data-ng-click="ui.showReport()">OK</button>
+                        </section>
+                    </div>
+                </article>
+
+                <!-- scelta modal -->
+                <div id="scelta" class="scelta md-modal md-effect-1" data-choice>
+                    <div class="scelta__inner md-content">
+                        <h2 class="scelta__title">{{ choice.title }}</h2>
+                        <p class="scelta__text">{{ choice.text }}</p>
+
+                        <section class="scelta__values">
+                            <span>
+                                <i class="icon-euro" aria-hidden="true"></i> {{ choice.money }}€
+                            </span>
+                            <span>
+                                <i class="icon-smile" aria-hidden="true"></i> {{ choice.happiness }}pt
+                            </span>
+                        </section>
+
+                        <section class="scelta__buttons">
+                            <button id="go-thru-1" data-ng-click="getConseguence()">OK</button>
+                            <button class="back-to-scena" data-ng-click="ui.closeChoice()">Indietro</button>
+                        </section>
+
+                        <a class="md-close" data-ng-click="ui.closeChoice()">&#215;</a>
+                    </div>
+                </div>
+
+
+        </section> <!-- end #main -->
         
 
         </div>
