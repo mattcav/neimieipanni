@@ -15,11 +15,11 @@
 
 <body class="step" data-ng-class="playerName.toLowerCase()">
     
-    <div class="row off-canvas-wrap">
+    <div class="off-canvas-wrap">
         <div class="inner-wrap">
             
             <!-- aside -->
-            <aside id="sidebar" class="player left-off-canvas-menu" role="complementary" data-ng-controller="sidebar">
+            <aside id="sidebar" class="sidebar-section player left-off-canvas-menu" role="complementary" data-ng-controller="sidebar">
 
                 <h1 class="player-title">{{ playerName }}</h1>    
                 
@@ -123,7 +123,7 @@
                     <div class="dialog__inner">
                         <h2 class="dialog__title">{{ scene.title }}</h2>
                         <p class="dialog__text">{{ scene.text }}</p>
-                        <section class="dialog__buttons">
+                        <section id="introduzione-buttons" class="dialog__buttons">
                            <button ng-repeat="choice in scene.choices" data-ng-click="ui.showChoice.call(this)" ng-disabled="!choice.enabled">{{ choice.button }}</button>
                         </section>
                     </div>
@@ -144,7 +144,7 @@
                                 </span>
                             </section>
 
-                            <section class="scelta__buttons">
+                            <section id="scelta-buttons" class="scelta__buttons">
                                 <button id="go-thru-1" data-ng-click="getConseguence()">OK</button>
                                 <button class="back-to-scena" data-ng-click="ui.closeChoice()">Indietro</button>
                             </section>

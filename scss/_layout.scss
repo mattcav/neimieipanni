@@ -1,15 +1,33 @@
 %h100 {
     height:100%;
 }
+%w100 {
+    width:100%;
+}
 
 .off-canvas-wrap {
     @extend %h100;
+    @media #{$small-up} {
+        @extend %w100;
+    }
 }
 
 .inner-wrap {
     @extend %h100;
 }
 
+.sidebar-section {
+    @media #{$small-up} {
+        width:25%;
+        transform: translate3d(0, 0px, 0px);
+    }
+}
+
 .main-section {
     @extend %h100;
+    @media #{$small-up} {
+        position:relative;
+        width:75%;
+        float:right;
+    }
 }

@@ -79,6 +79,7 @@
 
 //Player block
 .player {
+    overflow-x:hidden;
     color:$white;
     @include headings() {
         color:$white;
