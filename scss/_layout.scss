@@ -1,0 +1,15 @@
+%h100 {
+    height:100%;
+}
+
+.off-canvas-wrap {
+    @extend %h100;
+}
+
+.inner-wrap {
+    @extend %h100;
+}
+
+.main-section {
+    @extend %h100;
+}

@@ -10,7 +10,7 @@
     flex: 1;
     background-color: rgba($white, 0.95);
     color: $black;
-    margin-top: 2em;
+    margin-top: 5em;
     padding: 2em 0.9375em;
 }
 
@@ -43,6 +43,7 @@
         $columns:12
     );
     visibility: hidden;
+    position:absolute;
 }
 .dialog__inner {
     @extend %box;
@@ -67,7 +68,14 @@
 }
 
 
-
+// Variazione modifier
+.dialog--variazione__inner {
+    @include grid-column(
+        //large5
+    $columns:11,
+    $center:true
+    );
+}
 
 //Player block
 .player {

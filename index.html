@@ -129,6 +129,30 @@
                     </div>
                 </article>
 
+                <!-- scelta modal -->
+                <div id="scelta" class="scelta md-modal md-effect-1" data-choice>
+                        <div class="scelta__inner md-content">
+                            <h2 class="scelta__title">{{ choice.title }}</h2>
+                            <p class="scelta__text">{{ choice.text }}</p>
+
+                            <section class="scelta__values">
+                                <span>
+                                    <i class="icon-euro" aria-hidden="true"></i> {{ choice.money }}€
+                                </span>
+                                <span>
+                                    <i class="icon-smile" aria-hidden="true"></i> {{ choice.happiness }}pt
+                                </span>
+                            </section>
+
+                            <section class="scelta__buttons">
+                                <button id="go-thru-1" data-ng-click="getConseguence()">OK</button>
+                                <button class="back-to-scena" data-ng-click="ui.closeChoice()">Indietro</button>
+                            </section>
+
+                            <a class="md-close" data-ng-click="ui.closeChoice()">&#215;</a>
+                        </div>
+                </div>
+
                 <!-- CONSEGUENZA block -->
                 <article id="conseguenza" class="dialog dialog--conseguenza" data-conseguence data-ng-class="conseguence.class"><!-- aggiungere classi good/mid/bad a seconda del random-->
                     <div class="dialog__inner">
@@ -141,30 +165,54 @@
                     </div>
                 </article>
 
-                <!-- scelta modal -->
-                <div id="scelta" class="scelta md-modal md-effect-1" data-choice>
-                    <div class="scelta__inner md-content">
-                        <h2 class="scelta__title">{{ choice.title }}</h2>
-                        <p class="scelta__text">{{ choice.text }}</p>
+                <!-- VARIAZIONE block TO BE REDESIGNED -->
+                <article id="variazione" class="dialog dialog--variazione" data-variazione>
+                    <div class="dialog__inner dialog--variazione__inner">
+                        <h2 class="variazione__title">...e ora?</h2>
+                        <div class="variazione__block">
+                            <section id="e-variazione">
+                            <i aria-hidden="true" class="icon-euro"></i>
 
-                        <section class="scelta__values">
-                            <span>
-                                <i class="icon-euro" aria-hidden="true"></i> {{ choice.money }}€
-                            </span>
-                            <span>
-                                <i class="icon-smile" aria-hidden="true"></i> {{ choice.happiness }}pt
-                            </span>
-                        </section>
-
-                        <section class="scelta__buttons">
-                            <button id="go-thru-1" data-ng-click="getConseguence()">OK</button>
-                            <button class="back-to-scena" data-ng-click="ui.closeChoice()">Indietro</button>
-                        </section>
-
-                        <a class="md-close" data-ng-click="ui.closeChoice()">&#215;</a>
+                            <span id="e-fattore" class="variation-el fattore">{{ variazione.money.delta }}</span>
+                            <span id="e-before" class="variation-el before">€ {{ variazione.money.prima }}</span> 
+                            <span id="e-after" class="variation-el after">€ {{ variazione.money.attuale }}</span> 
+                            </section>
+                        </div>
+                        <div class="variazione__block">
+                            <section id="pt-variazione">
+                                <i aria-hidden="true" class="icon-smile"></i>
+                                <span id="pt-fattore" class="variation-el variation-pt fattore">{{ variazione.happiness.delta }}</span>
+                                <span id="pt-before" class="variation-el variation-pt before">pt {{ variazione.happiness.prima }}</span> 
+                                <span id="pt-after" class="variation-el variation-pt after">pt {{ variazione.happiness.attuale }}</span> 
+                            </section>
+                        </div>
                     </div>
-                </div>
+                </article> 
 
+                <!-- STATISTICHE block -->
+                <article id="stats" class="dialog dialog--stats" data-report>
+                    <div class="dialog__inner">
+                        
+                        <h5 class="dialog__title dialog--stats__title">{{ scene.report.text }}</h5>
+
+                        <h6 class="dialog--stats__src">{{ scene.report.source }}</h6>
+
+                        <section class="dialog__buttons">
+                            <button data-ng-click="ui.next()">OK</button>
+                        </section>
+                    </div>
+                </article>   
+
+                <!-- RISK message block -->
+                <article id="risk" class="dialog dialog--risk" data-risk>
+                    <div class="dialog__inner">
+                        <h2 class="dialog__title">Rischio!</h2>
+
+                        <p class="dialog__text">{{ conseguence.waitingText }}</p>
+
+                        <div class="roulette" data-ng-class="conseguence.class"></div><!-- aggiungere classi good/mid/bad a seconda del random-->
+                    </div>
+                </article>  
 
         </section> <!-- end #main -->
         
