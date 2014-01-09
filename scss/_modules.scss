@@ -102,7 +102,7 @@
 
 .player__img {
     @media #{$small-up} {
-        padding:rem-calc(15)
+        padding:0 rem-calc(15) rem-calc(15);
     }
 }
 
@@ -113,7 +113,7 @@
     @extend .text-center;
     font-size:rem-calc(18);
 
-    @media #{$small-up}{
+    @media #{$large-up}{
         font-size:rem-calc(23);
     }
 }
@@ -126,8 +126,19 @@
     @media #{$large-up} {
         padding:0 0.1em;
     }
+    @media #{$xlarge-up} {
+        padding:0 0.5em;
+    }
+
 }
 .player-metric__inner {
+    @media #{$small-only} {
+        border:medium none;
+    }
+    @media #{$medium-only} {
+        border:medium none;
+    }
+
      @media #{$large-up} {
         @extend %bottom-line;
         @extend %top-line;
@@ -197,7 +208,7 @@
     margin:1em 0;
 
     @media #{$large-up} {
-        margin:3em 0 1em;
+        margin:2em 0 1em;
     }
 }
 .unar__img {
@@ -229,6 +240,13 @@
 // Helper modal
 
 .scelta--helper {
+    color:$black;
+    @include headings() {
+        color:$black;
+    }
+}
+
+.scelta--conseguence {
     color:$black;
     @include headings() {
         color:$black;

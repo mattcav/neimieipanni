@@ -17,6 +17,7 @@
 }
 
 .sidebar-section {
+    left:0;
     @media #{$large-up} {
         width:25%;
         transform: translate3d(0, 0px, 0px);

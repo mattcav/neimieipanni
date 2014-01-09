@@ -26,7 +26,6 @@ perspective effects (not including the modals and the overlay).
 .md-modal {
     position: fixed;
     top: 50%;
-    //top: 40%;
     left: 50%;
     width: 50%;
     max-width: 630px;
@@ -41,6 +40,10 @@ perspective effects (not including the modals and the overlay).
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+
+    @media #{$large-up} {
+        top: 40%;
+    }
 }
 
 .md-show {
@@ -62,7 +65,7 @@ perspective effects (not including the modals and the overlay).
     transition: all 0.3s;
 }
 
-.md-show ~ .md-overlay {
+.md-overlay.show {
     opacity: 1;
     visibility: visible;
 }
