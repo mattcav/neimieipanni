@@ -26,24 +26,24 @@
                 <img class="player__img" src="images/avatar/{{ playerName.toLowerCase() }}.png" alt="{{ playerName }}">
                     
                 <section class="player-metrics">
-                    <div class="player-metrics__step">
-                        <section class="ng-binding">
-                            <i aria-hidden="true" class="icon-time"></i>
-                            [{{ scenes.currentIndex+1 }}/{{ scenes.scenes.length }}]
+                    <div class="player-metric player-metric--step">
+                        <section class="player-metric__inner ng-binding">
+                            <i aria-hidden="true" class="player__icon icon-time"></i>
+                            <span class="player__value">[{{ scenes.currentIndex+1 }}/{{ scenes.scenes.length }}]</span>
                         </section>
                     </div>
 
-                    <div class="player-metrics__money">
-                        <section class="ng-binding">
-                            <i aria-hidden="true" class="icon-euro"></i>
-                            &euro; {{ player.money }}
+                    <div class="player-metric player-metric--money">
+                        <section class="player-metric__inner ng-binding">
+                            <i aria-hidden="true" class="player__icon icon-euro"></i>
+                            <span class="player__value">&euro; {{ player.money }}</span>
                         </section>
                     </div>
 
-                    <div class="player-metrics__points">
-                        <section class="ng-binding">
-                            <i aria-hidden="true" class="icon-smile"></i>
-                            pt {{ player.happiness }} <!-- indicatore pt -->
+                    <div class="player-metric player-metric--points">
+                        <section class="player-metric__inner ng-binding">
+                            <i aria-hidden="true" class="player__icon icon-smile"></i>
+                            <span class="player__value">pt {{ player.happiness }}</span> 
                         </section>
                     </div>
                 </section>
@@ -55,7 +55,7 @@
                         
                         <p class="helper-buttons__text ng-binding">{{ helper.text }}</p>
                         
-                        <button data-ng-disabled="helper.disabled" data-ng-click="openHelper($index)" id="helper-1-call">
+                        <button class="helper-buttons__button" data-ng-disabled="helper.disabled" data-ng-click="openHelper($index)" id="helper-1-call">
                             <span class="show-for-small-only">DAI</span>
                             <span class="hide-for-small-only ng-binding">{{ helper.title }}</span>
                         </button>
@@ -109,7 +109,7 @@
             <section id="main" role="main" class="main-section" data-ng-controller="game">
                       
                 <!-- nav trigger 4 small --> 
-                <nav class="tab-bar show-for-small-only">
+                <nav class="tab-bar hide-for-large-up">
                   <section class="left-small">
                     <!-- <i class="icon-freccia" aria-hidden="true"></i> -->
                     <a class="left-off-canvas-toggle menu-icon"><span></span></a>

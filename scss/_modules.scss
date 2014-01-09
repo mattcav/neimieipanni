@@ -52,6 +52,12 @@
     $columns:12,
     $center:true
     );
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:7
+        );
+    }
 }
 .dialog__title {
     @extend %bottom-line;
@@ -84,6 +90,9 @@
     @include headings() {
         color:$white;
     }
+    @media #{$large-up} {
+        background-color:rgba($black, 0.6);
+    }
 }
 
 .player-title {
@@ -91,33 +100,55 @@
     font-weight:500; 
 }
 
+.player__img {
+    @media #{$small-up} {
+        padding:rem-calc(15)
+    }
+}
+
 //Player metrics
 .player-metrics {
-   @extend %vertical-rithm;
-   @extend .columns;
-   @extend .text-center;
+    @extend %vertical-rithm;
+    @extend .columns;
+    @extend .text-center;
     font-size:rem-calc(18);
+
+    @media #{$small-up}{
+        font-size:rem-calc(23);
+    }
 }
 
-.player-metrics__step {
+.player-metric {
     @include grid-column(
     $columns:4,
     $collapse:true
-  );
+    );
+    @media #{$large-up} {
+        padding:0 0.1em;
+    }
+}
+.player-metric__inner {
+     @media #{$large-up} {
+        @extend %bottom-line;
+        @extend %top-line;
+        border-color:$grey;
+        padding-bottom:0.5rem;
+    }
 }
 
-.player-metrics__money {
-    @include grid-column(
-    $columns:4,
-    $collapse:true
-  );
+.player__icon {
+    @media #{$large-up} {
+        color:$red;
+    }
 }
 
-.player-metrics__points {
-    @include grid-column(
-    $columns:4,
-    $collapse:true
-  );
+.player__value {
+    @media #{$large-up} {
+        &:before {
+            content: "\A ";
+            white-space: pre;
+        }
+    }
 }
 
 //Helper buttons
@@ -127,10 +158,6 @@
     $columns:12,
     $collapse:true
     );
-
-    button {
-        width:100%;
-    }
 }
 
 .helper-money {
@@ -139,10 +166,27 @@
     @include grid-column(
     $columns:12
     );
+    @media #{$large-up} {
+        border:medium none;
+    }
+    @media #{$xlarge-up} {
+       @include grid-column(
+        $columns:6
+        );
+    }
 }
 
+.helper-buttons__title {
+    @extend .hide-for-large-up;
+}
 .helper-buttons__text {
     font-weight: 100;
+    @extend .hide-for-large-up;
+}
+.helper-buttons__button {
+    width:100%;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 // UNAR
@@ -151,6 +195,10 @@
         $columns:12
     );
     margin:1em 0;
+
+    @media #{$large-up} {
+        margin:3em 0 1em;
+    }
 }
 .unar__img {
     background-color:$white;

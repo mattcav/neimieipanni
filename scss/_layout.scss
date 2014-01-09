@@ -7,7 +7,7 @@
 
 .off-canvas-wrap {
     @extend %h100;
-    @media #{$small-up} {
+    @media #{$large-up} {
         @extend %w100;
     }
 }
@@ -17,7 +17,7 @@
 }
 
 .sidebar-section {
-    @media #{$small-up} {
+    @media #{$large-up} {
         width:25%;
         transform: translate3d(0, 0px, 0px);
     }
@@ -25,7 +25,7 @@
 
 .main-section {
     @extend %h100;
-    @media #{$small-up} {
+    @media #{$large-up} {
         position:relative;
         width:75%;
         float:right;
