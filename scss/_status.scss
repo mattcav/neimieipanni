@@ -5,3 +5,186 @@
 .dialog.leave {
     visibility: hidden;
 }
+
+// DIALOG ENTER / LEAVE
+
+//introduzione
+.dialog--introduzione {
+    perspective:1300px;
+
+     .dialog__inner {
+        transform-style: preserve-3d;
+        opacity: 0;
+        transform: translate(30%) translateZ(600px) rotate(10deg);
+    }
+
+    &.show {
+        visibility: visible;
+
+        .dialog__inner{
+            opacity: 1;
+            transition: all 0.3s ease-in-out 1.3s;
+            transform: translate(0%) translateZ(0px) rotate(0deg);
+        }
+    }
+
+    &.leave {
+        .dialog__inner{
+            opacity: 0;
+            transition: all 0.3s ease-in 0s;
+            transform: translate(30%) translateZ(600px) rotate(10deg);
+        }
+    }
+}
+
+//conseguenza
+.dialog--conseguenza {
+    overflow-x: hidden;
+    perspective:1300px;
+
+    .dialog__inner {
+        opacity: 0;
+        transform: scale(0) rotate(720deg);
+    }
+
+    &.show {
+        visibility:visible;
+
+        .dialog__inner {
+            transition: all 0.8s ease 0.5s;
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+        }
+    }
+
+    &.leave {
+        .dialog__inner{
+            opacity: 0;
+            transition: all 0.8s ease 0.5s;
+            transform: scale(2) rotate(720deg);
+        }
+    }
+}
+
+// variazione dialog
+.dialog--variazione {
+    visibility: hidden;
+    overflow-x: hidden;
+
+    .dialog__inner {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    &.show {
+        visibility:visible;
+
+        .dialog__inner {
+            transition: all 0.5s ease 0.5s;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &.leave {
+        visibility:hidden;
+
+        .dialog__inner {
+            transition: all 0.3s ease 0s;
+            opacity: 0;
+            transform: scale(0);
+        }
+    }
+}
+
+//variazione rotation
+.variazione__block {
+    perspective: 1000px;
+}
+
+
+@keyframes cube {  
+  0%   {transform: translateZ(-100px) rotateX(0deg);}
+  50%  {transform: translateZ(-100px) rotateX(90deg);}
+  100% {transform: translateZ(-100px) rotateX(180deg);}
+}  
+
+%a-cube { 
+  animation-name:cube;
+  animation-duration:3s;
+  animation-timing-function:ease-in-out;
+  animation-delay:1s;
+  animation-iteration-count:1;
+  animation-direction:normal;
+  animation-play-state:running;
+  animation-fill-mode:forwards;
+} 
+
+.variazione__cube {
+    transform: translateZ(-100px) rotateX(0deg);
+    // transition: all 0.8s ease 2s;
+    transform-style: preserve-3d;
+    &.go-variazione {
+        @extend %a-cube;
+    }
+}
+
+.variazione__item.before {
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0px, 0px, 20px);
+}
+
+.variazione__item.fattore {
+    transform: rotate3d(1, 0, 0, -90deg) translate3d(0px, 0px, 20px);
+}
+.variazione__item.after {
+    transform: rotate3d(1, 0, 0, 180deg) translate3d(0px, 0px, 20px);
+}
+
+
+
+
+// stats
+.dialog--stats {
+    visibility: hidden;
+    overflow-x: hidden;
+
+    .dialog__inner {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    &.show {
+        visibility:visible;
+
+        .dialog__inner {
+            transition: all 0.5s ease 0.5s;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &.leave {
+        visibility:hidden;
+
+        .dialog__inner {
+            transition: all 0.5s ease 0.2s;
+            opacity: 0;
+            transform: scale(2);
+        }
+    }
+}
+
+// risk
+
+.risk {
+    @extend .stats;
+
+    &.show {
+        .roulette {
+           // @extend .a-roulette;
+        }
+    }
+}
+
+
+
