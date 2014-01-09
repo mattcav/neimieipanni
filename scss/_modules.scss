@@ -104,7 +104,14 @@
     text-align: center;
     width: 100%;
     height: 40px;
-    border:1px solid #333;
+    @media #{$large-up} {
+        width:50%;
+        margin-left: 25%;
+    }
+}
+
+.variazione__cube {
+    height:40px;
 }
 .variazione__icon {
     left: 0.5em;

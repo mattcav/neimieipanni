@@ -129,6 +129,12 @@
     }
 }
 
+.variazione__cube--pt {
+    &.go-variazione {
+        @extend %a-cube;
+        animation-delay:1.2s;
+    }
+}
 .variazione__item.before {
     transform: rotate3d(0, 0, 0, 0deg) translate3d(0px, 0px, 20px);
 }

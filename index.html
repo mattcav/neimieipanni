@@ -174,27 +174,16 @@
                         <h2 class="dialog__title">...e ora?</h2>
                         <div class="variazione__block">
                             <section id="e-variazione" class="variazione__cube">
-                                <i aria-hidden="true" class="variazione__icon icon-euro"></i> 
                                 <span id="e-fattore" class="variazione__item fattore">{{ variazione.money.delta }}</span>
                                 <span id="e-before" class="variazione__item before">€ {{ variazione.money.prima }}</span> 
                                 <span id="e-after" class="variazione__item after">€ {{ variazione.money.attuale }}</span> 
-
-                              <!--   <span id="e-before" class="variazione__item before"> €200</span> 
-                                <span id="e-fattore" class="variazione__item fattore"> + €500</span>
-                                <span id="e-after" class="variazione__item after"> €700</span> -->
                             </section>
                         </div>
                         <div class="variazione__block">
-                            <section id="pt-variazione" class="variazione__cube">
-                                <i aria-hidden="true" class="variazione__icon icon-smile"></i> 
+                            <section id="pt-variazione" class="variazione__cube variazione__cube--pt">
                                 <span id="pt-fattore" class="variazione__item variation-pt fattore">{{ variazione.happiness.delta }}</span>
                                 <span id="pt-before" class="variazione__item variation-pt before">pt {{ variazione.happiness.prima }}</span> 
                                 <span id="pt-after" class="variazione__item variation-pt after">pt {{ variazione.happiness.attuale }}</span> 
-
-                               
-                              <!--   <span id="pt-before" class="variazione__item variation-pt before"> 500pt</span> 
-                                 <span id="pt-fattore" class="variazione__item variation-pt fattore"> -100pt</span>
-                                <span id="pt-after" class="variazione__item variation-pt after"> 400pt</span>  -->
                             </section>
                         </div>
                     </div>
