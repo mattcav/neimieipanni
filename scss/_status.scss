@@ -105,7 +105,9 @@
 
 @keyframes cube {  
   0%   {transform: translateZ(-100px) rotateX(0deg);}
-  50%  {transform: translateZ(-100px) rotateX(90deg);}
+  20%  {transform: translateZ(-100px) rotateX(90deg);}
+  60%  {transform: translateZ(-100px) rotateX(90deg);}
+  80%  {transform: translateZ(-100px) rotateX(180deg);}
   100% {transform: translateZ(-100px) rotateX(180deg);}
 }  
 
