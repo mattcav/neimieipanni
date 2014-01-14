@@ -105,7 +105,7 @@ nmpApp.directive('risk', [function () {
 	};
 }]);
 
-nmpApp.directive('variazione', ['player', function (player) {
+nmpApp.directive('variazione', function ($timeout, TIMERS, player) {
 
 	var eVar = $('#e-variazione');
 	var hVar = $('#pt-variazione');
@@ -125,13 +125,13 @@ nmpApp.directive('variazione', ['player', function (player) {
 				scope.variazione = {
 					happiness: {
 						attuale: player.getPlayer().happiness,
-						delta: dH,
-						prima: player.getPlayer().happiness + dH
+						delta: dH > 0 ? '+' + dH : dH,
+						prima: player.getPlayer().happiness - dH
 					},
 					money: {
 						attuale: player.getPlayer().money,
-						delta: dM,
-						prima: player.getPlayer().money + dM
+						delta: dM > 0 ? '+' + dM : dM,
+						prima: player.getPlayer().money - dM
 					}
 				};
 
@@ -152,13 +152,68 @@ nmpApp.directive('variazione', ['player', function (player) {
 				element
 					.removeClass('show')
 					.addClass('leave');
+
+				$timeout(function () {
+					eVar.removeClass('go-variazione');
+					hVar.removeClass('go-variazione');
+				}, TIMERS.variation.hide);
 					
-				eVar.removeClass('go-variazione');
-				hVar.removeClass('go-variazione');
 			}
 
 			scope.$on('variazione:open', open);
 			scope.$on('variazione:close', close);
 		}
 	};
-}]);
+});
+
+
+nmpApp.directive('helper', function ($rootScope) {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attrs, controller) {
+			var $modal = angular.element(element.children()[0]),
+				$conseguence = angular.element(element.children()[1]);
+
+			function openModal(event, data, useHelp, closeHelp) {
+				scope.help = data;
+
+				scope.useHelp = function () {
+					(useHelp || angular.noop)();
+					$rootScope.$emit('helper:modal:close');
+				};
+
+				scope.closeHelp = function () {
+					(closeHelp || angular.noop)();
+					$rootScope.$emit('helper:modal:close');
+				}
+
+				$modal.addClass('md-show')
+				$('.md-overlay').addClass('show');
+			}
+
+			function closeModal() {
+				$modal.removeClass('md-show');
+				$('.md-overlay').removeClass('show');
+			}
+
+			function openConseguence(event, cons) {
+				scope.conseguence = cons;
+				scope.closeCons = $rootScope.$emit.bind($rootScope, 'helper:conseguence:close');
+
+				$conseguence.addClass('md-show')
+				$('.md-overlay').addClass('show');
+			}
+
+			function closeConseguence() {
+				$conseguence.removeClass('md-show');
+				$('.md-overlay').removeClass('show');
+			}
+
+			$rootScope.$on('helper:modal:open', openModal);
+			$rootScope.$on('helper:modal:close', closeModal);
+
+			$rootScope.$on('helper:conseguence:open', openConseguence);
+			$rootScope.$on('helper:conseguence:close', closeConseguence);
+		}
+	};
+});

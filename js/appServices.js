@@ -300,6 +300,9 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 	function showConseguence() {
 		var d = $q.defer();
 
+		$gameScope.$broadcast('choice:close');
+		$gameScope.$broadcast('scene:close');
+
 		$gameScope.$broadcast('conseguence:open');
 		$gameScope.ui.showReport = d.resolve.bind(d);
 		// $timeout(d.resolve.bind(d), TIMERS.conseguence.total);
@@ -308,16 +311,18 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 	}
 
 	function hideConseguence() {
-		var d = $q.defer();
+		// var d = $q.defer();
 
 		$gameScope.$broadcast('conseguence:close');
-		if($gameScope.conseguence.stop === true)
-			// $q.reject('pippo');
-			d.reject();
-		else
-			d.resolve();
 
-		return d.promise;
+		// return d.promise;
+	}
+
+	function checkStop() {
+		if($gameScope.conseguence.stop === true)
+			return backToScene();
+		else
+			return true;
 	}
 
 	function showReport() {
@@ -365,11 +370,12 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 	function normalChoice () {
 		$gameScope.conseguence = $gameScope.choice.scelto();
 		getQueue()
-			.then(showVariation)
-			.then(hideVariation)
 			.then(showConseguence)
 			.then(hideConseguence)
-			.then(null, backToScene) // failure catch
+			.then(showVariation)
+			.then(hideVariation)
+			.then(checkStop)
+			// .then(null, backToScene) // failure catch
 			.then(showReport)
 			.then(nextScene)
 	}
@@ -386,11 +392,12 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 			.then(function () {
 				$gameScope.conseguence = $gameScope.choice.scelto();
 			})
-			.then(showVariation)
-			.then(hideVariation)
 			.then(showConseguence)
 			.then(hideConseguence)
-			.then(null, backToScene) // failure catch
+			.then(showVariation)
+			.then(hideVariation)
+			.then(checkStop)
+			// .then(null, backToScene) // failure catch
 			.then(showReport)
 			.then(nextScene)
 	}

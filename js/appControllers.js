@@ -1,56 +1,24 @@
-nmpApp.controller('sidebar', [ '$scope', '$rootScope', 'player', 'scenes', 'choiceFactory', 'HELPERS', function ($scope, $rootScope, player, scenes, choiceFactory, HELPERS) {
+nmpApp.controller('sidebar', function ($scope, $rootScope, player, scenes, choiceFactory, HELPERS) {
 	
 	$scope.player = player.getPlayer();
 	$scope.scenes = scenes;
 
 	$scope.helpers = HELPERS;
-	$scope.choice = null;
 
+	$scope.choice = null;
 	$scope.conseguence = null;
 
-	$scope.open = {
-		helper: false,
-		conseguence: false
-	}
-
-	var helperIndex = -1;
-
-	/* Astraggo la gestione di apri/chiudi helper */
-	function openHelper() {
-		$scope.open.helper = true;
-	}
-
-	function closeHelper() {
-		$scope.open.helper = false;
-	}
-
-	function openConseguence() {
-		closeHelper();
-		$scope.open.conseguence = true;
-	}
-
-	function closeConseguence() {
-		$scope.open.conseguence = false;
-	}
 
 	$scope.openHelper = function ($index) {
 		$scope.choice = choiceFactory.new(this.helper);
-		helperIndex = $index;
-		openHelper();
-	}
 
-	$scope.getHelper = function () {
-		$scope.conseguence = $scope.choice.scelto();
-		$scope.helpers[helperIndex].disabled = true;
-		openConseguence();
-	}
+		$rootScope.$broadcast('helper:modal:open', $scope.choice, function () {
+			$scope.helpers[$index].disabled = true;
 
-	$scope.closeHelper = function () {
-		closeHelper();
-		closeConseguence();
+			$rootScope.$emit('helper:conseguence:open', $scope.choice.scelto());
+		});
 	}
-
-}]);
+});
 
 
 nmpApp.controller('game', function ($scope, $rootScope, $timeout, TIMERS, scenes, transitionEndEvents, uiChoiceManager) {
