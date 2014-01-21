@@ -1,0 +1,33 @@
+{
+	"title": "Il secondo lavoro",
+	"text": "Hai trovato un impiego di un giorno come hostess. Ma la responsabile dello stand manda via una delle altre ragazze perché è nera, dicendo che non vuole lavorare con le immigrate. Cosa fai?",
+	"theme": "hostess",
+	"report": {
+			"text": "Gli stranieri testimoni di episodi discriminatori risultano essere nati principalmente in Romania, Marocco e Perù (11,8% dei segnalanti testimoni totali)",
+			"source": "Rapporto UNAR"	
+		},
+	"choices": [
+		{
+			"title": "Non dici niente.",
+			"button": "Non dici niente.",
+			"text": "Hai proprio bisogno di questo guadagno extra anche se ti senti in colpa.",
+			"happiness": -100,
+			"money": 100,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai guadagnato dei soldi, ma hai dovuto sorridere tutto il tempo a quella donna razzista. Ti senti quasi peggiore di lei."
+			}
+		},
+		{
+			"title": "Te ne vai anche tu.",
+			"button": "Te ne vai anche tu.",
+			"text": "Non vuoi avere nulla a che fare con queste persone e dici che sei immigrata anche tu: meglio rinunciare ai soldi ma rimanere fedele ai tuoi principi.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai perso un facile guadagno, ma hai detto a quella donna razzista cosa pensi di lei. Dentro di te sai di aver fatto la scelta giusta."
+			}
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"title": "L'incidente stradale",
+	"text": "Vedi un uomo cadere dal motorino. Ti avvicini e capisci che si è lussato la spalla. Sai come rimettergliela a posto, ma lui sente il tuo accento straniero e non si fida. Cosa fai?",
+	"theme": "incidente",
+	"report": {
+			"text": "l’88,7% degli intervistati ritiene che non sia affatto giustificabile trattare meno bene un lavoratore “perchè immigrato” e il 71,7% ritiene che non sia giusto non assumere un dipendente con le qualifiche richieste solo perchè straniero. Inoltre, il comportamento degli italiani nei confronti degli immigrati risulta essere diffidente (60,1%), non apertamente ostile (6,9%) o indifferente (15,8%)",
+			"source": "“I migranti visti dai cittandini italiani”, Anno 2011, ISTAT"	
+		},
+	"choices": [
+		{
+			"title": "Te ne vai.",
+			"button": "Te ne vai.",
+			"text": "Non vuoi avere problemi, quindi lo lasci stare, ma ti senti in colpa per non aver fatto il tuo dovere.",
+			"happiness": -60,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai sostenuto una spesa extra, ma hai rivisto i parenti e sei stato bene con loro."
+			}
+		},
+		{
+			"title": "Insisiti.",
+			"button": "Insisiti.",
+			"text": "Evidentemente ci sono ancora persone per cui un accento straniero vale più di anni di studio. Torni a casa con questa consapevolezza e ti senti triste e sminuita.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Sei intervenuta perché sei qualificata e senti di aver fatto il tuo dovere, ma ora devi affrontare la reazione dell'uomo...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -120,
+						"money": 0,
+						"stop": false,
+						"text": "L'uomo si arrabbia e ti allontana a male parole. Ti senti umiliata, volevi solo essere utile. Perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 30,
+						"money": 0,
+						"stop": false,
+						"text": "L'uomo si lascia aiutare e gli rimetti a posto la spalla. Lui ti ringrazia e riconosce che il suo era solo uno stupido pregiudizio. Torni a casa felice. Guadagni 30 punti."
+					}
+				]
+			}
+		}
+	]
+}

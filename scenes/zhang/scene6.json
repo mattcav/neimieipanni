@@ -1,0 +1,49 @@
+{
+	"title": "Parli bene l'italiano",
+	"text": "Hai appena conosciuto una ragazza italiana. Lei ti piace,  ma dopo pochi minuti ti dice una frase che hai sentito un milione di volte: “Però, lo parli bene l’italiano!”. Come reagisci?",
+	"theme": "ragazza",
+	"report": {
+			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
+			"source": "Analisi ed elaborazione dati sull’immigrazione cinese"	
+		},
+	"choices": [
+		{
+			"title": "Sorridi e ringrazi",
+			"button": "Sorridi e ringrazi",
+			"text": "Tu sei italiano e questo genere di cose ti hanno sempre dato fastidio. Ma la ragazza crede di farti un complimento e quindi ti fingi contento.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace renderti conto che per i tuoi coetanei non sei davvero italiano."
+			}
+		},
+		{
+			"title": "Rispondi ironicamente",
+			"button": "Rispondi ironicamente",
+			"text": "Non ce la fai più a sentire commenti simili. Le rispondi “Complimenti, anche tu”.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Erano anni che volevi dare una risposta del genere e ti senti soddisfatto di te. Ma ora devi affrontare la reazione della ragazza...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -80,
+						"money": 0,
+						"stop": false,
+						"text": "La ragazza ci rimane male e se ne va senza salutarti. Perdi 80 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 30,
+						"money": 0,
+						"stop": false,
+						"text": "La ragazza si è messa a ridere e ti ha chiesto scusa. Poi ti ha invitato a prendere un caffè. Guadagni 30 punti."
+					}
+				]
+			}
+		}
+	]
+}

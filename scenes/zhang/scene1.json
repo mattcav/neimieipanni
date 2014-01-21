@@ -1,0 +1,56 @@
+	{
+		"title": "La scelta della casa",
+		"text": "Per frequentare l’università hai cambiato città, ora ti serve un posto dove stare. Cosa cerchi?",
+		"theme": "casa",
+		"report": {
+			"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
+			"source": "Rapporto UNAR"	
+		},
+		"choices": [
+			{
+				"title": "Monolocale",
+				"button": "Monolocale",
+				"text": "È sempre stato il tuo sogno essere indipendente, ma è la scelta più cara.",
+				"happiness": 500,
+				"money": -600,
+				"conseguence": {
+					"text": "Dovrai stare molto attento ai soldi, ma sei contentissimo di vivere da solo.",
+
+					"type": "trap",
+					"trapText": "L'agente immobiliare, che al telefono era gentilissimo, quando ti vede arrivare cambia espressione e dice che preferisce presentare ai proprietari “inquilini italiani”. Ti senti discriminato, e perdi 50 punti.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Stanza singola",
+				"button": "Stanza singola",
+				"text": "Risparmi qualcosa rispetto al monolocale, ma hai comunque uno spazio tuo.",
+				"happiness": 280,
+				"money": -400,
+				"conseguence": {
+					"text": "È comunque una bella soddisfazione avere una stanza tutta per te, anche se vivrai con degli estranei.",
+
+					"type": "trap",
+					"trapText": "L'agente immobiliare, che al telefono era gentilissimo, quando ti vede arrivare cambia espressione e dice che preferisce presentare ai proprietari “inquilini italiani”. Ti senti discriminato, e perdi 50 punti.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Stanza condivisa",
+				"button": "Stanza condivisa",
+				"text": "Hai scelto di risparmiare, ma non sarai davvero indipendente e dovrai convivere con degli estranei.",
+				"happiness": 100,
+				"money": -250,
+				"conseguence": {
+					"text": "Hai risolto il problema dell'alloggio con la spesa più bassa, ma ora dovrai affrontare qualche difficoltà nella convivenza.",
+
+					"type": "trap",
+					"trapText": "L'agente immobiliare, che al telefono era gentilissimo, quando ti vede arrivare cambia espressione e dice che preferisce presentare ai proprietari “inquilini italiani”. Ti senti discriminato, e perdi 50 punti.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			}
+		]
+}

@@ -1,0 +1,48 @@
+	{
+		"title": "Il lavoro",
+		"text": "Ora che hai trovato una casa, devi cercarti un lavoro. Per cosa ti proponi?",
+		"theme": "lavoro",
+		"report": {
+			"text": "Equivale a 540 miliardi di euro, corrispondenti a circa il 35% del Pil 'ufficiale', il valore dell'economia sommersa nel 2011. E circa 22,5 di quei miliardi arrivano dal lavoro degli immigrati. Considerando gli immigrati clandestini si stima un  sommerso di 10 miliardi e mezzo di euro.",
+			"source": "'L'Italia  in nero', Rapporto sull'economia sommersa realizzato dall'Eurispes  e dall'Istituto San Pio V di Roma"	
+		},
+		"choices": [
+			{
+				"title": "Infermiera professionale.",
+				"button": "Infermiera professionale.",
+				"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
+				"happiness": -300,
+				"money": 1000,
+				"conseguence": {
+					"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
+
+					"type": "trap",
+					"trapText": "Al colloquio ti dicono che per rendere validi i tuoi titoli di studio in Italia c'è una lunga trafila. Nel frattempo non possono darti il posto.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Commessa in una parafarmacia",
+				"button": "Commessa in una parafarmacia",
+				"text": "È un lavoro che hai già fatto e che ti piace, ma non è quello per cui hai studiato.",
+				"happiness": -500,
+				"money": 800,
+				"conseguence": {
+					"type": "normal",
+					"text": "Si tratta di un buon impiego, ma ti sembra che le tue competenze vengano sprecate, e questo ti dispiace."
+				}
+			},
+			{
+				"title": "Badante",
+				"button": "Badante",
+				"text": "Il lavoro è richiesto e lo stipendio è buono, ma è molto pesante e poco stimolante.",
+				"happiness": -550,
+				"money": 900,
+				"conseguence": {
+					"type": "normal",
+					"text": "Per avere un lavoro fisso hai accettato un posto molto impegnativo in cui le tue competenze non sono riconosciute e ti rimane poco tempo libero per te stessa."
+				}
+			}
+		]
+	}

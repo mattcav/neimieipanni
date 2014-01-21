@@ -1,0 +1,456 @@
+[	{
+		"title": "La scelta della casa",
+		"text": "Per frequentare l’università hai cambiato città, ora ti serve un posto dove stare. Cosa cerchi?",
+		"theme": "casa",
+		"report": {
+			"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
+			"source": "Rapporto UNAR"	
+		},
+		"choices": [
+			{
+				"title": "Monolocale",
+				"button": "Monolocale",
+				"text": "È sempre stato il tuo sogno essere indipendente, ma è la scelta più cara.",
+				"happiness": 500,
+				"money": -600,
+				"conseguence": {
+					"text": "Dovrai stare molto attento ai soldi, ma sei contentissimo di vivere da solo.",
+
+					"type": "trap",
+					"trapText": "L'agente immobiliare, che al telefono era gentilissimo, quando ti vede arrivare cambia espressione e dice che preferisce presentare ai proprietari “inquilini italiani”. Ti senti discriminato, e perdi 50 punti.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Stanza singola",
+				"button": "Stanza singola",
+				"text": "Risparmi qualcosa rispetto al monolocale, ma hai comunque uno spazio tuo.",
+				"happiness": 280,
+				"money": -400,
+				"conseguence": {
+					"text": "È comunque una bella soddisfazione avere una stanza tutta per te, anche se vivrai con degli estranei.",
+
+					"type": "trap",
+					"trapText": "L'agente immobiliare, che al telefono era gentilissimo, quando ti vede arrivare cambia espressione e dice che preferisce presentare ai proprietari “inquilini italiani”. Ti senti discriminato, e perdi 50 punti.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Stanza condivisa",
+				"button": "Stanza condivisa",
+				"text": "Hai scelto di risparmiare, ma non sarai davvero indipendente e dovrai convivere con degli estranei.",
+				"happiness": 100,
+				"money": -250,
+				"conseguence": {
+					"text": "Hai risolto il problema dell'alloggio con la spesa più bassa, ma ora dovrai affrontare qualche difficoltà nella convivenza.",
+
+					"type": "trap",
+					"trapText": "L'agente immobiliare, che al telefono era gentilissimo, quando ti vede arrivare cambia espressione e dice che preferisce presentare ai proprietari “inquilini italiani”. Ti senti discriminato, e perdi 50 punti.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			}
+		]
+},{
+	"title": "Al ristorante cinese",
+	"text": "Il proprietario di un ristorante cinese sotto casa tua ti ha preso in simpatia e spesso ti offre la cena. Ma ogni volta ti parla male degli italiani. Cosa fai?",
+	"theme": "ristorante",
+	"report": {
+			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
+			"source": "ORAC (2013)"	
+		},
+	"choices": [
+		{
+			"title": "Fingi di essere d'accordo.",
+			"button": "Fingi di essere d'accordo.",
+			"text": "Risparmi un po' di soldi ma rinunci a difendere il tuo paese.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Il trattamento di favore ti fa comodo, ma ti senti in colpa per essere stato zitto."
+			}
+		},
+		{
+			"title": "Smetti di andarci.",
+			"button": "Smetti di andarci.",
+			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
+			"happiness": 30,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai dovuto rinunciare al trattamento di favore, ma almeno non dovrai più ascoltare discorsi che ti infastidiscono."
+			}
+		}
+	]
+},{
+	"title": "Battuta razzista",
+	"text": "Nell’atrio dell’università un ragazzo, pensando che tu non capisca l’italiano, dice a un altro che invece che lì dovresti stare a cucinare gatti fingendo che siano pollo. Come reagisci?",
+	"theme": "bulli",
+	"report": {
+			"text": "Le discriminazioni su base etnico-razziale nell’ambito “Scuola&Istruzione” costituiscono il 5% del totale dei casi. Ill 21,2% riguarda atti discriminatori compiuti da studenti.",
+			"source": "Rapporto UNAR"	
+		},
+	"choices": [
+		{
+			"title": "Fingi di non aver sentito",
+			"button": "Fingi di non aver sentito",
+			"text": "Eviti problemi, ma non fai niente per fermare gli stereotipi e il razzismo.",
+			"happiness": -60,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "La tua giornata scorre tranquilla, ma quell'insulto ti risuona nella testa. Non hai fatto nulla per difendere le tue origini e la tua cultura. "
+			}
+		},
+		{
+			"title": "Ti fermi e lo affronti",
+			"button": "Ti fermi e lo affronti",
+			"text": "Rispondi alla loro battuta dicendogli che se non sa distinguere un gatto da un pollo è lui che forse non dovrebbe stare all’università. ",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Sei fiero di te: hai rivelato di essere italiano, ma anche di tenere alle tue origini. Ma ora devi scoprire la reazione dei ragazzi...",
+				"cases": [
+					{
+						"probability": 40,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"text": "I ragazzi non  la prendono bene, ti dicono che è meglio che impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
+					},
+					{
+						"probability": 60,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"text": "Stupiti dal tuo italiano perfetto e dalla tua battuta i ragazzi rimangono muti e imbarazzati. Guadagni altri 20 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "L'autobus",
+	"text": "La casa che hai trovato non è molto vicina all'univeristà, quindi dovrai prendere i mezzi pubblici ogni giorno. Cosa scegli di fare?",
+	"theme": "controllore",
+	"report": {
+			"text": "Il 70% delle segnalazioni pervenute all’UNAR riguardano casi di discriminazione etnico-razziale avvenute nell’ambito “Trasporto pubblico”.",
+			"source": "Rapporto UNAR"	
+		},
+	"choices": [
+		{
+			"title": "Compri la tessera mensile",
+			"button": "Compri la tessera mensile",
+			"text": "È una spesa fissa, ma puoi usare l'autobus anche per uscire la sera.",
+			"happiness": 10,
+			"money": -50,
+			"conseguence": {
+				"type": "normal",
+				"text": "È una spesa consistente , ma puoi spostarti ogni volta che ti serve."
+			}
+		},
+		{
+			"title": "Fai una furbata",
+			"button": "Fai una furbata",
+			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
+			"happiness": -20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Hai scelto di risparmiare, ma ora è salito il controllore...",
+				"cases": [
+					{
+						"probability": 40,
+						"happiness": -100,
+						"money": -100,
+						"stop": false,
+						"text": "Il controllore punta subito te per il tuo aspetto e ti trova con il biglietto non timbrato. Devi pagare 100€ di multa."
+					},
+					{
+						"probability": 60,
+						"happiness": -60,
+						"money": 0,
+						"stop": false,
+						"text": "Scendi dall'autobus appena in tempo. Ma  una signora ti ha visto e commenta “Gli stranieri non pagano mai”. Ti vergogni perché hai incrementato un pregiudizio, perdi 60 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "Il capodanno cinese",
+	"text": "I tuoi genitori ti chiedono di tornare a casa per festeggiare con loro il capodanno cinese. Ma in quel week end c’è una grande festa nella tua facoltà. Cosa fai?",
+	"theme": "capodanno",
+	"report": {
+			"text": "Indagine comunità cinese di Roma: pochi cinesi riunciano a festeggiare il capodanno cinese perchè forte ricorrenza della loro cultura. La differenza sta nei festeggiamenti: in Cina la festa si trascorre in famiglia; in Italia si va al ristorante coinvolgendo anche gli amici italiani.",
+			"source": "AGICHINA 24"	
+		},
+	"choices": [
+		{
+			"title": "Torni a casa.",
+			"button": "Torni a casa.",
+			"text": "Compri il biglietto del treno e parti. Sai che ai tuoi farà piacere.",
+			"happiness": 20,
+			"money": -80,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai sostenuto una spesa extra, ma hai rivisto i parenti e sei stato bene con loro."
+			}
+		},
+		{
+			"title": "Rimani per la festa.",
+			"button": "Rimani per la festa.",
+			"text": "Decidi di restare, il capodanno cinese ti piace ma la festa è l’occasione per farsi  nuovi amici.",
+			"happiness": 40,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "La festa sarà un momento fondamentale per socializzare all’università. Ma ora devi chiamare i tuoi genitori e dire che non andrai da loro...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -120,
+						"money": 0,
+						"stop": false,
+						"text": "I tuoi genitori sono rimasti molto delusi e non te lo nascondono. Non hai fatto nulla di male ma ti senti in colpa lo stesso. E alla festa sei l'unico che non si diverte, perdi 120 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 40,
+						"money": 0,
+						"stop": false,
+						"text": "I tuoi genitori sono un po' dispiaciuti di non vederti, ma ci tengono che tu ti senta come gli altri ragazzi della tua età."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "Il casting",
+	"text": "Per avere un po’ di soldi in più fai un casting per una pubblicità. Vieni scelto, ma scopri che devi interpretare un cinese stereotipato e con un ridicolo accento.",
+	"theme": "casting",
+	"report": {
+			"text": "Uno degli stereotipi razzisti più significativi nelle pubblicità ? quello relativo alla caratterizzazione dei Cinesi (e per estensione dela Cina) in termini di soggetti capaci solo di copiare e, possibilmente, “taroccare” (ossia spacciare le copie per originali) i prodotti creati da altri.",
+			"source": "Associna"	
+		},
+	"choices": [
+		{
+			"title": "Accetti.",
+			"button": "Accetti.",
+			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
+			"happiness": -100,
+			"money": 150,
+			"conseguence": {
+				"type": "normal",
+				"text": "Guadagnare quei soldi ti è costato abbastanza. Ma sentendo al telefono i tuoi genitori scopri che alcuni cinesi si sono sentiti offesi dalla tua ridicola interpretazione."
+			}
+		},
+		{
+			"title": "Te ne vai.",
+			"button": "Te ne vai.",
+			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
+			"happiness": 30,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Non avrai i soldi su cui contavi, ma quando senti e leggi i commenti indignati dei cinesi per quello spot sei contento di non essere tu l’attore."
+			}
+		}
+	]
+},{
+	"title": "Parli bene l'italiano",
+	"text": "Hai appena conosciuto una ragazza italiana. Lei ti piace,  ma dopo pochi minuti ti dice una frase che hai sentito un milione di volte: “Però, lo parli bene l’italiano!”. Come reagisci?",
+	"theme": "ragazza",
+	"report": {
+			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
+			"source": "Analisi ed elaborazione dati sull’immigrazione cinese"	
+		},
+	"choices": [
+		{
+			"title": "Sorridi e ringrazi",
+			"button": "Sorridi e ringrazi",
+			"text": "Tu sei italiano e questo genere di cose ti hanno sempre dato fastidio. Ma la ragazza crede di farti un complimento e quindi ti fingi contento.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace renderti conto che per i tuoi coetanei non sei davvero italiano."
+			}
+		},
+		{
+			"title": "Rispondi ironicamente",
+			"button": "Rispondi ironicamente",
+			"text": "Non ce la fai più a sentire commenti simili. Le rispondi “Complimenti, anche tu”.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Erano anni che volevi dare una risposta del genere e ti senti soddisfatto di te. Ma ora devi affrontare la reazione della ragazza...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -80,
+						"money": 0,
+						"stop": false,
+						"text": "La ragazza ci rimane male e se ne va senza salutarti. Perdi 80 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 30,
+						"money": 0,
+						"stop": false,
+						"text": "La ragazza si è messa a ridere e ti ha chiesto scusa. Poi ti ha invitato a prendere un caffè. Guadagni 30 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "Il nome sbagliato",
+	"text": "Per mantenerti all'università hai trovato un lavoretto. Ma il capo trova il tuo nome troppo complicato e lo storpia sempre. Come reagisci?",
+	"theme": "boss",
+	"report": {
+			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
+			"source": "Analisi ed elaborazione dati sull’immigrazione cinese"	
+		},
+	"choices": [
+		{
+			"title": "Fai finta di niente.",
+			"button": "Fai finta di niente.",
+			"text": "Questa situazione ti infastidisce, ma è il tuo capo e non vuoi problemi.",
+			"happiness": -40,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace renderti conto che per i tuoi coetanei non sei davvero italiano."
+			}
+		},
+		{
+			"title": "Ti impunti.",
+			"button": "Ti impunti.",
+			"text": "Al tuo nome ci tieni, questo scatto d’orgoglio ti fa stare meglio.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Prendere posizione ti rende più fiero i te e delle tue origini, ma la reazione del capo è un rischio...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -80,
+						"money": 0,
+						"stop": false,
+						"text": "Il capo si arrabbia, ma non vuole passare per razzista. Da quel momento però comincia ad assegnarti i compiti più noiosi e faticosi. Perdi 80 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"text": "Il capo accetta i tuoi appunti e si scusa. D'ora in poi ti chiamerà con il tuo vero nome, guadagni altri 10 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "Insulto a terzo",
+	"text": "Per mantenerti all'università hai trovato un lavoretto. Ma il capo trova il tuo nome troppo complicato e lo storpia sempre. Come reagisci?",
+	"theme": "insulto",
+	"report": {
+			"text": "Il decreto legislativo 215/2003 definisce come molestie “quei comportamenti indesiderati, posti in essere per motivi di razza o di origine etnica, aventi lo scopo o l’effetto di violare da dignità di una persona e di creare un clima intimidatorio, ostile, degradante, umiliante od offensivo” (art.2 comma 3)",
+			"source": "decreto legislativo 215/2003"	
+		},
+	"choices": [
+		{
+			"title": "Tiri dritto.",
+			"button": "Tiri dritto.",
+			"text": "Ignori un atto di razzismo e ti volti dall’altra parte per evitare problemi",
+			"happiness": -40,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai preferito non immischiarti, ma ora ti senti in colpa per non aver difeso qualcuno che ha subito la stessa ingiustizia che poteva capitare anche a te."
+			}
+		},
+		{
+			"title": "Intervieni.",
+			"button": "Intervieni.",
+			"text": "Ti senti parte in causa e ti fermi a difendere la donna.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Ti sei fermato e hai preso le difese della ragazza in modo energico. Sei fiero di te, ma...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"text": "Il ragazzo se la prende con te. Vola qualche spinta e la gente intorno vi guarda male. Senti di aver fatto la figura del violento e perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"text": "Il ragazzo ti ha guardato minaccioso, ma poi ha incassato il colpo ed è andato via. Guadagni 10 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "La partita  della nazionale",
+	"text": "Nella città dove vivi arriva la nazionale: vai allo stadio a vederla. Ma, pur essendo in un settore tranquillo, vicino a te un uomo inveisce contro i giocatori italiani di colore. Cosa fai?",
+	"theme": "partita",
+	"report": {
+			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
+			"source": "ORAC (2013)"	
+		},
+	"choices": [
+		{
+			"title": "Ti mostri infastidito.",
+			"button": "Ti mostri infastidito..",
+			"text": "Fai notare all'uomo che anche con la pelle di un colore diverso si può essere italiani.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Da italiano di origine straniera ti senti soddisfatto di averle cantate al tipo, ma ora c'è la sua reazione.",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -70,
+						"money": 0,
+						"stop": false,
+						"text": "L'uomo ti aggredisce verbalmente, tra l'indifferenza dei presenti. Ti allontani arrabbiato, non hai perso solo la partita, ma anche hai la sensazione di essere straniero nella tua nazione. Perdi 70 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"text": "L'uomo prova a reagire, ma altri presenti lo zittiscono, schierandoti dalla tua parte e incitando i giocatori di origine straniera che giocano in nazionale. Rimani sorridente al tuo posto, ti senti a casa. Guadagni 20 punti"
+					}
+				]
+			}
+		},
+		{
+			"title": "Ti sposti.",
+			"button": "Ti sposti.",
+			"text": "Ti sposti per non affrontarlo, ma trovi spazio solo dove hai una visuale peggiore.",
+			"happiness": -40,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Non hai voluto creare tensione ma la partita non te la riesci a gustare. Continui a guardare verso il posto che occupavi precedentemente, e ti dispiace non aver reagito."
+			}
+		}
+	]
+}]

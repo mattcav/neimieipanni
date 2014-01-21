@@ -1,0 +1,49 @@
+{
+	"title": "L'infortuneo sul lavoro",
+	"text": "Mentre sei al lavoro, cadi e ti fai male ad una gamba. Cosa fai?",
+	"theme": "infortuneo",
+	"report": {
+			"text": "il 16,6 % degli incidenti sul lavoro denunciati e il 31,2% dei casi mortali hanno coinvolto lavoratori nati in Romania (nazione prima in graduatoria sia per le denunce che per i decessi). Inoltre, il 10% dei lavoratori rumeni iscritti all’INAIL risulta essersi ammalato a causa del lavoro. Un’analisi per settore di attività mostra che il 94,3% degli infortuni dei lavoratori nati all’estero si verifica nell’Industria e servizi.",
+			"source": "Dossier Statistico Immigrazione Caritas e Migrantes 2012"	
+		},
+	"choices": [
+		{
+			"title": "Continui a lavorare.",
+			"button": "Continui a lavorare.",
+			"text": "Fai finta di niente per non sembrare una che crea problemi e sopporti il dolore.",
+			"happiness": -80,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Avresti avuto diritto a stare a casa, ma per troppa paura di perdere il lavoro non hai voluto correre nessun rischio."
+			}
+		},
+		{
+			"title": "Vai a casa.",
+			"button": "Vai a casa.",
+			"text": "Il permesso per malattia è un tuo diritto e intendi esercitarlo.",
+			"happiness": -20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Un giorno di riposo ti ha fatto guarire, ma ora ricevi una telefonata...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": 0,
+						"money": -100,
+						"stop": false,
+						"text": "L’uomo ti dice che la tua assenza è stata un problema e ti tratterrà 100 euro dallo stipendio. Sai che non è giusto, ma sai anche che non riuscirai a riavere quei soldi..."
+					},
+					{
+						"probability": 50,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"text": "L’uomo ti chiede come stai ed è contento di sapere che sei guarita. Le sue parole ti fanno sentire apprezzata e guadagni 20 punti."
+					}
+				]
+			}
+		}
+	]
+}

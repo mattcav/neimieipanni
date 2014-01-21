@@ -1,0 +1,49 @@
+{
+	"title": "L'autobus",
+	"text": "La casa che hai trovato non è molto vicina all'univeristà, quindi dovrai prendere i mezzi pubblici ogni giorno. Cosa scegli di fare?",
+	"theme": "controllore",
+	"report": {
+			"text": "Il 70% delle segnalazioni pervenute all’UNAR riguardano casi di discriminazione etnico-razziale avvenute nell’ambito “Trasporto pubblico”.",
+			"source": "Rapporto UNAR"	
+		},
+	"choices": [
+		{
+			"title": "Compri la tessera mensile",
+			"button": "Compri la tessera mensile",
+			"text": "È una spesa fissa, ma puoi usare l'autobus anche per uscire la sera.",
+			"happiness": 10,
+			"money": -50,
+			"conseguence": {
+				"type": "normal",
+				"text": "È una spesa consistente , ma puoi spostarti ogni volta che ti serve."
+			}
+		},
+		{
+			"title": "Fai una furbata",
+			"button": "Fai una furbata",
+			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
+			"happiness": -20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Hai scelto di risparmiare, ma ora è salito il controllore...",
+				"cases": [
+					{
+						"probability": 40,
+						"happiness": -100,
+						"money": -100,
+						"stop": false,
+						"text": "Il controllore punta subito te per il tuo aspetto e ti trova con il biglietto non timbrato. Devi pagare 100€ di multa."
+					},
+					{
+						"probability": 60,
+						"happiness": -60,
+						"money": 0,
+						"stop": false,
+						"text": "Scendi dall'autobus appena in tempo. Ma  una signora ti ha visto e commenta “Gli stranieri non pagano mai”. Ti vergogni perché hai incrementato un pregiudizio, perdi 60 punti."
+					}
+				]
+			}
+		}
+	]
+}

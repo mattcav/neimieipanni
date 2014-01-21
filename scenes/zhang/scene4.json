@@ -1,0 +1,49 @@
+{
+	"title": "Il capodanno cinese",
+	"text": "I tuoi genitori ti chiedono di tornare a casa per festeggiare con loro il capodanno cinese. Ma in quel week end c’è una grande festa nella tua facoltà. Cosa fai?",
+	"theme": "capodanno",
+	"report": {
+			"text": "Indagine comunità cinese di Roma: pochi cinesi riunciano a festeggiare il capodanno cinese perchè forte ricorrenza della loro cultura. La differenza sta nei festeggiamenti: in Cina la festa si trascorre in famiglia; in Italia si va al ristorante coinvolgendo anche gli amici italiani.",
+			"source": "AGICHINA 24"	
+		},
+	"choices": [
+		{
+			"title": "Torni a casa.",
+			"button": "Torni a casa.",
+			"text": "Compri il biglietto del treno e parti. Sai che ai tuoi farà piacere.",
+			"happiness": 20,
+			"money": -80,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai sostenuto una spesa extra, ma hai rivisto i parenti e sei stato bene con loro."
+			}
+		},
+		{
+			"title": "Rimani per la festa.",
+			"button": "Rimani per la festa.",
+			"text": "Decidi di restare, il capodanno cinese ti piace ma la festa è l’occasione per farsi  nuovi amici.",
+			"happiness": 40,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "La festa sarà un momento fondamentale per socializzare all’università. Ma ora devi chiamare i tuoi genitori e dire che non andrai da loro...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -120,
+						"money": 0,
+						"stop": false,
+						"text": "I tuoi genitori sono rimasti molto delusi e non te lo nascondono. Non hai fatto nulla di male ma ti senti in colpa lo stesso. E alla festa sei l'unico che non si diverte, perdi 120 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 40,
+						"money": 0,
+						"stop": false,
+						"text": "I tuoi genitori sono un po' dispiaciuti di non vederti, ma ci tengono che tu ti senta come gli altri ragazzi della tua età."
+					}
+				]
+			}
+		}
+	]
+}

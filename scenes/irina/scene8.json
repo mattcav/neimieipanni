@@ -1,0 +1,49 @@
+{
+	"title": "Battuta razzista",
+	"text": "Mentre stai lavorando senti il tuo capo che fa una battuta razzista. Cosa fai?",
+	"theme": "boss",
+	"report": {
+			"text": "Nell’ambito del lavoro iI 12,5 % dei casi di discriminazione razziale ha riguardato le relazioni con i colleghi e il 2,5% il mobbing con aggravante razziale.",
+			"source": "Rapporto UNAR"	
+		},
+	"choices": [
+		{
+			"title": "Fingi di non aver sentito",
+			"button": "Fingi di non aver sentito",
+			"text": "Decidi controvoglia di lasciar perdere: non vuoi avere problemi.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Sei stata zitta come se niente fosse, ma ti senti profondamente umiliata."
+			}
+		},
+		{
+			"title": "Protesti",
+			"button": "Protesti",
+			"text": "Fai valere le tue ragioni per fargli capire come ti senti.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Hai protestato e sei contenta di averlo fatto. Ma ora il capo vuole parlarti nel suo ufficio...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"text": "Il tuo capo ti chiede scusa controvoglia ma nei giorni seguenti noti che ti vengono assegnti i compiti più faticosi. Perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"text": "l tuo capo ti chiede scusa con convinzione. Senti di aver fatto qualcosa di buono non solo per te, ma anche per lui. Guadagni 20 punti."
+					}
+				]
+			}
+		}
+	]
+}

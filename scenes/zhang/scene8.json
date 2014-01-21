@@ -1,0 +1,49 @@
+{
+	"title": "Insulto a terzo",
+	"text": "Per mantenerti all'università hai trovato un lavoretto. Ma il capo trova il tuo nome troppo complicato e lo storpia sempre. Come reagisci?",
+	"theme": "insulto",
+	"report": {
+			"text": "Il decreto legislativo 215/2003 definisce come molestie “quei comportamenti indesiderati, posti in essere per motivi di razza o di origine etnica, aventi lo scopo o l’effetto di violare da dignità di una persona e di creare un clima intimidatorio, ostile, degradante, umiliante od offensivo” (art.2 comma 3)",
+			"source": "decreto legislativo 215/2003"	
+		},
+	"choices": [
+		{
+			"title": "Tiri dritto.",
+			"button": "Tiri dritto.",
+			"text": "Ignori un atto di razzismo e ti volti dall’altra parte per evitare problemi",
+			"happiness": -40,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai preferito non immischiarti, ma ora ti senti in colpa per non aver difeso qualcuno che ha subito la stessa ingiustizia che poteva capitare anche a te."
+			}
+		},
+		{
+			"title": "Intervieni.",
+			"button": "Intervieni.",
+			"text": "Ti senti parte in causa e ti fermi a difendere la donna.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Ti sei fermato e hai preso le difese della ragazza in modo energico. Sei fiero di te, ma...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"text": "Il ragazzo se la prende con te. Vola qualche spinta e la gente intorno vi guarda male. Senti di aver fatto la figura del violento e perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"text": "Il ragazzo ti ha guardato minaccioso, ma poi ha incassato il colpo ed è andato via. Guadagni 10 punti."
+					}
+				]
+			}
+		}
+	]
+}

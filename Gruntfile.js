@@ -42,44 +42,49 @@ module.exports = function(grunt) {
                   'js/app.js' 
               ],
               dest: 'js/build/app.js'
+          },
+          irina: {
+              src: ['scenes/irina/scene*.json'],
+              dest: 'scenes/irina/all.json',
+              options: {
+                banner: '[',
+                footer: "]",
+                separator: ','
+            }
+          },
+          zhang: {
+              src: ['scenes/zhang/scene*.json'],
+              dest: 'scenes/zhang/all.json',
+              options: {
+                banner: '[',
+                footer: "]",
+                separator: ','
+            }
           }
       },
+
       uglify: {
           build: {
               src: 'js/build/app.js',
               dest: 'js/build/app.min.js'
           }
       },
-    // imagemin: {
-    //       dynamic: {
-    //           files: [{
-    //               expand: true,
-    //               cwd: 'images/',
-    //               src: ['**/*.{png,jpg,gif}'],
-    //               dest: 'images/build/'
-    //           }]
-    //       }
-    //   },
 
-
+   
 
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
       sass: {
         files: 'scss/**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass', 'autoprefixer']
       },
 
-      autoprefixer: {
-        files: 'css/app.css',
-        tasks: ['autoprefixer'],
-        
       options: {
           livereload: true,
-        },
-      }
+        }
     }
+    
   });
 
   grunt.loadNpmTasks('grunt-sass');

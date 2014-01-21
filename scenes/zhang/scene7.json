@@ -1,0 +1,49 @@
+{
+	"title": "Il nome sbagliato",
+	"text": "Per mantenerti all'università hai trovato un lavoretto. Ma il capo trova il tuo nome troppo complicato e lo storpia sempre. Come reagisci?",
+	"theme": "boss",
+	"report": {
+			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
+			"source": "Analisi ed elaborazione dati sull’immigrazione cinese"	
+		},
+	"choices": [
+		{
+			"title": "Fai finta di niente.",
+			"button": "Fai finta di niente.",
+			"text": "Questa situazione ti infastidisce, ma è il tuo capo e non vuoi problemi.",
+			"happiness": -40,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace renderti conto che per i tuoi coetanei non sei davvero italiano."
+			}
+		},
+		{
+			"title": "Ti impunti.",
+			"button": "Ti impunti.",
+			"text": "Al tuo nome ci tieni, questo scatto d’orgoglio ti fa stare meglio.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Prendere posizione ti rende più fiero i te e delle tue origini, ma la reazione del capo è un rischio...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -80,
+						"money": 0,
+						"stop": false,
+						"text": "Il capo si arrabbia, ma non vuole passare per razzista. Da quel momento però comincia ad assegnarti i compiti più noiosi e faticosi. Perdi 80 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"text": "Il capo accetta i tuoi appunti e si scusa. D'ora in poi ti chiamerà con il tuo vero nome, guadagni altri 10 punti."
+					}
+				]
+			}
+		}
+	]
+}

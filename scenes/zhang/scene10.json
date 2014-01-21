@@ -1,0 +1,33 @@
+{
+	"title": "Al ristorante cinese",
+	"text": "Il proprietario di un ristorante cinese sotto casa tua ti ha preso in simpatia e spesso ti offre la cena. Ma ogni volta ti parla male degli italiani. Cosa fai?",
+	"theme": "ristorante",
+	"report": {
+			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
+			"source": "ORAC (2013)"	
+		},
+	"choices": [
+		{
+			"title": "Fingi di essere d'accordo.",
+			"button": "Fingi di essere d'accordo.",
+			"text": "Risparmi un po' di soldi ma rinunci a difendere il tuo paese.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Il trattamento di favore ti fa comodo, ma ti senti in colpa per essere stato zitto."
+			}
+		},
+		{
+			"title": "Smetti di andarci.",
+			"button": "Smetti di andarci.",
+			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
+			"happiness": 30,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai dovuto rinunciare al trattamento di favore, ma almeno non dovrai più ascoltare discorsi che ti infastidiscono."
+			}
+		}
+	]
+}

@@ -1,0 +1,48 @@
+{
+		"title": "La lavatrice",
+		"text": "Da quando ti sei trasferita hai dovuto lavare i panni a mano perdendo tempo e facendo fatica. Cosa fai?",
+		"theme": "lavoro",
+		"report": {
+			"text": "Le famiglie con stranieri dispongono di beni durevoli in maniera limitata rispetto alle famiglie composte da soli italiani. Il divario è  contenuto per beni come la lavatrice di cui ne dispone il 93,2% delle famiglie (contro il 97,7% delle famiglie italiane) anche se è frequente l’utilizzo in condivisione con altre famiglie.",
+			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
+		},
+		"choices": [
+			{
+				"title": "Compri una lavatrice.",
+				"button": "Compri una lavatrice.",
+				"text": "Trovi un'offerta con un finanziamento e una rata conveniente.",
+				"happiness": 100,
+				"money": -60,
+				"conseguence": {
+					"text": "Trovi un'offerta con un finanziamento e una rata conveniente.",
+
+					"type": "trap",
+					"trapText": "Il commesso del negozio ti dice che la finanziaria non concede prestiti ad immigrati appena arrivati. Devi rinunciare all'acquisto.",
+					"trapHappiness": 0,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Vai ad una lavanderia a gettoni",
+				"button": "Vai ad una lavanderia a gettoni",
+				"text": "La spesa è contenuta e ti risparmia la fatica, ma ti porta via tempo.",
+				"happiness": -30,
+				"money": -30,
+				"conseguence": {
+					"type": "normal",
+					"text": "Hai scelto un compromesso tra risparmio e comodità. Speri che in futuro potrai permetterti qualche lusso in più."
+				}
+			},
+			{
+				"title": "Continui a lavarli a casa",
+				"button": "Continui a lavarli a casa",
+				"text": "Non spendi nulla, ma hai meno tempo ed energie per tutto il resto.",
+				"happiness": -70,
+				"money": 0,
+				"conseguence": {
+					"type": "normal",
+					"text": "Hai scelto di non spendere nulla, ma da questo punto di vista, la tua vita è peggiore di quando eri in Romania."
+				}
+			}
+		]
+	}

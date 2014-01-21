@@ -1,0 +1,33 @@
+{
+	"title": "Il corso d'italiano",
+	"text": "Il tuo italiano è ancora scarso e hai difficoltà a parlare con le persone. Decidi di seguire un corso di lingua. Quale scegli?",
+	"theme": "italiano",
+	"report": {
+			"text": "L'’integrazione linguistica degli stranieri in Italia è stata “istituzionalizzata” dapprima mediante il Decreto del 4 giugno 2010 ( che ha inserito la conoscenza della lingua italiana tra i requisiti necessari per l’ottenimento dell’ambita Carta di soggiorno CE per soggiornanti di lungo periodo) a cui è seguito, il 28 luglio del 2011, il Regolamento attuativo dell’Accordo di integrazione. Stando ai soli aspiranti alla Carta di soggiorno CE, nei primi 6 mesi del 2011 le domande pervenute per accedere al test sono state, in Italia, oltre 51.000: una cifra pari ad appena il 12%  circa dei 400.000 soggiornanti che, a giugno dello stesso anno, risultavano aver maturato i requisiti per richiedere la Carta. L’esito è stato generalmente confortante, avendolo superato l’87% di quanti l’hanno sostenuto.",
+			"source": "“Immigrati e integrazione”, Centro Studi e Ricerche Idos"	
+		},
+	"choices": [
+		{
+			"title": "Un corso gratuito.",
+			"button": "Un corso gratuito.",
+			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
+			"happiness": -100,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Non spendi nulla, ma la scuola è lontana e ti crea problemi con gli orari e gli spostamenti."
+			}
+		},
+		{
+			"title": "Un corso a pagamento.",
+			"button": "Un corso a pagamento.",
+			"text": "Il costo non è basso, ma la scuola è proprio dietro casa e gli orari sono flessibili: puoi seguire le lezioni senza difficoltà.",
+			"happiness": 20,
+			"money": -120,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai dovuto spendere dei soldi, ma il tuo italiano migliora velocemente: ti senti più integrata ed è più facile conoscere nuove persone."
+			}
+		}
+	]
+}

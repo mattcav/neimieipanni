@@ -1,0 +1,49 @@
+{
+	"title": "La partita  della nazionale",
+	"text": "Nella città dove vivi arriva la nazionale: vai allo stadio a vederla. Ma, pur essendo in un settore tranquillo, vicino a te un uomo inveisce contro i giocatori italiani di colore. Cosa fai?",
+	"theme": "partita",
+	"report": {
+			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
+			"source": "ORAC (2013)"	
+		},
+	"choices": [
+		{
+			"title": "Ti mostri infastidito.",
+			"button": "Ti mostri infastidito..",
+			"text": "Fai notare all'uomo che anche con la pelle di un colore diverso si può essere italiani.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Da italiano di origine straniera ti senti soddisfatto di averle cantate al tipo, ma ora c'è la sua reazione.",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -70,
+						"money": 0,
+						"stop": false,
+						"text": "L'uomo ti aggredisce verbalmente, tra l'indifferenza dei presenti. Ti allontani arrabbiato, non hai perso solo la partita, ma anche hai la sensazione di essere straniero nella tua nazione. Perdi 70 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"text": "L'uomo prova a reagire, ma altri presenti lo zittiscono, schierandoti dalla tua parte e incitando i giocatori di origine straniera che giocano in nazionale. Rimani sorridente al tuo posto, ti senti a casa. Guadagni 20 punti"
+					}
+				]
+			}
+		},
+		{
+			"title": "Ti sposti.",
+			"button": "Ti sposti.",
+			"text": "Ti sposti per non affrontarlo, ma trovi spazio solo dove hai una visuale peggiore.",
+			"happiness": -40,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Non hai voluto creare tensione ma la partita non te la riesci a gustare. Continui a guardare verso il posto che occupavi precedentemente, e ti dispiace non aver reagito."
+			}
+		}
+	]
+}

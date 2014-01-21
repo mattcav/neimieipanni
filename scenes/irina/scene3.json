@@ -1,0 +1,49 @@
+{
+	"title": "L'aumento",
+	"text": "Il colloquio per il lavoro è andato bene ma lo stipendio ti sembra un po’ basso. Per chiedere un aumento potresti usare i tuoi studi. Che fai?",
+	"theme": "boss",
+	"report": {
+			"text": "Solo il 4,5% degli immigrati con cittadinanza romena svolge professioni qualificate (dirigenti, imprenditori, tecnici)",
+			"source": "“Relazione sulle forze lavoro”, Anno 2011, ISTAT"	
+		},
+	"choices": [
+		{
+			"title": "Chiedi l'aumento.",
+			"button": "Chiedi l'aumento.",
+			"text": "Sei un'infermiera diplomata, hai nozioni che possono essere utili. Dedici di farlo presente.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Esponi il tuo titolo di studio e spieghi che secondo te meriti di più. Sei contenta di averlo fatto, ma ora tutto dipende dalla reazione del datore di lavoro...",
+				"cases": [
+					{
+						"probability": 20,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"text": "I datori di lavoro dicono che non possono permettersi uno stipendio più alto, ma ora che sanno delle tue competenze ti affideranno mansioni più delicate. Perdi 100 punti."
+					},
+					{
+						"probability": 80,
+						"happiness": 0,
+						"money": 100,
+						"stop": false,
+						"text": "I datori di lavoro riconoscono l'importanza delle tue competenze, ottieni un aumento di 100 euro."
+					}
+				]
+			}
+		},
+		{
+			"title": "Accetti senza discutere.",
+			"button": "Accetti senza discutere.",
+			"text": "Stai nascondendo la cosa di cui vai più fiera, ma preferisci non tirare troppo la corda.",
+			"happiness": -20,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Sei così contenta di aver trovato lavoro che non hai voluto sollevare questioni. Ma ripensandoci a mente fredda, ti sembra di esserti svilita da sola."
+			}
+		}
+	]
+}

@@ -1,0 +1,454 @@
+[	{
+		"title": "La scelta della casa",
+		"text": "Sei appena arrivata in Italia. Come prima cosa ti serve una sistemazione. Che cosa cerchi?",
+		"theme": "casa",
+		"report": {
+			"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
+			"source": "Rapporto UNAR"	
+		},
+		"choices": [
+			{
+				"title": "Monolocale",
+				"button": "Monolocale",
+				"text": "La spesa è consistente, ma sei indipendente.",
+				"happiness": 500,
+				"money": -600,
+				"conseguence": {
+					"text": "Dovrai stare molto attento ai soldi, ma sei contentissimo di vivere da solo.",
+
+					"type": "trap",
+					"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Stanza singola",
+				"button": "Stanza singola",
+				"text": "Spendi una cifra più abbordabile, ma hai comunque un spazio tutto tuo.",
+				"happiness": 280,
+				"money": -400,
+				"conseguence": {
+					"text": "È comunque una bella soddisfazione avere una stanza tutta per te, anche se vivrai con degli estranei.",
+
+					"type": "trap",
+					"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Stanza condivisa",
+				"button": "Stanza condivisa",
+				"text": "Fai la scelta più economica, rinunciando a spazi e indipendenza.",
+				"happiness": 100,
+				"money": -250,
+				"conseguence": {
+					"text": "Hai risolto il problema dell'alloggio con la spesa più bassa, ma ora dovrai affrontare qualche difficoltà nella convivenza.",
+
+					"type": "trap",
+					"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			}
+		]
+},{
+	"title": "Il secondo lavoro",
+	"text": "Hai trovato un impiego di un giorno come hostess. Ma la responsabile dello stand manda via una delle altre ragazze perché è nera, dicendo che non vuole lavorare con le immigrate. Cosa fai?",
+	"theme": "hostess",
+	"report": {
+			"text": "Gli stranieri testimoni di episodi discriminatori risultano essere nati principalmente in Romania, Marocco e Perù (11,8% dei segnalanti testimoni totali)",
+			"source": "Rapporto UNAR"	
+		},
+	"choices": [
+		{
+			"title": "Non dici niente.",
+			"button": "Non dici niente.",
+			"text": "Hai proprio bisogno di questo guadagno extra anche se ti senti in colpa.",
+			"happiness": -100,
+			"money": 100,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai guadagnato dei soldi, ma hai dovuto sorridere tutto il tempo a quella donna razzista. Ti senti quasi peggiore di lei."
+			}
+		},
+		{
+			"title": "Te ne vai anche tu.",
+			"button": "Te ne vai anche tu.",
+			"text": "Non vuoi avere nulla a che fare con queste persone e dici che sei immigrata anche tu: meglio rinunciare ai soldi ma rimanere fedele ai tuoi principi.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai perso un facile guadagno, ma hai detto a quella donna razzista cosa pensi di lei. Dentro di te sai di aver fatto la scelta giusta."
+			}
+		}
+	]
+},	{
+		"title": "Il lavoro",
+		"text": "Ora che hai trovato una casa, devi cercarti un lavoro. Per cosa ti proponi?",
+		"theme": "lavoro",
+		"report": {
+			"text": "Equivale a 540 miliardi di euro, corrispondenti a circa il 35% del Pil 'ufficiale', il valore dell'economia sommersa nel 2011. E circa 22,5 di quei miliardi arrivano dal lavoro degli immigrati. Considerando gli immigrati clandestini si stima un  sommerso di 10 miliardi e mezzo di euro.",
+			"source": "'L'Italia  in nero', Rapporto sull'economia sommersa realizzato dall'Eurispes  e dall'Istituto San Pio V di Roma"	
+		},
+		"choices": [
+			{
+				"title": "Infermiera professionale.",
+				"button": "Infermiera professionale.",
+				"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
+				"happiness": -300,
+				"money": 1000,
+				"conseguence": {
+					"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
+
+					"type": "trap",
+					"trapText": "Al colloquio ti dicono che per rendere validi i tuoi titoli di studio in Italia c'è una lunga trafila. Nel frattempo non possono darti il posto.",
+					"trapHappiness": -50,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Commessa in una parafarmacia",
+				"button": "Commessa in una parafarmacia",
+				"text": "È un lavoro che hai già fatto e che ti piace, ma non è quello per cui hai studiato.",
+				"happiness": -500,
+				"money": 800,
+				"conseguence": {
+					"type": "normal",
+					"text": "Si tratta di un buon impiego, ma ti sembra che le tue competenze vengano sprecate, e questo ti dispiace."
+				}
+			},
+			{
+				"title": "Badante",
+				"button": "Badante",
+				"text": "Il lavoro è richiesto e lo stipendio è buono, ma è molto pesante e poco stimolante.",
+				"happiness": -550,
+				"money": 900,
+				"conseguence": {
+					"type": "normal",
+					"text": "Per avere un lavoro fisso hai accettato un posto molto impegnativo in cui le tue competenze non sono riconosciute e ti rimane poco tempo libero per te stessa."
+				}
+			}
+		]
+	},{
+	"title": "L'aumento",
+	"text": "Il colloquio per il lavoro è andato bene ma lo stipendio ti sembra un po’ basso. Per chiedere un aumento potresti usare i tuoi studi. Che fai?",
+	"theme": "boss",
+	"report": {
+			"text": "Solo il 4,5% degli immigrati con cittadinanza romena svolge professioni qualificate (dirigenti, imprenditori, tecnici)",
+			"source": "“Relazione sulle forze lavoro”, Anno 2011, ISTAT"	
+		},
+	"choices": [
+		{
+			"title": "Chiedi l'aumento.",
+			"button": "Chiedi l'aumento.",
+			"text": "Sei un'infermiera diplomata, hai nozioni che possono essere utili. Dedici di farlo presente.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Esponi il tuo titolo di studio e spieghi che secondo te meriti di più. Sei contenta di averlo fatto, ma ora tutto dipende dalla reazione del datore di lavoro...",
+				"cases": [
+					{
+						"probability": 20,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"text": "I datori di lavoro dicono che non possono permettersi uno stipendio più alto, ma ora che sanno delle tue competenze ti affideranno mansioni più delicate. Perdi 100 punti."
+					},
+					{
+						"probability": 80,
+						"happiness": 0,
+						"money": 100,
+						"stop": false,
+						"text": "I datori di lavoro riconoscono l'importanza delle tue competenze, ottieni un aumento di 100 euro."
+					}
+				]
+			}
+		},
+		{
+			"title": "Accetti senza discutere.",
+			"button": "Accetti senza discutere.",
+			"text": "Stai nascondendo la cosa di cui vai più fiera, ma preferisci non tirare troppo la corda.",
+			"happiness": -20,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Sei così contenta di aver trovato lavoro che non hai voluto sollevare questioni. Ma ripensandoci a mente fredda, ti sembra di esserti svilita da sola."
+			}
+		}
+	]
+},{
+	"title": "Il corso d'italiano",
+	"text": "Il tuo italiano è ancora scarso e hai difficoltà a parlare con le persone. Decidi di seguire un corso di lingua. Quale scegli?",
+	"theme": "italiano",
+	"report": {
+			"text": "L'’integrazione linguistica degli stranieri in Italia è stata “istituzionalizzata” dapprima mediante il Decreto del 4 giugno 2010 ( che ha inserito la conoscenza della lingua italiana tra i requisiti necessari per l’ottenimento dell’ambita Carta di soggiorno CE per soggiornanti di lungo periodo) a cui è seguito, il 28 luglio del 2011, il Regolamento attuativo dell’Accordo di integrazione. Stando ai soli aspiranti alla Carta di soggiorno CE, nei primi 6 mesi del 2011 le domande pervenute per accedere al test sono state, in Italia, oltre 51.000: una cifra pari ad appena il 12%  circa dei 400.000 soggiornanti che, a giugno dello stesso anno, risultavano aver maturato i requisiti per richiedere la Carta. L’esito è stato generalmente confortante, avendolo superato l’87% di quanti l’hanno sostenuto.",
+			"source": "“Immigrati e integrazione”, Centro Studi e Ricerche Idos"	
+		},
+	"choices": [
+		{
+			"title": "Un corso gratuito.",
+			"button": "Un corso gratuito.",
+			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
+			"happiness": -100,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Non spendi nulla, ma la scuola è lontana e ti crea problemi con gli orari e gli spostamenti."
+			}
+		},
+		{
+			"title": "Un corso a pagamento.",
+			"button": "Un corso a pagamento.",
+			"text": "Il costo non è basso, ma la scuola è proprio dietro casa e gli orari sono flessibili: puoi seguire le lezioni senza difficoltà.",
+			"happiness": 20,
+			"money": -120,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai dovuto spendere dei soldi, ma il tuo italiano migliora velocemente: ti senti più integrata ed è più facile conoscere nuove persone."
+			}
+		}
+	]
+},{
+	"title": "L'infortuneo sul lavoro",
+	"text": "Mentre sei al lavoro, cadi e ti fai male ad una gamba. Cosa fai?",
+	"theme": "infortuneo",
+	"report": {
+			"text": "il 16,6 % degli incidenti sul lavoro denunciati e il 31,2% dei casi mortali hanno coinvolto lavoratori nati in Romania (nazione prima in graduatoria sia per le denunce che per i decessi). Inoltre, il 10% dei lavoratori rumeni iscritti all’INAIL risulta essersi ammalato a causa del lavoro. Un’analisi per settore di attività mostra che il 94,3% degli infortuni dei lavoratori nati all’estero si verifica nell’Industria e servizi.",
+			"source": "Dossier Statistico Immigrazione Caritas e Migrantes 2012"	
+		},
+	"choices": [
+		{
+			"title": "Continui a lavorare.",
+			"button": "Continui a lavorare.",
+			"text": "Fai finta di niente per non sembrare una che crea problemi e sopporti il dolore.",
+			"happiness": -80,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Avresti avuto diritto a stare a casa, ma per troppa paura di perdere il lavoro non hai voluto correre nessun rischio."
+			}
+		},
+		{
+			"title": "Vai a casa.",
+			"button": "Vai a casa.",
+			"text": "Il permesso per malattia è un tuo diritto e intendi esercitarlo.",
+			"happiness": -20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Un giorno di riposo ti ha fatto guarire, ma ora ricevi una telefonata...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": 0,
+						"money": -100,
+						"stop": false,
+						"text": "L’uomo ti dice che la tua assenza è stata un problema e ti tratterrà 100 euro dallo stipendio. Sai che non è giusto, ma sai anche che non riuscirai a riavere quei soldi..."
+					},
+					{
+						"probability": 50,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"text": "L’uomo ti chiede come stai ed è contento di sapere che sei guarita. Le sue parole ti fanno sentire apprezzata e guadagni 20 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+		"title": "La lavatrice",
+		"text": "Da quando ti sei trasferita hai dovuto lavare i panni a mano perdendo tempo e facendo fatica. Cosa fai?",
+		"theme": "lavoro",
+		"report": {
+			"text": "Le famiglie con stranieri dispongono di beni durevoli in maniera limitata rispetto alle famiglie composte da soli italiani. Il divario è  contenuto per beni come la lavatrice di cui ne dispone il 93,2% delle famiglie (contro il 97,7% delle famiglie italiane) anche se è frequente l’utilizzo in condivisione con altre famiglie.",
+			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
+		},
+		"choices": [
+			{
+				"title": "Compri una lavatrice.",
+				"button": "Compri una lavatrice.",
+				"text": "Trovi un'offerta con un finanziamento e una rata conveniente.",
+				"happiness": 100,
+				"money": -60,
+				"conseguence": {
+					"text": "Trovi un'offerta con un finanziamento e una rata conveniente.",
+
+					"type": "trap",
+					"trapText": "Il commesso del negozio ti dice che la finanziaria non concede prestiti ad immigrati appena arrivati. Devi rinunciare all'acquisto.",
+					"trapHappiness": 0,
+					"trapMoney": 0
+				}
+			},
+			{
+				"title": "Vai ad una lavanderia a gettoni",
+				"button": "Vai ad una lavanderia a gettoni",
+				"text": "La spesa è contenuta e ti risparmia la fatica, ma ti porta via tempo.",
+				"happiness": -30,
+				"money": -30,
+				"conseguence": {
+					"type": "normal",
+					"text": "Hai scelto un compromesso tra risparmio e comodità. Speri che in futuro potrai permetterti qualche lusso in più."
+				}
+			},
+			{
+				"title": "Continui a lavarli a casa",
+				"button": "Continui a lavarli a casa",
+				"text": "Non spendi nulla, ma hai meno tempo ed energie per tutto il resto.",
+				"happiness": -70,
+				"money": 0,
+				"conseguence": {
+					"type": "normal",
+					"text": "Hai scelto di non spendere nulla, ma da questo punto di vista, la tua vita è peggiore di quando eri in Romania."
+				}
+			}
+		]
+	},{
+	"title": "Il volantino razzista",
+	"text": "Per strada un gruppo di ragazzi, credendoti italiana, ti porge un volantino con scritto “basta immigrati”.",
+	"theme": "volantino",
+	"report": {
+			"text": "le segnalazioni riguardanti scritte razziste su muri, manifesti e altri spazi raccolgono invece il 7,1% dei casi di discriminazione razziale totali pervenuti nel 2012. ",
+			"source": "Rapporto UNAR 2012"	
+		},
+	"choices": [
+		{
+			"title": "Lo prendi.",
+			"button": "Lo prendi.",
+			"text": "Hai paura di quei ragazzi, per evitare problemi lo prendi e te ne vai senza dire una parola.",
+			"happiness": -70,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Sei stata zitta. ma ora ti vergogni perché senti di aver mancato di rispetto a te stessa e agli altri immigrati..."
+			}
+		},
+		{
+			"title": "Lo rifiuti.",
+			"button": "Lo rifiuti.",
+			"text": "Hai uno scatto di orgoglio e rispondi, con il tuo accento straniero, che sei un'immigrata anche tu.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Hai detto quello che pensavi: quel volantino è pieno di stupidi pregiudizi. Ma ora i ragazzi potrebbero reagire.",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"text": "I ragazzi si sono avvicinati minacciosi. Ma si sono limitati a guardarti male e a bofonchiare qualcosa prima di andarsene."
+					},
+					{
+						"probability": 50,
+						"happiness": -150,
+						"money": 0,
+						"stop": false,
+						"text": "I ragazzi si sono avvicinati minacciosi. Indietreggiando per la paura sei caduta e ti sei fatta male. Perdi 150 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "Battuta razzista",
+	"text": "Mentre stai lavorando senti il tuo capo che fa una battuta razzista. Cosa fai?",
+	"theme": "boss",
+	"report": {
+			"text": "Nell’ambito del lavoro iI 12,5 % dei casi di discriminazione razziale ha riguardato le relazioni con i colleghi e il 2,5% il mobbing con aggravante razziale.",
+			"source": "Rapporto UNAR"	
+		},
+	"choices": [
+		{
+			"title": "Fingi di non aver sentito",
+			"button": "Fingi di non aver sentito",
+			"text": "Decidi controvoglia di lasciar perdere: non vuoi avere problemi.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Sei stata zitta come se niente fosse, ma ti senti profondamente umiliata."
+			}
+		},
+		{
+			"title": "Protesti",
+			"button": "Protesti",
+			"text": "Fai valere le tue ragioni per fargli capire come ti senti.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Hai protestato e sei contenta di averlo fatto. Ma ora il capo vuole parlarti nel suo ufficio...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"text": "Il tuo capo ti chiede scusa controvoglia ma nei giorni seguenti noti che ti vengono assegnti i compiti più faticosi. Perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"text": "l tuo capo ti chiede scusa con convinzione. Senti di aver fatto qualcosa di buono non solo per te, ma anche per lui. Guadagni 20 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "L'incidente stradale",
+	"text": "Vedi un uomo cadere dal motorino. Ti avvicini e capisci che si è lussato la spalla. Sai come rimettergliela a posto, ma lui sente il tuo accento straniero e non si fida. Cosa fai?",
+	"theme": "incidente",
+	"report": {
+			"text": "l’88,7% degli intervistati ritiene che non sia affatto giustificabile trattare meno bene un lavoratore “perchè immigrato” e il 71,7% ritiene che non sia giusto non assumere un dipendente con le qualifiche richieste solo perchè straniero. Inoltre, il comportamento degli italiani nei confronti degli immigrati risulta essere diffidente (60,1%), non apertamente ostile (6,9%) o indifferente (15,8%)",
+			"source": "“I migranti visti dai cittandini italiani”, Anno 2011, ISTAT"	
+		},
+	"choices": [
+		{
+			"title": "Te ne vai.",
+			"button": "Te ne vai.",
+			"text": "Non vuoi avere problemi, quindi lo lasci stare, ma ti senti in colpa per non aver fatto il tuo dovere.",
+			"happiness": -60,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai sostenuto una spesa extra, ma hai rivisto i parenti e sei stato bene con loro."
+			}
+		},
+		{
+			"title": "Insisiti.",
+			"button": "Insisiti.",
+			"text": "Evidentemente ci sono ancora persone per cui un accento straniero vale più di anni di studio. Torni a casa con questa consapevolezza e ti senti triste e sminuita.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Sei intervenuta perché sei qualificata e senti di aver fatto il tuo dovere, ma ora devi affrontare la reazione dell'uomo...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -120,
+						"money": 0,
+						"stop": false,
+						"text": "L'uomo si arrabbia e ti allontana a male parole. Ti senti umiliata, volevi solo essere utile. Perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 30,
+						"money": 0,
+						"stop": false,
+						"text": "L'uomo si lascia aiutare e gli rimetti a posto la spalla. Lui ti ringrazia e riconosce che il suo era solo uno stupido pregiudizio. Torni a casa felice. Guadagni 30 punti."
+					}
+				]
+			}
+		}
+	]
+}]
