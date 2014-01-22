@@ -33,6 +33,7 @@
 						"happiness": 20,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "I ragazzi si sono avvicinati minacciosi. Ma si sono limitati a guardarti male e a bofonchiare qualcosa prima di andarsene."
 					},
 					{
@@ -40,6 +41,7 @@
 						"happiness": -150,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "I ragazzi si sono avvicinati minacciosi. Indietreggiando per la paura sei caduta e ti sei fatta male. Perdi 150 punti."
 					}
 				]

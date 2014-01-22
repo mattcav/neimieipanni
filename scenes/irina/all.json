@@ -156,6 +156,7 @@
 						"happiness": -100,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "I datori di lavoro dicono che non possono permettersi uno stipendio più alto, ma ora che sanno delle tue competenze ti affideranno mansioni più delicate. Perdi 100 punti."
 					},
 					{
@@ -163,6 +164,7 @@
 						"happiness": 0,
 						"money": 100,
 						"stop": false,
+						"class":"good",
 						"text": "I datori di lavoro riconoscono l'importanza delle tue competenze, ottieni un aumento di 100 euro."
 					}
 				]
@@ -247,6 +249,7 @@
 						"happiness": 0,
 						"money": -100,
 						"stop": false,
+						"class":"bad",
 						"text": "L’uomo ti dice che la tua assenza è stata un problema e ti tratterrà 100 euro dallo stipendio. Sai che non è giusto, ma sai anche che non riuscirai a riavere quei soldi..."
 					},
 					{
@@ -254,6 +257,7 @@
 						"happiness": 20,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "L’uomo ti chiede come stai ed è contento di sapere che sei guarita. Le sue parole ti fanno sentire apprezzata e guadagni 20 punti."
 					}
 				]
@@ -342,6 +346,7 @@
 						"happiness": 20,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "I ragazzi si sono avvicinati minacciosi. Ma si sono limitati a guardarti male e a bofonchiare qualcosa prima di andarsene."
 					},
 					{
@@ -349,6 +354,7 @@
 						"happiness": -150,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "I ragazzi si sono avvicinati minacciosi. Indietreggiando per la paura sei caduta e ti sei fatta male. Perdi 150 punti."
 					}
 				]
@@ -390,6 +396,7 @@
 						"happiness": -100,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "Il tuo capo ti chiede scusa controvoglia ma nei giorni seguenti noti che ti vengono assegnti i compiti più faticosi. Perdi 100 punti."
 					},
 					{
@@ -397,6 +404,7 @@
 						"happiness": 20,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "l tuo capo ti chiede scusa con convinzione. Senti di aver fatto qualcosa di buono non solo per te, ma anche per lui. Guadagni 20 punti."
 					}
 				]
@@ -438,6 +446,7 @@
 						"happiness": -120,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "L'uomo si arrabbia e ti allontana a male parole. Ti senti umiliata, volevi solo essere utile. Perdi 100 punti."
 					},
 					{
@@ -445,6 +454,7 @@
 						"happiness": 30,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "L'uomo si lascia aiutare e gli rimetti a posto la spalla. Lui ti ringrazia e riconosce che il suo era solo uno stupido pregiudizio. Torni a casa felice. Guadagni 30 punti."
 					}
 				]

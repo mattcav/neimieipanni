@@ -33,6 +33,7 @@
 						"happiness": -120,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "I tuoi genitori sono rimasti molto delusi e non te lo nascondono. Non hai fatto nulla di male ma ti senti in colpa lo stesso. E alla festa sei l'unico che non si diverte, perdi 120 punti."
 					},
 					{
@@ -40,6 +41,7 @@
 						"happiness": 40,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "I tuoi genitori sono un po' dispiaciuti di non vederti, ma ci tengono che tu ti senta come gli altri ragazzi della tua età."
 					}
 				]

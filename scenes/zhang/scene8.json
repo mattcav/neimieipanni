@@ -33,6 +33,7 @@
 						"happiness": -100,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "Il ragazzo se la prende con te. Vola qualche spinta e la gente intorno vi guarda male. Senti di aver fatto la figura del violento e perdi 100 punti."
 					},
 					{
@@ -40,6 +41,7 @@
 						"happiness": 10,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Il ragazzo ti ha guardato minaccioso, ma poi ha incassato il colpo ed è andato via. Guadagni 10 punti."
 					}
 				]

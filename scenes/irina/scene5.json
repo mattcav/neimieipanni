@@ -33,6 +33,7 @@
 						"happiness": 0,
 						"money": -100,
 						"stop": false,
+						"class":"bad",
 						"text": "L’uomo ti dice che la tua assenza è stata un problema e ti tratterrà 100 euro dallo stipendio. Sai che non è giusto, ma sai anche che non riuscirai a riavere quei soldi..."
 					},
 					{
@@ -40,6 +41,7 @@
 						"happiness": 20,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "L’uomo ti chiede come stai ed è contento di sapere che sei guarita. Le sue parole ti fanno sentire apprezzata e guadagni 20 punti."
 					}
 				]

@@ -33,6 +33,7 @@
 						"happiness": -80,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "La ragazza ci rimane male e se ne va senza salutarti. Perdi 80 punti."
 					},
 					{
@@ -40,6 +41,7 @@
 						"happiness": 30,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "La ragazza si è messa a ridere e ti ha chiesto scusa. Poi ti ha invitato a prendere un caffè. Guadagni 30 punti."
 					}
 				]
