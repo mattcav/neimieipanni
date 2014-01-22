@@ -2,6 +2,10 @@
 	"title": "Battuta razzista",
 	"text": "Al lavoro il tuo capo ti chiama usando un nomignolo razzista. Cosa fai?",
 	"theme": "boss",
+	"report": {
+			"text": "Statisca mancante!",
+			"source": "Completala su googleDocs!"	
+		},
 	"choices": [
 		{
 			"title": "Fai finta di niente",
@@ -18,7 +22,7 @@
 			"title": "Lo affronti",
 			"button": "Lo affronti",
 			"text": "Prendere posizione ti rende più orgoglioso di te.",
-			"happiness": 0,
+			"happiness": 30,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
@@ -28,17 +32,19 @@
 						"happiness": -80,
 						"money": 0,
 						"stop": false,
-						"text": "Il capo non vuole passare per razzista. Ma se la lega al dito e da quel momento comincia ad assegnarti i compiti più faticosi. Perdi 100 punti."
+						"class":"bad",
+						"text": "Il capo non vuole passare per razzista. Ma se la lega al dito e da quel momento comincia ad assegnarti i compiti più faticosi. Perdi 80 punti."
 					},
 					{
 						"probability": 60,
-						"happiness": 30,
+						"happiness": 10,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Il capo ti capisce e si scusa sinceramente. Guadagni 10 punti."
 					}
 				]
 			}
 		}
 	]
-},
+}

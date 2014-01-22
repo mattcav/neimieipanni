@@ -2,6 +2,10 @@
 	"title": "Colazione al bar",
 	"text": "Nel bar dove fai colazione con i colleghi, ti accorgi che sei l'unico a cui danno il cappuccino in un bicchiere di plastica invece che nella tazza. Come reagisci?",
 	"theme": "cappuccino",
+	"report": {
+			"text": "Circa il 3,2% delle segnalazioni di discriminazione razziale pervenute all’UNAR si sono verificate nell’ambito “Erogazione servizi da pubblici esercizi”",
+			"source": "Rapporto UNAR 2013"	
+		},
 	"choices": [
 		{
 			"title": "Fai finta di niente",
@@ -18,27 +22,29 @@
 			"title": "Protesti",
 			"button": "Protesti",
 			"text": "Alzi la voce e chiedi di essere trattato come tutti.",
-			"happiness": 0,
+			"happiness": 10,
 			"money": 0,
-			"conseguence":  {
+			"conseguence": {
 				"type": "random",
 				"cases": [
 					{
-						"probability": 30,
+						"probability": 70,
 						"happiness": -30,
 						"money": -50,
 						"stop": false,
+						"class":"bad",
 						"text": "Il proprietario si arrabbia e ti caccia. Vorresti denunciarlo ma come clandestino non puoi. Da oggi dovrai andare in un altro bar più caro, più lontano e da solo. Perdi 50€ e 50 punti."
 					},
 					{
-						"probability": 70,
-						"happiness": 20,
+						"probability": 30,
+						"happiness": 10,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Il proprietario rimprovera il barista e si scusa con te. Da oggi sarai servito come gli altri."
 					}
 				]
 			}
 		}
 	]
-},
+}

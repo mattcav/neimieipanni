@@ -60,6 +60,15 @@ module.exports = function(grunt) {
                 footer: "]",
                 separator: ','
             }
+          },
+          didier: {
+              src: ['scenes/didier/scene*.json'],
+              dest: 'scenes/didier/all.json',
+              options: {
+                banner: '[',
+                footer: "]",
+                separator: ','
+            }
           }
       },
 
