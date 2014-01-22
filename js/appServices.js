@@ -387,11 +387,12 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 		getQueue()
 			.then(showVariation.bind(null, $gameScope.choice.happiness, $gameScope.choice.money))
 			.then(hideVariation)
-			.then(showRisk)
-			.then(hideRisk)
 			.then(function () {
 				$gameScope.conseguence = $gameScope.choice.scelto();
 			})
+			.then(showRisk)
+			.then(hideRisk)
+			
 			.then(showConseguence)
 			.then(hideConseguence)
 			.then(showVariation)

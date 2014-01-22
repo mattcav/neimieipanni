@@ -1,5 +1,55 @@
 [
 	{
+		"title": "La mazzetta",
+		"text": "Il tuo superiore ti chiede 50€ per metterti sotto la sua ala protettiva. Cosa fai?",
+		"theme": "mazzetta",
+		"report": {
+			"text": "Nel 2012 i lavoratori con cittadinanza extracomunitaria rappresentano il 7,9% del totale dei dipendenti (9,4% per i maschi; 5,9 per le femmine). I lavoratori dipendenti stagionali extracomunitari sono pari al 10.3% dei complessivi stagionali",
+			"source": "“Gli immigrati nel mercato del lavoro in Italia”,Terzo Rapporto annuale, Anno 2013"	
+		},
+		"choices": [
+			{
+				"title": "Paghi",
+				"button": "Paghi",
+				"text": "Cedi a malincuore, perche lo temi",
+				"happiness": -50,
+				"money": -50,
+				"conseguence": {
+					"type": "normal",
+					"text": "Ottieni ubito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignitÃ  di lavoratore."
+				}
+			},
+			{
+				"title": "Ti rifiuti",
+				"button": "Ti rifiuti",
+				"text": "Non vuoi cedere al ricatto, ma non sai se porterà conseguenze...",
+				"happiness": 10,
+				"money": 0,
+				"conseguence": {
+					"type": "random",
+					"waitingText": "Mentre aspetto leggo questo",
+					"cases": [
+						{
+							"probability": 50,
+							"happiness": -130,
+							"money": 0,
+							"stop": false,
+							"class": "bad",
+							"text": "L'uomo che non hai pagato riesce a danneggiarti. Ti mette i turni peggiori."
+						},
+						{
+							"probability": 50,
+							"happiness": 0,
+							"money": 0,
+							"stop": false,
+							"class": "good",
+							"text": "Scopri che il suo era solo un bluff."
+						}
+					]
+				}
+			}
+		]
+	},{
 		"title": "Il lavoro",
 		"text": "Non riesci a trovare un impiego in regola con cui potresti rinnovare il permesso di soggiorno. Ma hai bisogno di soldi e decidi di accettare un lavoro in nero. Cosa scegli?",
 		"theme": "lavoro",
@@ -131,7 +181,7 @@
 							"happiness": -130,
 							"money": 0,
 							"stop": false,
-							"class": "evil",
+							"class": "bad",
 							"text": "L'uomo che non hai pagato riesce a danneggiarti. Ti mette i turni peggiori."
 						},
 						{

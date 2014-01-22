@@ -1,49 +1,44 @@
 {
-	"title": "La scelta della casa",
-	"text": "Devi trovare un posto dove vivere nella nuova città. Che soluzione scegli?",
-	"theme": "casa",
-	"choices":
-	[
+	"title": "Il lavoro",
+	"text": "Non riesci a trovare un impiego in regola con cui potresti rinnovare il permesso di soggiorno. Ma hai bisogno di soldi e decidi di accettare un lavoro in nero. Cosa scegli?",
+	"theme": "lavoro",
+	"report": {
+		"text": "Equivale a 540 miliardi di euro, corrispondenti a circa il 35% del Pil 'ufficiale', il valore dell'economia sommersa nel 2011. E circa 22,5 di quei miliardi arrivano dal lavoro degli immigrati. Considerando gli immigrati clandestini si stima un  sommerso di 10 miliardi e mezzo di euro.",
+		"source": "'L'Italia  in nero', Rapporto sull'economia sommersa realizzato dall'Eurispes  e dall'Istituto San Pio V di Roma"	
+	},
+	"choices": [
 		{
-			"title": "Stanza singola",
-			"button": "Una stanza singola",
-			"text": "È una spesa consistente e dovrai dividere casa, ma avrai la tua indipendenza.",
-			"happiness": 250,
-			"money": -400,
-			"conseguence": {
-				"text": "Hai una stanza tutta tua e sei felice. Ma ora dovrai stare molto attento ai soldi.",
-
-				"type": "trap",
-				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ti arrabbi per questa ingiustizia e devi trovare altro. Perdi 50 punti.",
-				"trapHappiness": -30,
-				"trapMoney": 0
-			}
-		},
-		{
-			"title": "Stanza condivisa",
-			"button": "Una stanza condivisa",
-			"text": "Scegli il posto meno caro, ma dovrai dividere i tuoi spazi",
-			"happiness": 50,
-			"money": -250,
-			"conseguence": {
-				"text": "Hai scelto di spendere meno: lo spazio è limitato ma i coinquilini sono simpatici",
-
-				"type": "trap",
-				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ti arrabbi per questa ingiustizia e devi trovare altro. Perdi 50 punti.",
-				"trapHappiness": -30,
-				"trapMoney": 0
-			}
-		},
-		{
-			"title": "Dormitorio pubblico",
-			"button": "Un dormitorio pubblico",
-			"text": "Non paghi niente, ma è la scelta più umiliante",
-			"happiness": -300,
-			"money": 0,
+			"title": "Lavapiatti",
+			"button": "Lavapiatti",
+			"text": "La paga è bassa, ma il lavoro è poco faticoso e ti lascia il tempo di cercare un impiego in regola.",
+			"happiness": -500,
+			"money": 400,
 			"conseguence": {
 				"type": "normal",
-				"text": "Ogni sera ti presenti al dormitorio di un'associazione insieme a senza tetto e disperati: ti senti a disagio e non vedi l'ora di andartene"
+				"text": "Hai scelto il lavoro che ti porta via meno tempo ma hai paura che i soldi non ti basteranno."
+			}
+		},
+		{
+			"title": "Facchino",
+			"button": "Facchino",
+			"text": "E' una mansione abbastanza pesante, ma la paga è discreta",
+			"happiness": -550,
+			"money": 500,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai cercato di fare una scelta equilibrata, trovando una via di mezzo tra guadagno e fatica"
+			}
+		},
+		{
+			"title": "Manovale",
+			"button": "Manovale",
+			"text": "Tra i mestieri che puoi trovare è quello pagato meglio ma è faticoso e pericoloso.",
+			"happiness": -600,
+			"money": 600,
+			"conseguence": {
+				"type": "normal",
+				"text": "Il lavoro è pagato meglio degli altri, ma il cantiere non rispetta le norme di sicurezza e sei sempre preoccupato di farti male"
 			}
 		}
 	]
-},
+}

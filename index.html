@@ -207,12 +207,15 @@
 
                 <!-- RISK message block -->
                 <article id="risk" class="dialog dialog--risk" data-risk>
-                    <div class="dialog__inner">
+                    <div class="dialog__inner dialog__inner--risk">
                         <h2 class="dialog__title">Rischio!</h2>
 
                         <p class="dialog__text">{{ conseguence.waitingText }}</p>
 
-                        <div class="roulette" data-ng-class="conseguence.class"></div><!-- aggiungere classi good/mid/bad a seconda del random-->
+<!--                         <div class="roulette" data-ng-class="conseguence.class"></div>
+ -->
+                        <div class="spinner" data-ng-class="conseguence.class">
+                        </div>
                     </div>
                 </article>  
 
