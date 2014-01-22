@@ -1,0 +1,33 @@
+{
+	"title": "Il negoziante razzista",
+	"text": "Mentre stai facendo acquisti in un negozio dove vai spesso, vedi il gestore che caccia via una ragazza Rom. Cosa fai?",
+	"theme": "ROM",
+	"report": {
+			"text": "stat8",
+			"source": "“stat8”"
+		},
+	"choices": [
+		{
+			"title": "Fingi di non vedere.",
+			"button": "Fingi di non vedere.",
+			"text": "Per non avere problemi vai via rinunciando a difendere una donna che, come te, deve combattere contro dei pregiudizi.",
+			"happiness": 0,
+			"money": -80,
+			"conseguence": {
+				"type": "normal",
+				"text": "Torni a casa, ma non aver preso le parti di una persona discriminata ti fa sentire molto in colpa."
+			}
+		},
+		{
+			"title": "Affronti il negoziante.",
+			"button": "Affronti il negoziante.",
+			"text": "Protesti col negoziante per il suo comportamento discriminatorio e gli dici che non andrai più in quel negozio.",
+			"happiness": 50,
+			"money": -100,
+			"conseguence": {
+				"type": "normal",
+				"text": "Ti senti soddisfatta perché hai preso le parti di una persona discriminata, ma non andare più in quel negozio ti farà spendere di più."
+			}
+		}
+	]
+}

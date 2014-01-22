@@ -33,6 +33,7 @@
 						"happiness": -80,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "Il capo si arrabbia, ma non vuole passare per razzista. Da quel momento però comincia ad assegnarti i compiti più noiosi e faticosi. Perdi 80 punti."
 					},
 					{
@@ -40,6 +41,7 @@
 						"happiness": 10,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Il capo accetta i tuoi appunti e si scusa. D'ora in poi ti chiamerà con il tuo vero nome, guadagni altri 10 punti."
 					}
 				]

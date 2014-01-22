@@ -21,12 +21,12 @@
 		{
 			"title": "Facchino",
 			"button": "Facchino",
-			"text": "E' una mansione abbastanza pesante, ma la paga è discreta",
+			"text": "È una mansione abbastanza pesante, ma la paga è discreta.",
 			"happiness": -550,
 			"money": 500,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai cercato di fare una scelta equilibrata, trovando una via di mezzo tra guadagno e fatica"
+				"text": "Hai cercato di fare una scelta equilibrata, trovando una via di mezzo tra guadagno e fatica."
 			}
 		},
 		{
@@ -37,7 +37,7 @@
 			"money": 600,
 			"conseguence": {
 				"type": "normal",
-				"text": "Il lavoro è pagato meglio degli altri, ma il cantiere non rispetta le norme di sicurezza e sei sempre preoccupato di farti male"
+				"text": "Il lavoro è pagato meglio degli altri, ma il cantiere non rispetta le norme di sicurezza e sei sempre preoccupato di farti male."
 			}
 		}
 	]

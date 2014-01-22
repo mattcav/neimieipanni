@@ -15,7 +15,7 @@
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "È una spesa consistente , ma puoi spostarti ogni volta che ti serve."
+				"text": "È una spesa consistente, ma puoi spostarti ogni volta che ti serve."
 			}
 		},
 		{
@@ -33,6 +33,7 @@
 						"happiness": -100,
 						"money": -100,
 						"stop": false,
+						"class":"bad",
 						"text": "Il controllore punta subito te per il tuo aspetto e ti trova con il biglietto non timbrato. Devi pagare 100€ di multa."
 					},
 					{
@@ -40,6 +41,7 @@
 						"happiness": -60,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Scendi dall'autobus appena in tempo. Ma  una signora ti ha visto e commenta “Gli stranieri non pagano mai”. Ti vergogni perché hai incrementato un pregiudizio, perdi 60 punti."
 					}
 				]

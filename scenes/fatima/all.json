@@ -1,145 +1,438 @@
-[
-	{
-		"title": "L'insulto",
-		"text": "Camminando per strada senti un ragazzo che insulta una donna cinese per il colore della sua pelle. Cosa fai?",
-		"theme": "insulto",
-		"report": {
-			"text": "oltre il 90% delle famiglie con almeno uno straniero possiede un telefono (incluso in cellulare) che, quasi sempre, è ad uso esclusivo.",
-			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
-		},
-		"choices": [
-			{
-				"title": "Tiri dritto",
-				"button": "Tiri dritto",
-				"text": "Non vuoi avere rogne, ma così volti le spalle a chi ha i tuoi stessi problemi.",
-				"happiness": -50,
-				"money": 0,
-				"conseguence": {
-					"text": "La tua giornata scorre tranquilla, ma lo sguardo della donna che non ti sei fermato ad aiutare ti rimane dentro e ti fa sentire in colpa.",
-					"type": "normal"
-				}
-			},
-			
-			{
-				"title": "Ti fermi e lo affronti",
-				"button": "Ti fermi e lo affronti",
-				"text": "Intervieni perché vuoi difendere chi è nella tua stessa condizione.",
-				"happiness": 0,
-				"money": 0,
-
-				"conseguence": {
-					"type": "random",
-					"cases": [
-						{
-							"probability": 30,
-							"happiness": 0,
-							"money": 0,
-							"stop": true,
-							"text": "Il ragazzo insulta anche te e cominciate a litigare. Le urla attirano l'attenzione di una pattuglia. Vieni identificato come clandestino e espulso dall'Italia."
-						},
-						{
-							"probability": 70,
-							"happiness": 20,
-							"money": 0,
-							"stop": false,
-							"text": "Il ragazzo abbassa lo sguardo e se ne va. La donna cinese ti sorride e ti ringrazia. Guadagni 20 punti"
-						}
-					]
-				}
-			}
-		]
+[{
+	"title": "Una nuova casa",
+	"text": "I tuoi bambini stanno crescendo, servirebbe una casa più grande, invece di quella dove vivete con i genitori di tuo marito. Che casa cerchi?",
+	"theme": "casa",
+	"report": {
+		"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
+		"source": "Rapporto UNAR"	
 	},
+	"choices": [
+		{
+			"title": "Più vicina alla scuola.",
+			"button": "Più vicina alla scuola",
+			"text": "È una spesa alta, ma la vostra vita migliorerà moltissimo.",
+			"happiness": 500,
+			"money": -600,
+			"conseguence": {
+				"text": "La nuova casa ti piace molto e i bambini sono contenti. Ti senti soddisfatta anche se la spesa si fa sentire.",
 
-	{
-		"title": "Il lavoro",
-		"text": "Non riesci a trovare un impiego in regola con cui potresti rinnovare il permesso di soggiorno. Ma hai bisogno di soldi e decidi di accettare un lavoro in nero. Cosa scegli?",
-		"theme": "lavoro",
-		"report": {
-			"text": "oltre il 90% delle famiglie con almeno uno straniero possiede un telefono (incluso in cellulare) che, quasi sempre, è ad uso esclusivo.",
-			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
-		},
-		"choices": [
-			{
-				"title": "Lavapiatti",
-				"button": "Lavapiatti",
-				"text": "La paga è bassa, ma il lavoro è poco faticoso e ti lascia il tempo di cercare un impiego in regola.",
-				"happiness": -300,
-				"money": 500,
-				"conseguence": {
-					"type": "normal",
-					"text": "Hai scelto il lavoro che ti porta via meno tempo ma hai paura che i soldi non ti basteranno."
-				}
-			},
-			{
-				"title": "Facchino",
-				"button": "Facchino",
-				"text": "E' una mansione abbastanza pesante, ma la paga è discreta",
-				"happiness": -450,
-				"money": 700,
-				"conseguence": {
-					"type": "normal",
-					"text": "Hai cercato di fare una scelta equilibrata, trovando una via di mezzo tra guadagno e fatica"
-				}
-			},
-			{
-				"title": "Manovale",
-				"button": "Manovale",
-				"text": "Tra i mestieri che puoi trovare è quello pagato meglio ma è faticoso e pericoloso.",
-				"happiness": -600,
-				"money": 900,
-				"conseguence": {
-					"type": "normal",
-					"text": "Il lavoro è pagato meglio degli altri, ma il cantiere non rispetta le norme di sicurezza e sei sempre preoccupato di farti male"
-				}
+				"type": "trap",
+				"trapText": "L'agente immobiliare sottopone la tua candidatura ai proprietari, ma il condominio ha deciso di non affittare a extracomunitari. Ti senti discriminata, ma non puoi ribattere nulla, perdi 20 punti.",
+				"trapHappiness": -20,
+				"trapMoney": 0
 			}
-		]
+		},
+		{
+			"title": "Più grande ma periferica.",
+			"button": "Più grande ma periferica.",
+			"text": "È una spesa sostenibile, hai più spazio ma perdi più tempo per spostarti.",
+			"happiness": 280,
+			"money": -400,
+			"conseguence": {
+				"text": "La nuova casa è carina anche se devi affrontare qualche difficoltà. Ma per il momento va bene così.",
+
+				"type": "trap",
+				"trapText": "L'agente immobiliare sottopone la tua candidatura ai proprietari, ma il condominio ha deciso di non affittare a extracomunitari. Ti senti discriminata, ma non puoi ribattere nulla, perdi 20 punti.",
+				"trapHappiness": -20,
+				"trapMoney": 0
+			}
+		},
+		{
+			"title": "Resti in quella dei suoceri.",
+			"button": "Resti in quella dei suoceri.",
+			"text": "È la scelta più economica, ma ti pesa non avere una casa solo tua.",
+			"happiness": 150,
+			"money": 0,
+			"conseguence": {
+				"text": "Per paura di non farcela con i soldi hai dovuto rimandare il vostro progetto di essere indipendenti. Ti senti molto insoddisfatta.",
+
+				"type": "trap",
+				"trapText": "L'agente immobiliare sottopone la tua candidatura ai proprietari, ma il condominio ha deciso di non affittare a extracomunitari. Ti senti discriminata, ma non puoi ribattere nulla, perdi 20 punti.",
+				"trapHappiness": -20,
+				"trapMoney": 0
+			}
+		}
+	]
+},{
+	"title": "La casa popolare",
+	"text": "Ti hanno detto che hai i requisiti per richiedere una casa popolare. Ti presenti in Comune, ma lì davanti noti un presidio di manifestanti con cartelli come “Basta extracomunitari” e “Le case agli italiani”.",
+	"theme": "palloncino",
+	"report": {
+			"text": "stat10",
+			"source": "“stat10”"
+		},
+	"choices": [
+		{
+			"title": "Entri con decisione.",
+			"button": "Entri con decisione.",
+			"text": "Anche se con te c'è il tuo bambino pensi che quello sia un tuo diritto e intendi esercitarlo.",
+			"happiness": 50,
+			"money": 0,
+			"conseguence": {
+				"type": "random",
+				"waitingText": "Sei dentro, che succederà?",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -50,
+						"money": 0,
+						"stop": false,
+						"class":"bad",
+						"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 50,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "I manifestanti ti guardano con aria di sfida, ma nessuno ti dice nulla. Presenti la domanda e torni a casa con la speranza di ottenere una casa migliore per la tua famiglia."
+					}
+				]
+			}
+		}	
+		{
+			"title": "Tornerai un altro giorno.",
+			"button": "Tornerai un altro giorno.",
+			"text": "Con te c'è uno dei tuoi bambini, meglio evitare problemi.",
+			"happiness": -30,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "La festa è andata bene, ma non saprai mai cosa sarebbe successo se l'avessi organizzata a casa tua."
+			}
+		},
+	]
+},{
+	"title": "Il velo",
+	"text": "Un'amica ti propone di lavorare insieme a lei per un giorno in uno stand, ma il capo ti dice di toglierti il velo. Come reagisci?",
+	"theme": "amica",
+	"report": {
+			"text": "stat2",
+			"source": "“stat2”"	
+		},
+	"choices": [
+		{
+			"title": "Protesti.",
+			"button": "Protesti.",
+			"text": "Dici al capo che con la sua richiesta sta offendendo te e la tua religione.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence": {
+				"type": "random",
+				"waitingText": "Hai spiegato al capo quanto è offensiva la sua richiesta. Sei soddisfatta di te, ma ora devi affrontare la sua reazione...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": 0,
+						"money": -100,
+						"stop": false,
+						"class":"bad",
+						"text": "L’uomo la prende male, alza la voce e manda via anche la tua amica. Le dai di tasca tua i 100 euro che avrebbe guadagnato."
+					},
+					{
+						"probability": 50,
+						"happiness": 0,
+						"money": 100,
+						"stop": false,
+						"class":"good",
+						"text": "Il capo ascolta le tue spiegazioni e cambia idea. Potrai svolgere la giornata di lavoro tenendo il velo, guadagni 100 euro."
+					}
+				]
+			}
+		},
+		{
+			"title": "Te ne vai.",
+			"button": "Te ne vai.",
+			"text": "Rinunci al lavoro senza discutere per non creare problemi alla tua amica.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Se stata discriminata e non l’hai nemmeno fatto notare, ti senti avvilita."
+			}
+		}
+	]
+},{
+	"title": "L'automobile",
+	"text": "Un amico ti vorrebbe regalare l'auto che non usa più.Ti basterà trasferire l'assicurazione a tuo nome. Cosa fai?",
+	"theme": "automobile",
+	"report": {
+			"text": "stat3",
+			"source": "“stat3”"	
 	},
-	{
-		"title": "La mazzetta",
-		"text": "Alla fine del colloquio di lavoro, la persona con cui hai parlato ti fa capire che ci sono tanti pretendenti, ma se gli dai 50€ il posto è tuo. Cosa fai?",
-		"theme": "mazzetta",
-		"report": {
-			"text": "oltre il 90% delle famiglie con almeno uno straniero possiede un telefono (incluso in cellulare) che, quasi sempre, è ad uso esclusivo.",
-			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
-		},
-		"choices": [
-			{
-				"title": "Paghi",
-				"button": "Paghi",
-				"text": "Cedi a malincuore, ma ti serve quel lavoro.",
-				"happiness": -10,
-				"money": -50,
-				"conseguence": {
-					"type": "normal",
-					"text": "Ottieni ubito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
-				}
-			},
-			{
-				"title": "Ti rifiuti",
-				"button": "Ti rifiuti",
-				"text": "Non vuoi cedere al ricatto, ma non sai se otterrai il posto.",
-				"happiness": 0,
-				"money": 0,
-				"conseguence": {
-					"type": "random",
-					"cases": [
-						{
-							"probability": 50,
-							"happiness": 10,
-							"money": 0,
-							"stop": true,
-							"text": "L'uomo che non hai pagato riesce a danneggiarti. Il lavoro va a un altro."
-						},
-						{
-							"probability": 50,
-							"happiness": 10,
-							"money": 0,
-							"stop": false,
-							"text": "Hai avuto paura di perdere il posto, ma il capo non da ascolto al consiglio del selezionatore: sei assunto."
-						}
-					]
-				}
+	"choices": [
+		{
+			"title": "Accetti.",
+			"button": "Accetti.",
+			"text": "Fra assicurazione e benzina, l'auto ti costa di più, ma rende i tuoi spostamenti molto più veloci e senza vincoli di orario.",
+			"happiness": 500,
+			"money": -250,
+			"conseguence": {
+				"text": "La nuova casa ti piace molto e i bambini sono contenti. Ti senti soddisfatta anche se la spesa si fa sentire.",
+
+				"type": "trap",
+				"trapText": "Scopri che. in quanto immigrata, paghi più di assicurazione rispetto al tuo amico italiano: il costo è di 300€",
+				"trapHappiness": 0,
+				"trapMoney": 0
 			}
-		]
-	}
-]
+		},
+		{
+			"title": "Continui con l'autobus.",
+			"button": "Continui con l'autobus.",
+			"text": "L'abbonamento ai mezzi pubblici per te e i tuoi figli costa meno, ma gli spostamenti continueranno ad essere lenti e faticosi.",
+			"happiness": 280,
+			"money": -100,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai risparmiato un po', anche se hai rinunciato a tutte le comodità dell'auto.",
+			}
+		}
+	]
+},{
+	"title": "La mensa",
+	"text": "Scopri che quest’anno alla mensa della scuola dei tuoi figli non è previsto un menu musulmano senza carne di maiale.",
+	"theme": "pollo",
+	"report": {
+			"text": "stat4",
+			"source": "“stat4”"
+		},
+	"choices": [
+		{
+			"title": "Chiedi un certificato medico.",
+			"button": "Chiedi un certificato medico.",
+			"text": "Con questo trucchetto ai tuoi figli verrà servito un menù diverso, ma dovrai dichiarare il falso.",
+			"happiness": -80,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Alla fine sei riuscita ad ottenere quello che tu ritieni giusto, ma ti dà fastidio aver dovuto mentire e far passare i tuoi figli per malati."
+			}
+		},
+		{
+			"title": "Prepari tu i pasti.",
+			"button": "Prepari tu i pasti.",
+			"text": "Questa soluzione risolve il problema, ma è una spesa extra.",
+			"happiness": 0,
+			"money": -80,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai dovuto pagare di tasca tua, sei delusa perché la scuola non ha fatto nemmeno un piccolo sforzo per venire incontro ai problemi delle persone come te."
+			}
+		}
+	]
+},{
+	"title": "La scritta sul muro",
+	"text": "Tua madre viene a trovarti. Ma il giorno prima qualcuno fa una scritta a fianco al tuo portone che minaccia quelli della tua religione. Cosa fai?",
+	"theme": "writers",
+	"report": {
+			"text": "stat5",
+			"source": "“stat5”"		
+		},
+	"choices": [
+		{
+			"title": "La fai cancellare subito.",
+			"button": "La fai cancellare subito.",
+			"text": "Paghi un imbianchino perchè non vuoi far preoccupare tua madre.",
+			"happiness": 0,
+			"money": -80,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai speso una cifra imprevista, ma niente ha rovinato la visita di tua madre."
+			}
+		},
+		{
+			"title": " Deleghi il condominio.",
+			"button": " Deleghi il condominio.",
+			"text": "Risparmi, ma l’amministratore ti dice che ci vorrà qualche giorno",
+			"happiness": -80,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Vedendo la scritta tua madre ha pensato che vivete in un quartiere pericoloso. Vederla così preoccupata ti fa stare male."
+			}
+		}
+	]
+},{
+	"title": "La battuta razzista",
+	"text": "Mentre accompagni uno dei tuoi figli a scuola, senti un bambino che fa una battuta razzista sul colore della sua pelle. Cosa fai?",
+	"theme": "bambino",
+	"report": {
+			"text": "stat6",
+			"source": "“stat6”"
+		},
+	"choices": [
+		{
+			"title": "Non dici nulla.",
+			"button": "Non dici nulla.",
+			"text": "Preferisci andare via ed evitare una polemica, anche se ti senti molto arrabbiata.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai evitato una possibile lite, ma ti senti in colpa per non aver difeso tuo figlio."
+			}
+		},
+		{
+			"title": "Affronti la situazione.",
+			"button": "Affronti la situazione.",
+			"text": "Ti fermi per spiegare al bambino quanto è offensiva la sua battuta.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence": {
+				"type": "random",
+				"waitingText": "Hai difeso tuo figlio, che ti guarda riconoscente. Sei contenta della tua scelta, ma ora si avvicina il padre del bambino...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"class":"bad",
+						"text": "Tra te e l'uomo è partita un'accesa discussione sul modo di educare i figli. Alcune insegnanti vi invitano a calmarvi. Per l'imbarazzo perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "L'uomo è d'accordo con quello che dici. Il bambino chiede scusa a tuo figlio e tutti vi salutate con un sorriso. Ti senti accettata e guadagni altri 10 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "La perquisizione",
+	"text": "Arrivi in stazione con un grosso borsone. C'è un posto di controllo delle forze dell'ordine e tu sei l'unica a cui viene chiesto di aprire il bagaglio. Cosa fai?",
+	"theme": "borsone",
+	"report": {
+			"text": "stat7",
+			"source": "“stat7”"
+		},
+	"choices": [
+		{
+			"title": "Non dici nulla.",
+			"button": "Non dici nulla.",
+			"text": "Ti sembra un'ingiustizia ma scegli di non farla notare per non creare problemi.",
+			"happiness": -30,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai deciso di non reagire, ma continui a pensare che ti abbiano perquisita solo perché hai il velo e la cosa ti offende molto."
+			}
+		},
+		{
+			"title": "Protesti.",
+			"button": "Protesti.",
+			"text": "Dici agli agenti che ti stanno discriminando: ti sembra la cosa giusta da fare.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence": {
+				"type": "random",
+				"waitingText": "Sei felice di esserti fatta sentire, ma ora è il momento della reazione degli agenti.",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": 0,
+						"money": -40,
+						"stop": false,
+						"class":"bad",
+						"text": "Parte una lunga discussione con gli agenti, che non sono d'accordo con te. Finisci per perdere il treno e spendi altri 40€ per il nuovo biglietto."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "Gli agenti comprendono le tue recriminazioni, ma tagliano corto, dicendoti che è il loro lavoro. Sali velocemente sul treno e parti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "Il negoziante razzista",
+	"text": "Mentre stai facendo acquisti in un negozio dove vai spesso, vedi il gestore che caccia via una ragazza Rom. Cosa fai?",
+	"theme": "ROM",
+	"report": {
+			"text": "stat8",
+			"source": "“stat8”"
+		},
+	"choices": [
+		{
+			"title": "Fingi di non vedere.",
+			"button": "Fingi di non vedere.",
+			"text": "Per non avere problemi vai via rinunciando a difendere una donna che, come te, deve combattere contro dei pregiudizi.",
+			"happiness": 0,
+			"money": -80,
+			"conseguence": {
+				"type": "normal",
+				"text": "Torni a casa, ma non aver preso le parti di una persona discriminata ti fa sentire molto in colpa."
+			}
+		},
+		{
+			"title": "Affronti il negoziante.",
+			"button": "Affronti il negoziante.",
+			"text": "Protesti col negoziante per il suo comportamento discriminatorio e gli dici che non andrai più in quel negozio.",
+			"happiness": 50,
+			"money": -100,
+			"conseguence": {
+				"type": "normal",
+				"text": "Ti senti soddisfatta perché hai preso le parti di una persona discriminata, ma non andare più in quel negozio ti farà spendere di più."
+			}
+		}
+	]
+},{
+	"title": "La festa di compleanno",
+	"text": "Vuoi organizzare una festa per il compleanno di uno dei tuoi figli, ma un'amica ti fa notare che alcune mamme potrebbero non mandare i loro bambini in una casa di immigrati. Dove organizzi la festa?",
+	"theme": "palloncino",
+	"report": {
+			"text": "stat9",
+			"source": "“stat9”"
+		},
+	"choices": [
+		{
+			"title": "A casa tua.",
+			"button": "A casa tua.",
+			"text": "Fai la scelta più semplice e conveniente e speri che vengano tutti i suoi compagni di scuola.",
+			"happiness": 0,
+			"money": -50,
+			"conseguence": {
+				"type": "random",
+				"waitingText": "È il giorno della festa...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -50,
+						"money": 0,
+						"stop": false,
+						"class":"bad",
+						"text": "Aveva ragione la tua amica, molti genitori non hanno mandato i loro figli. Il tuo bambino è triste e ti incolpa di non aver organizzato la festa al fast food. Perdi 50 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 50,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "Tutti i bambini invitati sono venuti, la festa è stata un successo. La felicità di tuo figlio ti fa guadagnare 50 punti."
+					}
+				]
+			}
+		}	
+		{
+			"title": "In un fast food.",
+			"button": "In un fast food.",
+			"text": "Spendi di più ma sei sicura che verranno tutti.",
+			"happiness": 0,
+			"money": -100,
+			"conseguence": {
+				"type": "normal",
+				"text": "La festa è andata bene, ma non saprai mai cosa sarebbe successo se l'avessi organizzata a casa tua."
+			}
+		},
+	]
+}]

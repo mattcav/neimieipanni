@@ -33,13 +33,15 @@
 						"happiness": -100,
 						"money": 0,
 						"stop": false,
-						"text": "I ragazzi non  la prendono bene, ti dicono che è meglio che impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
+						"class":"bad",
+						"text": "I ragazzi non la prendono bene, ti dicono che è meglio che impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
 					},
 					{
 						"probability": 60,
 						"happiness": 20,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Stupiti dal tuo italiano perfetto e dalla tua battuta i ragazzi rimangono muti e imbarazzati. Guadagni altri 20 punti."
 					}
 				]

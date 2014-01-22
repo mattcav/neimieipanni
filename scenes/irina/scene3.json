@@ -22,6 +22,7 @@
 						"happiness": -100,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "I datori di lavoro dicono che non possono permettersi uno stipendio più alto, ma ora che sanno delle tue competenze ti affideranno mansioni più delicate. Perdi 100 punti."
 					},
 					{
@@ -29,6 +30,7 @@
 						"happiness": 0,
 						"money": 100,
 						"stop": false,
+						"class":"good",
 						"text": "I datori di lavoro riconoscono l'importanza delle tue competenze, ottieni un aumento di 100 euro."
 					}
 				]

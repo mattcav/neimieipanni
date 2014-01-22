@@ -1,44 +1,51 @@
 {
 	"title": "La mazzetta",
-	"text": "Alla fine del colloquio di lavoro, la persona con cui hai parlato ti fa capire che ci sono tanti pretendenti, ma se gli dai 50€ il posto è tuo. Cosa fai?",
-	"theme": "lavoro",
+	"text": "Il tuo superiore ti chiede 50€ per metterti sotto la sua ala protettiva. Cosa fai?",
+	"theme": "mazzetta",
+	"report": {
+		"text": "Nel 2012 i lavoratori con cittadinanza extracomunitaria rappresentano il 7,9% del totale dei dipendenti (9,4% per i maschi; 5,9 per le femmine). I lavoratori dipendenti stagionali extracomunitari sono pari al 10.3% dei complessivi stagionali",
+		"source": "“Gli immigrati nel mercato del lavoro in Italia”,Terzo Rapporto annuale, Anno 2013"	
+	},
 	"choices": [
 		{
 			"title": "Paghi",
 			"button": "Paghi",
-			"text": "Cedi a malincuore, ma ti serve quel lavoro.",
-			"happiness": -10,
+			"text": "Cedi a malincuore, perché lo temi.",
+			"happiness": -50,
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "Ottieni subito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
+				"text": "Ottieni ubito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
 			}
 		},
 		{
 			"title": "Ti rifiuti",
 			"button": "Ti rifiuti",
-			"text": "Non vuoi cedere al ricatto, ma non sai se otterrai il posto.",
-			"happiness": 0,
+			"text": "Non vuoi cedere al ricatto, e rifiuti con veemenza",
+			"happiness": 10,
 			"money": 0,
 			"conseguence": {
 				"type": "random",
+				"waitingText": "Non sai se la tua azione porterà delle conseguenze...",
 				"cases": [
 					{
 						"probability": 50,
-						"happiness": 10,
+						"happiness": -130,
 						"money": 0,
-						"stop": true,
-						"text": "L'uomo che non hai pagato riesce a danneggiarti. Il lavoro va a un altro."
+						"stop": false,
+						"class": "bad",
+						"text": "L'uomo che non hai pagato riesce a danneggiarti. Ti mette i turni peggiori."
 					},
 					{
 						"probability": 50,
-						"happiness": 10,
+						"happiness": 0,
 						"money": 0,
 						"stop": false,
-						"text": "Hai avuto paura di perdere il posto, ma il capo non da ascolto al consiglio del selezionatore: sei assunto."
+						"class": "good",
+						"text": "Scopri che il suo era solo un bluff."
 					}
 				]
 			}
 		}
 	]
-},
+}

@@ -120,13 +120,15 @@
 						"happiness": -100,
 						"money": 0,
 						"stop": false,
-						"text": "I ragazzi non  la prendono bene, ti dicono che è meglio che impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
+						"class":"bad",
+						"text": "I ragazzi non la prendono bene, ti dicono che è meglio che impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
 					},
 					{
 						"probability": 60,
 						"happiness": 20,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Stupiti dal tuo italiano perfetto e dalla tua battuta i ragazzi rimangono muti e imbarazzati. Guadagni altri 20 punti."
 					}
 				]
@@ -150,7 +152,7 @@
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "È una spesa consistente , ma puoi spostarti ogni volta che ti serve."
+				"text": "È una spesa consistente, ma puoi spostarti ogni volta che ti serve."
 			}
 		},
 		{
@@ -168,6 +170,7 @@
 						"happiness": -100,
 						"money": -100,
 						"stop": false,
+						"class":"bad",
 						"text": "Il controllore punta subito te per il tuo aspetto e ti trova con il biglietto non timbrato. Devi pagare 100€ di multa."
 					},
 					{
@@ -175,6 +178,7 @@
 						"happiness": -60,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Scendi dall'autobus appena in tempo. Ma  una signora ti ha visto e commenta “Gli stranieri non pagano mai”. Ti vergogni perché hai incrementato un pregiudizio, perdi 60 punti."
 					}
 				]
@@ -216,6 +220,7 @@
 						"happiness": -120,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "I tuoi genitori sono rimasti molto delusi e non te lo nascondono. Non hai fatto nulla di male ma ti senti in colpa lo stesso. E alla festa sei l'unico che non si diverte, perdi 120 punti."
 					},
 					{
@@ -223,6 +228,7 @@
 						"happiness": 40,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "I tuoi genitori sono un po' dispiaciuti di non vederti, ma ci tengono che tu ti senta come gli altri ragazzi della tua età."
 					}
 				]
@@ -296,6 +302,7 @@
 						"happiness": -80,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "La ragazza ci rimane male e se ne va senza salutarti. Perdi 80 punti."
 					},
 					{
@@ -303,6 +310,7 @@
 						"happiness": 30,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "La ragazza si è messa a ridere e ti ha chiesto scusa. Poi ti ha invitato a prendere un caffè. Guadagni 30 punti."
 					}
 				]
@@ -344,6 +352,7 @@
 						"happiness": -80,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "Il capo si arrabbia, ma non vuole passare per razzista. Da quel momento però comincia ad assegnarti i compiti più noiosi e faticosi. Perdi 80 punti."
 					},
 					{
@@ -351,6 +360,7 @@
 						"happiness": 10,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Il capo accetta i tuoi appunti e si scusa. D'ora in poi ti chiamerà con il tuo vero nome, guadagni altri 10 punti."
 					}
 				]
@@ -392,6 +402,7 @@
 						"happiness": -100,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "Il ragazzo se la prende con te. Vola qualche spinta e la gente intorno vi guarda male. Senti di aver fatto la figura del violento e perdi 100 punti."
 					},
 					{
@@ -399,6 +410,7 @@
 						"happiness": 10,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "Il ragazzo ti ha guardato minaccioso, ma poi ha incassato il colpo ed è andato via. Guadagni 10 punti."
 					}
 				]
@@ -429,6 +441,7 @@
 						"happiness": -70,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "L'uomo ti aggredisce verbalmente, tra l'indifferenza dei presenti. Ti allontani arrabbiato, non hai perso solo la partita, ma anche hai la sensazione di essere straniero nella tua nazione. Perdi 70 punti."
 					},
 					{
@@ -436,6 +449,7 @@
 						"happiness": 20,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "L'uomo prova a reagire, ma altri presenti lo zittiscono, schierandoti dalla tua parte e incitando i giocatori di origine straniera che giocano in nazionale. Rimani sorridente al tuo posto, ti senti a casa. Guadagni 20 punti"
 					}
 				]

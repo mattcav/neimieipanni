@@ -1,0 +1,51 @@
+{
+	"title": "Il velo",
+	"text": "Un'amica ti propone di lavorare insieme a lei per un giorno in uno stand, ma il capo ti dice di toglierti il velo. Come reagisci?",
+	"theme": "amica",
+	"report": {
+			"text": "stat2",
+			"source": "“stat2”"	
+		},
+	"choices": [
+		{
+			"title": "Protesti.",
+			"button": "Protesti.",
+			"text": "Dici al capo che con la sua richiesta sta offendendo te e la tua religione.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence": {
+				"type": "random",
+				"waitingText": "Hai spiegato al capo quanto è offensiva la sua richiesta. Sei soddisfatta di te, ma ora devi affrontare la sua reazione...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": 0,
+						"money": -100,
+						"stop": false,
+						"class":"bad",
+						"text": "L’uomo la prende male, alza la voce e manda via anche la tua amica. Le dai di tasca tua i 100 euro che avrebbe guadagnato."
+					},
+					{
+						"probability": 50,
+						"happiness": 0,
+						"money": 100,
+						"stop": false,
+						"class":"good",
+						"text": "Il capo ascolta le tue spiegazioni e cambia idea. Potrai svolgere la giornata di lavoro tenendo il velo, guadagni 100 euro."
+					}
+				]
+			}
+		},
+		{
+			"title": "Te ne vai.",
+			"button": "Te ne vai.",
+			"text": "Rinunci al lavoro senza discutere per non creare problemi alla tua amica.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Se stata discriminata e non l’hai nemmeno fatto notare, ti senti avvilita."
+			}
+		}
+	]
+}

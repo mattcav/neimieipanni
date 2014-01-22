@@ -392,7 +392,6 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 			})
 			.then(showRisk)
 			.then(hideRisk)
-			
 			.then(showConseguence)
 			.then(hideConseguence)
 			.then(showVariation)

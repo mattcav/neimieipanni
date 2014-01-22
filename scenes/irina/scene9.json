@@ -33,6 +33,7 @@
 						"happiness": -120,
 						"money": 0,
 						"stop": false,
+						"class":"bad",
 						"text": "L'uomo si arrabbia e ti allontana a male parole. Ti senti umiliata, volevi solo essere utile. Perdi 100 punti."
 					},
 					{
@@ -40,6 +41,7 @@
 						"happiness": 30,
 						"money": 0,
 						"stop": false,
+						"class":"good",
 						"text": "L'uomo si lascia aiutare e gli rimetti a posto la spalla. Lui ti ringrazia e riconosce che il suo era solo uno stupido pregiudizio. Torni a casa felice. Guadagni 30 punti."
 					}
 				]
