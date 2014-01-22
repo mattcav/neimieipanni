@@ -1,58 +1,58 @@
-[	{
-		"title": "La scelta della casa",
-		"text": "Sei appena arrivata in Italia. Come prima cosa ti serve una sistemazione. Che cosa cerchi?",
-		"theme": "casa",
-		"report": {
-			"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
-			"source": "Rapporto UNAR"	
-		},
-		"choices": [
-			{
-				"title": "Monolocale",
-				"button": "Monolocale",
-				"text": "La spesa è consistente, ma sei indipendente.",
-				"happiness": 500,
-				"money": -600,
-				"conseguence": {
-					"text": "Dovrai stare molto attento ai soldi, ma sei contentissimo di vivere da solo.",
+[{
+	"title": "La scelta della casa",
+	"text": "Sei appena arrivata in Italia. Come prima cosa ti serve una sistemazione. Che cosa cerchi?",
+	"theme": "casa",
+	"report": {
+		"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
+		"source": "Rapporto UNAR"	
+	},
+	"choices": [
+		{
+			"title": "Monolocale",
+			"button": "Monolocale",
+			"text": "La spesa è consistente, ma sei indipendente.",
+			"happiness": 500,
+			"money": -600,
+			"conseguence": {
+				"text": "Dovrai stare molto attento ai soldi, ma sei contentissimo di vivere da solo.",
 
-					"type": "trap",
-					"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
-					"trapHappiness": -50,
-					"trapMoney": 0
-				}
-			},
-			{
-				"title": "Stanza singola",
-				"button": "Stanza singola",
-				"text": "Spendi una cifra più abbordabile, ma hai comunque un spazio tutto tuo.",
-				"happiness": 280,
-				"money": -400,
-				"conseguence": {
-					"text": "È comunque una bella soddisfazione avere una stanza tutta per te, anche se vivrai con degli estranei.",
-
-					"type": "trap",
-					"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
-					"trapHappiness": -50,
-					"trapMoney": 0
-				}
-			},
-			{
-				"title": "Stanza condivisa",
-				"button": "Stanza condivisa",
-				"text": "Fai la scelta più economica, rinunciando a spazi e indipendenza.",
-				"happiness": 100,
-				"money": -250,
-				"conseguence": {
-					"text": "Hai risolto il problema dell'alloggio con la spesa più bassa, ma ora dovrai affrontare qualche difficoltà nella convivenza.",
-
-					"type": "trap",
-					"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
-					"trapHappiness": -50,
-					"trapMoney": 0
-				}
+				"type": "trap",
+				"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapHappiness": -50,
+				"trapMoney": 0
 			}
-		]
+		},
+		{
+			"title": "Stanza singola",
+			"button": "Stanza singola",
+			"text": "Spendi una cifra più abbordabile, ma hai comunque un spazio tutto tuo.",
+			"happiness": 280,
+			"money": -400,
+			"conseguence": {
+				"text": "È comunque una bella soddisfazione avere una stanza tutta per te, anche se vivrai con degli estranei.",
+
+				"type": "trap",
+				"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapHappiness": -50,
+				"trapMoney": 0
+			}
+		},
+		{
+			"title": "Stanza condivisa",
+			"button": "Stanza condivisa",
+			"text": "Fai la scelta più economica, rinunciando a spazi e indipendenza.",
+			"happiness": 100,
+			"money": -250,
+			"conseguence": {
+				"text": "Hai risolto il problema dell'alloggio con la spesa più bassa, ma ora dovrai affrontare qualche difficoltà nella convivenza.",
+
+				"type": "trap",
+				"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapHappiness": -50,
+				"trapMoney": 0
+			}
+		}
+	]
 },{
 	"title": "Il secondo lavoro",
 	"text": "Hai trovato un impiego di un giorno come hostess. Ma la responsabile dello stand manda via una delle altre ragazze perché è nera, dicendo che non vuole lavorare con le immigrate. Cosa fai?",

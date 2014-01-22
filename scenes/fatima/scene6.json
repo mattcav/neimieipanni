@@ -1,0 +1,51 @@
+{
+	"title": "La battuta razzista",
+	"text": "Mentre accompagni uno dei tuoi figli a scuola, senti un bambino che fa una battuta razzista sul colore della sua pelle. Cosa fai?",
+	"theme": "bambino",
+	"report": {
+			"text": "stat6",
+			"source": "“stat6”"
+		},
+	"choices": [
+		{
+			"title": "Non dici nulla.",
+			"button": "Non dici nulla.",
+			"text": "Preferisci andare via ed evitare una polemica, anche se ti senti molto arrabbiata.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai evitato una possibile lite, ma ti senti in colpa per non aver difeso tuo figlio."
+			}
+		},
+		{
+			"title": "Affronti la situazione.",
+			"button": "Affronti la situazione.",
+			"text": "Ti fermi per spiegare al bambino quanto è offensiva la sua battuta.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence": {
+				"type": "random",
+				"waitingText": "Hai difeso tuo figlio, che ti guarda riconoscente. Sei contenta della tua scelta, ma ora si avvicina il padre del bambino...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"class":"bad",
+						"text": "Tra te e l'uomo è partita un'accesa discussione sul modo di educare i figli. Alcune insegnanti vi invitano a calmarvi. Per l'imbarazzo perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "L'uomo è d'accordo con quello che dici. Il bambino chiede scusa a tuo figlio e tutti vi salutate con un sorriso. Ti senti accettata e guadagni altri 10 punti."
+					}
+				]
+			}
+		}
+	]
+}

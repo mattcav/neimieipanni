@@ -1,0 +1,51 @@
+{
+	"title": "La perquisizione",
+	"text": "Arrivi in stazione con un grosso borsone. C'è un posto di controllo delle forze dell'ordine e tu sei l'unica a cui viene chiesto di aprire il bagaglio. Cosa fai?",
+	"theme": "borsone",
+	"report": {
+			"text": "stat7",
+			"source": "“stat7”"
+		},
+	"choices": [
+		{
+			"title": "Non dici nulla.",
+			"button": "Non dici nulla.",
+			"text": "Ti sembra un'ingiustizia ma scegli di non farla notare per non creare problemi.",
+			"happiness": -30,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai deciso di non reagire, ma continui a pensare che ti abbiano perquisita solo perché hai il velo e la cosa ti offende molto."
+			}
+		},
+		{
+			"title": "Protesti.",
+			"button": "Protesti.",
+			"text": "Dici agli agenti che ti stanno discriminando: ti sembra la cosa giusta da fare.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence": {
+				"type": "random",
+				"waitingText": "Sei felice di esserti fatta sentire, ma ora è il momento della reazione degli agenti.",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": 0,
+						"money": -40,
+						"stop": false,
+						"class":"bad",
+						"text": "Parte una lunga discussione con gli agenti, che non sono d'accordo con te. Finisci per perdere il treno e spendi altri 40€ per il nuovo biglietto."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "Gli agenti comprendono le tue recriminazioni, ma tagliano corto, dicendoti che è il loro lavoro. Sali velocemente sul treno e parti."
+					}
+				]
+			}
+		}
+	]
+}
