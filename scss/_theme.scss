@@ -26,6 +26,13 @@
 }
 
 
+%white {
+    color:$white;
+    @include headings(1) {
+        color:$white;
+    }
+}
+
 
 /* SHAME */
 //@import "modalFX";

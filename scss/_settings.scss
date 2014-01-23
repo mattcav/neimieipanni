@@ -37,9 +37,11 @@
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-$body-font-family: "PFDinTextCompPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$body-font-weight: 100;
+$body-font-family: "Fira Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: 300;
 // $body-font-style: normal;
+
+$header-font-weight: 500 !default;
 
 // We use this to control font-smoothing
 // $font-smoothing: antialiased;
@@ -271,6 +273,8 @@ $screen: "only screen";
 // $f-dropdown-content-padding: rem-calc(20);
 
 // Dropdown Buttons
+$button-font-weight: 400 !default;
+
 
 // $include-html-button-classes: $include-html-classes;
 
@@ -494,7 +498,7 @@ $topbar-title-font-size: rem-calc(23) !default;
 
 // Off Canvas Tab Bar Headers
 // $tabbar-header-color: #FFF;
-$tabbar-header-weight: 100;
+$tabbar-header-weight: 300;
 // $tabbar-header-line-height: $tabbar-height;
 // $tabbar-header-margin: 0;
 

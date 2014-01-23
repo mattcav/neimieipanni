@@ -26,7 +26,7 @@
     display: block;
     margin: 0 auto 1.25em;
     max-width: 22em;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 %vertical-rithm {
@@ -43,6 +43,11 @@
     );
     visibility: hidden;
     position:absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @media #{$large-up} {
+        overflow-y: hidden;
+    }
 }
 .dialog__inner {
     @extend %box;
@@ -67,7 +72,7 @@
 .dialog__buttons {
     @extend %bottom-line;
     button {
-        font-size: 1.125rem;
+        font-size: 0.9rem;
         margin-right: 0.5rem;
     }
 }
@@ -227,13 +232,14 @@
     @extend .hide-for-large-up;
 }
 .helper-buttons__text {
-    font-weight: 100;
+    font-weight: 300;
     @extend .hide-for-large-up;
 }
 .helper-buttons__button {
     width:100%;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
+    font-size:0.9em;
 }
 
 // UNAR
@@ -270,6 +276,9 @@
 .scelta__buttons {
     margin-top:1em;
     @extend %bottom-line;
+    button {
+        font-size:0.9em;
+    }
 }
 
 
@@ -289,3 +298,35 @@
     }
 }
 
+// end game
+.page {
+    margin-top:1em;
+    max-width: 30rem;
+
+    @extend .text-center;
+    @extend %white;
+    @include grid-column(
+        $columns:12,
+        $center:true
+    );
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:6,
+            $center:true
+        );
+    }
+}
+
+.page__title {
+    @extend %white;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size:rem-calc(27);
+}
+
+.page__text {
+    //font-size:rem-calc(27);
+    font-size:rem-calc(18);
+    font-weight: 300;
+}
