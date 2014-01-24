@@ -1,128 +1,21 @@
- 
-// .dialog__inner--risk {
-//   perspective: 800px;
-//   perspective-origin: 50% 200px;
-// }
-//  .spinner {
-//       position: relative;
-//       width: 200px;
-//       height:200px;
-//       transform-style: preserve-3d;
-//       animation: rotatedice 5s infinite ease-in-out;
-//     }
-
-// .spinner div {
-//   position: absolute;
-//   width: 200px;
-//   height: 200px;
-// }    
-
-// .back {
-//   transform: rotateX(90deg) translateZ(100px);
-//   background-color:red;
-// }
-// .right {
-//   transform: translateZ(100px);
-//   background-color:green;
-// }
-// .left {
-//   transform: rotateY(90deg) translateZ(100px);
-//   background-color:green;
-// }
-// .top {
-//   transform: rotateY(180deg) translateZ(100px);
-//   background-color:red;
-// }
-// .bottom {
-//   transform: rotateY(-90deg) translateZ(100px);
-//   background-color:green;
-// }
-// .front {
-//   transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
-//   background-color:red;
-// }
-
-
-
-//     @keyframes rotatedice{
-//       0% {
-//         transform: translateZ(-100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-//       } 
-//       16% {
-//         transform: translateZ(-100px) rotateX(90deg) rotateY(0deg) rotateZ(0deg);
-//       } 
-//       33% {
-//         transform: translateZ(-100px) rotateX(90deg) rotateY(90deg) rotateZ(90deg);
-//       }
-//       66% {
-//         transform: translateZ(-100px) rotateX(180deg) rotateY(90deg) rotateZ(90deg);
-//       }
-//       82% {
-//         transform: translateZ(-100px) rotateX(180deg) rotateY(180deg) rotateZ(180deg);
-//       }
-//       100% {
-//         transform: translateZ(-100px) rotateX(320deg) rotateY(180deg) rotateZ(0deg);
-//       }
-//     }
-
-.spinner {
+ .spinner {
       width: 100px;
       height: 100px;
       background-color: red;
-
       margin: 10px auto;
       animation: rotateplane 2s infinite ease-in-out;
-
-      &:before, &:after {
-        font-size: 50px;
-        height: 50px;
-        width: 50px;
-        top:50%;
-        left:50%;
-        margin-left: -25px;
-        margin-top: -25px;
-        position: absolute;
-
-        animation: changeico-bad 2s infinite ease-in-out;
-
-        @extend .icon-frown;
-        content:"\2639";
-      }
-      
-      &:after {
-        color:$white;
-        transform:rotateX(180deg);
-        content:"\263a";
-        animation: changeico-good 2s infinite ease-in-out;
-      }
-
-
+      background-color: $alertRed; 
     }
-
-
 
     @keyframes rotateplane {
-      0% {transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-        background-color:red; } 
+      0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            background-color: $alertRed; 
+         } 
       49% {transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-        background-color:green; } 
+          background-color:$alertGreen;
+         } 
       100% {transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-        background-color:red;
-      }
-    }
-
-     @keyframes changeico-bad {
-      0% {opacity:1 }
-      1% {opacity:1;}
-      45% {opacity:0;} 
-      50% {opacity:0;}
-      99% {opacity:1; transform:rotateX(180deg)}
-      100% {opacity:1; transform:rotateX(180deg)}
-    }
-     @keyframes changeico-good {
-      0% {opacity:0 }
-      45% {opacity:1;} 
-      80% {opacity:0;}
-      95% {opacity:0;}
-      100% {opacity:0}
+                background-color: $alertRed;
+          }
     }
