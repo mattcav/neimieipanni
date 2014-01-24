@@ -38,7 +38,7 @@
 					},
 					{
 						"probability": 50,
-						"happiness": 0,
+						"happiness": 10,
 						"money": 0,
 						"stop": false,
 						"class": "good",
