@@ -31,3 +31,22 @@
     clear: both;
   }
 }
+
+@mixin texture-red() {
+        background: $alertRed;
+        background:
+        linear-gradient(115deg, transparent 75%, rgba(204,51,0,1) 75%) 0 0,
+        linear-gradient(245deg, transparent 75%, rgba(204,51,0,1) 75%) 0 0,
+        linear-gradient(115deg, transparent 75%, rgba(204,51,0,1) 75%) 7px -15px,
+        linear-gradient(245deg, transparent 75%, rgba(204,51,0,1) 75%) 7px -15px,
+        $alertRed;
+        background-size: 15px 30px
+    }
+
+@mixin texture-green() {
+        background-color:$alertGreen;
+        background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.1) 99%),
+        radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.1) 99%);
+        background-size:20px 20px;
+        background-position:0 0, 10px 10px;
+    }
