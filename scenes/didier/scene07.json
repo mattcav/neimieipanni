@@ -26,6 +26,7 @@
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
+				"waitingText": "Puoi camminare a testa alta, hai saputo reagire con carattere.<br>Ma i tuo capo ti convoca nel suo ufficio...",
 				"cases": [
 					{
 						"probability": 40,

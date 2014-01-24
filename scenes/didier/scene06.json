@@ -29,6 +29,8 @@
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
+				"waitingText": "È salito il controllore!",
+
 				"cases": [
 					{
 						"probability": 30,

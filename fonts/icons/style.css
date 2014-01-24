@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-skull, .icon-danger, .icon-bomb, .icon-thumb-down, .icon-thumb-up, .icon-money, .icon-sad, .icon-happy, .icon-time, .icon-arrow-rt, .icon-arrow-lt, .icon-arrow-left, .icon-arrow-right {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-skull:before {
+	content: "\271d";
+}
+.icon-danger:before {
+	content: "\2757";
+}
+.icon-bomb:before {
+	content: "\2b55";
+}
+.icon-thumb-down:before {
+	content: "\e003";
+}
+.icon-thumb-up:before {
+	content: "\e004";
+}
+.icon-money:before {
+	content: "\e000";
+}
+.icon-sad:before {
+	content: "\2639";
+}
+.icon-happy:before {
+	content: "\263a";
+}
+.icon-time:before {
+	content: "\23f0";
+}
+.icon-arrow-rt:before {
+	content: "\2192";
+}
+.icon-arrow-lt:before {
+	content: "\2190";
+}
+.icon-arrow-left:before {
+	content: "\21e0";
+}
+.icon-arrow-right:before {
+	content: "\21e2";
+}

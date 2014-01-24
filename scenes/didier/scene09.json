@@ -26,6 +26,7 @@
 			"money": 0,
 			"conseguence": {
 				"type": "random",
+				"waiting text": "Ora devi affrontare la sua reazione...", 
 				"cases": [
 					{
 						"probability": 70,

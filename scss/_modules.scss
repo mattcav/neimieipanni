@@ -190,6 +190,7 @@
      @media #{$large-up} {
         @extend %bottom-line;
         @extend %top-line;
+        padding-top:0;
         border-color:$grey;
         padding-bottom:0.5rem;
     }
@@ -198,6 +199,7 @@
 .player__icon {
     @media #{$large-up} {
         color:$red;
+        line-height: 1.6;
     }
 }
 
@@ -212,7 +214,7 @@
 
 //Helper buttons
 .helper-buttons {
-    @extend %vertical-rithm;
+    margin-top:1em;
     @include grid-column(
     $columns:12,
     $collapse:true
@@ -255,15 +257,11 @@
         $columns:12
     );
     margin:1em 0;
-
-    @media #{$large-up} {
-        margin:2em 0 1em;
-    }
 }
 .unar__img {
     background-color:$white;
     width:100%;
-    padding: 0.5em 0.5em 1em;
+    padding: 0.75em 3em 1em;
 }
 
 
