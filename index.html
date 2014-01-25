@@ -24,7 +24,7 @@
 
                 <h1 class="player-title">{{ playerName }}</h1>    
                 
-                <img class="player__img" src="images/avatar/{{playerName.toLowerCase()}}.png" alt="{{ playerName }}">
+                <img class="player__img" data-ng-src="images/avatar/{{playerName.toLowerCase()}}.png" alt="{{ playerName }}">
                     
                 <section class="player-metrics">
                     <div class="player-metric player-metric--step">
@@ -216,8 +216,7 @@
 
                         <p class="dialog__text">Non sai se la tua azione porterà delle conseguenze...</p>
 
-                        <div class="spinner" data-ng-class="conseguence.class">
-                        </div>
+                        <div class="spinner" data-ng-class="conseguence.class"></div>
                     </div>
                 </article>  
               
