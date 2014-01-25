@@ -159,7 +159,7 @@
                 </article>
 
                 <!-- scelta modal -->
-                <div id="scelta" class="scelta md-modal md-effect-1" data-choice>
+                <div id="scelta" class="scelta md-modal md-effect-1" data-ng-class="{'alert-risk': choice.conseguence.type === 'random'}" data-choice>
                         <div class="scelta__inner md-content">
                             <h2 class="scelta__title">{{ choice.title }}</h2>
                             <p class="scelta__text">{{ choice.text }}</p>
