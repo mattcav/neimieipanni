@@ -110,6 +110,27 @@
                         <a class="md-close" data-ng-click="closeCons()">&#215;</a>
                     </div>
                 </div>
+
+                <!-- helper modal variation -->
+                <article id="h-variazione" class="dialog dialog--variazione">
+                    <div class="dialog__inner dialog--variazione__inner">
+                        <h2 class="dialog__title">...e ora?</h2>
+                        <div class="variazione__block">
+                            <section id="h-e-variazione" class="variazione__cube" data-ng-class="{'go-variazione': scope.variazione.money.delta != 0}">
+                                <span id="h-e-fattore" class="variazione__item fattore">{{ variazione.money.delta }}</span>
+                                <span id="h-e-before" class="variazione__item before">€ {{ variazione.money.prima }}</span> 
+                                <span id="h-e-after" class="variazione__item after">€ {{ variazione.money.attuale }}</span> 
+                            </section>
+                        </div>
+                        <div class="variazione__block">
+                            <section id="h-pt-variazione" class="variazione__cube variazione__cube--pt" data-ng-class="{'go-variazione': scope.variazione.happiness.delta != 0}">
+                                <span id="h-pt-fattore" class="variazione__item variation-pt fattore">{{ variazione.happiness.delta }}</span>
+                                <span id="h-pt-before" class="variazione__item variation-pt before">pt {{ variazione.happiness.prima }}</span> 
+                                <span id="h-pt-after" class="variazione__item variation-pt after">pt {{ variazione.happiness.attuale }}</span> 
+                            </section>
+                        </div>
+                    </div>
+                </article> 
             </div>
 
             <!-- main section-->

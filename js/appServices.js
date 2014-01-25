@@ -342,7 +342,7 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 		$gameScope.$broadcast('risk:open');
 
 		// At the end
-		$timeout(d.resolve.bind(d), TIMERS.risk.show+999999);
+		$timeout(d.resolve.bind(d), TIMERS.risk.show);
 		
 		return d.promise;
 	}
