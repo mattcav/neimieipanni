@@ -143,7 +143,7 @@ nmpApp.service('sceneFactory', ['$rootScope', 'choiceFactory', function ($rootSc
 	}
 }]);
 
-nmpApp.service('choiceFactory', ['$rootScope', 'player', function ($rootScope, player) {
+nmpApp.service('choiceFactory', function ($rootScope, $timeout, TIMERS, player) {
 	function Choice (jO, parentScene) {
 		angular.extend(this, jO);
 
@@ -204,6 +204,28 @@ nmpApp.service('choiceFactory', ['$rootScope', 'player', function ($rootScope, p
 		}
 	}
 
+	Choice.prototype.buildConseguenceVtrap = function () {
+		if(this.parentScene.trapable === false)
+			return this.buildConseguenceNormal();
+
+		this.parentScene.fallInTrap();
+
+		var _self = this;
+		$timeout(function () {
+			_self.happiness += _self.conseguence.deltaHappiness;
+			_self.money += _self.conseguence.deltaMoney;
+		}, 500);
+
+		return {
+			title: this.title,
+			text: this.conseguence.trapText,
+			happiness: 0,
+			money: 0,
+			stop: true,
+			risk: false
+		}
+	}
+
 	Choice.prototype.buildConseguenceRandom = function () {
 		function getRandomConseguence (cases) {
 			var r = Math.floor(Math.random()*100);
@@ -243,7 +265,7 @@ nmpApp.service('choiceFactory', ['$rootScope', 'player', function ($rootScope, p
 			return new Choice(jsonObject, parent);
 		}
 	}
-}]);
+});
 
 
 nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, scenes) {
@@ -413,6 +435,8 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 		if(type === 'normal')
 			normalChoice();
 		else if(type === 'trap')
+			normalChoice();
+		else if(type === 'vtrap')
 			normalChoice();
 		else if(type === 'random')
 			randomChoice();
