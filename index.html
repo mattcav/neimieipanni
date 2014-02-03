@@ -10,9 +10,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <script src="bower_components/modernizr/modernizr.js"></script>
-
-    
-
+   
+</head>
     
 <body onload="loaded()" class="step" data-ng-class="playerName.toLowerCase()">
     
@@ -231,8 +230,8 @@
         </div>
 
         <!-- helper modal variation -->
-        <article id="h-variazione" class="dialog dialog--variazione">
-            <div class="dialog__inner dialog--variazione__inner">
+        <article id="h-variazione" class="dialog dialog--variazione dialog--variazione-help">
+            <div class="dialog__inner dialog--variazione__inner dialog--variazione-help__inner">
                 <h2 class="dialog__title">...e ora?</h2>
                 <div class="variazione__block">
                     <section id="h-e-variazione" class="variazione__cube" data-ng-class="{'go-variazione': scope.variazione.money.delta != 0}">

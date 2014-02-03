@@ -335,3 +335,18 @@
     font-size:rem-calc(18);
     font-weight: 300;
 }
+
+.dialog--variazione-help {
+    z-index:1000;
+}
+
+.dialog--variazione-help__inner {
+    @include grid-column(
+        $columns:12
+    );
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:4
+        );
+    }
+}
