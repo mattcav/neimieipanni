@@ -54,38 +54,6 @@
 			}
 		]
 },{
-	"title": "Al ristorante cinese",
-	"text": "Il proprietario di un ristorante cinese sotto casa tua ti ha preso in simpatia e spesso ti offre la cena. Ma ogni volta ti parla male degli italiani. Cosa fai?",
-	"theme": "ristorante",
-	"report": {
-			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
-			"source": "ORAC (2013)"	
-		},
-	"choices": [
-		{
-			"title": "Fingi di essere d'accordo.",
-			"button": "Fingi di essere d'accordo.",
-			"text": "Risparmi un po' di soldi ma rinunci a difendere il tuo paese.",
-			"happiness": -50,
-			"money": 0,
-			"conseguence": {
-				"type": "normal",
-				"text": "Il trattamento di favore ti fa comodo, ma ti senti in colpa per essere stato zitto."
-			}
-		},
-		{
-			"title": "Smetti di andarci.",
-			"button": "Smetti di andarci.",
-			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
-			"happiness": 30,
-			"money": 0,
-			"conseguence": {
-				"type": "normal",
-				"text": "Hai dovuto rinunciare al trattamento di favore, ma almeno non dovrai più ascoltare discorsi che ti infastidiscono."
-			}
-		}
-	]
-},{
 	"title": "Battuta razzista",
 	"text": "Nell’atrio dell’università un ragazzo, pensando che tu non capisca l’italiano, dice a un altro che invece che lì dovresti stare a cucinare gatti fingendo che siano pollo. Come reagisci?",
 	"theme": "bulli",
@@ -136,56 +104,6 @@
 		}
 	]
 },{
-	"title": "L'autobus",
-	"text": "La casa che hai trovato non è molto vicina all'univeristà, quindi dovrai prendere i mezzi pubblici ogni giorno. Cosa scegli di fare?",
-	"theme": "controllore",
-	"report": {
-			"text": "Il 70% delle segnalazioni pervenute all’UNAR riguardano casi di discriminazione etnico-razziale avvenute nell’ambito “Trasporto pubblico”.",
-			"source": "Rapporto UNAR"	
-		},
-	"choices": [
-		{
-			"title": "Compri la tessera mensile",
-			"button": "Compri la tessera mensile",
-			"text": "È una spesa fissa, ma puoi usare l'autobus anche per uscire la sera.",
-			"happiness": 10,
-			"money": -50,
-			"conseguence": {
-				"type": "normal",
-				"text": "È una spesa consistente, ma puoi spostarti ogni volta che ti serve."
-			}
-		},
-		{
-			"title": "Fai una furbata",
-			"button": "Fai una furbata",
-			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
-			"happiness": -20,
-			"money": 0,
-			"conseguence":  {
-				"type": "random",
-				"waitingText": "Hai scelto di risparmiare, ma ora è salito il controllore...",
-				"cases": [
-					{
-						"probability": 40,
-						"happiness": -100,
-						"money": -100,
-						"stop": false,
-						"class":"bad",
-						"text": "Il controllore punta subito te per il tuo aspetto e ti trova con il biglietto non timbrato. Devi pagare 100€ di multa."
-					},
-					{
-						"probability": 60,
-						"happiness": -60,
-						"money": 0,
-						"stop": false,
-						"class":"good",
-						"text": "Scendi dall'autobus appena in tempo. Ma  una signora ti ha visto e commenta “Gli stranieri non pagano mai”. Ti vergogni perché hai incrementato un pregiudizio, perdi 60 punti."
-					}
-				]
-			}
-		}
-	]
-},{
 	"title": "Il capodanno cinese",
 	"text": "I tuoi genitori ti chiedono di tornare a casa per festeggiare con loro il capodanno cinese. Ma in quel week end c’è una grande festa nella tua facoltà. Cosa fai?",
 	"theme": "capodanno",
@@ -230,6 +148,56 @@
 						"stop": false,
 						"class":"good",
 						"text": "I tuoi genitori sono un po' dispiaciuti di non vederti, ma ci tengono che tu ti senta come gli altri ragazzi della tua età."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "L'autobus",
+	"text": "La casa che hai trovato non è molto vicina all'univeristà, quindi dovrai prendere i mezzi pubblici ogni giorno. Cosa scegli di fare?",
+	"theme": "controllore",
+	"report": {
+			"text": "Il 70% delle segnalazioni pervenute all’UNAR riguardano casi di discriminazione etnico-razziale avvenute nell’ambito “Trasporto pubblico”.",
+			"source": "Rapporto UNAR"	
+		},
+	"choices": [
+		{
+			"title": "Compri la tessera mensile",
+			"button": "Compri la tessera mensile",
+			"text": "È una spesa fissa, ma puoi usare l'autobus anche per uscire la sera.",
+			"happiness": 10,
+			"money": -50,
+			"conseguence": {
+				"type": "normal",
+				"text": "È una spesa consistente, ma puoi spostarti ogni volta che ti serve."
+			}
+		},
+		{
+			"title": "Fai una furbata",
+			"button": "Fai una furbata",
+			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
+			"happiness": -20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Hai scelto di risparmiare, ma ora è salito il controllore...",
+				"cases": [
+					{
+						"probability": 40,
+						"happiness": -100,
+						"money": -100,
+						"stop": false,
+						"class":"bad",
+						"text": "Il controllore punta subito te per il tuo aspetto e ti trova con il biglietto non timbrato. Devi pagare 100€ di multa."
+					},
+					{
+						"probability": 60,
+						"happiness": -60,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "Scendi dall'autobus appena in tempo. Ma  una signora ti ha visto e commenta “Gli stranieri non pagano mai”. Ti vergogni perché hai incrementato un pregiudizio, perdi 60 punti."
 					}
 				]
 			}
@@ -464,6 +432,38 @@
 			"conseguence": {
 				"type": "normal",
 				"text": "Non hai voluto creare tensione ma la partita non te la riesci a gustare. Continui a guardare verso il posto che occupavi precedentemente, e ti dispiace non aver reagito."
+			}
+		}
+	]
+},{
+	"title": "Al ristorante cinese",
+	"text": "Il proprietario di un ristorante cinese sotto casa tua ti ha preso in simpatia e spesso ti offre la cena. Ma ogni volta ti parla male degli italiani. Cosa fai?",
+	"theme": "ristorante",
+	"report": {
+			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
+			"source": "ORAC (2013)"	
+		},
+	"choices": [
+		{
+			"title": "Fingi di essere d'accordo.",
+			"button": "Fingi di essere d'accordo.",
+			"text": "Risparmi un po' di soldi ma rinunci a difendere il tuo paese.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Il trattamento di favore ti fa comodo, ma ti senti in colpa per essere stato zitto."
+			}
+		},
+		{
+			"title": "Smetti di andarci.",
+			"button": "Smetti di andarci.",
+			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
+			"happiness": 30,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai dovuto rinunciare al trattamento di favore, ma almeno non dovrai più ascoltare discorsi che ti infastidiscono."
 			}
 		}
 	]
