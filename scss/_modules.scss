@@ -350,4 +350,15 @@
         );
     }
 }
+.spinner {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px auto;
+  animation: rotateplane 2s infinite ease-in-out;
+  background-color: $alertRed; 
+}
 
+.figure {
+    @include position(absolute, bottom 0 right 0);
+}

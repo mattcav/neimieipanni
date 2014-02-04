@@ -103,6 +103,8 @@ nmpApp.service('scenes', ['$http', '$rootScope', 'player', 'sceneFactory', funct
 			service.currentIndex = index;
 			$rootScope.$broadcast('sceneUpdated');
 			$body.attr('data-theme', service.getCurrentScene().theme);
+			$('.figure').remove();
+			$body.prepend('<img class="figure" src="../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png">')
 		},
 
 		nextScene: function () {
