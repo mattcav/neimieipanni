@@ -149,7 +149,6 @@
 
 
 
-
 // stats
 .dialog--stats {
     visibility: hidden;
@@ -193,5 +192,36 @@
     }
 }
 
+.bad .dialg__text:before,
+.good .dialg__text:before {
+    color:$alertRed;
+    content: "\e003";
+    display: block;
+    font-family: 'icomoon';
+    font-size: 3em;
+    position:relative;
+    text-align: center;
+    width:100%;
+}
 
+.good .dialg__text:before {
+    color:$alertGreen;
+    content: "\e004";
+}
+
+// backgrounds
+    .figure {
+        animation-name: fade-in,zoom-in;
+        animation-duration:1s,50s;
+        animation-play-state:running;
+                height:100%;
+                max-height:100%;
+                max-width:100%;
+    }
+
+.didier {
+
+   
+
+}
 

@@ -167,33 +167,35 @@ nmpApp.directive('variazione', function ($timeout, TIMERS, player) {
 });
 
 
-nmpApp.directive('helper', function ($rootScope) {
+nmpApp.directive('helper', function ($rootScope, $timeout, TIMERS, player) {
 	return {
 		restrict: 'A',
 		link: function (scope, element, attrs, controller) {
 			var $modal = angular.element(element.children()[0]),
-				$conseguence = angular.element(element.children()[1]);
+				$conseguence = angular.element(element.children()[1]),
+				$variation = angular.element(element.children()[2]);
 
 			function openModal(event, data, useHelp, closeHelp) {
 				scope.help = data;
 
 				scope.useHelp = function () {
 					(useHelp || angular.noop)();
-					$rootScope.$emit('helper:modal:close');
+					$rootScope.$emit('helper:modal:close', false);
 				};
 
 				scope.closeHelp = function () {
 					(closeHelp || angular.noop)();
-					$rootScope.$emit('helper:modal:close');
+					$rootScope.$emit('helper:modal:close', true);
 				}
 
 				$modal.addClass('md-show')
 				$('.md-overlay').addClass('show');
 			}
 
-			function closeModal() {
+			function closeModal(event, closeOverlay) {
 				$modal.removeClass('md-show');
-				$('.md-overlay').removeClass('show');
+				if(closeOverlay === true)
+					$('.md-overlay').removeClass('show');
 			}
 
 			function openConseguence(event, cons) {
@@ -206,7 +208,43 @@ nmpApp.directive('helper', function ($rootScope) {
 
 			function closeConseguence() {
 				$conseguence.removeClass('md-show');
-				$('.md-overlay').removeClass('show');
+				$rootScope.$broadcast('helper:variation:open')
+				// $('.md-overlay').removeClass('show');
+			}
+
+			function openVariation(event) {
+				var dH = scope.conseguence.happiness,
+					dM = scope.conseguence.money;
+
+				scope.conseguence.applicaVariazione();
+
+				scope.variazione = {
+					happiness: {
+						attuale: player.getPlayer().happiness,
+						delta: dH > 0 ? '+' + dH : dH,
+						prima: player.getPlayer().happiness - dH
+					},
+					money: {
+						attuale: player.getPlayer().money,
+						delta: dM > 0 ? '+' + dM : dM,
+						prima: player.getPlayer().money - dM
+					}
+				};
+
+				$variation
+					.addClass('show')
+					.removeClass('leave');
+
+				$timeout(function () {
+					$rootScope.$broadcast('helper:variation:close');
+				}, TIMERS.variation.total);
+			}
+
+			function closeVariation() {
+				$variation
+					.addClass('leave')
+					.removeClass('show');
+			 	$('.md-overlay').removeClass('show');
 			}
 
 			$rootScope.$on('helper:modal:open', openModal);
@@ -214,6 +252,9 @@ nmpApp.directive('helper', function ($rootScope) {
 
 			$rootScope.$on('helper:conseguence:open', openConseguence);
 			$rootScope.$on('helper:conseguence:close', closeConseguence);
+
+			$rootScope.$on('helper:variation:open', openVariation);
+			$rootScope.$on('helper:variation:close', closeVariation);
 		}
 	};
 });

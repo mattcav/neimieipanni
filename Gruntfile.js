@@ -12,10 +12,10 @@ module.exports = function(grunt) {
         },
         files: {
           'css/app.css': 'scss/app.scss'
-        }        
+        }
       }
     },
-    
+
     connect: {
       server: {
         options: {
@@ -24,74 +24,67 @@ module.exports = function(grunt) {
       }
     },
 
-     autoprefixer: {
-        single_file: {
-          options: {
-            browsers: ['last 2 version', 'ie 8', 'ie 7']
-          },
-          src: 'css/app.css',
-          dest: 'css/app.css'
+    autoprefixer: {
+      single_file: {
+        options: {
+          browsers: ['last 2 version', 'ie 8', 'ie 7']
         },
+        src: 'css/app.css',
+        dest: 'css/app.css'
       },
+    },
 
-      concat: {   
-          dist: {
-              src: [
-                  'bower_components/jquery/jquery.js', 
-                  'bower_components/foundation/js/foundation.min.js',
-                  'js/app.js' 
-              ],
-              dest: 'js/build/app.js'
-          },
-          irina: {
-              src: ['scenes/irina/scene*.json'],
-              dest: 'scenes/irina/all.json',
-              options: {
-                banner: '[',
-                footer: "]",
-                separator: ','
-            }
-          },
-          zhang: {
-              src: ['scenes/zhang/scene*.json'],
-              dest: 'scenes/zhang/all.json',
-              options: {
-                banner: '[',
-                footer: "]",
-                separator: ','
-            }
-          },
-          didier: {
-              src: ['scenes/didier/scene*.json'],
-              dest: 'scenes/didier/all.json',
-              options: {
-                banner: '[',
-                footer: "]",
-                separator: ','
-            }
-          },
-          fatima: {
-              src: ['scenes/fatima/scene*.json'],
-              dest: 'scenes/fatima/all.json',
-              options: {
-                banner: '[',
-                footer: "]",
-                separator: ','
-            }
-          }
+    concat: {
+      dist: {
+        src: [
+          'bower_components/jquery/jquery.js',
+          'bower_components/foundation/js/foundation.min.js',
+          'js/app.js'
+        ],
+        dest: 'js/build/app.js'
       },
-
-      uglify: {
-          build: {
-              src: 'js/build/app.js',
-              dest: 'js/build/app.min.js'
-          }
+      irina: {
+        src: ['scenes/irina/scene*.json'],
+        dest: 'scenes/irina/all.json',
+        options: {
+          banner: '[',
+          footer: "]",
+          separator: ','
+        }
       },
+      zhang: {
+        src: ['scenes/zhang/scene*.json'],
+        dest: 'scenes/zhang/all.json',
+        options: {
+          banner: '[',
+          footer: "]",
+          separator: ','
+        }
+      },
+      didier: {
+        src: ['scenes/didier/scene*.json'],
+        dest: 'scenes/didier/all.json',
+        options: {
+          banner: '[',
+          footer: "]",
+          separator: ','
+        }
+      }
+    },
 
-   
+    uglify: {
+      build: {
+        src: 'js/build/app.js',
+        dest: 'js/build/app.min.js'
+      }
+    },
+
+
 
     watch: {
-      grunt: { files: ['Gruntfile.js'] },
+      grunt: {
+        files: ['Gruntfile.js']
+      },
 
       sass: {
         files: 'scss/**/*.scss',
@@ -99,10 +92,10 @@ module.exports = function(grunt) {
       },
 
       options: {
-          livereload: true,
-        }
+        livereload: true,
+      }
     }
-    
+
   });
 
   grunt.loadNpmTasks('grunt-sass');
@@ -114,5 +107,5 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask('build', ['sass', 'autoprefixer', 'connect', 'concat', 'uglify']);
-  grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('default', ['build', 'watch']);
 }

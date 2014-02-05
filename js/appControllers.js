@@ -1,4 +1,4 @@
-nmpApp.controller('sidebar', function ($scope, $rootScope, player, scenes, choiceFactory, HELPERS) {
+nmpApp.controller('sidebar', function ($scope, $rootScope, player, scenes, choiceFactory, HELPERS, $q) {
 	
 	$scope.player = player.getPlayer();
 	$scope.scenes = scenes;
@@ -12,11 +12,12 @@ nmpApp.controller('sidebar', function ($scope, $rootScope, player, scenes, choic
 	$scope.openHelper = function ($index) {
 		$scope.choice = choiceFactory.new(this.helper);
 
-		$rootScope.$broadcast('helper:modal:open', $scope.choice, function () {
+		function useHelp() {
 			$scope.helpers[$index].disabled = true;
-
 			$rootScope.$emit('helper:conseguence:open', $scope.choice.scelto());
-		});
+		}
+
+		$rootScope.$broadcast('helper:modal:open', $scope.choice, useHelp);
 	}
 });
 

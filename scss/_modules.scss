@@ -335,3 +335,30 @@
     font-size:rem-calc(18);
     font-weight: 300;
 }
+
+.dialog--variazione-help {
+    z-index:1000;
+}
+
+.dialog--variazione-help__inner {
+    @include grid-column(
+        $columns:12
+    );
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:4
+        );
+    }
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px auto;
+  animation: rotateplane 2s infinite ease-in-out;
+  background-color: $alertRed; 
+}
+
+.figure {
+    @include position(absolute, bottom 0 right 0);
+}
