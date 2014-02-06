@@ -172,8 +172,7 @@ nmpApp.directive('helper', function ($rootScope, $timeout, TIMERS, player) {
 		restrict: 'A',
 		link: function (scope, element, attrs, controller) {
 			var $modal = angular.element(element.children()[0]),
-				$conseguence = angular.element(element.children()[1]),
-				$variation = angular.element(element.children()[2]);
+				$variation = angular.element(element.children()[1]);
 
 			function openModal(event, data, useHelp, closeHelp) {
 				scope.help = data;
@@ -198,21 +197,15 @@ nmpApp.directive('helper', function ($rootScope, $timeout, TIMERS, player) {
 					$('.md-overlay').removeClass('show');
 			}
 
-			function openConseguence(event, cons) {
+			// function openConseguence(event, cons) {
+			// 	scope.conseguence = cons;
+			// 	scope.closeCons = $rootScope.$emit.bind($rootScope, 'helper:variation:open');
+
+			// 	$('.md-overlay').addClass('show');
+			// }
+
+			function openVariation(event, cons) {
 				scope.conseguence = cons;
-				scope.closeCons = $rootScope.$emit.bind($rootScope, 'helper:conseguence:close');
-
-				$conseguence.addClass('md-show')
-				$('.md-overlay').addClass('show');
-			}
-
-			function closeConseguence() {
-				$conseguence.removeClass('md-show');
-				$rootScope.$broadcast('helper:variation:open')
-				// $('.md-overlay').removeClass('show');
-			}
-
-			function openVariation(event) {
 				var dH = scope.conseguence.happiness,
 					dM = scope.conseguence.money;
 
@@ -230,6 +223,13 @@ nmpApp.directive('helper', function ($rootScope, $timeout, TIMERS, player) {
 						prima: player.getPlayer().money - dM
 					}
 				};
+
+				if(scope.variazione.money.delta != 0)
+					$('#h-e-variazione').addClass('go-variazione');
+
+				if(scope.variazione.happiness.delta != 0)
+					$('#h-pt-variazione').addClass('go-variazione');
+
 
 				$variation
 					.addClass('show')
@@ -249,9 +249,6 @@ nmpApp.directive('helper', function ($rootScope, $timeout, TIMERS, player) {
 
 			$rootScope.$on('helper:modal:open', openModal);
 			$rootScope.$on('helper:modal:close', closeModal);
-
-			$rootScope.$on('helper:conseguence:open', openConseguence);
-			$rootScope.$on('helper:conseguence:close', closeConseguence);
 
 			$rootScope.$on('helper:variation:open', openVariation);
 			$rootScope.$on('helper:variation:close', closeVariation);
