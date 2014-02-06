@@ -244,6 +244,7 @@ nmpApp.directive('helper', function ($rootScope, $timeout, TIMERS, player) {
 				$variation
 					.addClass('leave')
 					.removeClass('show');
+				$('#h-e-variazione, #h-pt-variazione').removeClass('go-variazione');
 			 	$('.md-overlay').removeClass('show');
 			}
 
