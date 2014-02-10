@@ -182,15 +182,37 @@
 
 // risk
 
-.risk {
-    @extend .stats;
+.dialog--risk {
+    visibility: hidden;
+    overflow-x: hidden;
+
+    .dialog__inner {
+        opacity: 0;
+        transform: scale(0);
+    }
 
     &.show {
-        .roulette {
-           // @extend .a-roulette;
+        visibility:visible;
+
+        .dialog__inner {
+            transition: all 0.5s ease 0.5s;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &.leave {
+        visibility:hidden;
+
+        .dialog__inner {
+            transition: all 0.5s ease 0.2s;
+            opacity: 0;
+            transform: scale(2);
         }
     }
 }
+
+
 
 .bad .dialg__text:before,
 .good .dialg__text:before {
@@ -210,18 +232,10 @@
 }
 
 // backgrounds
-    .figure {
-        animation-name: fade-in,zoom-in;
-        animation-duration:1s,50s;
-        animation-play-state:running;
-                height:100%;
-                max-height:100%;
-                max-width:100%;
-    }
-
-.didier {
-
-   
-
+.figure {
+    animation-name: fade-in,zoom-in;
+    animation-duration:1s,50s;
+    animation-play-state:running;
 }
+
 

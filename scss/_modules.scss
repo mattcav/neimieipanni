@@ -54,12 +54,15 @@
     //large-7
     @include grid-column(
     $columns:12,
-    $center:true
+    $center:true,
+    $float:none
     );
 
     @media #{$medium-up} {
         @include grid-column(
-        $columns:7
+        $columns:7,
+        $center:true,
+        $float:none
         );
     }
 }
@@ -95,7 +98,8 @@
 
     @media #{$medium-up} {
         @include grid-column(
-        $columns:6
+        $columns:6,
+        $center:true
         );
     }
 }
@@ -157,7 +161,10 @@
 //Player metrics
 .player-metrics {
     @extend %vertical-rithm;
-    @extend .columns;
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+    );
     @extend .text-center;
     font-size:rem-calc(18);
 
@@ -361,4 +368,13 @@
 
 .figure {
     @include position(absolute, bottom 0 right 0);
+    max-height:100%;
+    max-width:100%;
+    width:100%;
+    height:auto;
+
+    @media #{$landscape} {
+        width:auto;
+        height:100%;
+    }
 }
