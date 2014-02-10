@@ -69,7 +69,7 @@ module.exports = function(grunt) {
           footer: "]",
           separator: ','
         }
-      }
+      },
       fatima: {
         src: ['scenes/fatima/scene*.json'],
         dest: 'scenes/fatima/all.json',
