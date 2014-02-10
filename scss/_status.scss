@@ -185,19 +185,22 @@
 .dialog--risk {
     visibility: hidden;
     overflow-x: hidden;
+    perspective: 1300px;
 
     .dialog__inner {
         opacity: 0;
-        transform: scale(0);
+        transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+        transform-origin: 0 100% 0;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease 0s;
     }
 
     &.show {
         visibility:visible;
 
         .dialog__inner {
-            transition: all 0.5s ease 0.5s;
             opacity: 1;
-            transform: scale(1);
+            transform: translateZ(0px) translateX(0%) rotateY(0deg);
         }
     }
 
@@ -205,9 +208,8 @@
         visibility:hidden;
 
         .dialog__inner {
-            transition: all 0.5s ease 0.2s;
             opacity: 0;
-            transform: scale(2);
+            transform: translateZ(100px) translateX(-30%) rotateY(90deg);
         }
     }
 }

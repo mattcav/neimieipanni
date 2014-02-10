@@ -167,7 +167,12 @@
     );
     @extend .text-center;
     font-size:rem-calc(18);
-
+    @media #{$medium-up} {
+        @include grid-column(
+            $columns:12,
+            $collapse:false
+        );
+    }
     @media #{$large-up}{
         font-size:rem-calc(23);
     }
