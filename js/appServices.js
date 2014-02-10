@@ -91,12 +91,12 @@ nmpApp.service('scenes', ['$http', '$rootScope', 'player', 'sceneFactory', funct
 				throw "Error";
 
 			if(index === service.scenes.length) {
-				window.location.href = 'win.html';
+				window.location.href = player.getPlayer().name + '/win.html';
 				return;
 			}
 
 			if(player.getPlayer().isLoser()) {
-				window.location.href = 'lose.html';
+				window.location.href = player.getPlayer().name + '/lose.html';
 				return;
 			}
 

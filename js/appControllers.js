@@ -14,7 +14,7 @@ nmpApp.controller('sidebar', function ($scope, $rootScope, player, scenes, choic
 
 		function useHelp() {
 			$scope.helpers[$index].disabled = true;
-			$rootScope.$emit('helper:conseguence:open', $scope.choice.scelto());
+			$rootScope.$emit('helper:variation:open', $scope.choice.scelto());
 		}
 
 		$rootScope.$broadcast('helper:modal:open', $scope.choice, useHelp);
