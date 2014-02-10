@@ -70,6 +70,15 @@ module.exports = function(grunt) {
           separator: ','
         }
       }
+      fatima: {
+        src: ['scenes/fatima/scene*.json'],
+        dest: 'scenes/fatima/all.json',
+        options: {
+          banner: '[',
+          footer: "]",
+          separator: ','
+        }
+      }
     },
 
     uglify: {

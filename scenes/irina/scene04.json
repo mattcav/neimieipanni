@@ -8,19 +8,19 @@
 		},
 	"choices": [
 		{
-			"title": "Un corso gratuito.",
-			"button": "Un corso gratuito.",
-			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
+			"title": "Un corso gratuito",
+			"button": "Un corso gratuito",
+			"text": "Non spendi nulla, ma la scuola è lontana e ti crea problemi con gli orari e gli spostamenti.",
 			"happiness": -100,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Non spendi nulla, ma la scuola è lontana e ti crea problemi con gli orari e gli spostamenti."
+				"text": "Il tuo italiano migliora velocemente: ti senti più integrata ed è più facile conoscere nuove persone. Peccato solo per la scomodità."
 			}
 		},
 		{
-			"title": "Un corso a pagamento.",
-			"button": "Un corso a pagamento.",
+			"title": "Un corso a pagamento",
+			"button": "Un corso a pagamento",
 			"text": "Il costo non è basso, ma la scuola è proprio dietro casa e gli orari sono flessibili: puoi seguire le lezioni senza difficoltà.",
 			"happiness": 20,
 			"money": -120,

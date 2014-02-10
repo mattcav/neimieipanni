@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Te ne vai.",
-			"button": "Te ne vai.",
+			"title": "Te ne vai",
+			"button": "Te ne vai",
 			"text": "Non vuoi avere problemi, quindi lo lasci stare, ma ti senti in colpa per non aver fatto il tuo dovere.",
 			"happiness": -60,
 			"money": 0,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Insisiti.",
-			"button": "Insisiti.",
+			"title": "Insisiti",
+			"button": "Insisiti",
 			"text": "Evidentemente ci sono ancora persone per cui un accento straniero vale più di anni di studio. Torni a casa con questa consapevolezza e ti senti triste e sminuita.",
 			"happiness": 20,
 			"money": 0,

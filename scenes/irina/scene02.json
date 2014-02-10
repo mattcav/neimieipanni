@@ -8,8 +8,8 @@
 		},
 		"choices": [
 			{
-				"title": "Infermiera professionale.",
-				"button": "Infermiera professionale.",
+				"title": "Infermiera professionale",
+				"button": "Infermiera professionale",
 				"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
 				"happiness": -300,
 				"money": 1000,
