@@ -108,7 +108,7 @@
 		"happiness": 500,
 		"money": -250,
 		"conseguence": {
-			"text": "Hai preso la macchina, ma hai dovuto pagare l'assicurazione più degli altri. Non ti sembra certo un fatto giusto.",
+			"text": "La nuova casa ti piace molto e i bambini sono contenti. Ti senti soddisfatta anche se la spesa si fa sentire.",
 
 			"type": "vtrap",
 			"trapText": "Scopri che. in quanto immigrata, paghi più di assicurazione rispetto al tuo amico italiano: il costo è di 300€",

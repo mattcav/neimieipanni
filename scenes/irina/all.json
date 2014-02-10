@@ -63,8 +63,8 @@
 		},
 		"choices": [
 			{
-				"title": "Infermiera professionale.",
-				"button": "Infermiera professionale.",
+				"title": "Infermiera professionale",
+				"button": "Infermiera professionale",
 				"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
 				"happiness": -300,
 				"money": 1000,
@@ -110,8 +110,8 @@
 		},
 	"choices": [
 		{
-			"title": "Chiedi l'aumento.",
-			"button": "Chiedi l'aumento.",
+			"title": "Chiedi l'aumento",
+			"button": "Chiedi l'aumento",
 			"text": "Sei un'infermiera diplomata, hai nozioni che possono essere utili. Dedici di farlo presente.",
 			"happiness": 20,
 			"money": 0,
@@ -139,8 +139,8 @@
 			}
 		},
 		{
-			"title": "Accetti senza discutere.",
-			"button": "Accetti senza discutere.",
+			"title": "Accetti senza discutere",
+			"button": "Accetti senza discutere",
 			"text": "Stai nascondendo la cosa di cui vai più fiera, ma preferisci non tirare troppo la corda.",
 			"happiness": -20,
 			"money": 0,
@@ -160,19 +160,19 @@
 		},
 	"choices": [
 		{
-			"title": "Un corso gratuito.",
-			"button": "Un corso gratuito.",
-			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
+			"title": "Un corso gratuito",
+			"button": "Un corso gratuito",
+			"text": "Non spendi nulla, ma la scuola è lontana e ti crea problemi con gli orari e gli spostamenti.",
 			"happiness": -100,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Non spendi nulla, ma la scuola è lontana e ti crea problemi con gli orari e gli spostamenti."
+				"text": "Il tuo italiano migliora velocemente: ti senti più integrata ed è più facile conoscere nuove persone. Peccato solo per la scomodità."
 			}
 		},
 		{
-			"title": "Un corso a pagamento.",
-			"button": "Un corso a pagamento.",
+			"title": "Un corso a pagamento",
+			"button": "Un corso a pagamento",
 			"text": "Il costo non è basso, ma la scuola è proprio dietro casa e gli orari sono flessibili: puoi seguire le lezioni senza difficoltà.",
 			"happiness": 20,
 			"money": -120,
@@ -183,7 +183,7 @@
 		}
 	]
 },{
-	"title": "L'infortuneo sul lavoro",
+	"title": "L'infortunio sul lavoro",
 	"text": "Mentre sei al lavoro, cadi e ti fai male ad una gamba. Cosa fai?",
 	"theme": "infortuneo",
 	"report": {
@@ -192,8 +192,8 @@
 		},
 	"choices": [
 		{
-			"title": "Continui a lavorare.",
-			"button": "Continui a lavorare.",
+			"title": "Continui a lavorare",
+			"button": "Continui a lavorare",
 			"text": "Fai finta di niente per non sembrare una che crea problemi e sopporti il dolore.",
 			"happiness": -80,
 			"money": 0,
@@ -203,8 +203,8 @@
 			}
 		},
 		{
-			"title": "Vai a casa.",
-			"button": "Vai a casa.",
+			"title": "Vai a casa",
+			"button": "Vai a casa",
 			"text": "Il permesso per malattia è un tuo diritto e intendi esercitarlo.",
 			"happiness": -20,
 			"money": 0,
@@ -242,8 +242,8 @@
 		},
 		"choices": [
 			{
-				"title": "Compri una lavatrice.",
-				"button": "Compri una lavatrice.",
+				"title": "Compri una lavatrice",
+				"button": "Compri una lavatrice",
 				"text": "Trovi un'offerta con un finanziamento e una rata conveniente.",
 				"happiness": 100,
 				"money": -60,
@@ -289,8 +289,8 @@
 		},
 	"choices": [
 		{
-			"title": "Lo prendi.",
-			"button": "Lo prendi.",
+			"title": "Lo prendi",
+			"button": "Lo prendi",
 			"text": "Hai paura di quei ragazzi, per evitare problemi lo prendi e te ne vai senza dire una parola.",
 			"happiness": -70,
 			"money": 0,
@@ -300,8 +300,8 @@
 			}
 		},
 		{
-			"title": "Lo rifiuti.",
-			"button": "Lo rifiuti.",
+			"title": "Lo rifiuti",
+			"button": "Lo rifiuti",
 			"text": "Hai uno scatto di orgoglio e rispondi, con il tuo accento straniero, che sei un'immigrata anche tu.",
 			"happiness": 20,
 			"money": 0,
@@ -389,8 +389,8 @@
 		},
 	"choices": [
 		{
-			"title": "Te ne vai.",
-			"button": "Te ne vai.",
+			"title": "Te ne vai",
+			"button": "Te ne vai",
 			"text": "Non vuoi avere problemi, quindi lo lasci stare, ma ti senti in colpa per non aver fatto il tuo dovere.",
 			"happiness": -60,
 			"money": 0,
@@ -400,8 +400,8 @@
 			}
 		},
 		{
-			"title": "Insisiti.",
-			"button": "Insisiti.",
+			"title": "Insisiti",
+			"button": "Insisiti",
 			"text": "Evidentemente ci sono ancora persone per cui un accento straniero vale più di anni di studio. Torni a casa con questa consapevolezza e ti senti triste e sminuita.",
 			"happiness": 20,
 			"money": 0,
@@ -439,8 +439,8 @@
 		},
 	"choices": [
 		{
-			"title": "Non dici niente.",
-			"button": "Non dici niente.",
+			"title": "Non dici niente",
+			"button": "Non dici niente",
 			"text": "Hai proprio bisogno di questo guadagno extra anche se ti senti in colpa.",
 			"happiness": -100,
 			"money": 100,
@@ -450,8 +450,8 @@
 			}
 		},
 		{
-			"title": "Te ne vai anche tu.",
-			"button": "Te ne vai anche tu.",
+			"title": "Te ne vai anche tu",
+			"button": "Te ne vai anche tu",
 			"text": "Non vuoi avere nulla a che fare con queste persone e dici che sei immigrata anche tu: meglio rinunciare ai soldi ma rimanere fedele ai tuoi principi.",
 			"happiness": 20,
 			"money": 0,
