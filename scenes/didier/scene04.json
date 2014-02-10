@@ -9,8 +9,8 @@
 	"choices":
 	[
 		{
-			"title": "Cellulare e SIM card.",
-			"button": "Cellulare e SIM card.",
+			"title": "Cellulare e SIM card",
+			"button": "Cellulare e SIM card",
 			"text": "È una spesa alta, ma puoi sentire i tuoi ogni volta che vuoi.",
 			"happiness": 200,
 			"money": -200,
