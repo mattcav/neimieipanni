@@ -1,9 +1,9 @@
 %cover-all {
-    bottom: 0;
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
+    bottom:0;
 }
 
 %box {
@@ -26,7 +26,7 @@
     display: block;
     margin: 0 auto 1.25em;
     max-width: 22em;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 %vertical-rithm {
@@ -43,23 +43,38 @@
     );
     visibility: hidden;
     position:absolute;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .dialog__inner {
+    position:relative;
+    -webkit-transform: translateZ(0);
     @extend %box;
     //large-7
     @include grid-column(
     $columns:12,
-    $center:true
+    $center:true,
+    $float:none
     );
 
     @media #{$medium-up} {
         @include grid-column(
-        $columns:7
+        $columns:7,
+        $center:true,
+        $float:none
         );
     }
 }
 .dialog__title {
     @extend %bottom-line;
+    font-size:rem-calc(27);
+    line-height: 1;
+    margin-bottom:0.5em;
+    padding-bottom:0.25em;
+    @media #{$large-up} {
+        padding-bottom:0.5em;
+    }
 }
 .dialog__text {
     @extend %scena-text;
@@ -67,7 +82,7 @@
 .dialog__buttons {
     @extend %bottom-line;
     button {
-        font-size: 1.125rem;
+        font-size: 0.9rem;
         margin-right: 0.5rem;
     }
 }
@@ -83,7 +98,8 @@
 
     @media #{$medium-up} {
         @include grid-column(
-        $columns:6
+        $columns:6,
+        $center:true
         );
     }
 }
@@ -137,7 +153,7 @@
 }
 
 .player__img {
-    @media #{$small-up} {
+    @media #{$large-up} {
         padding:0 rem-calc(15) rem-calc(15);
     }
 }
@@ -145,7 +161,10 @@
 //Player metrics
 .player-metrics {
     @extend %vertical-rithm;
-    @extend .columns;
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+    );
     @extend .text-center;
     font-size:rem-calc(18);
 
@@ -178,6 +197,7 @@
      @media #{$large-up} {
         @extend %bottom-line;
         @extend %top-line;
+        padding-top:0;
         border-color:$grey;
         padding-bottom:0.5rem;
     }
@@ -186,6 +206,7 @@
 .player__icon {
     @media #{$large-up} {
         color:$red;
+        line-height: 1.6;
     }
 }
 
@@ -200,7 +221,7 @@
 
 //Helper buttons
 .helper-buttons {
-    @extend %vertical-rithm;
+    margin-top:1em;
     @include grid-column(
     $columns:12,
     $collapse:true
@@ -227,13 +248,14 @@
     @extend .hide-for-large-up;
 }
 .helper-buttons__text {
-    font-weight: 100;
+    font-weight: 300;
     @extend .hide-for-large-up;
 }
 .helper-buttons__button {
     width:100%;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
+    font-size:0.9em;
 }
 
 // UNAR
@@ -242,15 +264,11 @@
         $columns:12
     );
     margin:1em 0;
-
-    @media #{$large-up} {
-        margin:2em 0 1em;
-    }
 }
 .unar__img {
     background-color:$white;
     width:100%;
-    padding: 0.5em 0.5em 1em;
+    padding: 0.75em 3em 1em;
 }
 
 
@@ -270,6 +288,9 @@
 .scelta__buttons {
     margin-top:1em;
     @extend %bottom-line;
+    button {
+        font-size:0.9em;
+    }
 }
 
 
@@ -289,3 +310,71 @@
     }
 }
 
+// end game
+.page {
+    margin-top:1em;
+    max-width: 30rem;
+
+    @extend .text-center;
+    @extend %white;
+    @include grid-column(
+        $columns:12,
+        $center:true
+    );
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:6,
+            $center:true
+        );
+    }
+}
+
+.page__title {
+    @extend %white;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size:rem-calc(27);
+}
+
+.page__text {
+    //font-size:rem-calc(27);
+    font-size:rem-calc(18);
+    font-weight: 300;
+}
+
+.dialog--variazione-help {
+    z-index:1000;
+}
+
+.dialog--variazione-help__inner {
+    @include grid-column(
+        $columns:12
+    );
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:4
+        );
+    }
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px auto;
+  animation: rotateplane 2s infinite ease-in-out;
+  background-color: $alertRed; 
+}
+
+.figure {
+    @include position(absolute, bottom 0 right 0);
+    max-height:100%;
+    max-width:100%;
+    width:100%;
+    height:auto;
+
+    @media #{$landscape} {
+        width:auto;
+        height:100%;
+    }
+}

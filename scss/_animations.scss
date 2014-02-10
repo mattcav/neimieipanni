@@ -1,0 +1,25 @@
+// rotating panel
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        background-color: $alertRed; 
+     } 
+  49% {transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      background-color:$alertGreen;
+     } 
+  100% {transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            background-color: $alertRed;
+      }
+}      
+
+//fade in
+@keyframes fade-in {
+  from {opacity:0;}
+  to {opacity:1; animation-play-state:paused;}
+}
+
+//zoom-in
+@keyframes zoom-in {
+  from {transform:scale(1);}
+  to {transform:scale(1.2); animation-play-state:running;}
+}

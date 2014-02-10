@@ -2,8 +2,11 @@ html, body {
     height:100%;
 }
 
+body {
+    overflow: hidden;
+}
+
 p {
-    font-size:1.1em;
     line-height: 1.4;
 }
 
@@ -26,4 +29,8 @@ button, .button {
 
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
     background:#333 !important;
+}
+
+strong, b {
+    font-weight: 500;
 }

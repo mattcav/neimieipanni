@@ -21,11 +21,12 @@
 		{
 			"title": "Vai a casa",
 			"button": "Vai a casa",
-			"text": "Non è colpa tua se ti sei fatto male: pensi di avere almeno diritto a un giorno di riposo per guarire.",
+			"text": "Hai saltato un giorno di lavoro ma il dolore è passato. Ma quando torni, il capo manda a chiamare...",
 			"happiness": 10,
 			"money": 0,
 			"conseguence":{
 				"type": "random",
+
 				"cases": [
 					{
 						"probability": 50,

@@ -27,6 +27,8 @@
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
+				"waitingText": "La donna ti lancia uno sguardo preoccupato...",
+
 				"cases": [
 					{
 						"probability": 70,

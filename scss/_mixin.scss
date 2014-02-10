@@ -1,3 +1,4 @@
+// headings
 @mixin headings($from: 1, $to: 6){
     @for $i from $from through $to{
       h#{$i}{
@@ -5,3 +6,63 @@
       }
     }
 }
+// hide
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+// cleafix 
+%clearfix {
+  *zoom: 1;
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+// position
+@mixin position($position, $args) {
+    position: $position;
+    $offsets: top right bottom left;
+
+    @each $o in $offsets {
+        $i: index($args, $o);
+
+        @if $i 
+        and $i + 1 <= length($args) 
+        and type-of( nth($args, $i + 1) ) == number {
+            #{$o}: nth($args, $i + 1);
+        }
+    }
+}
+
+@mixin texture-red() {
+        background: $alertRed;
+        background:
+        linear-gradient(115deg, transparent 75%, rgba(204,51,0,1) 75%) 0 0,
+        linear-gradient(245deg, transparent 75%, rgba(204,51,0,1) 75%) 0 0,
+        linear-gradient(115deg, transparent 75%, rgba(204,51,0,1) 75%) 7px -15px,
+        linear-gradient(245deg, transparent 75%, rgba(204,51,0,1) 75%) 7px -15px,
+        $alertRed;
+        background-size: 15px 30px
+    }
+
+@mixin texture-green() {
+        background-color:$alertGreen;
+        background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.1) 99%),
+        radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.1) 99%);
+        background-size:20px 20px;
+        background-position:0 0, 10px 10px;
+    }

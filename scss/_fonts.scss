@@ -48,22 +48,134 @@
     font-weight:300;   
 }
 
+// fira 
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/eot/FiraSans-Light.eot');
+    src: local('Fira Sans Light'),
+         url('../fonts/fira/eot/FiraSans-Light.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraSans-Light.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/eot/FiraSans-LightItalic.eot');
+    src: local('Fira Sans Light Italic'),
+         url('../fonts/fira/eot/FiraSans-LightItalic.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraSans-LightItalic.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/eot/FiraSans-Regular.eot');
+    src: local('Fira Sans Regular'),
+         url('../fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/eot/FiraSans-RegularItalic.eot');
+    src: local('Fira Sans Regular Italic'),
+         url('../fonts/fira/eot/FiraSans-RegularItalic.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraSans-RegularItalic.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraSans-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/eot/FiraSans-Medium.eot');
+    src: local('Fira Sans Medium'),
+         url('../fonts/fira/eot/FiraSans-Medium.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraSans-Medium.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/eot/FiraSans-MediumItalic.eot');
+    src: local('Fira Sans Medium Italic'),
+         url('../fonts/fira/eot/FiraSans-MediumItalic.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraSans-MediumItalic.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/eot/FiraSans-Bold.eot');
+    src: local('Fira Sans Bold'),
+         url('../fonts/fira/eot/FiraSans-Bold.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraSans-Bold.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/eot/FiraSans-BoldItalic.eot');
+    src: local('Fira Sans Bold Italic'),
+         url('../fonts/fira/eot/FiraSans-BoldItalic.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraSans-BoldItalic.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraSans-BoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Mono';
+    src: url('../fonts/fira/eot/FiraMono-Regular.eot');
+    src: local('Fira Mono'),
+         url('../fonts/fira/eot/FiraMono-Regular.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraMono-Regular.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Mono';
+    src: url('../fonts/fira/eot/FiraMono-Bold.eot');
+    src: local('Fira Mono Bold'),
+         url('../fonts/fira/eot/FiraMono-Bold.eot') format('embedded-opentype'),
+         url('../fonts/fira/woff/FiraMono-Bold.woff') format('woff'),
+         url('../fonts/fira/ttf/FiraMono-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 
 // icons
 @font-face {
-    font-family: 'nmp';
-    src:url('../fonts/nmp.eot');
-    src:url('../fonts/nmp.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/nmp.woff') format('woff'),
-        url('../fonts/nmp.ttf') format('truetype'),
-        url('../fonts/nmp.svg#nmp') format('svg');
+    font-family: 'icomoon';
+    src:url('../fonts/icons/fonts/icomoon.eot');
+    src:url('../fonts/icons/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icons/fonts/icomoon.woff') format('woff'),
+        url('../fonts/icons/fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icons/fonts/icomoon.svg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
-    font-family: 'nmp';
+    font-family: 'icomoon';
     content: attr(data-icon);
     speak: none;
     font-weight: normal;
@@ -80,8 +192,8 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-soldi, .icon-clock, .icon-freccia, .icon-arrow-up, .icon-arrow-right, .icon-arrow-left, .icon-alert, .icon-bomb, .icon-bomb-2, .icon-euro, .icon-time, .icon-smile, .icon-frown, .icon-meh, .icon-arrow-right-2 {
-    font-family: 'nmp';
+.icon-skull, .icon-danger, .icon-bomb, .icon-thumb-down, .icon-thumb-up, .icon-money, .icon-sad, .icon-happy, .icon-time, .icon-arrow-rt, .icon-arrow-lt, .icon-arrow-left, .icon-arrow-right {
+    font-family: 'icomoon';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -90,49 +202,43 @@ you can use the generic selector below, but it's slower:
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
-.icon-soldi:before {
-    content: "\e005";
+.icon-skull:before {
+    content: "\271d";
 }
-.icon-clock:before {
-    content: "\e000";
-}
-.icon-freccia:before {
-    content: "\2192";
-}
-.icon-arrow-up:before {
-    content: "\e001";
-}
-.icon-arrow-right:before {
-    content: "\e002";
-}
-.icon-arrow-left:before {
-    content: "\3c";
-}
-.icon-alert:before {
-    content: "\21";
+.icon-danger:before {
+    content: "\2757";
 }
 .icon-bomb:before {
-    content: "\2739";
+    content: "\2b55";
 }
-.icon-bomb-2:before {
-    content: "\2738";
+.icon-thumb-down:before {
+    content: "\e003";
 }
-.icon-euro:before {
-    content: "\20ac";
+.icon-thumb-up:before {
+    content: "\e004";
 }
-.icon-time:before {
-    content: "\2609";
+.icon-money:before {
+    content: "\e000";
 }
-.icon-smile:before {
-    content: "\263a";
-}
-.icon-frown:before {
+.icon-sad:before {
     content: "\2639";
 }
-.icon-meh:before {
-    content: "\263b";
+.icon-happy:before {
+    content: "\263a";
 }
-.icon-arrow-right-2:before {
-    content: "\3e";
+.icon-time:before {
+    content: "\23f0";
+}
+.icon-arrow-rt:before {
+    content: "\2192";
+}
+.icon-arrow-lt:before {
+    content: "\2190";
+}
+.icon-arrow-left:before {
+    content: "\21e0";
+}
+.icon-arrow-right:before {
+    content: "\21e2";
 }
 
