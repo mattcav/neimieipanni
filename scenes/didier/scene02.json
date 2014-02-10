@@ -39,14 +39,14 @@
 			}
 		},
 		{
-			"title": "Dormitorio",
-			"button": "Dormitorio",
-			"text": "È degradante!",
+			"title": "Ospite da un amico",
+			"button": "Ospite da un amico",
+			"text": "Non paghi l’affitto, ma dipendi dalla generosità di un altro.",
 			"happiness": -150,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Ogni sera ti presenti dall'amico insieme a senza tetto e disperati: ti senti a disagio e non vedi l'ora di andartene."
+				"text": "Paghi solo le spese, ma ti senti comunque un peso."
 			}
 		}
 	]
