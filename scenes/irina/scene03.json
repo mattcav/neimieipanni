@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Chiedi l'aumento.",
-			"button": "Chiedi l'aumento.",
+			"title": "Chiedi l'aumento",
+			"button": "Chiedi l'aumento",
 			"text": "Sei un'infermiera diplomata, hai nozioni che possono essere utili. Dedici di farlo presente.",
 			"happiness": 20,
 			"money": 0,
@@ -37,8 +37,8 @@
 			}
 		},
 		{
-			"title": "Accetti senza discutere.",
-			"button": "Accetti senza discutere.",
+			"title": "Accetti senza discutere",
+			"button": "Accetti senza discutere",
 			"text": "Stai nascondendo la cosa di cui vai più fiera, ma preferisci non tirare troppo la corda.",
 			"happiness": -20,
 			"money": 0,
