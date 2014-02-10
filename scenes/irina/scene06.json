@@ -8,8 +8,8 @@
 		},
 		"choices": [
 			{
-				"title": "Compri una lavatrice.",
-				"button": "Compri una lavatrice.",
+				"title": "Compri una lavatrice",
+				"button": "Compri una lavatrice",
 				"text": "Trovi un'offerta con un finanziamento e una rata conveniente.",
 				"happiness": 100,
 				"money": -60,

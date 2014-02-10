@@ -113,8 +113,8 @@
 		},
 	"choices": [
 		{
-			"title": "Torni a casa.",
-			"button": "Torni a casa.",
+			"title": "Torni a casa",
+			"button": "Torni a casa",
 			"text": "Compri il biglietto del treno e parti. Sai che ai tuoi farà piacere.",
 			"happiness": 20,
 			"money": -80,
@@ -124,8 +124,8 @@
 			}
 		},
 		{
-			"title": "Rimani per la festa.",
-			"button": "Rimani per la festa.",
+			"title": "Rimani per la festa",
+			"button": "Rimani per la festa",
 			"text": "Decidi di restare, il capodanno cinese ti piace ma la festa è l’occasione per farsi  nuovi amici.",
 			"happiness": 40,
 			"money": 0,
@@ -213,8 +213,8 @@
 		},
 	"choices": [
 		{
-			"title": "Accetti.",
-			"button": "Accetti.",
+			"title": "Accetti",
+			"button": "Accetti",
 			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
 			"happiness": -100,
 			"money": 150,
@@ -224,8 +224,8 @@
 			}
 		},
 		{
-			"title": "Te ne vai.",
-			"button": "Te ne vai.",
+			"title": "Te ne vai",
+			"button": "Te ne vai",
 			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
 			"happiness": 30,
 			"money": 0,
@@ -295,8 +295,8 @@
 		},
 	"choices": [
 		{
-			"title": "Fai finta di niente.",
-			"button": "Fai finta di niente.",
+			"title": "Fai finta di niente",
+			"button": "Fai finta di niente",
 			"text": "Questa situazione ti infastidisce, ma è il tuo capo e non vuoi problemi.",
 			"happiness": -40,
 			"money": 0,
@@ -306,8 +306,8 @@
 			}
 		},
 		{
-			"title": "Ti impunti.",
-			"button": "Ti impunti.",
+			"title": "Ti impunti",
+			"button": "Ti impunti",
 			"text": "Al tuo nome ci tieni, questo scatto d’orgoglio ti fa stare meglio.",
 			"happiness": 20,
 			"money": 0,
@@ -337,7 +337,7 @@
 	]
 },{
 	"title": "Insulto a terzo",
-	"text": "Per mantenerti all'università hai trovato un lavoretto. Ma il capo trova il tuo nome troppo complicato e lo storpia sempre. Come reagisci?",
+	"text": "Stai camminando per strada quando senti un ragazzo che insulta una donna di colore, lei si gira a guardarti per cercare sostegno.",
 	"theme": "insulto",
 	"report": {
 			"text": "Il decreto legislativo 215/2003 definisce come molestie “quei comportamenti indesiderati, posti in essere per motivi di razza o di origine etnica, aventi lo scopo o l’effetto di violare da dignità di una persona e di creare un clima intimidatorio, ostile, degradante, umiliante od offensivo” (art.2 comma 3)",
@@ -345,8 +345,8 @@
 		},
 	"choices": [
 		{
-			"title": "Tiri dritto.",
-			"button": "Tiri dritto.",
+			"title": "Tiri dritto",
+			"button": "Tiri dritto",
 			"text": "Ignori un atto di razzismo e ti volti dall’altra parte per evitare problemi",
 			"happiness": -40,
 			"money": 0,
@@ -356,8 +356,8 @@
 			}
 		},
 		{
-			"title": "Intervieni.",
-			"button": "Intervieni.",
+			"title": "Intervieni",
+			"button": "Intervieni",
 			"text": "Ti senti parte in causa e ti fermi a difendere la donna.",
 			"happiness": 20,
 			"money": 0,
@@ -395,8 +395,8 @@
 		},
 	"choices": [
 		{
-			"title": "Ti mostri infastidito.",
-			"button": "Ti mostri infastidito..",
+			"title": "Ti mostri infastidito",
+			"button": "Ti mostri infastidito",
 			"text": "Fai notare all'uomo che anche con la pelle di un colore diverso si può essere italiani.",
 			"happiness": 20,
 			"money": 0,
@@ -424,8 +424,8 @@
 			}
 		},
 		{
-			"title": "Ti sposti.",
-			"button": "Ti sposti.",
+			"title": "Ti sposti",
+			"button": "Ti sposti",
 			"text": "Ti sposti per non affrontarlo, ma trovi spazio solo dove hai una visuale peggiore.",
 			"happiness": -40,
 			"money": 0,
@@ -445,8 +445,8 @@
 		},
 	"choices": [
 		{
-			"title": "Fingi di essere d'accordo.",
-			"button": "Fingi di essere d'accordo.",
+			"title": "Fingi di essere d'accordo",
+			"button": "Fingi di essere d'accordo",
 			"text": "Risparmi un po' di soldi ma rinunci a difendere il tuo paese.",
 			"happiness": -50,
 			"money": 0,
@@ -456,8 +456,8 @@
 			}
 		},
 		{
-			"title": "Smetti di andarci.",
-			"button": "Smetti di andarci.",
+			"title": "Smetti di andarci",
+			"button": "Smetti di andarci",
 			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
 			"happiness": 30,
 			"money": 0,

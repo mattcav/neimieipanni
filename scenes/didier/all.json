@@ -43,7 +43,7 @@
 	]
 },{
 	"title": "La scelta della casa",
-	"text": "Devi trovare un posto dove vivere nella nuova città . Che soluzione scegli?",
+	"text": "Devi trovare un posto dove vivere nella nuova città. Che soluzione scegli?",
 	"theme": "casa",
 	"report": {
 			"text": "il 39% degli intervistati convive con persone di nazionalità diversa e di questi solo il 5% sono africani.",
@@ -82,20 +82,24 @@
 			}
 		},
 		{
-			"title": "Dormitorio",
-			"button": "Dormitorio",
-			"text": "È degradante!",
+			"title": "Ospite da un amico",
+			"button": "Ospite da un amico",
+			"text": "Non paghi l’affitto, ma dipendi dalla generosità di un altro.",
 			"happiness": -150,
 			"money": 0,
 			"conseguence": {
-				"type": "normal",
-				"text": "Ogni sera ti presenti dall'amico insieme a senza tetto e disperati: ti senti a disagio e non vedi l'ora di andartene."
+				"text": "Paghi solo le spese, ma ti senti comunque un peso.",
+
+				"type": "trap",
+				"trapText": "Il tuo amico, che è italiano, ti ospiterebbe volentieri, ma il suo padrone di casa non vuole extracomunitari e lo costringe a mandarti via. Perdi 50 punti.",
+				"trapHappiness": -50,
+				"trapMoney": 0
 			}
 		}
 	]
 },{
 	"title": "La mazzetta",
-	"text": "Il tuo superiore ti chiede 50€ per metterti sotto la sua ala protettiva. Cosa fai?",
+	"text": "Il tuo superiore ti chiede 50€ per metterti sotto la sua protezione. Cosa fai?",
 	"theme": "mazzetta",
 	"report": {
 		"text": "Nel 2012 i lavoratori con cittadinanza extracomunitaria rappresentano il 7,9% del totale dei dipendenti (9,4% per i maschi; 5,9 per le femmine). I lavoratori dipendenti stagionali extracomunitari sono pari al 10.3% dei complessivi stagionali",
@@ -154,8 +158,8 @@
 	"choices":
 	[
 		{
-			"title": "Cellulare e SIM card.",
-			"button": "Cellulare e SIM card.",
+			"title": "Cellulare e SIM card",
+			"button": "Cellulare e SIM card",
 			"text": "È una spesa alta, ma puoi sentire i tuoi ogni volta che vuoi.",
 			"happiness": 200,
 			"money": -200,

@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Non dici nulla.",
-			"button": "Non dici nulla.",
+			"title": "Non dici nulla",
+			"button": "Non dici nulla",
 			"text": "Preferisci andare via ed evitare una polemica, anche se ti senti molto arrabbiata.",
 			"happiness": -50,
 			"money": 0,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Affronti la situazione.",
-			"button": "Affronti la situazione.",
+			"title": "Affronti la situazione",
+			"button": "Affronti la situazione",
 			"text": "Ti fermi per spiegare al bambino quanto è offensiva la sua battuta.",
 			"happiness": 20,
 			"money": 0,

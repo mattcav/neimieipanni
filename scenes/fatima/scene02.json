@@ -7,8 +7,8 @@
 		"source": "“stat2”"
 	},
 	"choices": [{
-		"title": "Protesti.",
-		"button": "Protesti.",
+		"title": "Protesti",
+		"button": "Protesti",
 		"text": "Dici al capo che con la sua richiesta sta offendendo te e la tua religione.",
 		"happiness": 20,
 		"money": 0,
@@ -32,8 +32,8 @@
 			}]
 		}
 	}, {
-		"title": "Te ne vai.",
-		"button": "Te ne vai.",
+		"title": "Te ne vai",
+		"button": "Te ne vai",
 		"text": "Rinunci al lavoro senza discutere per non creare problemi alla tua amica.",
 		"happiness": -50,
 		"money": 0,

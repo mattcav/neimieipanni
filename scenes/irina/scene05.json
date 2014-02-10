@@ -1,5 +1,5 @@
 {
-	"title": "L'infortuneo sul lavoro",
+	"title": "L'infortunio sul lavoro",
 	"text": "Mentre sei al lavoro, cadi e ti fai male ad una gamba. Cosa fai?",
 	"theme": "infortuneo",
 	"report": {
@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Continui a lavorare.",
-			"button": "Continui a lavorare.",
+			"title": "Continui a lavorare",
+			"button": "Continui a lavorar.",
 			"text": "Fai finta di niente per non sembrare una che crea problemi e sopporti il dolore.",
 			"happiness": -80,
 			"money": 0,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Vai a casa.",
-			"button": "Vai a casa.",
+			"title": "Vai a casa",
+			"button": "Vai a casa",
 			"text": "Il permesso per malattia è un tuo diritto e intendi esercitarlo.",
 			"happiness": -20,
 			"money": 0,
