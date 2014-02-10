@@ -17,7 +17,7 @@
 				"text": "Dovrai stare molto attento ai soldi, ma sei contentissimo di vivere da solo.",
 
 				"type": "trap",
-				"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. Gli spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}

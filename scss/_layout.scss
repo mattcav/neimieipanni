@@ -16,6 +16,10 @@
     @extend %h100;
 }
 
+.tab-bar {
+    z-index:999;
+}
+
 .sidebar-section {
     -webkit-overflow-scrolling: touch;
     left:0;

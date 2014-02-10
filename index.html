@@ -10,12 +10,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <script src="bower_components/modernizr/modernizr.js"></script>
+   
+</head>
+    
+<body class="step" data-ng-class="playerName.toLowerCase()">
+    
+    <img id="figure" class="figure" src="">
 
-    
-
-    
-<body onload="loaded()" class="step" data-ng-class="playerName.toLowerCase()">
-    
     <div class="off-canvas-wrap">
         <div class="inner-wrap">
             
@@ -24,7 +25,7 @@
 
                 <h1 class="player-title">{{ playerName }}</h1>    
                 
-                <img class="player__img" src="images/avatar/{{playerName.toLowerCase()}}.png" alt="{{ playerName }}">
+                <img class="player__img" data-ng-src="images/avatar/{{playerName.toLowerCase()}}.png" alt="{{ playerName }}">
                     
                 <section class="player-metrics">
                     <div class="player-metric player-metric--step">
@@ -72,45 +73,6 @@
                 <div class="md-overlay"></div>
             </aside>
 
-            <div data-helper>
-                <!-- helper modal choice -->
-                <div id="helper" class="scelta scelta--helper md-modal md-effect-8">
-                    <div class="scelta__inner md-content">
-                        <h2 class="scelta__title">{{ help.title }}</h2>
-                        <p class="scelta__text">{{ help.text }}</p>
-
-                        <section class="scelta__values">
-                            <span>
-                                <i class="icon-euro" aria-hidden="true"></i> {{ help.money }}€
-                            </span>
-                            <span>
-                                <i class="icon-smile" aria-hidden="true"></i> {{ help.happiness }}pt
-                            </span>
-                        </section>
-
-                        <section class="scelta__buttons">
-                            <button class="helper__go" id="go-thru-1" data-ng-click="useHelp()">OK</button>
-                            <button class="helper__back back-to-scena" data-ng-click="closeHelp()">Indietro</button>
-                        </section>
-                        
-                        <a class="md-close" data-ng-click="closeHelp()">&#215;</a>
-                    </div>
-                </div>
-
-                <!-- helper modal conseguence -->
-                <div id="helper-conseguence" class="scelta scelta--conseguence md-modal md-effect-8 text-center">
-                    <div class="scelta__inner md-content">
-                        <h2 class="scelta__title">{{ conseguence.title }}</h2>
-                        <p class="scelta__text">{{ conseguence.text }}</p>
-
-                        <section class="scelta__buttons">
-                        <button id="go-thru-1" data-ng-click="closeCons()">OK</button>
-                        </section>
-                        <a class="md-close" data-ng-click="closeCons()">&#215;</a>
-                    </div>
-                </div>
-            </div>
-
             <!-- main section-->
             <section id="main" role="main" class="main-section" data-ng-controller="game">
              
@@ -137,7 +99,7 @@
                 </article>
 
                 <!-- scelta modal -->
-                <div id="scelta" class="scelta md-modal md-effect-1" data-choice>
+                <div id="scelta" class="scelta md-modal md-effect-1" data-ng-class="{'alert-risk': choice.conseguence.type === 'random'}" data-choice>
                         <div class="scelta__inner md-content">
                             <h2 class="scelta__title">{{ choice.title }}</h2>
                             <p class="scelta__text">{{ choice.text }}</p>
@@ -152,8 +114,9 @@
                             </section>
 
                             <section id="scelta-buttons" class="scelta__buttons">
-                                <button id="go-thru-1" data-ng-click="getConseguence()">OK</button>
+
                                 <button class="back-to-scena" data-ng-click="ui.closeChoice()">Indietro</button>
+                                <button id="go-thru-1" data-ng-click="getConseguence()">OK</button>
                             </section>
 
                             <a class="md-close" data-ng-click="ui.closeChoice()">&#215;</a>
@@ -167,12 +130,12 @@
                         <p class="dialog__text">{{ conseguence.text }}</p>
 
                         <section class="dialog__buttons">
-                            <button data-ng-click="ui.showReport()">OK</button>
+                            <button data-ng-click="ui.showReport()"><i class="icon-arrow-rt" aria-hidden="true"></i></button>
                         </section>
                     </div>
                 </article>
 
-                <!-- VARIAZIONE block TO BE REDESIGNED -->
+                <!-- VARIAZIONE block -->
                 <article id="variazione" class="dialog dialog--variazione" data-variazione>
                     <div class="dialog__inner dialog--variazione__inner">
                         <h2 class="dialog__title">...e ora?</h2>
@@ -197,12 +160,12 @@
                 <article id="stats" class="dialog dialog--stats" data-report>
                     <div class="dialog__inner">
                         
-                        <h5 class="dialog__title dialog--stats__title">{{ scene.report.text }}</h5>
+                        <p class="dialog__title dialog--stats__title">{{ scene.report.text }}</p>
 
-                        <h6 class="dialog--stats__src">{{ scene.report.source }}</h6>
+                        <p class="dialog--stats__src">{{ scene.report.source }}</p>
 
                         <section class="dialog__buttons">
-                            <button data-ng-click="ui.next()">OK</button>
+                            <button data-ng-click="ui.next()"><i class="icon-arrow-rt" aria-hidden="true"></i></button>
                         </section>
                     </div>
                 </article>   
@@ -214,8 +177,7 @@
 
                         <p class="dialog__text">Non sai se la tua azione porterà delle conseguenze...</p>
 
-                        <div class="spinner" data-ng-class="conseguence.class">
-                        </div>
+                        <div class="spinner" data-ng-class="conseguence.class"></div>
                     </div>
                 </article>  
               
@@ -228,18 +190,62 @@
 
         </div>
     </div>
+
+
+    <div data-helper>
+        <!-- helper modal choice -->
+        <div id="helper" class="scelta scelta--helper md-modal md-effect-8">
+            <div class="scelta__inner md-content">
+                <h2 class="scelta__title">{{ help.title }}</h2>
+                <p class="scelta__text">{{ help.text }}</p>
+
+                <section class="scelta__values">
+                    <span>
+                        <i class="icon-euro" aria-hidden="true"></i> {{ help.money }}€
+                    </span>
+                    <span>
+                        <i class="icon-smile" aria-hidden="true"></i> {{ help.happiness }}pt
+                    </span>
+                </section>
+
+                <section class="scelta__buttons">
+                    
+                    <button class="helper__back back-to-scena" data-ng-click="closeHelp()"> indietro</button>
+                    <button class="helper__go" id="go-thru-1" data-ng-click="useHelp()">ok</button>
+                </section>
+                
+                <a class="md-close" data-ng-click="closeHelp()">&#215;</a>
+            </div>
+        </div>
+
+        <!-- helper modal variation -->
+        <article id="h-variazione" class="dialog dialog--variazione dialog--variazione-help">
+            <div class="dialog__inner dialog--variazione__inner dialog--variazione-help__inner">
+                <h2 class="dialog__title">...e ora?</h2>
+                <div class="variazione__block">
+                    <section id="h-e-variazione" class="variazione__cube">
+                        <span id="h-e-fattore" class="variazione__item fattore">{{ variazione.money.delta }}</span>
+                        <span id="h-e-before" class="variazione__item before">€ {{ variazione.money.prima }}</span> 
+                        <span id="h-e-after" class="variazione__item after">€ {{ variazione.money.attuale }}</span> 
+                    </section>
+                </div>
+                <div class="variazione__block">
+                    <section id="h-pt-variazione" class="variazione__cube variazione__cube--pt">
+                        <span id="h-pt-fattore" class="variazione__item variation-pt fattore">{{ variazione.happiness.delta }}</span>
+                        <span id="h-pt-before" class="variazione__item variation-pt before">pt {{ variazione.happiness.prima }}</span> 
+                        <span id="h-pt-after" class="variazione__item variation-pt after">pt {{ variazione.happiness.attuale }}</span> 
+                    </section>
+                </div>
+            </div>
+        </article> 
+    </div>
     
 
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="bower_components/scrollfix/scrollfix.js"></script>
     <script src="js/app.js"></script>
 
-    <script>
-    var scrollable = document.getElementById("wrapper");
-    new ScrollFix(scrollable);
-    </script>
 
     
 

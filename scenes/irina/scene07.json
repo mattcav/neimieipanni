@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Lo prendi.",
-			"button": "Lo prendi.",
+			"title": "Lo prendi",
+			"button": "Lo prendi",
 			"text": "Hai paura di quei ragazzi, per evitare problemi lo prendi e te ne vai senza dire una parola.",
 			"happiness": -70,
 			"money": 0,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Lo rifiuti.",
-			"button": "Lo rifiuti.",
+			"title": "Lo rifiuti",
+			"button": "Lo rifiuti",
 			"text": "Hai uno scatto di orgoglio e rispondi, con il tuo accento straniero, che sei un'immigrata anche tu.",
 			"happiness": 20,
 			"money": 0,

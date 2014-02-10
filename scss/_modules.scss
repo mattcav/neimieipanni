@@ -54,12 +54,15 @@
     //large-7
     @include grid-column(
     $columns:12,
-    $center:true
+    $center:true,
+    $float:none
     );
 
     @media #{$medium-up} {
         @include grid-column(
-        $columns:7
+        $columns:7,
+        $center:true,
+        $float:none
         );
     }
 }
@@ -95,7 +98,8 @@
 
     @media #{$medium-up} {
         @include grid-column(
-        $columns:6
+        $columns:6,
+        $center:true
         );
     }
 }
@@ -157,7 +161,10 @@
 //Player metrics
 .player-metrics {
     @extend %vertical-rithm;
-    @extend .columns;
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+    );
     @extend .text-center;
     font-size:rem-calc(18);
 
@@ -334,4 +341,40 @@
     //font-size:rem-calc(27);
     font-size:rem-calc(18);
     font-weight: 300;
+}
+
+.dialog--variazione-help {
+    z-index:1000;
+}
+
+.dialog--variazione-help__inner {
+    @include grid-column(
+        $columns:12
+    );
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:4
+        );
+    }
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px auto;
+  animation: rotateplane 2s infinite ease-in-out;
+  background-color: $alertRed; 
+}
+
+.figure {
+    @include position(absolute, bottom 0 right 0);
+    max-height:100%;
+    max-width:100%;
+    width:100%;
+    height:auto;
+
+    @media #{$landscape} {
+        width:auto;
+        height:100%;
+    }
 }

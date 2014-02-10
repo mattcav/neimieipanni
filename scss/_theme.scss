@@ -8,6 +8,36 @@
     color:$black;
 }
 
+.alert-risk {
+    .scelta__title:before {
+        content: "\2b55";
+        font-family: icomoon;
+        margin-right: 15px;
+        position: relative;
+        top: -7px;
+        //color:$alertRed;
+    }
+}
+.bad {
+    .dialog__title:after {
+        content:"\e003";
+        font-family: "icomoon";
+        color:$alertRed;
+        margin-left: 10px;
+        position:relative;
+        top:-4px;
+    }
+}
+.good {
+    .dialog__title:after {
+        content:"\e004";
+        font-family: "icomoon";
+        color:$alertGreen;
+        margin-left: 10px;
+        position:relative;
+        top:4px;
+    }
+}
 
 .irina {
     background:$irina;

@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Fingi di essere d'accordo.",
-			"button": "Fingi di essere d'accordo.",
+			"title": "Fingi di essere d'accordo",
+			"button": "Fingi di essere d'accordo",
 			"text": "Risparmi un po' di soldi ma rinunci a difendere il tuo paese.",
 			"happiness": -50,
 			"money": 0,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Smetti di andarci.",
-			"button": "Smetti di andarci.",
+			"title": "Smetti di andarci",
+			"button": "Smetti di andarci",
 			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
 			"happiness": 30,
 			"money": 0,

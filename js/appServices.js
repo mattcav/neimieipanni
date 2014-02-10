@@ -91,18 +91,20 @@ nmpApp.service('scenes', ['$http', '$rootScope', 'player', 'sceneFactory', funct
 				throw "Error";
 
 			if(index === service.scenes.length) {
-				window.location.href = 'win.html';
+				window.location.href = player.getPlayer().name + '/win.html';
 				return;
 			}
 
 			if(player.getPlayer().isLoser()) {
-				window.location.href = 'lose.html';
+				window.location.href = player.getPlayer().name + '/lose.html';
 				return;
 			}
 
 			service.currentIndex = index;
 			$rootScope.$broadcast('sceneUpdated');
 			$body.attr('data-theme', service.getCurrentScene().theme);
+			$('.figure').remove();
+			$body.prepend('<img class="figure" src="../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png">')
 		},
 
 		nextScene: function () {
@@ -143,7 +145,7 @@ nmpApp.service('sceneFactory', ['$rootScope', 'choiceFactory', function ($rootSc
 	}
 }]);
 
-nmpApp.service('choiceFactory', ['$rootScope', 'player', function ($rootScope, player) {
+nmpApp.service('choiceFactory', function ($rootScope, $timeout, TIMERS, player) {
 	function Choice (jO, parentScene) {
 		angular.extend(this, jO);
 
@@ -168,7 +170,10 @@ nmpApp.service('choiceFactory', ['$rootScope', 'player', function ($rootScope, p
 
 		var eventData = this[typeFunction]();
 
-		this.applyChoice(eventData);
+
+		// Non applico subito la variazione, ma intanto decido la conseguenza scelta
+		eventData.applicaVariazione = this.applyChoice.bind(this, eventData);
+		// this.applyChoice(eventData);
 		return eventData;
 	}
 
@@ -201,6 +206,28 @@ nmpApp.service('choiceFactory', ['$rootScope', 'player', function ($rootScope, p
 		}
 	}
 
+	Choice.prototype.buildConseguenceVtrap = function () {
+		if(this.parentScene.trapable === false)
+			return this.buildConseguenceNormal();
+
+		this.parentScene.fallInTrap();
+
+		var _self = this;
+		$timeout(function () {
+			_self.happiness += _self.conseguence.deltaHappiness;
+			_self.money += _self.conseguence.deltaMoney;
+		}, 500);
+
+		return {
+			title: this.title,
+			text: this.conseguence.trapText,
+			happiness: 0,
+			money: 0,
+			stop: true,
+			risk: false
+		}
+	}
+
 	Choice.prototype.buildConseguenceRandom = function () {
 		function getRandomConseguence (cases) {
 			var r = Math.floor(Math.random()*100);
@@ -218,17 +245,6 @@ nmpApp.service('choiceFactory', ['$rootScope', 'player', function ($rootScope, p
 		var cons = this.conseguence.cases[index];
 
 		this.enabled = !cons.stop;
-
-		// this.applyRandom = function () {
-		// 	player.getPlayer().addHappiness(cons.happiness);
-		// 	player.getPlayer().addMoney(cons.money);
-			
-		// 	return {
-		// 		title: this.title,
-		// 		text: cons.text,
-		// 		stop: cons.stop
-		// 	}
-		// }
 
 		return {
 			title: this.title,
@@ -251,7 +267,7 @@ nmpApp.service('choiceFactory', ['$rootScope', 'player', function ($rootScope, p
 			return new Choice(jsonObject, parent);
 		}
 	}
-}]);
+});
 
 
 nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, scenes) {
@@ -273,7 +289,12 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 		$gameScope.$broadcast('choice:close');
 		$gameScope.$broadcast('scene:close');
 		
-		if(dH == 0 && dM == 0 && $gameScope.conseguence.happiness == 0 && $gameScope.conseguence.money == 0)
+		var variazioneEsplicita = !(dH === undefined && dM === undefined),
+			variazioneImplicita = $gameScope.conseguence !== null &&
+								  ($gameScope.conseguence.happiness !== 0 ||
+								  $gameScope.conseguence.money !== 0);
+
+		if(variazioneEsplicita === false && variazioneImplicita === false)
 			return false;
 
 		var d = $q.defer();
@@ -372,6 +393,9 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 		getQueue()
 			.then(showConseguence)
 			.then(hideConseguence)
+			.then(function () {
+				$gameScope.conseguence.applicaVariazione();
+			})
 			.then(showVariation)
 			.then(hideVariation)
 			.then(checkStop)
@@ -394,6 +418,9 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 			.then(hideRisk)
 			.then(showConseguence)
 			.then(hideConseguence)
+			.then(function () {
+				$gameScope.conseguence.applicaVariazione();
+			})
 			.then(showVariation)
 			.then(hideVariation)
 			.then(checkStop)
@@ -410,6 +437,8 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 		if(type === 'normal')
 			normalChoice();
 		else if(type === 'trap')
+			normalChoice();
+		else if(type === 'vtrap')
 			normalChoice();
 		else if(type === 'random')
 			randomChoice();

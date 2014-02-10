@@ -3,49 +3,43 @@
 	"text": "Ti hanno detto che hai i requisiti per richiedere una casa popolare. Ti presenti in Comune, ma lì davanti noti un presidio di manifestanti con cartelli come “Basta extracomunitari” e “Le case agli italiani”.",
 	"theme": "palloncino",
 	"report": {
-			"text": "stat10",
-			"source": "“stat10”"
-		},
-	"choices": [
-		{
-			"title": "Entri con decisione.",
-			"button": "Entri con decisione.",
-			"text": "Anche se con te c'è il tuo bambino pensi che quello sia un tuo diritto e intendi esercitarlo.",
-			"happiness": 50,
-			"money": 0,
-			"conseguence": {
-				"type": "random",
-				"waitingText": "Sei dentro, che succederà?",
-				"cases": [
-					{
-						"probability": 50,
-						"happiness": -50,
-						"money": 0,
-						"stop": false,
-						"class":"bad",
-						"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 100 punti."
-					},
-					{
-						"probability": 50,
-						"happiness": 50,
-						"money": 0,
-						"stop": false,
-						"class":"good",
-						"text": "I manifestanti ti guardano con aria di sfida, ma nessuno ti dice nulla. Presenti la domanda e torni a casa con la speranza di ottenere una casa migliore per la tua famiglia."
-					}
-				]
-			}
-		}	
-		{
-			"title": "Tornerai un altro giorno.",
-			"button": "Tornerai un altro giorno.",
-			"text": "Con te c'è uno dei tuoi bambini, meglio evitare problemi.",
-			"happiness": -30,
-			"money": 0,
-			"conseguence": {
-				"type": "normal",
-				"text": "La festa è andata bene, ma non saprai mai cosa sarebbe successo se l'avessi organizzata a casa tua."
-			}
-		},
-	]
+		"text": "stat10",
+		"source": "“stat10”"
+	},
+	"choices": [{
+		"title": "Entri con decisione",
+		"button": "Entri con decisione",
+		"text": "Anche se con te c'è il tuo bambino pensi che quello sia un tuo diritto e intendi esercitarlo.",
+		"happiness": 50,
+		"money": 0,
+		"conseguence": {
+			"type": "random",
+			"waitingText": "Sei dentro, che succederà?",
+			"cases": [{
+				"probability": 50,
+				"happiness": -50,
+				"money": 0,
+				"stop": false,
+				"class": "bad",
+				"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 100 punti."
+			}, {
+				"probability": 50,
+				"happiness": 50,
+				"money": 0,
+				"stop": false,
+				"class": "good",
+				"text": "I manifestanti ti guardano con aria di sfida, ma nessuno ti dice nulla. Presenti la domanda e torni a casa con la speranza di ottenere una casa migliore per la tua famiglia."
+			}]
+		}
+	}, {
+		"title": "Tornerai un altro giorno",
+		"button": "Tornerai un altro giorno",
+		"text": "Con te c'è uno dei tuoi bambini, meglio evitare problemi.",
+		"happiness": -30,
+		"money": 0,
+		"conseguence": {
+			"type": "normal",
+			"text": "La festa è andata bene, ma non saprai mai cosa sarebbe successo se l'avessi organizzata a casa tua."
+		}
+	}]
 }

@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Fai finta di niente.",
-			"button": "Fai finta di niente.",
+			"title": "Fai finta di niente",
+			"button": "Fai finta di niente",
 			"text": "Questa situazione ti infastidisce, ma è il tuo capo e non vuoi problemi.",
 			"happiness": -40,
 			"money": 0,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Ti impunti.",
-			"button": "Ti impunti.",
+			"title": "Ti impunti",
+			"button": "Ti impunti",
 			"text": "Al tuo nome ci tieni, questo scatto d’orgoglio ti fa stare meglio.",
 			"happiness": 20,
 			"money": 0,

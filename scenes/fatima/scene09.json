@@ -3,49 +3,43 @@
 	"text": "Vuoi organizzare una festa per il compleanno di uno dei tuoi figli, ma un'amica ti fa notare che alcune mamme potrebbero non mandare i loro bambini in una casa di immigrati. Dove organizzi la festa?",
 	"theme": "palloncino",
 	"report": {
-			"text": "stat9",
-			"source": "“stat9”"
-		},
-	"choices": [
-		{
-			"title": "A casa tua.",
-			"button": "A casa tua.",
-			"text": "Fai la scelta più semplice e conveniente e speri che vengano tutti i suoi compagni di scuola.",
-			"happiness": 0,
-			"money": -50,
-			"conseguence": {
-				"type": "random",
-				"waitingText": "È il giorno della festa...",
-				"cases": [
-					{
-						"probability": 50,
-						"happiness": -50,
-						"money": 0,
-						"stop": false,
-						"class":"bad",
-						"text": "Aveva ragione la tua amica, molti genitori non hanno mandato i loro figli. Il tuo bambino è triste e ti incolpa di non aver organizzato la festa al fast food. Perdi 50 punti."
-					},
-					{
-						"probability": 50,
-						"happiness": 50,
-						"money": 0,
-						"stop": false,
-						"class":"good",
-						"text": "Tutti i bambini invitati sono venuti, la festa è stata un successo. La felicità di tuo figlio ti fa guadagnare 50 punti."
-					}
-				]
-			}
-		}	
-		{
-			"title": "In un fast food.",
-			"button": "In un fast food.",
-			"text": "Spendi di più ma sei sicura che verranno tutti.",
-			"happiness": 0,
-			"money": -100,
-			"conseguence": {
-				"type": "normal",
-				"text": "La festa è andata bene, ma non saprai mai cosa sarebbe successo se l'avessi organizzata a casa tua."
-			}
-		},
-	]
+		"text": "stat9",
+		"source": "“stat9”"
+	},
+	"choices": [{
+		"title": "A casa tua",
+		"button": "A casa tua",
+		"text": "Fai la scelta più semplice e conveniente e speri che vengano tutti i suoi compagni di scuola.",
+		"happiness": 0,
+		"money": -50,
+		"conseguence": {
+			"type": "random",
+			"waitingText": "È il giorno della festa...",
+			"cases": [{
+				"probability": 50,
+				"happiness": -50,
+				"money": 0,
+				"stop": false,
+				"class": "bad",
+				"text": "Aveva ragione la tua amica, molti genitori non hanno mandato i loro figli. Il tuo bambino è triste e ti incolpa di non aver organizzato la festa al fast food. Perdi 50 punti."
+			}, {
+				"probability": 50,
+				"happiness": 50,
+				"money": 0,
+				"stop": false,
+				"class": "good",
+				"text": "Tutti i bambini invitati sono venuti, la festa è stata un successo. La felicità di tuo figlio ti fa guadagnare 50 punti."
+			}]
+		}
+	}, {
+		"title": "In un fast food",
+		"button": "In un fast food",
+		"text": "Spendi di più ma sei sicura che verranno tutti.",
+		"happiness": 0,
+		"money": -100,
+		"conseguence": {
+			"type": "normal",
+			"text": "La festa è andata bene, ma non saprai mai cosa sarebbe successo se l'avessi organizzata a casa tua."
+		}
+	}]
 }

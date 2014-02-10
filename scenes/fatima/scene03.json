@@ -3,35 +3,32 @@
 	"text": "Un amico ti vorrebbe regalare l'auto che non usa più.Ti basterà trasferire l'assicurazione a tuo nome. Cosa fai?",
 	"theme": "automobile",
 	"report": {
-			"text": "stat3",
-			"source": "“stat3”"	
+		"text": "stat3",
+		"source": "“stat3”"
 	},
-	"choices": [
-		{
-			"title": "Accetti.",
-			"button": "Accetti.",
-			"text": "Fra assicurazione e benzina, l'auto ti costa di più, ma rende i tuoi spostamenti molto più veloci e senza vincoli di orario.",
-			"happiness": 500,
-			"money": -250,
-			"conseguence": {
-				"text": "La nuova casa ti piace molto e i bambini sono contenti. Ti senti soddisfatta anche se la spesa si fa sentire.",
+	"choices": [{
+		"title": "Accetti",
+		"button": "Accetti",
+		"text": "Fra assicurazione e benzina, l'auto ti costa di più, ma rende i tuoi spostamenti molto più veloci e senza vincoli di orario.",
+		"happiness": 500,
+		"money": -250,
+		"conseguence": {
+			"text": "Hai preso la macchina, ma hai dovuto pagare l'assicurazione più degli altri. Non ti sembra certo un fatto giusto.",
 
-				"type": "trap",
-				"trapText": "Scopri che. in quanto immigrata, paghi più di assicurazione rispetto al tuo amico italiano: il costo è di 300€",
-				"trapHappiness": 0,
-				"trapMoney": 0
-			}
-		},
-		{
-			"title": "Continui con l'autobus.",
-			"button": "Continui con l'autobus.",
-			"text": "L'abbonamento ai mezzi pubblici per te e i tuoi figli costa meno, ma gli spostamenti continueranno ad essere lenti e faticosi.",
-			"happiness": 280,
-			"money": -100,
-			"conseguence": {
-				"type": "normal",
-				"text": "Hai risparmiato un po', anche se hai rinunciato a tutte le comodità dell'auto.",
-			}
+			"type": "vtrap",
+			"trapText": "Scopri che. in quanto immigrata, paghi più di assicurazione rispetto al tuo amico italiano: il costo è di 300€",
+			"deltaHappiness": -50,
+			"deltaMoney": -50
 		}
-	]
+	}, {
+		"title": "Continui con l'autobus",
+		"button": "Continui con l'autobus",
+		"text": "L'abbonamento ai mezzi pubblici per te e i tuoi figli costa meno, ma gli spostamenti continueranno ad essere lenti e faticosi.",
+		"happiness": 280,
+		"money": -100,
+		"conseguence": {
+			"type": "normal",
+			"text": "Hai risparmiato un po', anche se hai rinunciato a tutte le comodità dell'auto."
+		}
+	}]
 }
