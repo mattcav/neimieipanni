@@ -48,62 +48,24 @@
 }
 
 
-
-// .message__title {
-//     background: none repeat scroll 0 0 $white;
-//     position: absolute;
-//     text-align: center;
-//     width: 100%;
-//     // &:nth-child(1) {
-//     //     z-index:100
-//     // }
-//     // &:nth-child(2) {
-//     //     z-index:90;
-//     // }
-//     // &:nth-child(3) {
-//     //     z-index:80;
-//     // }
-//     // &:nth-child(4) {
-//     //     z-index:70;
-//     // }
-//     // &:nth-child(5) {
-//     //     z-index:60;
-//     // }
-//     // &:nth-child(6) {
-//     //     z-index:50;
-//     // }
-// }
-
-
 // shame
 .square {
     cursor: pointer;
     filter: none;
-    height: 80px;
+    height: 30px;
     opacity: 1;
     position: absolute;
-    transition: opacity 1s ease 0s, background 1.2s ease 0s;
-    width: 80px;
+    transition: opacity 1s ease 500ms;
+    width: 30px;
     background:$didier;
+    opacity:0;
+
+    @media #{$medium-up} {
+        width:80px;
+        height:80px;
+    }
 }
 
-.square1 {
-    cursor: pointer;
-    filter: none;
-    height: 80px;
-    opacity: 1;
-    position: absolute;
-    transition: opacity 1s ease 0s, background 1.2s ease 0s;
-    width: 80px;
-    background:$fatima;
-}
 
-.square2 {
-    @extend .square;
-    background:$zhang;
-}
 
-.square3 {
-    @extend .square;
-    background:$irina;
-}
+

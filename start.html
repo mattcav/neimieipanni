@@ -17,14 +17,27 @@
 <body class="full">
 
     <div id="start" class="start">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>    
+    <div class="square"></div>
+
         <div class="message">
             <header class="message__header">
                 <h2 class="message__title">Sono <div class="word__container">
-                        <span class="word">nero.</span>
+                        <span class="word">straniero.</span>
                         <span class="word">musulmana.</span>
+                        <span class="word">nero.</span>
                         <span class="word">extracomunitaria.</span>
                         <span class="word">figlio di cinesi.</span>
                         <span class="word">didier.</span>
+                        <span class="word">fatima.</span>
+                        <span class="word">irina.</span>
+                        <span class="word">zhang.</span>
                     </div>
                 </h2>
             </header>
@@ -135,22 +148,82 @@
     $(document).ready(function() {
         $('body').addClass('ready');
     });
+
     // Tweens
     var cover = $("#start"),
-        words = $('.word'),
+        square = $(".square"),
         btn = $("#go-to-select");
 
-//var tl = new TimelineMax({ repeat:-1, delay:0, repeatDelay:0 });
-   // tl.staggerTo(words, 2, {opacity:"0"}, 1); 
+    //animate squares
 
+
+    function setSquares() {
+        for (i = 0; i < square.length; i++) {
+            var newq = makeNewPosition();
+                el = $(square[i]);
+                el.css('top', newq[0]);
+                el.css('left', newq[1]);
+                transform = 'rotateX('+newq[4] +'deg) rotateY('+newq[3]+') scale('+newq[2]+')';
+               // el.css('transform', transform);
+        } 
+    }
+
+    setSquares();
+    animateDiv();    
+
+
+    function animateDiv() {
+        for (i = 0; i < square.length; i++) {
+            elem = $(square[i]);
+            tween(elem);
+        }
+    };
+
+
+     function tween($el) {
+        var newq = makeNewPosition();
+
+        TweenMax.to($el, newq[5], {top:newq[0], 
+                            left:newq[1],  
+                            rotationY:newq[4],
+                            rotationX:newq[3],
+                            scale:newq[2],
+                            onComplete:animateDiv,
+                            ease: Ease.easeInQuad
+                        }); 
+    };
+
+
+   function makeNewPosition(){
+        
+        // Get viewport dimensions (remove the dimension of the div)
+        var h = $(window).height() - 30;
+        var w = $(window).width() - 30;
+        var min = -360;
+        var max = 360;
+        var smax = 20;
+        var smin = 2;
+
+        // and the formula is:
+        var nrx = Math.floor(Math.random() * (max - min + 1)) + min;
+        var nry = Math.floor(Math.random() * (max - min + 1)) + min;
+        
+        var nh = Math.floor(Math.random() * h);
+        var nw = Math.floor(Math.random() * w);
+        var ns = Math.random();
+        var nsp = Math.floor(Math.random() * (smax - smin + 1)) + smin;
+        return [nh,nw,ns,nrx,nry,nsp];            
+    };
+
+  
+
+
+
+   // animate words
    $(function(){
             
             var $words = $(".word");
-            //var $holder = $("#holder");
-            
-            //set via JS so they're visible if JS disabled
-            //$slogans.parent().css({position : "absolute", top:"0px", left:"0px"});
-            
+
             //settings
             var transitionTime = 0.4;
             var wordsDelayTime = 1.5;
@@ -178,12 +251,11 @@
                 TweenLite.fromTo($words.eq(currentWord), transitionTime, {top:20, alpha:0, rotationX: -90 }, {top:0, alpha:1, rotationX:0});
                 
                 TweenLite.delayedCall(wordsDelayTime, switchWords);
-            }
-            
-        });
+            }       
+    });
 
 
-    // start with people
+    // go to select
     btn.on("click", function(){
         TweenLite.to(cover, 1, {top:"-100%", ease:Back.easeInOut});
         $('html').addClass('show-select');

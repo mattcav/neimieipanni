@@ -241,3 +241,19 @@
 }
 
 
+// ready
+
+.ready {
+    .square {
+        opacity:1;
+          animation-name:change-colors;
+          animation-duration:10s;
+          animation-timing-function:ease-in-out;
+          animation-delay:0s;
+          animation-iteration-count:infinite;
+          animation-direction:normal;
+          animation-play-state:running;
+          animation-fill-mode:forwards;
+    }
+}
+
