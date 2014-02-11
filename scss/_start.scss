@@ -2,6 +2,11 @@
     display:flex;
     justify-content: center;
     flex-direction: column;
+    height:100%;
+
+    @include position(absolute, top -1% left 0 right 0 bottom 0);
+    background-color: $white;
+    z-index:100;
 }
 
 .message {
@@ -15,4 +20,35 @@
             $center:true
         );
     } 
+}
+.square {
+    cursor: pointer;
+    filter: none;
+    height: 80px;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 1s ease 0s, background 1.2s ease 0s;
+    width: 80px;
+    background:$didier;
+}
+
+.square1 {
+    cursor: pointer;
+    filter: none;
+    height: 80px;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 1s ease 0s, background 1.2s ease 0s;
+    width: 80px;
+    background:$fatima;
+}
+
+.square2 {
+    @extend .square;
+    background:$zhang;
+}
+
+.square3 {
+    @extend .square;
+    background:$irina;
 }
