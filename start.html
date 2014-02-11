@@ -1,7 +1,6 @@
-<html class="full">
 
 <!--[if IE 8]><html class="no-js lt-ie9" lang="it" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="it" > <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js full" lang="it" > <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -19,7 +18,16 @@
 
     <div id="start" class="start">
         <div class="message">
-            <h1 class="message__title">Sono un nero</h1>
+            <header class="message__header">
+                <h2 class="message__title">Sono <div class="word__container">
+                        <span class="word">nero.</span>
+                        <span class="word">musulmana.</span>
+                        <span class="word">extracomunitaria.</span>
+                        <span class="word">figlio di cinesi.</span>
+                        <span class="word">didier.</span>
+                    </div>
+                </h2>
+            </header>
             <button id="go-to-select" class="message__button">gioca nei miei panni</button>
         </div>
     </div>    
@@ -129,8 +137,53 @@
     });
     // Tweens
     var cover = $("#start"),
+        words = $('.word'),
         btn = $("#go-to-select");
 
+//var tl = new TimelineMax({ repeat:-1, delay:0, repeatDelay:0 });
+   // tl.staggerTo(words, 2, {opacity:"0"}, 1); 
+
+   $(function(){
+            
+            var $words = $(".word");
+            //var $holder = $("#holder");
+            
+            //set via JS so they're visible if JS disabled
+            //$slogans.parent().css({position : "absolute", top:"0px", left:"0px"});
+            
+            //settings
+            var transitionTime = 0.4;
+            var wordsDelayTime = 1.5;
+            
+            //internal
+            var totalWords = $words.length;
+            
+            var oldWord = 0;
+            var currentWord = -1;
+            
+            //initialize    
+            switchWords();
+            
+            function switchWords(){
+                
+                oldWord = currentWord;
+                
+                if(currentWord < totalWords-1){
+                    currentWord ++
+                } else {
+                    currentWord = 0;
+                }
+                
+                TweenLite.to($words.eq(oldWord), transitionTime, {top:-20, alpha:0, rotationX: 90});
+                TweenLite.fromTo($words.eq(currentWord), transitionTime, {top:20, alpha:0, rotationX: -90 }, {top:0, alpha:1, rotationX:0});
+                
+                TweenLite.delayedCall(wordsDelayTime, switchWords);
+            }
+            
+        });
+
+
+    // start with people
     btn.on("click", function(){
         TweenLite.to(cover, 1, {top:"-100%", ease:Back.easeInOut});
         $('html').addClass('show-select');
