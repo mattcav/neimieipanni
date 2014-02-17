@@ -21,6 +21,7 @@
 }
 
 .sidebar-section {
+    min-width:rem-calc(270);
     -webkit-overflow-scrolling: touch;
     left:0;
     @media #{$large-up} {

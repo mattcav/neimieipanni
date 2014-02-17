@@ -1,16 +1,29 @@
 // rotating panel
 @keyframes rotateplane {
   0% {
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(1200px) rotateX(0deg) rotateY(0deg);
         background-color: $alertRed; 
      } 
-  49% {transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  49% {transform: perspective(1200px) rotateX(-180.1deg) rotateY(0deg);
       background-color:$alertGreen;
      } 
-  100% {transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  100% {transform: perspective(1200px) rotateX(-180deg) rotateY(-179.9deg);
             background-color: $alertRed;
       }
-}      
+}   
+
+@keyframes rotateplane--good {
+  0% {
+    transform: perspective(1200px) rotateX(0deg) rotateY(0deg);
+        background-color: $alertGreen; 
+     } 
+  49% {transform: perspective(1200px) rotateX(-180.1deg) rotateY(0deg);
+      background-color:$alertRed;
+     } 
+  100% {transform: perspective(1200px) rotateX(-180deg) rotateY(-179.9deg);
+            background-color: $alertGreen;
+      }
+}     
 
 //fade in
 @keyframes fade-in {

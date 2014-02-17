@@ -97,7 +97,7 @@
 }
 
 //variazione rotation
-.variazione__block, .dialog--risk {
+.variazione__block{
     perspective: 1000px;
 }
 
@@ -191,7 +191,7 @@
         opacity: 0;
         transform: translateZ(100px) translateX(-30%) rotateY(90deg);
         transform-origin: 0 100% 0;
-        transform-style: preserve-3d;
+        //transform-style: preserve-3d;
         transition: all 0.5s ease 0s;
     }
 

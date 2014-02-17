@@ -369,9 +369,17 @@
   height: 100px;
   background-color: red;
   margin: 10px auto;
-  animation: rotateplane 2s infinite ease-in-out;
-  background-color: $alertRed; 
+
+  &.bad {
+    background-color: $alertRed;
+    animation: rotateplane 1.8s 2 ease-in-out;
+  } 
+  &.good {
+    background-color: $alertGreen;
+    animation: rotateplane--good 1.8s 2 ease-in-out;
+  }
 }
+
 
 .figure {
     @include position(absolute, bottom 0 right 0);

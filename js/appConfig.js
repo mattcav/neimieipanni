@@ -80,7 +80,7 @@ nmpConfig.constant('TIMERS', (function () {
 		risk: {
 			delay: 500,
 			duration: 500, // durata transizione
-			wait: 5000 // attesa guardando la "roulette"
+			wait: 3000 // attesa guardando la "roulette"
 		}
 	}
 
