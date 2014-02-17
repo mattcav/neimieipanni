@@ -354,11 +354,13 @@
 
 .dialog--variazione-help__inner {
     @include grid-column(
-        $columns:12
+        $columns:12,
+        $float:none
     );
     @media #{$large-up} {
         @include grid-column(
-            $columns:4
+            $columns:4,
+            $float:none
         );
     }
 }
