@@ -103,9 +103,16 @@ nmpApp.service('scenes', ['$http', '$rootScope', 'player', 'sceneFactory', funct
 			service.currentIndex = index;
 			$rootScope.$broadcast('sceneUpdated');
 			$body.attr('data-theme', service.getCurrentScene().theme);
-			$('.figure').remove();
 			
-			$body.prepend('<img class="figure" src="../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png">')
+			// not interchanged
+			//$('.figure').remove();
+			//$body.prepend('<img class="figure" src="../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png">')
+			
+			// with interchange
+			$('.figure').remove();
+			$body.prepend('<img id="figure" class="figure" data-interchange="[../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (default)], [../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (large)]"> ');
+			$(document).foundation('interchange', 'reflow');
+			
 		},
 
 		nextScene: function () {
