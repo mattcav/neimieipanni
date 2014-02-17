@@ -23,3 +23,15 @@
   from {transform:scale(1);}
   to {transform:scale(1.2); animation-play-state:running;}
 }
+
+// change colors 
+@keyframes change-colors {
+  0% {background:$didier;}
+  20% {background:$didier};
+  25% {background:$fatima;}
+  45% {background:$fatima;}
+  50% {background:$irina;}
+  70% {background:$irina;}
+  75% {background:$zhang;}
+  96% {background:$zhang;}
+}
