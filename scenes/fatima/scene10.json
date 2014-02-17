@@ -7,8 +7,8 @@
 		"source": "“stat10”"
 	},
 	"choices": [{
-		"title": "Entri con decisione.",
-		"button": "Entri con decisione.",
+		"title": "Entri con decisione",
+		"button": "Entri con decisione",
 		"text": "Anche se con te c'è il tuo bambino pensi che quello sia un tuo diritto e intendi esercitarlo.",
 		"happiness": 50,
 		"money": 0,
@@ -32,8 +32,8 @@
 			}]
 		}
 	}, {
-		"title": "Tornerai un altro giorno.",
-		"button": "Tornerai un altro giorno.",
+		"title": "Tornerai un altro giorno",
+		"button": "Tornerai un altro giorno",
 		"text": "Con te c'è uno dei tuoi bambini, meglio evitare problemi.",
 		"happiness": -30,
 		"money": 0,

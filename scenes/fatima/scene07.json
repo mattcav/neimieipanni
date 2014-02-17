@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Non dici nulla.",
-			"button": "Non dici nulla.",
+			"title": "Non dici nulla",
+			"button": "Non dici nulla",
 			"text": "Ti sembra un'ingiustizia ma scegli di non farla notare per non creare problemi.",
 			"happiness": -30,
 			"money": 0,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Protesti.",
-			"button": "Protesti.",
+			"title": "Protesti",
+			"button": "Protesti",
 			"text": "Dici agli agenti che ti stanno discriminando: ti sembra la cosa giusta da fare.",
 			"happiness": 20,
 			"money": 0,

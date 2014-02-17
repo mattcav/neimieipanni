@@ -185,7 +185,7 @@
 },{
 	"title": "L'infortunio sul lavoro",
 	"text": "Mentre sei al lavoro, cadi e ti fai male ad una gamba. Cosa fai?",
-	"theme": "infortuneo",
+	"theme": "infortunio",
 	"report": {
 			"text": "il 16,6 % degli incidenti sul lavoro denunciati e il 31,2% dei casi mortali hanno coinvolto lavoratori nati in Romania (nazione prima in graduatoria sia per le denunce che per i decessi). Inoltre, il 10% dei lavoratori rumeni iscritti all’INAIL risulta essersi ammalato a causa del lavoro. Un’analisi per settore di attività mostra che il 94,3% degli infortuni dei lavoratori nati all’estero si verifica nell’Industria e servizi.",
 			"source": "Dossier Statistico Immigrazione Caritas e Migrantes 2012"	
@@ -235,7 +235,7 @@
 },{
 		"title": "La lavatrice",
 		"text": "Da quando ti sei trasferita hai dovuto lavare i panni a mano perdendo tempo e facendo fatica. Cosa fai?",
-		"theme": "lavoro",
+		"theme": "lavatrice",
 		"report": {
 			"text": "Le famiglie con stranieri dispongono di beni durevoli in maniera limitata rispetto alle famiglie composte da soli italiani. Il divario è  contenuto per beni come la lavatrice di cui ne dispone il 93,2% delle famiglie (contro il 97,7% delle famiglie italiane) anche se è frequente l’utilizzo in condivisione con altre famiglie.",
 			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	

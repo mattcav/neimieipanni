@@ -7,8 +7,8 @@
 		"source": "“stat5”"
 	},
 	"choices": [{
-		"title": "La fai cancellare subito.",
-		"button": "La fai cancellare subito.",
+		"title": "La fai cancellare subito",
+		"button": "La fai cancellare subito",
 		"text": "Paghi un imbianchino perchè non vuoi far preoccupare tua madre.",
 		"happiness": 0,
 		"money": -80,
@@ -17,8 +17,8 @@
 			"text": "Hai speso una cifra imprevista, ma niente ha rovinato la visita di tua madre."
 		}
 	}, {
-		"title": " Deleghi il condominio.",
-		"button": " Deleghi il condominio.",
+		"title": "Deleghi il condominio",
+		"button": "Deleghi il condominio",
 		"text": "Risparmi, ma l’amministratore ti dice che ci vorrà qualche giorno",
 		"happiness": -80,
 		"money": 0,

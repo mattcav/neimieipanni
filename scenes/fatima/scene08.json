@@ -8,19 +8,19 @@
 		},
 	"choices": [
 		{
-			"title": "Fingi di non vedere.",
-			"button": "Fingi di non vedere.",
+			"title": "Fingi di non vedere",
+			"button": "Fingi di non vedere",
 			"text": "Per non avere problemi vai via rinunciando a difendere una donna che, come te, deve combattere contro dei pregiudizi.",
-			"happiness": 0,
-			"money": -80,
+			"happiness": -80,
+			"money": 0,
 			"conseguence": {
 				"type": "normal",
 				"text": "Torni a casa, ma non aver preso le parti di una persona discriminata ti fa sentire molto in colpa."
 			}
 		},
 		{
-			"title": "Affronti il negoziante.",
-			"button": "Affronti il negoziante.",
+			"title": "Affronti il negoziante",
+			"button": "Affronti il negoziante",
 			"text": "Protesti col negoziante per il suo comportamento discriminatorio e gli dici che non andrai più in quel negozio.",
 			"happiness": 50,
 			"money": -100,

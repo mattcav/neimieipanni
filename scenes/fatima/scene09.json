@@ -7,8 +7,8 @@
 		"source": "“stat9”"
 	},
 	"choices": [{
-		"title": "A casa tua.",
-		"button": "A casa tua.",
+		"title": "A casa tua",
+		"button": "A casa tua",
 		"text": "Fai la scelta più semplice e conveniente e speri che vengano tutti i suoi compagni di scuola.",
 		"happiness": 0,
 		"money": -50,
@@ -32,8 +32,8 @@
 			}]
 		}
 	}, {
-		"title": "In un fast food.",
-		"button": "In un fast food.",
+		"title": "In un fast food",
+		"button": "In un fast food",
 		"text": "Spendi di più ma sei sicura che verranno tutti.",
 		"happiness": 0,
 		"money": -100,

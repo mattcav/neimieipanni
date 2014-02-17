@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Torni a casa.",
-			"button": "Torni a casa.",
+			"title": "Torni a casa",
+			"button": "Torni a casa",
 			"text": "Compri il biglietto del treno e parti. Sai che ai tuoi farà piacere.",
 			"happiness": 20,
 			"money": -80,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Rimani per la festa.",
-			"button": "Rimani per la festa.",
+			"title": "Rimani per la festa",
+			"button": "Rimani per la festa",
 			"text": "Decidi di restare, il capodanno cinese ti piace ma la festa è l’occasione per farsi  nuovi amici.",
 			"happiness": 40,
 			"money": 0,

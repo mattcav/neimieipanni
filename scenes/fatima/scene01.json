@@ -7,7 +7,7 @@
 		"source": "Rapporto UNAR"
 	},
 	"choices": [{
-		"title": "Più vicina alla scuola.",
+		"title": "Più vicina alla scuola",
 		"button": "Più vicina alla scuola",
 		"text": "È una spesa alta, ma la vostra vita migliorerà moltissimo.",
 		"happiness": 500,
@@ -21,8 +21,8 @@
 			"trapMoney": 0
 		}
 	}, {
-		"title": "Più grande ma periferica.",
-		"button": "Più grande ma periferica.",
+		"title": "Più grande ma periferica",
+		"button": "Più grande ma periferica",
 		"text": "È una spesa sostenibile, hai più spazio ma perdi più tempo per spostarti.",
 		"happiness": 280,
 		"money": -400,
@@ -35,8 +35,8 @@
 			"trapMoney": 0
 		}
 	}, {
-		"title": "Resti in quella dei suoceri.",
-		"button": "Resti in quella dei suoceri.",
+		"title": "Resti in quella dei suoceri",
+		"button": "Resti in quella dei suoceri",
 		"text": "È la scelta più economica, ma ti pesa non avere una casa solo tua.",
 		"happiness": 150,
 		"money": 0,

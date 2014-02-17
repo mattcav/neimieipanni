@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Accetti.",
-			"button": "Accetti.",
+			"title": "Accetti",
+			"button": "Accetti",
 			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
 			"happiness": -100,
 			"money": 150,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Te ne vai.",
-			"button": "Te ne vai.",
+			"title": "Te ne vai",
+			"button": "Te ne vai",
 			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
 			"happiness": 30,
 			"money": 0,
