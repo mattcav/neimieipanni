@@ -7,8 +7,8 @@
 		"source": "“stat4”"
 	},
 	"choices": [{
-		"title": "Chiedi un certificato medico.",
-		"button": "Chiedi un certificato medico.",
+		"title": "Chiedi un certificato medico",
+		"button": "Chiedi un certificato medico",
 		"text": "Con questo trucchetto ai tuoi figli verrà servito un menù diverso, ma dovrai dichiarare il falso.",
 		"happiness": -80,
 		"money": 0,
@@ -17,8 +17,8 @@
 			"text": "Alla fine sei riuscita ad ottenere quello che tu ritieni giusto, ma ti dà fastidio aver dovuto mentire e far passare i tuoi figli per malati."
 		}
 	}, {
-		"title": "Prepari tu i pasti.",
-		"button": "Prepari tu i pasti.",
+		"title": "Prepari tu i pasti",
+		"button": "Prepari tu i pasti",
 		"text": "Questa soluzione risolve il problema, ma è una spesa extra.",
 		"happiness": 0,
 		"money": -80,

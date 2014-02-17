@@ -1,6 +1,6 @@
 {
 	"title": "Insulto a terzo",
-	"text": "Per mantenerti all'università hai trovato un lavoretto. Ma il capo trova il tuo nome troppo complicato e lo storpia sempre. Come reagisci?",
+	"text": "Stai camminando per strada quando senti un ragazzo che insulta una donna di colore, lei si gira a guardarti per cercare sostegno.",
 	"theme": "insulto",
 	"report": {
 			"text": "Il decreto legislativo 215/2003 definisce come molestie “quei comportamenti indesiderati, posti in essere per motivi di razza o di origine etnica, aventi lo scopo o l’effetto di violare da dignità di una persona e di creare un clima intimidatorio, ostile, degradante, umiliante od offensivo” (art.2 comma 3)",
@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Tiri dritto.",
-			"button": "Tiri dritto.",
+			"title": "Tiri dritto",
+			"button": "Tiri dritto",
 			"text": "Ignori un atto di razzismo e ti volti dall’altra parte per evitare problemi",
 			"happiness": -40,
 			"money": 0,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"title": "Intervieni.",
-			"button": "Intervieni.",
+			"title": "Intervieni",
+			"button": "Intervieni",
 			"text": "Ti senti parte in causa e ti fermi a difendere la donna.",
 			"happiness": 20,
 			"money": 0,
