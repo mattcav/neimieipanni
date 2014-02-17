@@ -5,8 +5,8 @@ nmpConfig.constant('HELPERS', [
 		"title": "bisogno di soldi?",
 		"class": "m-add-money",
 		"text": "Chiedi un prestito ad un amico: ricevi € 200 ma perdi pt 250",
-		"happiness": -200,
-		"money": 100,
+		"happiness": -250,
+		"money": 200,
 		"conseguence": {
 			"type": "normal",
 			"text": "Testo help ricevuto"
@@ -16,7 +16,7 @@ nmpConfig.constant('HELPERS', [
 		"title": "morale a terra?",
 		"class": "m-add-points",
 		"text": "Fai un regalo ai tuoi genitori: ricevi pt 250, ma perdi € 200",
-		"happiness": 100,
+		"happiness": 250,
 		"money": -200,
 		"conseguence": {
 			"type": "normal",

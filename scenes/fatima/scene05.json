@@ -17,8 +17,8 @@
 			"text": "Hai speso una cifra imprevista, ma niente ha rovinato la visita di tua madre."
 		}
 	}, {
-		"title": " Deleghi il condominio",
-		"button": " Deleghi il condominio",
+		"title": "Deleghi il condominio",
+		"button": "Deleghi il condominio",
 		"text": "Risparmi, ma l’amministratore ti dice che ci vorrà qualche giorno",
 		"happiness": -80,
 		"money": 0,
