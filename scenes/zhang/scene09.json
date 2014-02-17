@@ -8,8 +8,8 @@
 		},
 	"choices": [
 		{
-			"title": "Ti mostri infastidito.",
-			"button": "Ti mostri infastidito..",
+			"title": "Ti mostri infastidito",
+			"button": "Ti mostri infastidito",
 			"text": "Fai notare all'uomo che anche con la pelle di un colore diverso si può essere italiani.",
 			"happiness": 20,
 			"money": 0,
@@ -37,8 +37,8 @@
 			}
 		},
 		{
-			"title": "Ti sposti.",
-			"button": "Ti sposti.",
+			"title": "Ti sposti",
+			"button": "Ti sposti",
 			"text": "Ti sposti per non affrontarlo, ma trovi spazio solo dove hai una visuale peggiore.",
 			"happiness": -40,
 			"money": 0,
