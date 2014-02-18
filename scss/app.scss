@@ -58,6 +58,10 @@
 // extenders
 @import "scelta";
 @import "start";
+nav.tab-bar {
+    position:fixed;
+    width:100%;
+}
 
 .dialog {
     min-height:650px;
