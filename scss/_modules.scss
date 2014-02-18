@@ -50,6 +50,7 @@
     );
     visibility: hidden;
     position:absolute;
+
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     overflow-y: auto;
@@ -146,7 +147,9 @@
 // stats
 .stat-img {
     margin-bottom: 1rem;
-    max-width: 23rem;
+    @media #{$medium-up} {
+        max-width: 18rem;
+    }
 }
 .dialog--stats__text {
     @extend %monospace-text;

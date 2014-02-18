@@ -2,7 +2,6 @@
   "name": "foundation-libsass-template",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "angular": "~1.2.8",
-    "scrollfix": "*"
+    "angular": "~1.2.8"
   }
 }

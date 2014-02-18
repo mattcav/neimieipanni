@@ -61,9 +61,9 @@ module.exports = function(grunt) {
           separator: ','
         }
       },
-      didier: {
-        src: ['scenes/didier/scene*.json'],
-        dest: 'scenes/didier/all.json',
+      benjamin: {
+        src: ['scenes/benjamin/scene*.json'],
+        dest: 'scenes/benjamin/all.json',
         options: {
           banner: '[',
           footer: "]",
