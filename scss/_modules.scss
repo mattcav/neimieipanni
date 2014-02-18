@@ -33,6 +33,13 @@
     margin-top:0.5rem;
 }
 
+%center-block {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    float:none !important;
+}
+
 
 // Dialog block
 .dialog {
@@ -135,6 +142,28 @@
     top: 0.35em;
     z-index: 10;
 }
+
+// stats
+.stat-img {
+    margin-bottom: 1rem;
+    max-width: 23rem;
+}
+.dialog--stats__text {
+    @extend %monospace-text;
+    @extend %center-block;
+    max-width:30rem;
+    border-bottom:medium none;
+    padding-bottom:0;
+}
+
+.dialog--stats__src {
+    @extend %monospace-alt;
+    @extend %center-block;
+    max-width:30rem;
+}
+
+
+
 //Player block
 .player {
     overflow-x:hidden;
@@ -391,5 +420,33 @@
     @media #{$landscape} {
         width:auto;
         height:100%;
+    }
+}
+
+
+.istruzioni {
+    @include position (fixed, top 0px right 0px bottom 0px left 0px);
+    background:rgba($white, 1);
+    z-index:9999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    @media #{$large-up} {
+        @include position (fixed, top 10px right 10px bottom 10px left 10px);        
+    }
+}
+
+.istruzioni__inner {
+    @include grid-column(
+        $columns:12, 
+        $center:true
+        );
+    max-width: 26rem;
+
+    @media #{$medium-up} {
+         @include grid-column(
+            $columns:7, 
+            $center:true
+        );
     }
 }

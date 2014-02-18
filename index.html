@@ -14,6 +14,20 @@
 </head>
     
 <body class="step" data-ng-class="playerName.toLowerCase()">
+    
+    <div class="istruzioni" data-ng-class="fadeOutClass">
+        <div class="istruzioni__inner">
+            <h2 class="istruzioni__title">Benvenuto!</h2>
+            <p class="istruzioni__text">
+               Affronta insieme a {{ playerName }} dieci situazioni della vita di tutti i giorni.
+            </p>
+            <p class="istruzioni__text">
+                Per arrivare alla fine devi tenere d'occhio i soldi che hai in tasca, ma anche i punti: rappresentano la tua salute fisica e il tuo stato d'animo. Se anche uno solo dei due parametri scende sotto lo zero, hai perso.
+            </p>
+            <button id="go-to-game" class="istruzioni__button" data-ng-click="fadeOutClass='fade-out'">ok, cominciamo!</button>
+        </div>
+    </div>
+
     <img class="figure" data-interchange="[../images/background/didier/lavoro.png, (default)], [../images/background/didier/lavoro.png, (large)]">
 
     <div class="off-canvas-wrap">
@@ -158,9 +172,9 @@
                 <!-- STATISTICHE block -->
                 <article id="stats" class="dialog dialog--stats" data-report>
                     <div class="dialog__inner">
-                        
-                        <p class="dialog__title dialog--stats__title">{{ scene.report.text }}</p>
-
+                        <img class="stat-img" src="images/stats/{{ scene.report.img }}" alt="">
+                        <p class="dialog__title dialog--stats__text">{{ scene.report.text }}</p>
+                        <hr>
                         <p class="dialog--stats__src">{{ scene.report.source }}</p>
 
                         <section class="dialog__buttons">
@@ -238,7 +252,8 @@
             </div>
         </article> 
     </div>
-    
+
+
 
 
     <script src="bower_components/jquery/jquery.js"></script>
@@ -246,8 +261,6 @@
     <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
     <script src="js/app.js"></script>
 
-
-    
 
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="js/appConfig.js"></script>

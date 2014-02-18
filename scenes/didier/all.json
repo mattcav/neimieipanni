@@ -3,6 +3,7 @@
 	"text": "Non riesci a trovare un impiego in regola con cui potresti rinnovare il permesso di soggiorno. Ma hai bisogno di soldi e decidi di accettare un lavoro in nero. Cosa scegli?",
 	"theme": "lavoro",
 	"report": {
+		"img": "test.jpg",
 		"text": "Equivale a 540 miliardi di euro, corrispondenti a circa il 35% del Pil 'ufficiale', il valore dell'economia sommersa nel 2011. E circa 22,5 di quei miliardi arrivano dal lavoro degli immigrati. Considerando gli immigrati clandestini si stima un  sommerso di 10 miliardi e mezzo di euro.",
 		"source": "'L'Italia  in nero', Rapporto sull'economia sommersa realizzato dall'Eurispes  e dall'Istituto San Pio V di Roma"	
 	},
@@ -46,8 +47,9 @@
 	"text": "Devi trovare un posto dove vivere nella nuova città . Che soluzione scegli?",
 	"theme": "casa",
 	"report": {
-			"text": "il 39% degli intervistati convive con persone di nazionalità diversa e di questi solo il 5% sono africani.",
-			"source": "Ricerca EasyStanza.it 2012"	
+			"img": "casa.svg",
+			"text": "Due ricercatori dell’Università di Modena e Reggio Emilia si sono finti stranieri per cercare una casa in affitto. Così facendo, un proprietario su cinque si è rifiutato di affittargli casa.",
+			"source": "Ethnic discrimination in the Italian rental housing market, Massimo Baldini e Marta Federici, CAPP, 2010"	
 		},
 	"choices":
 	[

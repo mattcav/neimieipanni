@@ -3,8 +3,9 @@
 	"text": "Devi trovare un posto dove vivere nella nuova città . Che soluzione scegli?",
 	"theme": "casa",
 	"report": {
-			"text": "il 39% degli intervistati convive con persone di nazionalità diversa e di questi solo il 5% sono africani.",
-			"source": "Ricerca EasyStanza.it 2012"	
+			"img": "casa.svg",
+			"text": "Due ricercatori dell’Università di Modena e Reggio Emilia si sono finti stranieri per cercare una casa in affitto. Così facendo, un proprietario su cinque si è rifiutato di affittargli casa.",
+			"source": "Ethnic discrimination in the Italian rental housing market, Massimo Baldini e Marta Federici, CAPP, 2010"	
 		},
 	"choices":
 	[

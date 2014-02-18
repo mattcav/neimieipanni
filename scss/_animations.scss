@@ -25,11 +25,17 @@
       }
 }     
 
-//fade in
+//fade in / out
 @keyframes fade-in {
   from {opacity:0;}
   to {opacity:1; animation-play-state:paused;}
 }
+
+@keyframes fade-out {
+  from {opacity:1;}
+  to {opacity:0; animation-play-state:paused; visibility:hidden;}
+}
+
 
 //zoom-in
 @keyframes zoom-in {
