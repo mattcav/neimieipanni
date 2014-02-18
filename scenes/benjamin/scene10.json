@@ -1,0 +1,50 @@
+{
+	"title": "L'insulto ad un altro",
+	"text": "Camminando per strada senti un ragazzo che insulta una donna cinese per il colore della sua pelle. Cosa fai?",
+	"theme": "cinese",
+	"report": {
+			"text": "Se sei vittima o testiomone di comportamenti discriminatori nei confronti di terzi, contatta il Numero Verde UNAR 800901010",
+			"source": "oppure visita il sito web www.unar.it"	
+		},
+	"choices": [
+		{
+			"title": "Tiri dritto",
+			"button": "Tiri dritto",
+			"text": "Non vuoi avere rogne, ma così volti le spalle a chi ha i tuoi stessi problemi.",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "La tua giornata scorre tranquilla, ma lo sguardo della donna che non ti sei fermato ad aiutare ti rimane dentro e ti fa sentire in colpa."
+			}
+		},
+		{
+			"title": "Intervieni",
+			"button": "Intervieni",
+			"text": "Ti fermi e lo affronti, vuoi difendere chi è nella tua stessa condizione.",
+			"happiness": 10,
+			"money": 0,
+			"conseguence": {
+				"type": "random",
+				"cases": [
+					{
+						"probability": 70,
+						"happiness": 20,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "Il ragazzo abbassa lo sguardo e se ne va. La donna cinese ti sorride e ti ringrazia. Guadagni 20 punti"
+					},
+					{
+						"probability": 30,
+						"happiness": -1000,
+						"money": -1000,
+						"stop": true,
+						"class":"bad",
+						"text": "Il ragazzo insulta anche te e cominciate a litigare. Le urla attirano l'attenzione di una pattuglia. Vieni identificato come clandestino e espulso dall'Italia."
+					}
+				]
+			}
+		}
+	]
+}
