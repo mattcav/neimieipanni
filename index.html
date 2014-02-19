@@ -1,259 +1,268 @@
-<!doctype html>
-<html ng-app="nmpApp" class="no-js" lang="it" >
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="it" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js full" lang="it" > <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>Nei Miei Panni - Game</title>
-    
-    <link rel="stylesheet" href="css/app.css" />
+  <title>Scegli il tuo personaggio | Nei Miei Panni</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <script src="bower_components/modernizr/modernizr.js"></script>
-   
+
+  <link rel="stylesheet" href="css/app.css">  
+  <script src="bower_components/modernizr/modernizr.scegli.js"></script> 
 </head>
-    
-<body class="step" data-ng-class="playerName.toLowerCase()">
-    <img class="figure" data-interchange="[../images/background/didier/lavoro.png, (default)], [../images/background/didier/lavoro.png, (large)]">
 
-    <div class="off-canvas-wrap">
-        <div class="inner-wrap">
-            
-            <!-- aside -->
-            <aside id="sidebar" class="sidebar-section player left-off-canvas-menu" role="complementary" data-ng-controller="sidebar">
+<body class="full">
 
-                <h1 class="player-title">{{ playerName }}</h1>    
+    <div id="start" class="start">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>    
+    <div class="square"></div>
+
+        <div class="message">
+            <header class="message__header">
+                <h2 class="message__title">Sono <div class="word__container">
+                        <span class="word">straniero.</span>
+                        <span class="word">musulmana.</span>
+                        <span class="word">nero.</span>
+                        <span class="word">extracomunitaria.</span>
+                        <span class="word">figlio di cinesi.</span>
+                        <span class="word">benjamin.</span>
+                        <span class="word">fatima.</span>
+                        <span class="word">irina.</span>
+                        <span class="word">zhang.</span>
+                    </div>
+                </h2>
+            </header>
+            <button id="go-to-select" class="message__button">gioca nei miei panni</button>
+        </div>
+    </div>    
+
+
+<div class="container"> 
+        <div id="bl-main" class="bl-main">
                 
-                <img class="player__img" data-ng-src="images/avatar/{{playerName.toLowerCase()}}.png" alt="{{ playerName }}">
-                    
-                <section class="player-metrics">
-                    <div class="player-metric player-metric--step">
-                        <section class="player-metric__inner ng-binding">
-                            <i aria-hidden="true" class="player__icon icon-time"></i>
-                            <span class="player__value">[{{ scenes.currentIndex+1 }}/{{ scenes.scenes.length }}]</span>
-                        </section>
-                    </div>
-
-                    <div class="player-metric player-metric--money">
-                        <section class="player-metric__inner ng-binding">
-                            <i aria-hidden="true" class="player__icon icon-money"></i>
-                            <span class="player__value">&euro; {{ player.money }}</span>
-                        </section>
-                    </div>
-
-                    <div class="player-metric player-metric--points">
-                        <section class="player-metric__inner ng-binding">
-                             <i aria-hidden="true" class="player__icon icon-happy"></i>   
-                            <span class="player__value">pt {{ player.happiness }}</span> 
-                        </section>
-                    </div>
-                </section>
-
-                <section class="helper-buttons">
-
-                    <div class="helper-money" data-ng-repeat="helper in helpers" data-ng-class="helper.class">
-                        <h3 class="helper-buttons__title ng-binding">{{ helper.title }}</h3>
-                        
-                        <p class="helper-buttons__text ng-binding">{{ helper.text }}</p>
-                        
-                        <button class="helper-buttons__button" data-ng-disabled="helper.disabled" data-ng-click="openHelper($index)" id="helper-1-call">
-                            <span class="show-for-small-only">DAI</span>
-                            <span class="hide-for-small-only ng-binding">{{ helper.title }}</span>
-                        </button>
-                    </div>
-                </section>
-
-                <footer class="unar">
-                    <img class="unar__img" alt="UNAR - Ufficio Nazionale Antidiscriminazioni Razziali" src="images/unar.png">
-                </footer>
-
-
-                <!-- overlay for modals -->
-                <div class="md-overlay"></div>
-            </aside>
-
-            <!-- main section-->
-            <section id="main" role="main" class="main-section" data-ng-controller="game">
-             
-
-                <!-- nav trigger 4 small --> 
-                <nav class="tab-bar hide-for-large-up">
-                  <section class="left-small">
-                    <!-- <i class="icon-freccia" aria-hidden="true"></i> -->
-                    <a class="left-off-canvas-toggle menu-icon"><span></span></a>
-                  </section>
-                    <h1 class="title text-center">{{ playerName }}</h1>
-                </nav>
-
-              
-                <!-- INTRODUZIONE block -->
-                <article id="introduzione" class="dialog dialog--introduzione" data-scene>
-                    <div class="dialog__inner">
-                        <h2 class="dialog__title">{{ scene.title }}</h2>
-                        <p class="dialog__text">{{ scene.text }}</p>
-                        <section id="introduzione-buttons" class="dialog__buttons">
-                           <button ng-repeat="choice in scene.choices" data-ng-click="ui.showChoice.call(this)" ng-disabled="!choice.enabled">{{ choice.button }}</button>
-                        </section>
-                    </div>
-                </article>
-
-                <!-- scelta modal -->
-                <div id="scelta" class="scelta md-modal md-effect-1" data-ng-class="{'alert-risk': choice.conseguence.type === 'random'}" data-choice>
-                        <div class="scelta__inner md-content">
-                            <h2 class="scelta__title">{{ choice.title }}</h2>
-                            <p class="scelta__text">{{ choice.text }}</p>
-
-                            <section class="scelta__values">
-                                <span>
-                                    <i class="icon-euro" aria-hidden="true"></i> {{ choice.money }}€
-                                </span>
-                                <span>
-                                    <i class="icon-smile" aria-hidden="true"></i> {{ choice.happiness }}pt
-                                </span>
-                            </section>
-
-                            <section id="scelta-buttons" class="scelta__buttons">
-
-                                <button class="back-to-scena" data-ng-click="ui.closeChoice()">Indietro</button>
-                                <button id="go-thru-1" data-ng-click="getConseguence()">OK</button>
-                            </section>
-
-                            <a class="md-close" data-ng-click="ui.closeChoice()">&#215;</a>
-                        </div>
+            <section class="benjamin">
+                <div class="bl-box">
+                    <img class="bl-box-img" src="images/avatar/benjamin.png" alt="benjamin">
                 </div>
 
-                <!-- CONSEGUENZA block -->
-                <article id="conseguenza" class="dialog dialog--conseguenza" data-conseguence data-ng-class="conseguence.class"><!-- aggiungere classi good/mid/bad a seconda del random-->
-                    <div class="dialog__inner">
-                        <h2 class="dialog__title">{{ conseguence.title }}</h2>
-                        <p class="dialog__text">{{ conseguence.text }}</p>
+                <div class="bl-content">
+                    <h2 class="m-name">Benjamin</h2>
+                    <p>Ho 25 anni e vengo dalla Nigeria. Sono arrivato in Italia per lavorare in una piccola impresa che purtroppo ha chiuso.</p>
 
-                        <section class="dialog__buttons">
-                            <button data-ng-click="ui.showReport()"><i class="icon-arrow-rt" aria-hidden="true"></i></button>
-                        </section>
+                    <p>Io e i miei colleghi siamo rimasti senza lavoro, ma rispetto a loro ho un problema in più: senza un'assunzione in regola non posso rinnovare il permesso di soggiorno, e diventerò un clandestino.</p>
+
+                    <p>Così sono venuto in una grande città, sperando di trovare un lavoro che mi permetta di mettermi in regola. Vuoi provare a vivere nei miei panni?</p> 
+
+                    <div class="bl-action">
+                        <a href="game.html#/benjamin" class="button bl-button">gioca con benjamin</a> oppure <a class="bl-close bl-back"href="#">torna alle scelte</a>
                     </div>
-                </article>
+                
+                </div>
+                <span class="bl-icon bl-icon-close bl-close"></span>
+                <span class="md-close"></span>
+            </section>
 
-                <!-- VARIAZIONE block -->
-                <article id="variazione" class="dialog dialog--variazione" data-variazione>
-                    <div class="dialog__inner dialog--variazione__inner">
-                        <h2 class="dialog__title">...e ora?</h2>
-                        <div class="variazione__block">
-                            <section id="e-variazione" class="variazione__cube">
-                                <span id="e-fattore" class="variazione__item fattore">{{ variazione.money.delta }}</span>
-                                <span id="e-before" class="variazione__item before">€ {{ variazione.money.prima }}</span> 
-                                <span id="e-after" class="variazione__item after">€ {{ variazione.money.attuale }}</span> 
-                            </section>
-                        </div>
-                        <div class="variazione__block">
-                            <section id="pt-variazione" class="variazione__cube variazione__cube--pt">
-                                <span id="pt-fattore" class="variazione__item variation-pt fattore">{{ variazione.happiness.delta }}</span>
-                                <span id="pt-before" class="variazione__item variation-pt before">pt {{ variazione.happiness.prima }}</span> 
-                                <span id="pt-after" class="variazione__item variation-pt after">pt {{ variazione.happiness.attuale }}</span> 
-                            </section>
-                        </div>
+            <section class="fatima">
+                <div class="bl-box ">
+                    <img class="bl-box-img" src="images/avatar/fatima.png" alt="Fatima">
+                </div>
+
+                <div class="bl-content">
+                    <h2 class="m-name">Fatima</h2>
+                    <p>Ho 38 anni e sono nata e cresciuta in Marocco. Mio marito ha trovato un lavoro in Italia e io mi sono trasferita qui, dove abbiamo avuto due figli che adesso vanno a scuola.</p>
+
+                    <p>Faccio la mamma, la casalinga e cerco di far quadrare i conti, anche se è difficile. Il mio sogno è dare un futuro migliore ai miei figli, ma anche crescerli nel rispetto della nostra religione e del nostro paese d'origine. Vuoi provare a vivere nei miei panni?</p>
+
+                    <div class="bl-action">
+                        <a href="game.html#/fatima" class="button bl-button">gioca con Fatima</a> oppure <a class="bl-back bl-close" href="#">torna alle scelte</a>
                     </div>
-                </article> 
 
-                <!-- STATISTICHE block -->
-                <article id="stats" class="dialog dialog--stats" data-report>
-                    <div class="dialog__inner">
-                        
-                        <p class="dialog__title dialog--stats__title">{{ scene.report.text }}</p>
+                </div>
+                <span class="bl-icon bl-icon-close bl-close"></span>
+            </section>
 
-                        <p class="dialog--stats__src">{{ scene.report.source }}</p>
+            <section class="irina">
+                <div class="bl-box">
+                    <img class="bl-box-img" src="images/avatar/irina.png" alt="Irina">
+                </div>
+                <div class="bl-content">
+                    <h2 class="m-name">Irina</h2>
+                    <p>Sono nata 28 anni fa in Romania. Ho sempre vissuto in un piccolo centro e la mia famiglia non è mai stata ricca, anzi.</p> 
 
-                        <section class="dialog__buttons">
-                            <button data-ng-click="ui.next()"><i class="icon-arrow-rt" aria-hidden="true"></i></button>
-                        </section>
+                    <p>Ho sempre lavorato e studiato insieme, e sono riuscita a prendere un diploma da infermiera professionale con il massimo dei voti.</p> 
+
+                    <p>Sono venuta in Italia per trovare un lavoro e aiutare la mia famiglia rimasta in Romania. Vuoi provare a vivere nei miei panni?</p>
+
+                    <div class="bl-action">
+                        <a href="game.html#/irina" class="button bl-button">gioca con Irina</a> oppure <a class="bl-back bl-close" href="#">torna alle scelte</a>
                     </div>
-                </article>   
 
-                <!-- RISK message block -->
-                <article id="risk" class="dialog dialog--risk" data-risk>
-                    <div class="dialog__inner dialog__inner--risk">
-                        <h2 class="dialog__title">Rischio!</h2>
+                </div>
+                <span class="bl-icon bl-close bl-icon-close"></span>
+            </section>
+    
+            <section class="zhang">
 
-                        <p class="dialog__text">Non sai se la tua azione porterà delle conseguenze...</p>
+                <div class="bl-box">
+                    <img class="bl-box-img" src="images/avatar/zhang.png" alt="Zhang">
+                </div>
+                <div class="bl-content">
+                    <h2 class="m-name">Zhang</h2>
+                    <p>Ho 19 anni, sono nato in Italia, sono italiano e parlo italiano. I miei genitori sono arrivati dalla Cina 30 anni fa e gestiscono un negozio.</p>
 
-                        <div id="spinner" class="spinner" data-ng-class="conseguence.class"></div>
+                    <p>Loro vorrebbero che io imparassi il cinese e che andassi a lavorare con loro, ma io voglio continuare a studiare.</p>
+
+                    <p>Per questo mi sono trasferito in una città più grande e mi sono iscritto all'università, anche se loro non sono d'accordo. Ora dovrò cavarmela da solo. Vuoi provare a vivere nei miei panni?</p>
+                    <div class="bl-action">
+                        <a href="game.html#/zhang" class="button bl-button">gioca con Zhang</a> oppure <a class="bl-back bl-close" href="#">torna alle scelte</a>
                     </div>
-                </article>  
-              
+        
+                </div>
+                <span class="bl-icon bl-close bl-icon-close"></span>
+            </section>
 
-        </section> <!-- end #main -->
-
-        <!-- overlay for modals -->
-        <div class="md-overlay"></div>
+        </div>
+</div><!-- /container -->
         
 
-        </div>
-    </div>
 
 
-    <div data-helper>
-        <!-- helper modal choice -->
-        <div id="helper" class="scelta scelta--helper md-modal md-effect-8">
-            <div class="scelta__inner md-content">
-                <h2 class="scelta__title">{{ help.title }}</h2>
-                <p class="scelta__text">{{ help.text }}</p>
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="js/vendor/boxlayout.js"></script>
+<script src="bower_components/greensock/src/minified/TweenMax.min.js"></script>   
 
-                <section class="scelta__values">
-                    <span>
-                        <i class="icon-euro" aria-hidden="true"></i> {{ help.money }}€
-                    </span>
-                    <span>
-                        <i class="icon-smile" aria-hidden="true"></i> {{ help.happiness }}pt
-                    </span>
-                </section>
+<script>
+    $(function() {
+        Boxlayout.init();
+    });
 
-                <section class="scelta__buttons">
-                    
-                    <button class="helper__back back-to-scena" data-ng-click="closeHelp()"> indietro</button>
-                    <button class="helper__go" id="go-thru-1" data-ng-click="useHelp()">ok</button>
-                </section>
+    $(document).ready(function() {
+        $('body').addClass('ready');
+    });
+
+    // Tweens
+    var cover = $("#start"),
+        square = $(".square"),
+        btn = $("#go-to-select");
+
+    //animate squares
+
+
+    function setSquares() {
+        for (i = 0; i < square.length; i++) {
+            var newq = makeNewPosition();
+                el = $(square[i]);
+                el.css('top', newq[0]);
+                el.css('left', newq[1]);
+                transform = 'rotateX('+newq[4] +'deg) rotateY('+newq[3]+') scale('+newq[2]+')';
+               // el.css('transform', transform);
+        } 
+    }
+
+    setSquares();
+    animateDiv();    
+
+
+    function animateDiv() {
+        for (i = 0; i < square.length; i++) {
+            elem = $(square[i]);
+            tween(elem);
+        }
+    };
+
+
+     function tween($el) {
+        var newq = makeNewPosition();
+
+        TweenMax.to($el, newq[5], {top:newq[0], 
+                            left:newq[1],  
+                            rotationY:newq[4],
+                            rotationX:newq[3],
+                            scale:newq[2],
+                            onComplete:animateDiv,
+                            ease: Ease.easeInQuad
+                        }); 
+    };
+
+
+   function makeNewPosition(){
+        
+        // Get viewport dimensions (remove the dimension of the div)
+        var h = $(window).height() - 30;
+        var w = $(window).width() - 30;
+        var min = -360;
+        var max = 360;
+        var smax = 20;
+        var smin = 2;
+
+        // and the formula is:
+        var nrx = Math.floor(Math.random() * (max - min + 1)) + min;
+        var nry = Math.floor(Math.random() * (max - min + 1)) + min;
+        
+        var nh = Math.floor(Math.random() * h);
+        var nw = Math.floor(Math.random() * w);
+        var ns = Math.random();
+        var nsp = Math.floor(Math.random() * (smax - smin + 1)) + smin;
+        return [nh,nw,ns,nrx,nry,nsp];            
+    };
+
+  
+
+
+
+   // animate words
+   $(function(){
+            
+            var $words = $(".word");
+
+            //settings
+            var transitionTime = 0.4;
+            var wordsDelayTime = 1.5;
+            
+            //internal
+            var totalWords = $words.length;
+            
+            var oldWord = 0;
+            var currentWord = -1;
+            
+            //initialize    
+            switchWords();
+            
+            function switchWords(){
                 
-                <a class="md-close" data-ng-click="closeHelp()">&#215;</a>
-            </div>
-        </div>
-
-        <!-- helper modal variation -->
-        <article id="h-variazione" class="dialog dialog--variazione dialog--variazione-help">
-            <div class="dialog__inner dialog--variazione__inner dialog--variazione-help__inner">
-                <h2 class="dialog__title">...e ora?</h2>
-                <div class="variazione__block">
-                    <section id="h-e-variazione" class="variazione__cube">
-                        <span id="h-e-fattore" class="variazione__item fattore">{{ variazione.money.delta }}</span>
-                        <span id="h-e-before" class="variazione__item before">€ {{ variazione.money.prima }}</span> 
-                        <span id="h-e-after" class="variazione__item after">€ {{ variazione.money.attuale }}</span> 
-                    </section>
-                </div>
-                <div class="variazione__block">
-                    <section id="h-pt-variazione" class="variazione__cube variazione__cube--pt">
-                        <span id="h-pt-fattore" class="variazione__item variation-pt fattore">{{ variazione.happiness.delta }}</span>
-                        <span id="h-pt-before" class="variazione__item variation-pt before">pt {{ variazione.happiness.prima }}</span> 
-                        <span id="h-pt-after" class="variazione__item variation-pt after">pt {{ variazione.happiness.attuale }}</span> 
-                    </section>
-                </div>
-            </div>
-        </article> 
-    </div>
-    
+                oldWord = currentWord;
+                
+                if(currentWord < totalWords-1){
+                    currentWord ++
+                } else {
+                    currentWord = 0;
+                }
+                
+                TweenLite.to($words.eq(oldWord), transitionTime, {top:-20, alpha:0, rotationX: 90});
+                TweenLite.fromTo($words.eq(currentWord), transitionTime, {top:20, alpha:0, rotationX: -90 }, {top:0, alpha:1, rotationX:0});
+                
+                TweenLite.delayedCall(wordsDelayTime, switchWords);
+            }       
+    });
 
 
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
-    <script src="js/app.js"></script>
+    // go to select
+    btn.on("click", function(){
+        TweenLite.to(cover, 1, {top:"-100%", ease:Back.easeInOut});
+        $('html').addClass('show-select');
+    });    
 
 
-    
+</script>
 
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="js/appConfig.js"></script>
-    <script src="js/appServices.js"></script>
-    <script src="js/appControllers.js"></script>
-    <script src="js/appDirectives.js"></script>
-    <script src="js/appFilters.js"></script>
 </body>
 </html>

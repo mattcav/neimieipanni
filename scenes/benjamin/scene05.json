@@ -1,0 +1,53 @@
+{
+	"title": "La mamma preoccupata",
+	"text": "È sera, in una strada buia incroci una mamma con un bambino. Quando ti vede, lo tira vicino a sé con sguardo preoccupato. Come reagisci?",
+	"theme": "bambino",
+	"report": {
+			"text": "Il 33,9% dei casi di discriminazione razziale pervenute all’UNAR riguarda la convivenza negli spazi pubblici.",
+			"source": "Rapporto UNAR 2012"	
+		},
+	"choices":
+	[
+		{
+			"title": "Prosegui",
+			"button": "Prosegui",
+			"text": "Fai finta di niente per evitare discussioni",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Ti ha fatto male sentirti giudicato male solo perchè sei di colore, soprattutto perchè pensi che anche il bambino crescerà  con gli stessi pregiudizi."
+			}
+		},
+		{
+			"title": "Ti fermi a parlarle",
+			"button": "Ti fermi a parlarle",
+			"text": "Le spieghi che che non sei un criminale solo per il colore della tua pelle.",
+			"happiness": 10,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "La donna ti lancia uno sguardo preoccupato...",
+
+				"cases": [
+					{
+						"probability": 70,
+						"happiness": 10,
+						"money": -70,
+						"stop": false,
+						"class": "bad",
+						"text": "Appena hai aperto bocca, la donna si è spaventata e ti ha spruzzato con uno spray al peperoncino. Il giorno dopo non sei riuscito ad andare a lavoro. Perdi 70€."
+					},
+					{
+						"probability": 30,
+						"happiness": 30,
+						"money": 0,
+						"stop": false,
+						"class": "good",
+						"text": "La donna ti ha ascoltato e si è scusata. Senti di aver fatto qualcosa di buono per tutti gli stranieri. Guadagni 20 punti."
+					}
+				]
+			}
+		}
+	]
+}

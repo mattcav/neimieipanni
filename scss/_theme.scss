@@ -51,7 +51,7 @@
     background:$fatima;
 }
 
-.didier {
+.didier, .benjamin {
     background:$didier;
 }
 
@@ -63,7 +63,18 @@
     }
 }
 
+%monospace-text {
+    font-family: "fira mono";
+    font-size: 1rem;
+    line-height: 1.2;
+}
 
+%monospace-alt {
+    font-family: "fira mono";
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
 
 /* SHAME */

@@ -31,7 +31,6 @@
 }
 
 .main-section {
-    -webkit-overflow-scrolling: touch;
     @extend %h100;
     @media #{$large-up} {
         position:relative;

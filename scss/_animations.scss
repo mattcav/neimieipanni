@@ -23,13 +23,27 @@
   100% {transform: perspective(1200px) rotateX(-180deg) rotateY(-179.9deg);
             background-color: $alertGreen;
       }
-}     
+}  
 
-//fade in
+// h-go-away
+@keyframes h-go-away {
+  0% {transform:translateX(0%);}
+  55% {transform:translateX(-10%);}
+  85% {opacity:1;}
+  100% {transform:translateX(110%) rotate(0.5deg);  opacity:0; visibility:hidden;}
+}
+
+//fade in / out
 @keyframes fade-in {
   from {opacity:0;}
   to {opacity:1; animation-play-state:paused;}
 }
+
+@keyframes fade-out {
+  from {opacity:1;}
+  to {opacity:0; animation-play-state:paused; visibility:hidden;}
+}
+
 
 //zoom-in
 @keyframes zoom-in {

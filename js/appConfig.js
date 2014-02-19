@@ -26,7 +26,7 @@ nmpConfig.constant('HELPERS', [
 ]);
 
 nmpConfig.constant('CHARACTERS', {
-	'didier': {
+	'benjamin': {
 		start: {
 			happiness: 800,
 			money: 100

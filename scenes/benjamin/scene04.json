@@ -1,0 +1,48 @@
+{
+	"title": "Chiama i tuoi",
+	"text": "Quando eri a casa di tua sorella chiamavate i vostri genitori in Nigeria dal telefono di casa. Come comunichi ora?",
+	"theme": "nostalgia",
+	"report": {
+			"text": "oltre il 90% delle famiglie con almeno uno straniero possiede un telefono (incluso in cellulare) che, quasi sempre, è ad uso esclusivo.",
+			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
+		},
+	"choices":
+	[
+		{
+			"title": "Cellulare e SIM card",
+			"button": "Cellulare e SIM card",
+			"text": "È una spesa alta, ma puoi sentire i tuoi ogni volta che vuoi.",
+			"happiness": 200,
+			"money": -200,
+			"conseguence": {
+				"text": "Non avendo il permesso di soggiorno, non hai i documenti per fare un contratto telefonico.",
+				"type": "trap",
+				"trapText": "Non avendo il permesso di soggiorno, non hai i documenti per fare un contratto telefonico.",
+				"trapHappiness": -50,
+				"trapMoney": 0
+			}
+		},
+		{
+			"title": "Scheda Telefonica",
+			"button": "Scheda telefonica",
+			"text": "La spesa è limitata, ma non riesci a parlare con i parenti quanto vorresti...",
+			"happiness": 40,
+			"money": -120,
+			"conseguence": {
+				"type": "normal",
+				"text": "Risparmi un po', ma ti dispiace non essere sempre raggiungibile dai tuoi genitori."
+			}
+		},
+		{
+			"title": "Call center",
+			"button": "Call Center",
+			"text": "La spesa è ridotta al minimo, ma anche i contatti con i tuoi.",
+			"happiness": -50,
+			"money": -50,
+			"conseguence": {
+				"type": "normal",
+				"text": "La spesa è minima, ma chiami raramente i tuoi e ti senti in colpa."
+			}
+		}
+	]
+}

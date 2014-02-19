@@ -1,9 +1,12 @@
 html, body {
-    height:100%;
+   // min-height:100%;
+   overflow:hidden;
 }
 
 body {
-    overflow: hidden;
+    // overflow-x: hidden;
+    // overflow-y:scroll;
+       // -webkit-overflow-scrolling: touch;
 }
 
 p {
@@ -33,4 +36,13 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
 
 strong, b {
     font-weight: 500;
+}
+
+svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
 }
