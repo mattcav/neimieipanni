@@ -15,7 +15,7 @@
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace renderti conto che per i tuoi coetanei non sei davvero italiano."
+				"text": "Hai scelto di non reagire, ma ogni volta che senti quel nome sbagliato ti ricordi che non sei accettato per quello che sei."
 			}
 		},
 		{
@@ -42,7 +42,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Il capo accetta i tuoi appunti e si scusa. D'ora in poi ti chiamerà con il tuo vero nome, guadagni altri 10 punti."
+						"text": "Il capo accetta la tua critica e si scusa. D'ora in poi ti chiamerà con il tuo vero nome, guadagni altri 10 punti."
 					}
 				]
 			}

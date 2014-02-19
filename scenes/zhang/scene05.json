@@ -3,7 +3,7 @@
 	"text": "Per avere un po’ di soldi in più fai un casting per una pubblicità. Vieni scelto, ma scopri che devi interpretare un cinese stereotipato e con un ridicolo accento.",
 	"theme": "casting",
 	"report": {
-			"text": "Uno degli stereotipi razzisti più significativi nelle pubblicità ? quello relativo alla caratterizzazione dei Cinesi (e per estensione dela Cina) in termini di soggetti capaci solo di copiare e, possibilmente, “taroccare” (ossia spacciare le copie per originali) i prodotti creati da altri.",
+			"text": "Uno degli stereotipi razzisti più significativi nelle pubblicità? Quello relativo alla caratterizzazione dei Cinesi (e per estensione dela Cina) in termini di soggetti capaci solo di copiare e, possibilmente, “taroccare” (ossia spacciare le copie per originali) i prodotti creati da altri.",
 			"source": "Associna"	
 		},
 	"choices": [
@@ -15,7 +15,7 @@
 			"money": 150,
 			"conseguence": {
 				"type": "normal",
-				"text": "Guadagnare quei soldi ti è costato abbastanza. Ma sentendo al telefono i tuoi genitori scopri che alcuni cinesi si sono sentiti offesi dalla tua ridicola interpretazione."
+				"text": "Hai guadagnato dei soldi che ti torneranno utili. Ma i tuoi genitori ti dicono che alcuni cinesi si sono offesi per la tua ridicola interpretazione, ti senti imbarazzo."
 			}
 		},
 		{

@@ -23,8 +23,8 @@
 				}
 			},
 			{
-				"title": "Vai ad una lavanderia a gettoni",
-				"button": "Vai ad una lavanderia a gettoni",
+				"title": "Vai in una lavanderia a gettoni",
+				"button": "Vai in una lavanderia a gettoni",
 				"text": "La spesa è contenuta e ti risparmia la fatica, ma ti porta via tempo.",
 				"happiness": -30,
 				"money": -30,

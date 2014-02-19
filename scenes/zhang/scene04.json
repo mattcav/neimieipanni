@@ -23,7 +23,7 @@
 			"button": "Fai una furbata",
 			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
 			"happiness": -20,
-			"money": 0,
+			"money": -10,
 			"conseguence":  {
 				"type": "random",
 				"waitingText": "Hai scelto di risparmiare, ma ora è salito il controllore...",

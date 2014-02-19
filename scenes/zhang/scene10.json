@@ -12,7 +12,7 @@
 			"button": "Fingi di essere d'accordo",
 			"text": "Risparmi un po' di soldi ma rinunci a difendere il tuo paese.",
 			"happiness": -50,
-			"money": 0,
+			"money": 30,
 			"conseguence": {
 				"type": "normal",
 				"text": "Il trattamento di favore ti fa comodo, ma ti senti in colpa per essere stato zitto."
@@ -21,7 +21,7 @@
 		{
 			"title": "Smetti di andarci",
 			"button": "Smetti di andarci",
-			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
+			"text": "Qualche pasto gratis ti faceva comodo, ma la dignità non ha prezzo.",
 			"happiness": 30,
 			"money": 0,
 			"conseguence": {
