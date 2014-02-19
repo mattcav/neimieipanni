@@ -10,7 +10,7 @@
 		{
 			"title": "Chiedi l'aumento",
 			"button": "Chiedi l'aumento",
-			"text": "Sei un'infermiera diplomata, hai nozioni che possono essere utili. Dedici di farlo presente.",
+			"text": "Sei un'infermiera diplomata e ne sei fiera. Decidi di farlo presente perché hai nozioni che possono essere utili.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
@@ -44,7 +44,7 @@
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Sei così contenta di aver trovato lavoro che non hai voluto sollevare questioni. Ma ripensandoci a mente fredda, ti sembra di esserti svilita da sola."
+				"text": "Sei così contenta di aver trovato lavoro che non hai voluto sollevare questioni. Ma, ripensandoci a mente fredda, ti sembra di esserti svilita da sola."
 			}
 		}
 	]

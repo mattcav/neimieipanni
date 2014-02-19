@@ -3,8 +3,8 @@
 	"text": "Nell’atrio dell’università un ragazzo, pensando che tu non capisca l’italiano, dice a un altro che invece che lì dovresti stare a cucinare gatti fingendo che siano pollo. Come reagisci?",
 	"theme": "bulli",
 	"report": {
-			"text": "Le discriminazioni su base etnico-razziale nell’ambito “Scuola&Istruzione” costituiscono il 5% del totale dei casi. Ill 21,2% riguarda atti discriminatori compiuti da studenti.",
-			"source": "Rapporto UNAR"	
+			"text": "Il 59% delle discriminazioni subite dalla comunità cinese è legato alle informazioni diffamatorie sulla cultura cinese diffuse quotidianamente.",
+			"source": "Indagine “AssoChina”"	
 		},
 	"choices": [
 		{
@@ -34,7 +34,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "I ragazzi non la prendono bene, ti dicono che è meglio che impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
+						"text": "I ragazzi non la prendono bene, ti dicono che è meglio se impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
 					},
 					{
 						"probability": 60,
