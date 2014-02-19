@@ -1,6 +1,15 @@
 //shame
+.dialog {
+    visibility: hidden;
+   height:0;
+    @media #{$medium-up} {
+        height:auto;
+    }
+}
 .dialog.show {
+    display:block;
     visibility: visible;
+    height:auto;
 }
 .dialog.leave {
     visibility: hidden;
