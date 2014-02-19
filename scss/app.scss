@@ -58,13 +58,9 @@
 // extenders
 @import "scelta";
 @import "start";
-nav.tab-bar {
-    position:fixed;
-    width:100%;
-}
 
 .dialog {
-    min-height:650px;
+    //min-height:650px;
     -webkit-overflow-scrolling: touch;
     @media #{$medium-up} {
         min-height:auto;
