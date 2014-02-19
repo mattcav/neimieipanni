@@ -23,7 +23,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "L'uomo ti aggredisce verbalmente, tra l'indifferenza dei presenti. Ti allontani arrabbiato, non hai perso solo la partita, ma anche hai la sensazione di essere straniero nella tua nazione. Perdi 70 punti."
+						"text": "L'uomo ti aggredisce verbalmente, tra l'indifferenza dei presenti. Ti allontani arrabbiato, non hai perso solo la partita, ma hai anche la sensazione di essere straniero nella tua nazione. Perdi 70 punti."
 					},
 					{
 						"probability": 50,
@@ -31,7 +31,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "L'uomo prova a reagire, ma altri presenti lo zittiscono, schierandoti dalla tua parte e incitando i giocatori di origine straniera che giocano in nazionale. Rimani sorridente al tuo posto, ti senti a casa. Guadagni 20 punti"
+						"text": "L'uomo prova a reagire, ma altri presenti lo zittiscono, schierandosi dalla tua parte e incitando i giocatori di origine straniera che giocano in nazionale. Rimani sorridente al tuo posto, ti senti a casa. Guadagni 20 punti"
 					}
 				]
 			}

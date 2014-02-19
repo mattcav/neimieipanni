@@ -15,13 +15,13 @@
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai sostenuto una spesa extra, ma hai rivisto i parenti e sei stato bene con loro."
+				"text": "Evidentemente ci sono ancora persone per cui un accento straniero vale più di anni di studio. Torni a casa con questa consapevolezza e ti senti triste e sminuita."
 			}
 		},
 		{
-			"title": "Insisiti",
-			"button": "Insisiti",
-			"text": "Evidentemente ci sono ancora persone per cui un accento straniero vale più di anni di studio. Torni a casa con questa consapevolezza e ti senti triste e sminuita.",
+			"title": "Insisti",
+			"button": "Insisti",
+			"text": "Hai uno scatto di orgoglio. Questo è il tuo mestiere e lo sai fare: gli dici di stare fermo e fidarsi di te.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {

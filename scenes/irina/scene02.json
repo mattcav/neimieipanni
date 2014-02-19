@@ -17,7 +17,7 @@
 					"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
 
 					"type": "trap",
-					"trapText": "Al colloquio ti dicono che per rendere validi i tuoi titoli di studio in Italia c'è una lunga trafila. Nel frattempo non possono darti il posto.",
+					"trapText": "Al colloquio ti dicono che per rendere validi i tuoi titoli di studio in Italia c'è una lunga trafila. Nel frattempo non possono darti il posto. Ti sembra un'ingiustizia, ma non puoi farci niente.",
 					"trapHappiness": -50,
 					"trapMoney": 0
 				}
