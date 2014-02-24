@@ -101,20 +101,20 @@
 		"title": "Accetti",
 		"button": "Accetti",
 		"text": "Fra assicurazione e benzina, l'auto ti costa di più, ma rende i tuoi spostamenti molto più veloci e senza vincoli di orario.",
-		"happiness": 500,
+		"happiness": 300,
 		"money": -250,
 		"conseguence": {
-			"text": "La nuova casa ti piace molto e i bambini sono contenti. Ti senti soddisfatta anche se la spesa si fa sentire.",
+			"text": "Con la macchina tu e i tuoi figli potete fare molte più cose. Ma ti rimane la dolorosa sensazione di aver ceduto a una discriminazione.",
 			"type": "vtrap",
-			"trapText": "Scopri che, in quanto immigrata, paghi più di assicurazione rispetto al tuo amico italiano: il costo è di 300€",
+			"trapText": "Scopri che, in quanto immigrata, paghi più di assicurazione rispetto al tuo amico italiano: il costo è di 300€.",
 			"deltaHappiness": 0,
 			"deltaMoney": -50
 		}
 	}, {
 		"title": "Continui con l'autobus",
 		"button": "Continui con l'autobus",
-		"text": "L'abbonamento ai mezzi pubblici per te e i tuoi figli costa meno, ma gli spostamenti continueranno ad essere lenti e faticosi.",
-		"happiness": 280,
+		"text": "L'abbonamento ai mezzi pubblici per te e i tuoi figli costa meno. Gli spostamenti sono scomodi ma è sempre meglio che andare a piedi.",
+		"happiness": 50,
 		"money": -100,
 		"conseguence": {
 			"type": "normal",
@@ -137,7 +137,7 @@
 		"money": 0,
 		"conseguence": {
 			"type": "normal",
-			"text": "Alla fine sei riuscita ad ottenere quello che tu ritieni giusto, ma ti dà fastidio aver dovuto mentire e far passare i tuoi figli per malati."
+			"text": "Alla fine sei riuscita ad ottenere quello che ritieni giusto, ma ti dà fastidio aver dovuto mentire e far passare i tuoi figli per malati."
 		}
 	}, {
 		"title": "Prepari tu i pasti",
@@ -202,7 +202,7 @@
 		{
 			"title": "Affronti la situazione",
 			"button": "Affronti la situazione",
-			"text": "Ti fermi per spiegare al bambino quanto è offensiva la sua battuta.",
+			"text": "Ti fermi per spiegare al bambino quanto è offensiva la sua battuta. Lo ritieni doveroso.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence": {
@@ -282,7 +282,7 @@
 },{
 	"title": "Il negoziante razzista",
 	"text": "Mentre stai facendo acquisti in un negozio dove vai spesso, vedi il gestore che caccia via una ragazza Rom. Cosa fai?",
-	"theme": "ROM",
+	"theme": "negoziante",
 	"report": {
 			"text": "stat8",
 			"source": "“stat8”"
@@ -302,7 +302,7 @@
 		{
 			"title": "Affronti il negoziante",
 			"button": "Affronti il negoziante",
-			"text": "Protesti col negoziante per il suo comportamento discriminatorio e gli dici che non andrai più in quel negozio.",
+			"text": "Protesti col gestore per il suo comportamento discriminatorio e gli dici che non andrai più in quel negozio.",
 			"happiness": 50,
 			"money": -100,
 			"conseguence": {
@@ -322,7 +322,7 @@
 	"choices": [{
 		"title": "A casa tua",
 		"button": "A casa tua",
-		"text": "Fai la scelta più semplice e conveniente e speri che vengano tutti i suoi compagni di scuola.",
+		"text": "Fai la scelta più semplice e conveniente e speri che i suoi compagni di scuola di tuo figlio vengano comunque.",
 		"happiness": 0,
 		"money": -50,
 		"conseguence": {
@@ -366,7 +366,7 @@
 	"choices": [{
 		"title": "Entri con decisione",
 		"button": "Entri con decisione",
-		"text": "Anche se con te c'è il tuo bambino pensi che quello sia un tuo diritto e intendi esercitarlo.",
+		"text": "Anche se con te c'è il tuo bambino, pensi che quello sia un tuo diritto e intendi esercitarlo.",
 		"happiness": 50,
 		"money": 0,
 		"conseguence": {
@@ -378,14 +378,14 @@
 				"money": 0,
 				"stop": false,
 				"class": "bad",
-				"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 100 punti."
+				"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 100 punti. Perdi 50 punti."
 			}, {
 				"probability": 50,
 				"happiness": 50,
 				"money": 0,
 				"stop": false,
 				"class": "good",
-				"text": "I manifestanti ti guardano con aria di sfida, ma nessuno ti dice nulla. Presenti la domanda e torni a casa con la speranza di ottenere una casa migliore per la tua famiglia."
+				"text": "I manifestanti ti guardano con aria di sfida, ma nessuno ti dice nulla. Presenti la domanda e torni a casa con la speranza di ottenere una casa migliore per la tua famiglia. Guadagni 50 punti."
 			}]
 		}
 	}, {
