@@ -30,7 +30,7 @@
 				"cases": [
 					{
 						"probability": 70,
-						"happiness": -30,
+						"happiness": -50,
 						"money": -50,
 						"stop": false,
 						"class":"bad",

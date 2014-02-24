@@ -9,7 +9,7 @@
 	"choices": [{
 		"title": "Entri con decisione",
 		"button": "Entri con decisione",
-		"text": "Anche se con te c'è il tuo bambino pensi che quello sia un tuo diritto e intendi esercitarlo.",
+		"text": "Anche se con te c'è il tuo bambino, pensi che quello sia un tuo diritto e intendi esercitarlo.",
 		"happiness": 50,
 		"money": 0,
 		"conseguence": {
@@ -21,14 +21,14 @@
 				"money": 0,
 				"stop": false,
 				"class": "bad",
-				"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 100 punti."
+				"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 100 punti. Perdi 50 punti."
 			}, {
 				"probability": 50,
 				"happiness": 50,
 				"money": 0,
 				"stop": false,
 				"class": "good",
-				"text": "I manifestanti ti guardano con aria di sfida, ma nessuno ti dice nulla. Presenti la domanda e torni a casa con la speranza di ottenere una casa migliore per la tua famiglia."
+				"text": "I manifestanti ti guardano con aria di sfida, ma nessuno ti dice nulla. Presenti la domanda e torni a casa con la speranza di ottenere una casa migliore per la tua famiglia. Guadagni 50 punti."
 			}]
 		}
 	}, {

@@ -56,14 +56,14 @@
 		{
 			"title": "Stanza singola",
 			"button": "Una stanza singola",
-			"text": "È una spesa consistente e dovrai dividere casa, ma avrai la tua indipendenza.",
+			"text": "È una spesa consistente e dovrai dividere la casa, ma avrai la tua indipendenza.",
 			"happiness": 350,
 			"money": -400,
 			"conseguence": {
 				"text": "Hai una stanza tutta tua e sei felice. Ma ora dovrai stare molto attento ai soldi.",
 
 				"type": "trap",
-				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ti arrabbi per questa ingiustizia e devi trovare altro. Perdi 50 punti.",
+				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ora devi trovare un'altra sistemazione, ma ti arrabbi per questa ingiustizia. Perdi 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -78,7 +78,7 @@
 				"text": "Hai scelto di spendere meno: lo spazio è limitato ma i coinquilini sono simpatici.",
 
 				"type": "trap",
-				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ti arrabbi per questa ingiustizia e devi trovare altro. Perdi 50 punti.",
+				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ora devi trovare un'altra sistemazione, ma ti arrabbi per questa ingiustizia. Perdi 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -86,12 +86,15 @@
 		{
 			"title": "Ospite da un amico",
 			"button": "Ospite da un amico",
-			"text": "Non paghi l’affitto, ma dipendi dalla generosità di un altro.",
+			"text": "Non paghi l’affitto, ma ti dispiace dipendere dalla generosità di un altro.",
 			"happiness": -150,
 			"money": 0,
 			"conseguence": {
-				"type": "normal",
-				"text": "Paghi solo le spese, ma ti senti comunque un peso."
+				"text": "Paghi solo le spese, ma ti senti comunque un peso.",
+				"type": "trap",
+				"trapText": "Il padrone di casa non vuole extracomunitari e si lamenta con il tuo amico, che a malincuore ti chiede di andare via. Ora devi trovare un'altra sistemazione, ma ti arrabbi per questa ingiustizia. Perdi 50 punti.",
+				"trapHappiness": -50,
+				"trapMoney": 0
 			}
 		}
 	]
@@ -112,13 +115,13 @@
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "Ottieni ubito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
+				"text": "Ottieni subito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
 			}
 		},
 		{
 			"title": "Ti rifiuti",
 			"button": "Ti rifiuti",
-			"text": "Non vuoi cedere al ricatto, e rifiuti con veemenza",
+			"text": "Non vuoi cedere al ricatto, e rifiuti orgogliosamente.",
 			"happiness": 10,
 			"money": 0,
 			"conseguence": {
@@ -131,7 +134,7 @@
 						"money": 0,
 						"stop": false,
 						"class": "bad",
-						"text": "L'uomo che non hai pagato riesce a danneggiarti. Ti mette i turni peggiori."
+						"text": "L'uomo che non hai pagato riesce a danneggiarti. Ti mette i turni peggiori. Perdi 130 punti."
 					},
 					{
 						"probability": 50,
@@ -139,7 +142,7 @@
 						"money": 0,
 						"stop": false,
 						"class": "good",
-						"text": "Scopri che il suo era solo un bluff."
+						"text": "Il suo era solo un bluff. Sei contento di non esserti fatto intimidire, e guadagni altri 10 punti."
 					}
 				]
 			}
@@ -162,9 +165,8 @@
 			"happiness": 200,
 			"money": -200,
 			"conseguence": {
-				"text": "Non avendo il permesso di soggiorno, non hai i documenti per fare un contratto telefonico.",
 				"type": "trap",
-				"trapText": "Non avendo il permesso di soggiorno, non hai i documenti per fare un contratto telefonico.",
+				"trapText": "Non avendo il permesso di soggiorno, non hai i documenti per fare un contratto telefonico. La sensazione di ingiustizia ti fa perdere 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -188,124 +190,7 @@
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "La spesa è minima, ma chiami raramente i tuoi e ti senti in colpa."
-			}
-		}
-	]
-},{
-	"title": "La mamma preoccupata",
-	"text": "È sera, in una strada buia incroci una mamma con un bambino. Quando ti vede, lo tira vicino a sé con sguardo preoccupato. Come reagisci?",
-	"theme": "bambino",
-	"report": {
-			"text": "Il 33,9% dei casi di discriminazione razziale pervenute all’UNAR riguarda la convivenza negli spazi pubblici.",
-			"source": "Rapporto UNAR 2012"	
-		},
-	"choices":
-	[
-		{
-			"title": "Prosegui",
-			"button": "Prosegui",
-			"text": "Fai finta di niente per evitare discussioni",
-			"happiness": -50,
-			"money": 0,
-			"conseguence": {
-				"type": "normal",
-				"text": "Ti ha fatto male sentirti giudicato male solo perchè sei di colore, soprattutto perchè pensi che anche il bambino crescerà  con gli stessi pregiudizi."
-			}
-		},
-		{
-			"title": "Ti fermi a parlarle",
-			"button": "Ti fermi a parlarle",
-			"text": "Le spieghi che che non sei un criminale solo per il colore della tua pelle.",
-			"happiness": 10,
-			"money": 0,
-			"conseguence":  {
-				"type": "random",
-				"waitingText": "La donna ti lancia uno sguardo preoccupato...",
-
-				"cases": [
-					{
-						"probability": 70,
-						"happiness": 10,
-						"money": -70,
-						"stop": false,
-						"class": "bad",
-						"text": "Appena hai aperto bocca, la donna si è spaventata e ti ha spruzzato con uno spray al peperoncino. Il giorno dopo non sei riuscito ad andare a lavoro. Perdi 70€."
-					},
-					{
-						"probability": 30,
-						"happiness": 30,
-						"money": 0,
-						"stop": false,
-						"class": "good",
-						"text": "La donna ti ha ascoltato e si è scusata. Senti di aver fatto qualcosa di buono per tutti gli stranieri. Guadagni 20 punti."
-					}
-				]
-			}
-		}
-	]
-},{
-	"title": "L'autobus",
-	"text": "Il lavoro che hai trovato è lontano da casa e devi prendere l'autobus. Cosa scegli di fare?",
-	"theme": "controllore",
-	"report": {
-			"text": "il 15,3% delle famiglie con stranieri non avevano denaro a sufficienza per i trasporti (contro l’8,1% delle famiglie composte da soli italiani)",
-			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
-		},
-	"choices": [
-		{
-			"title": "Fai l'abbonamento",
-			"button": "Fai l'abbonamento",
-			"text": "È una spesa fissa, ma puoi usare l'autobus anche per uscire la sera.",
-			"happiness": 100,
-			"money": -50,
-			"conseguence": {
-				"text": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai.",
-				"type": "trap",
-				"trapText": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai.",
-				"trapHappiness": -50,
-				"trapMoney": 0
-			}
-		},
-		{
-			"title": "Usi un trucco",
-			"button": "Usi un trucco",
-			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
-			"happiness": -20,
-			"money": 0,
-			"conseguence":  {
-				"type": "random",
-				"waitingText": "È salito il controllore!",
-
-				"cases": [
-					{
-						"probability": 30,
-						"happiness": -50,
-						"money": -120,
-						"stop": false,
-						"class": "bad",
-						"text": "Il controllore punta subito te per il tuo aspetto. Ti fa la multa di 100euro."
-					},
-					{
-						"probability": 70,
-						"happiness": -20,
-						"money": -20,
-						"stop": false,
-						"class":"good",
-						"text": "Scendi dall'autobus appena in tempo. Una signora ti ha visto e commenta «Gli stranieri non pagano mai». Ti vergogni di aver avvalorato un pregiudizio e perdi 10 punti."
-					}
-				]
-			}
-		},	
-		{
-			"title": "Compri i biglietti",
-			"button": "Compri i biglietti",
-			"text": "Spendi molto, ma sei sicuro.",
-			"happiness": 0,
-			"money": -80,
-			"conseguence": {
-				"type": "normal",
-				"text": "L'acquisto di tutti quei biglietti col tempo si fa sentire sul tuo budget."
+				"text": "La spesa è minima, ma riesci a chiamare raramente i tuoi e per questo ti senti in colpa."
 			}
 		}
 	]
@@ -360,6 +245,123 @@
 		}
 	]
 },{
+	"title": "L'autobus",
+	"text": "Il lavoro che hai trovato è lontano da casa e devi prendere l'autobus. Cosa scegli di fare?",
+	"theme": "controllore",
+	"report": {
+			"text": "il 15,3% delle famiglie con stranieri non avevano denaro a sufficienza per i trasporti (contro l’8,1% delle famiglie composte da soli italiani)",
+			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
+		},
+	"choices": [
+		{
+			"title": "Fai l'abbonamento",
+			"button": "Fai l'abbonamento",
+			"text": "È una spesa fissa, ma puoi usare l'autobus anche per uscire la sera.",
+			"happiness": 100,
+			"money": -50,
+			"conseguence": {
+				"text": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai. La sensazione di ingiustizia ti fa perdere 50 punti.",
+				"type": "trap",
+				"trapText": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai. La sensazione di ingiustizia ti fa perdere 50 punti.",
+				"trapHappiness": -50,
+				"trapMoney": 0
+			}
+		},
+		{
+			"title": "Usi un trucco",
+			"button": "Usi un trucco",
+			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri anche se ti senti in colpa.",
+			"happiness": -20,
+			"money": 20,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "È salito il controllore!",
+
+				"cases": [
+					{
+						"probability": 30,
+						"happiness": -50,
+						"money": -100,
+						"stop": false,
+						"class": "bad",
+						"text": "È salito il controllore che punta subito te per il tuo aspetto. Ti fa la multa di 100euro."
+					},
+					{
+						"probability": 70,
+						"happiness": -10,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "È salito il controllore ma riesci a scendere dall'autobus appena in tempo. Una signora ti ha visto e commenta «Gli stranieri non pagano mai». Ti vergogni di aver avvalorato un pregiudizio e perdi 10 punti."
+					}
+				]
+			}
+		},	
+		{
+			"title": "Compri i biglietti",
+			"button": "Compri i biglietti",
+			"text": "Spendi molto, ma sei sicuro.",
+			"happiness": 0,
+			"money": -80,
+			"conseguence": {
+				"type": "normal",
+				"text": "L'acquisto di tutti quei biglietti col tempo si fa sentire sul tuo budget."
+			}
+		}
+	]
+},{
+	"title": "La mamma preoccupata",
+	"text": "È sera, in una strada buia incroci una mamma con un bambino. Quando ti vede, lo tira vicino a sé con sguardo preoccupato. Come reagisci?",
+	"theme": "bambino",
+	"report": {
+			"text": "Il 33,9% dei casi di discriminazione razziale pervenute all’UNAR riguarda la convivenza negli spazi pubblici.",
+			"source": "Rapporto UNAR 2012"	
+		},
+	"choices":
+	[
+		{
+			"title": "Prosegui",
+			"button": "Prosegui",
+			"text": "Fai finta di niente per evitare discussioni",
+			"happiness": -50,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Ti ha fatto male sentirti giudicato male solo perchè sei di colore, soprattutto perchè pensi che anche il bambino crescerà  con gli stessi pregiudizi."
+			}
+		},
+		{
+			"title": "Ti fermi a parlarle",
+			"button": "Ti fermi a parlarle",
+			"text": "Le spieghi orgogliosamente che che non sei un criminale solo per il colore della tua pelle.",
+			"happiness": 10,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "La donna ti lancia uno sguardo preoccupato...",
+
+				"cases": [
+					{
+						"probability": 70,
+						"happiness": 0,
+						"money": -70,
+						"stop": false,
+						"class": "bad",
+						"text": "Appena hai aperto bocca, la donna si è spaventata e ti ha spruzzato con uno spray al peperoncino. Il giorno dopo non sei riuscito ad andare a lavoro. Perdi 70€."
+					},
+					{
+						"probability": 30,
+						"happiness": 30,
+						"money": 0,
+						"stop": false,
+						"class": "good",
+						"text": "La donna ti ha ascoltato e si è scusata. Senti di aver fatto qualcosa di buono per tutti gli stranieri. Guadagni 20 punti."
+					}
+				]
+			}
+		}
+	]
+},{
 	"title": "L'infortunio sul lavoro",
 	"text": "Il posto dove lavori non rispetta le norme sulla sicurezza. Un giorno cadi e ti fai male ad una gamba. Cosa fai?",
 	"theme": "gamba",
@@ -382,12 +384,12 @@
 		{
 			"title": "Vai a casa",
 			"button": "Vai a casa",
-			"text": "Hai saltato un giorno di lavoro ma il dolore è passato. Ma quando torni, il capo manda a chiamare...",
+			"text": "Salti un giorno di lavoro: basterà a farti passare il dolore.",
 			"happiness": 10,
 			"money": 0,
 			"conseguence":{
 				"type": "random",
-
+				"waitingText": "Quando torni, il capo manda a chiamare...",
 				"cases": [
 					{
 						"probability": 50,
@@ -399,7 +401,7 @@
 					},
 					{
 						"probability": 50,
-						"happiness": 10,
+						"happiness": 20,
 						"money": 0,
 						"stop": false,
 						"class":"good",
@@ -441,7 +443,7 @@
 				"cases": [
 					{
 						"probability": 70,
-						"happiness": -30,
+						"happiness": -50,
 						"money": -50,
 						"stop": false,
 						"class":"bad",

@@ -12,14 +12,14 @@
 		{
 			"title": "Stanza singola",
 			"button": "Una stanza singola",
-			"text": "È una spesa consistente e dovrai dividere casa, ma avrai la tua indipendenza.",
+			"text": "È una spesa consistente e dovrai dividere la casa, ma avrai la tua indipendenza.",
 			"happiness": 350,
 			"money": -400,
 			"conseguence": {
 				"text": "Hai una stanza tutta tua e sei felice. Ma ora dovrai stare molto attento ai soldi.",
 
 				"type": "trap",
-				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ti arrabbi per questa ingiustizia e devi trovare altro. Perdi 50 punti.",
+				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ora devi trovare un'altra sistemazione, ma ti arrabbi per questa ingiustizia. Perdi 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -34,7 +34,7 @@
 				"text": "Hai scelto di spendere meno: lo spazio è limitato ma i coinquilini sono simpatici.",
 
 				"type": "trap",
-				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ti arrabbi per questa ingiustizia e devi trovare altro. Perdi 50 punti.",
+				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ora devi trovare un'altra sistemazione, ma ti arrabbi per questa ingiustizia. Perdi 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -42,12 +42,15 @@
 		{
 			"title": "Ospite da un amico",
 			"button": "Ospite da un amico",
-			"text": "Non paghi l’affitto, ma dipendi dalla generosità di un altro.",
+			"text": "Non paghi l’affitto, ma ti dispiace dipendere dalla generosità di un altro.",
 			"happiness": -150,
 			"money": 0,
 			"conseguence": {
-				"type": "normal",
-				"text": "Paghi solo le spese, ma ti senti comunque un peso."
+				"text": "Paghi solo le spese, ma ti senti comunque un peso.",
+				"type": "trap",
+				"trapText": "Il padrone di casa non vuole extracomunitari e si lamenta con il tuo amico, che a malincuore ti chiede di andare via. Ora devi trovare un'altra sistemazione, ma ti arrabbi per questa ingiustizia. Perdi 50 punti.",
+				"trapHappiness": -50,
+				"trapMoney": 0
 			}
 		}
 	]

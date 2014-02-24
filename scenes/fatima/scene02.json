@@ -9,7 +9,7 @@
 	"choices": [{
 		"title": "Protesti",
 		"button": "Protesti",
-		"text": "Dici al capo che con la sua richiesta sta offendendo te e la tua religione.",
+		"text": "Non vuoi essere discriminata e dici al capo che con la sua richiesta sta offendendo te e la tua religione.",
 		"happiness": 20,
 		"money": 0,
 		"conseguence": {

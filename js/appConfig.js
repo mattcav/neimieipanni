@@ -4,7 +4,7 @@ nmpConfig.constant('HELPERS', [
 	{
 		"title": "bisogno di soldi?",
 		"class": "m-add-money",
-		"text": "Chiedi un prestito ad un amico: ricevi € 200 ma perdi pt 250",
+		"text": "Chiedi un prestito ad un amico: ricevi 200 euro ma il disagio ti costerà 250 punti.",
 		"happiness": -250,
 		"money": 200,
 		"conseguence": {
@@ -15,9 +15,9 @@ nmpConfig.constant('HELPERS', [
 	{
 		"title": "morale a terra?",
 		"class": "m-add-points",
-		"text": "Fai un regalo ai tuoi genitori: ricevi pt 250, ma perdi € 200",
-		"happiness": 250,
-		"money": -200,
+		"text": "Fai un regalo ai tuoi genitori: costa 250 euro, ma sentirli felici ti farà guadagnare 200 punti.",
+		"happiness": 200,
+		"money": -250,
 		"conseguence": {
 			"type": "normal",
 			"text": "Testo help2 ricevuto"
@@ -34,8 +34,8 @@ nmpConfig.constant('CHARACTERS', {
 	},
 	'fatima': {
 		start: {
-			happiness: 800,
-			money: 600
+			happiness: 600,
+			money: 700
 		}
 	},
 	'irina': {

@@ -15,13 +15,13 @@
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "Ottieni ubito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
+				"text": "Ottieni subito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
 			}
 		},
 		{
 			"title": "Ti rifiuti",
 			"button": "Ti rifiuti",
-			"text": "Non vuoi cedere al ricatto, e rifiuti con veemenza",
+			"text": "Non vuoi cedere al ricatto, e rifiuti orgogliosamente.",
 			"happiness": 10,
 			"money": 0,
 			"conseguence": {
@@ -34,7 +34,7 @@
 						"money": 0,
 						"stop": false,
 						"class": "bad",
-						"text": "L'uomo che non hai pagato riesce a danneggiarti. Ti mette i turni peggiori."
+						"text": "L'uomo che non hai pagato riesce a danneggiarti. Ti mette i turni peggiori. Perdi 130 punti."
 					},
 					{
 						"probability": 50,
@@ -42,7 +42,7 @@
 						"money": 0,
 						"stop": false,
 						"class": "good",
-						"text": "Scopri che il suo era solo un bluff."
+						"text": "Il suo era solo un bluff. Sei contento di non esserti fatto intimidire, e guadagni altri 10 punti."
 					}
 				]
 			}
