@@ -21,12 +21,12 @@
 		{
 			"title": "Vai a casa",
 			"button": "Vai a casa",
-			"text": "Hai saltato un giorno di lavoro ma il dolore è passato. Ma quando torni, il capo manda a chiamare...",
+			"text": "Salti un giorno di lavoro: basterà a farti passare il dolore.",
 			"happiness": 10,
 			"money": 0,
 			"conseguence":{
 				"type": "random",
-
+				"waitingText": "Quando torni, il capo manda a chiamare...",
 				"cases": [
 					{
 						"probability": 50,
@@ -38,7 +38,7 @@
 					},
 					{
 						"probability": 50,
-						"happiness": 10,
+						"happiness": 20,
 						"money": 0,
 						"stop": false,
 						"class":"good",

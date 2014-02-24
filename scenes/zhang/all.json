@@ -3,8 +3,8 @@
 		"text": "Per frequentare l’università hai cambiato città, ora ti serve un posto dove stare. Cosa cerchi?",
 		"theme": "casa",
 		"report": {
-			"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
-			"source": "Rapporto UNAR"	
+			"text": "Il 16,7% degli episodi di discriminazione etnico-razziale in ambito casa riguardano le condizioni di affitto.",
+			"source": "Rapporto UNAR 2013"	
 		},
 		"choices": [
 			{
@@ -58,8 +58,8 @@
 	"text": "Nell’atrio dell’università un ragazzo, pensando che tu non capisca l’italiano, dice a un altro che invece che lì dovresti stare a cucinare gatti fingendo che siano pollo. Come reagisci?",
 	"theme": "bulli",
 	"report": {
-			"text": "Le discriminazioni su base etnico-razziale nell’ambito “Scuola&Istruzione” costituiscono il 5% del totale dei casi. Ill 21,2% riguarda atti discriminatori compiuti da studenti.",
-			"source": "Rapporto UNAR"	
+			"text": "Il 59% delle discriminazioni subite dalla comunità cinese è legato alle informazioni diffamatorie sulla cultura cinese diffuse quotidianamente.",
+			"source": "Indagine “AssoChina”"	
 		},
 	"choices": [
 		{
@@ -89,7 +89,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "I ragazzi non la prendono bene, ti dicono che è meglio che impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
+						"text": "I ragazzi non la prendono bene, ti dicono che è meglio se impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
 					},
 					{
 						"probability": 60,
@@ -178,7 +178,7 @@
 			"button": "Fai una furbata",
 			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
 			"happiness": -20,
-			"money": 0,
+			"money": -10,
 			"conseguence":  {
 				"type": "random",
 				"waitingText": "Hai scelto di risparmiare, ma ora è salito il controllore...",
@@ -208,7 +208,7 @@
 	"text": "Per avere un po’ di soldi in più fai un casting per una pubblicità. Vieni scelto, ma scopri che devi interpretare un cinese stereotipato e con un ridicolo accento.",
 	"theme": "casting",
 	"report": {
-			"text": "Uno degli stereotipi razzisti più significativi nelle pubblicità ? quello relativo alla caratterizzazione dei Cinesi (e per estensione dela Cina) in termini di soggetti capaci solo di copiare e, possibilmente, “taroccare” (ossia spacciare le copie per originali) i prodotti creati da altri.",
+			"text": "Uno degli stereotipi razzisti più significativi nelle pubblicità? Quello relativo alla caratterizzazione dei Cinesi (e per estensione dela Cina) in termini di soggetti capaci solo di copiare e, possibilmente, “taroccare” (ossia spacciare le copie per originali) i prodotti creati da altri.",
 			"source": "Associna"	
 		},
 	"choices": [
@@ -220,7 +220,7 @@
 			"money": 150,
 			"conseguence": {
 				"type": "normal",
-				"text": "Guadagnare quei soldi ti è costato abbastanza. Ma sentendo al telefono i tuoi genitori scopri che alcuni cinesi si sono sentiti offesi dalla tua ridicola interpretazione."
+				"text": "Hai guadagnato dei soldi che ti torneranno utili. Ma i tuoi genitori ti dicono che alcuni cinesi si sono offesi per la tua ridicola interpretazione, ti senti imbarazzo."
 			}
 		},
 		{
@@ -252,7 +252,7 @@
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace renderti conto che per i tuoi coetanei non sei davvero italiano."
+				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace scoprire che per i tuoi coetanei non sei davvero italiano."
 			}
 		},
 		{
@@ -302,7 +302,7 @@
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace renderti conto che per i tuoi coetanei non sei davvero italiano."
+				"text": "Hai scelto di non reagire, ma ogni volta che senti quel nome sbagliato ti ricordi che non sei accettato per quello che sei."
 			}
 		},
 		{
@@ -329,7 +329,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Il capo accetta i tuoi appunti e si scusa. D'ora in poi ti chiamerà con il tuo vero nome, guadagni altri 10 punti."
+						"text": "Il capo accetta la tua critica e si scusa. D'ora in poi ti chiamerà con il tuo vero nome, guadagni altri 10 punti."
 					}
 				]
 			}
@@ -352,7 +352,7 @@
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai preferito non immischiarti, ma ora ti senti in colpa per non aver difeso qualcuno che ha subito la stessa ingiustizia che poteva capitare anche a te."
+				"text": "Hai preferito non immischiarti, ma ora ti senti in colpa per non aver difeso qualcuno che ha subito la un'ingiustizia che poteva capitare anche a te."
 			}
 		},
 		{
@@ -410,7 +410,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "L'uomo ti aggredisce verbalmente, tra l'indifferenza dei presenti. Ti allontani arrabbiato, non hai perso solo la partita, ma anche hai la sensazione di essere straniero nella tua nazione. Perdi 70 punti."
+						"text": "L'uomo ti aggredisce verbalmente, tra l'indifferenza dei presenti. Ti allontani arrabbiato, non hai perso solo la partita, ma hai anche la sensazione di essere straniero nella tua nazione. Perdi 70 punti."
 					},
 					{
 						"probability": 50,
@@ -418,7 +418,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "L'uomo prova a reagire, ma altri presenti lo zittiscono, schierandoti dalla tua parte e incitando i giocatori di origine straniera che giocano in nazionale. Rimani sorridente al tuo posto, ti senti a casa. Guadagni 20 punti"
+						"text": "L'uomo prova a reagire, ma altri presenti lo zittiscono, schierandosi dalla tua parte e incitando i giocatori di origine straniera che giocano in nazionale. Rimani sorridente al tuo posto, ti senti a casa. Guadagni 20 punti"
 					}
 				]
 			}
@@ -449,7 +449,7 @@
 			"button": "Fingi di essere d'accordo",
 			"text": "Risparmi un po' di soldi ma rinunci a difendere il tuo paese.",
 			"happiness": -50,
-			"money": 0,
+			"money": 30,
 			"conseguence": {
 				"type": "normal",
 				"text": "Il trattamento di favore ti fa comodo, ma ti senti in colpa per essere stato zitto."
@@ -458,7 +458,7 @@
 		{
 			"title": "Smetti di andarci",
 			"button": "Smetti di andarci",
-			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
+			"text": "Qualche pasto gratis ti faceva comodo, ma la dignità non ha prezzo.",
 			"happiness": 30,
 			"money": 0,
 			"conseguence": {

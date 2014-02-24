@@ -1,7 +1,7 @@
 {
 	"title": "Il negoziante razzista",
 	"text": "Mentre stai facendo acquisti in un negozio dove vai spesso, vedi il gestore che caccia via una ragazza Rom. Cosa fai?",
-	"theme": "ROM",
+	"theme": "negoziante",
 	"report": {
 			"text": "stat8",
 			"source": "“stat8”"
@@ -21,7 +21,7 @@
 		{
 			"title": "Affronti il negoziante",
 			"button": "Affronti il negoziante",
-			"text": "Protesti col negoziante per il suo comportamento discriminatorio e gli dici che non andrai più in quel negozio.",
+			"text": "Protesti col gestore per il suo comportamento discriminatorio e gli dici che non andrai più in quel negozio.",
 			"happiness": 50,
 			"money": -100,
 			"conseguence": {

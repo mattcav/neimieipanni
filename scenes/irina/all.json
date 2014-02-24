@@ -17,7 +17,7 @@
 				"text": "Dovrai stare molto attento ai soldi, ma sei contentissimo di vivere da solo.",
 
 				"type": "trap",
-				"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapText": "Il proprietario ti incontra e ti dice che preferisce non affitare agli extracomunitari. Gli spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -32,7 +32,7 @@
 				"text": "È comunque una bella soddisfazione avere una stanza tutta per te, anche se vivrai con degli estranei.",
 
 				"type": "trap",
-				"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapText": "Il proprietario ti incontra e ti dice che preferisce non affitare agli extracomunitari. Gli spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -47,7 +47,7 @@
 				"text": "Hai risolto il problema dell'alloggio con la spesa più bassa, ma ora dovrai affrontare qualche difficoltà nella convivenza.",
 
 				"type": "trap",
-				"trapText": "Il proprietario ti vede e ti dice che preferisce non affitare agli extracomunitari. GLi spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapText": "Il proprietario ti incontra e ti dice che preferisce non affitare agli extracomunitari. Gli spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -72,7 +72,7 @@
 					"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
 
 					"type": "trap",
-					"trapText": "Al colloquio ti dicono che per rendere validi i tuoi titoli di studio in Italia c'è una lunga trafila. Nel frattempo non possono darti il posto.",
+					"trapText": "Al colloquio ti dicono che per rendere validi i tuoi titoli di studio in Italia c'è una lunga trafila. Nel frattempo non possono darti il posto. Ti sembra un'ingiustizia, ma non puoi farci niente.",
 					"trapHappiness": -50,
 					"trapMoney": 0
 				}
@@ -112,7 +112,7 @@
 		{
 			"title": "Chiedi l'aumento",
 			"button": "Chiedi l'aumento",
-			"text": "Sei un'infermiera diplomata, hai nozioni che possono essere utili. Dedici di farlo presente.",
+			"text": "Sei un'infermiera diplomata e ne sei fiera. Decidi di farlo presente perché hai nozioni che possono essere utili.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
@@ -146,7 +146,7 @@
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Sei così contenta di aver trovato lavoro che non hai voluto sollevare questioni. Ma ripensandoci a mente fredda, ti sembra di esserti svilita da sola."
+				"text": "Sei così contenta di aver trovato lavoro che non hai voluto sollevare questioni. Ma, ripensandoci a mente fredda, ti sembra di esserti svilita da sola."
 			}
 		}
 	]
@@ -167,7 +167,7 @@
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Il tuo italiano migliora velocemente: ti senti più integrata ed è più facile conoscere nuove persone. Peccato solo per la scomodità."
+				"text": "Il tuo italiano migliora velocemente: ti senti più integrata ed è più facile conoscere nuove persone. Purtroppo gli orari sono scomodi e non puoi seguire tutte le lezioni."
 			}
 		},
 		{
@@ -206,7 +206,7 @@
 			"title": "Vai a casa",
 			"button": "Vai a casa",
 			"text": "Il permesso per malattia è un tuo diritto e intendi esercitarlo.",
-			"happiness": -20,
+			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
@@ -257,8 +257,8 @@
 				}
 			},
 			{
-				"title": "Vai ad una lavanderia a gettoni",
-				"button": "Vai ad una lavanderia a gettoni",
+				"title": "Vai in una lavanderia a gettoni",
+				"button": "Vai in una lavanderia a gettoni",
 				"text": "La spesa è contenuta e ti risparmia la fatica, ma ti porta via tempo.",
 				"happiness": -30,
 				"money": -30,
@@ -315,7 +315,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "I ragazzi si sono avvicinati minacciosi. Ma si sono limitati a guardarti male e a bofonchiare qualcosa prima di andarsene."
+						"text": "I ragazzi si sono avvicinati minacciosi. Ma si sono limitati a guardarti male e a mormorare qualcosa prima di andarsene."
 					},
 					{
 						"probability": 50,
@@ -396,13 +396,13 @@
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai sostenuto una spesa extra, ma hai rivisto i parenti e sei stato bene con loro."
+				"text": "Evidentemente ci sono ancora persone per cui un accento straniero vale più di anni di studio. Torni a casa con questa consapevolezza e ti senti triste e sminuita."
 			}
 		},
 		{
-			"title": "Insisiti",
-			"button": "Insisiti",
-			"text": "Evidentemente ci sono ancora persone per cui un accento straniero vale più di anni di studio. Torni a casa con questa consapevolezza e ti senti triste e sminuita.",
+			"title": "Insisti",
+			"button": "Insisti",
+			"text": "Hai uno scatto di orgoglio. Questo è il tuo mestiere e lo sai fare: gli dici di stare fermo e fidarsi di te.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {

@@ -9,7 +9,7 @@
 	"choices": [{
 		"title": "A casa tua",
 		"button": "A casa tua",
-		"text": "Fai la scelta più semplice e conveniente e speri che vengano tutti i suoi compagni di scuola.",
+		"text": "Fai la scelta più semplice e conveniente e speri che i suoi compagni di scuola di tuo figlio vengano comunque.",
 		"happiness": 0,
 		"money": -50,
 		"conseguence": {

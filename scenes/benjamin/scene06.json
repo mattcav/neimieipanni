@@ -14,9 +14,9 @@
 			"happiness": 100,
 			"money": -50,
 			"conseguence": {
-				"text": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai.",
+				"text": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai. La sensazione di ingiustizia ti fa perdere 50 punti.",
 				"type": "trap",
-				"trapText": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai.",
+				"trapText": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai. La sensazione di ingiustizia ti fa perdere 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -24,9 +24,9 @@
 		{
 			"title": "Usi un trucco",
 			"button": "Usi un trucco",
-			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
+			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri anche se ti senti in colpa.",
 			"happiness": -20,
-			"money": 0,
+			"money": 20,
 			"conseguence":  {
 				"type": "random",
 				"waitingText": "È salito il controllore!",
@@ -35,18 +35,18 @@
 					{
 						"probability": 30,
 						"happiness": -50,
-						"money": -120,
+						"money": -100,
 						"stop": false,
 						"class": "bad",
-						"text": "Il controllore punta subito te per il tuo aspetto. Ti fa la multa di 100euro."
+						"text": "È salito il controllore che punta subito te per il tuo aspetto. Ti fa la multa di 100euro."
 					},
 					{
 						"probability": 70,
-						"happiness": -20,
-						"money": -20,
+						"happiness": -10,
+						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Scendi dall'autobus appena in tempo. Una signora ti ha visto e commenta «Gli stranieri non pagano mai». Ti vergogni di aver avvalorato un pregiudizio e perdi 10 punti."
+						"text": "È salito il controllore ma riesci a scendere dall'autobus appena in tempo. Una signora ti ha visto e commenta «Gli stranieri non pagano mai». Ti vergogni di aver avvalorato un pregiudizio e perdi 10 punti."
 					}
 				]
 			}

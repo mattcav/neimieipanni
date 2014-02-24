@@ -15,9 +15,8 @@
 			"happiness": 200,
 			"money": -200,
 			"conseguence": {
-				"text": "Non avendo il permesso di soggiorno, non hai i documenti per fare un contratto telefonico.",
 				"type": "trap",
-				"trapText": "Non avendo il permesso di soggiorno, non hai i documenti per fare un contratto telefonico.",
+				"trapText": "Non avendo il permesso di soggiorno, non hai i documenti per fare un contratto telefonico. La sensazione di ingiustizia ti fa perdere 50 punti.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
@@ -41,7 +40,7 @@
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "La spesa è minima, ma chiami raramente i tuoi e ti senti in colpa."
+				"text": "La spesa è minima, ma riesci a chiamare raramente i tuoi e per questo ti senti in colpa."
 			}
 		}
 	]

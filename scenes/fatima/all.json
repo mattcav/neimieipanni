@@ -1,6 +1,6 @@
 [{
 	"title": "Una nuova casa",
-	"text": "I tuoi bambini stanno crescendo, servirebbe una casa più grande, invece di quella dove vivete con i genitori di tuo marito. Che casa cerchi?",
+	"text": "I tuoi bambini stanno crescendo, servirebbe un appartamento più grande, invece di quello dove vivete con i genitori di tuo marito. Che casa cerchi?",
 	"theme": "casa",
 	"report": {
 		"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
@@ -38,15 +38,11 @@
 		"title": "Resti in quella dei suoceri",
 		"button": "Resti in quella dei suoceri",
 		"text": "È la scelta più economica, ma ti pesa non avere una casa solo tua.",
-		"happiness": 150,
+		"happiness": -150,
 		"money": 0,
 		"conseguence": {
-			"text": "Per paura di non farcela con i soldi hai dovuto rimandare il vostro progetto di essere indipendenti. Ti senti molto insoddisfatta.",
-
-			"type": "trap",
-			"trapText": "L'agente immobiliare sottopone la tua candidatura ai proprietari, ma il condominio ha deciso di non affittare a extracomunitari. Ti senti discriminata, ma non puoi ribattere nulla, perdi 20 punti.",
-			"trapHappiness": -20,
-			"trapMoney": 0
+			"type": "normal",
+			"text": "Per paura di non farcela con i soldi hai dovuto rimandare il vostro progetto di essere indipendenti. Ti senti molto insoddisfatta, perdi 150 punti."
 		}
 	}]
 },{
@@ -60,7 +56,7 @@
 	"choices": [{
 		"title": "Protesti",
 		"button": "Protesti",
-		"text": "Dici al capo che con la sua richiesta sta offendendo te e la tua religione.",
+		"text": "Non vuoi essere discriminata e dici al capo che con la sua richiesta sta offendendo te e la tua religione.",
 		"happiness": 20,
 		"money": 0,
 		"conseguence": {
@@ -95,7 +91,7 @@
 	}]
 },{
 	"title": "L'automobile",
-	"text": "Un amico ti vorrebbe regalare l'auto che non usa più.Ti basterà trasferire l'assicurazione a tuo nome. Cosa fai?",
+	"text": "Un amico ti vorrebbe regalare l'auto che non usa più. Ti basterà trasferire l'assicurazione a tuo nome. Cosa fai?",
 	"theme": "automobile",
 	"report": {
 		"text": "stat3",
@@ -109,10 +105,9 @@
 		"money": -250,
 		"conseguence": {
 			"text": "La nuova casa ti piace molto e i bambini sono contenti. Ti senti soddisfatta anche se la spesa si fa sentire.",
-
 			"type": "vtrap",
-			"trapText": "Scopri che. in quanto immigrata, paghi più di assicurazione rispetto al tuo amico italiano: il costo è di 300€",
-			"deltaHappiness": -50,
+			"trapText": "Scopri che, in quanto immigrata, paghi più di assicurazione rispetto al tuo amico italiano: il costo è di 300€",
+			"deltaHappiness": 0,
 			"deltaMoney": -50
 		}
 	}, {
