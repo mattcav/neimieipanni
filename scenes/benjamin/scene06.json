@@ -3,7 +3,8 @@
 	"text": "Il lavoro che hai trovato è lontano da casa e devi prendere l'autobus. Cosa scegli di fare?",
 	"theme": "controllore",
 	"report": {
-			"text": "il 15,3% delle famiglie con stranieri non avevano denaro a sufficienza per i trasporti (contro l’8,1% delle famiglie composte da soli italiani)",
+			"img":"autobus.png",
+			"text": "Le famiglie con stranieri che non hanno denaro a sufficienza per i trasporti, sono quasi il doppio di quelle composte da soli italiani: 15,3% contro l’8,1%.",
 			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
 		},
 	"choices": [

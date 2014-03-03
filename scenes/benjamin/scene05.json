@@ -3,8 +3,9 @@
 	"text": "Al lavoro il tuo capo ti chiama usando un nomignolo razzista. Cosa fai?",
 	"theme": "boss",
 	"report": {
-			"text": "Statisca mancante!",
-			"source": "Completala su googleDocs!"	
+			"img": "battuta.png",
+			"text": "Commette discriminazione […] Il datore di lavoro che [compie] qualsiasi atto o comportamento che produca un effetto pregiudizievole discriminando anche indirettamente i lavoratori in ragione della loro appartenenza a una razza.",
+			"source": "art 43 comma 2e Dlgs 286/1998"	
 		},
 	"choices": [
 		{
