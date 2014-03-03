@@ -3,8 +3,9 @@
 	"text": "Nel bar dove fai colazione con i colleghi, ti accorgi che sei l'unico a cui danno il cappuccino in un bicchiere di plastica invece che nella tazza. Come reagisci?",
 	"theme": "cappuccino",
 	"report": {
-			"text": "Circa il 3,2% delle segnalazioni di discriminazione razziale pervenute all’UNAR si sono verificate nell’ambito “Erogazione servizi da pubblici esercizi”",
-			"source": "Rapporto UNAR 2013"	
+			"img":"pillole.png",
+			"text": "Non ci sono differenze particolarmente significative circa le patologie riscontrate nei cittadini stranieri irregolari e nei pazienti italiani.",
+			"source": "Rapporto NAGA sulle malattie degli immigrati irregolari, ottobre 2009"	
 		},
 	"choices": [
 		{

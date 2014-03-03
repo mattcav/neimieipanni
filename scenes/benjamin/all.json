@@ -103,8 +103,9 @@
 	"text": "Il tuo superiore ti chiede 50€ per metterti sotto la sua ala protettiva. Cosa fai?",
 	"theme": "mazzetta",
 	"report": {
-		"text": "Nel 2012 i lavoratori con cittadinanza extracomunitaria rappresentano il 7,9% del totale dei dipendenti (9,4% per i maschi; 5,9 per le femmine). I lavoratori dipendenti stagionali extracomunitari sono pari al 10.3% dei complessivi stagionali",
-		"source": "“Gli immigrati nel mercato del lavoro in Italia”,Terzo Rapporto annuale, Anno 2013"	
+		"img": "mazzetta.png",
+		"text": "A partire dal settembre 2011 è stato introdotto nel codice penale italiano il nuovo reato di intermediazione illecita e sfruttamento del lavoro. Le pene previste per i cosiddetti “caporali” sono la reclusione da cinque a otto anni e una multa da 1.000 a 2.000 € per ogni lavoratore coinvolto.",
+		"source": "Codice Penale"	
 	},
 	"choices": [
 		{
@@ -153,8 +154,9 @@
 	"text": "Quando eri a casa di tua sorella chiamavate i vostri genitori in Nigeria dal telefono di casa. Come comunichi ora?",
 	"theme": "nostalgia",
 	"report": {
-			"text": "oltre il 90% delle famiglie con almeno uno straniero possiede un telefono (incluso in cellulare) che, quasi sempre, è ad uso esclusivo.",
-			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
+			"img": "telefono.png",
+			"text": "Per l'economia italiana, il mercato della telefonia rivolta a stranieri, vale oltre un miliardo di euro all'anno.",
+			"source": "Il Sole 24 ore, 2010"	
 		},
 	"choices":
 	[
@@ -199,8 +201,9 @@
 	"text": "Al lavoro il tuo capo ti chiama usando un nomignolo razzista. Cosa fai?",
 	"theme": "boss",
 	"report": {
-			"text": "Statisca mancante!",
-			"source": "Completala su googleDocs!"	
+			"img": "battuta.png",
+			"text": "Commette discriminazione […] Il datore di lavoro che [compie] qualsiasi atto o comportamento che produca un effetto pregiudizievole discriminando anche indirettamente i lavoratori in ragione della loro appartenenza a una razza.",
+			"source": "art 43 comma 2e Dlgs 286/1998"	
 		},
 	"choices": [
 		{
@@ -249,7 +252,8 @@
 	"text": "Il lavoro che hai trovato è lontano da casa e devi prendere l'autobus. Cosa scegli di fare?",
 	"theme": "controllore",
 	"report": {
-			"text": "il 15,3% delle famiglie con stranieri non avevano denaro a sufficienza per i trasporti (contro l’8,1% delle famiglie composte da soli italiani)",
+			"img":"autobus.png",
+			"text": "Le famiglie con stranieri che non hanno denaro a sufficienza per i trasporti, sono quasi il doppio di quelle composte da soli italiani: 15,3% contro l’8,1%.",
 			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
 		},
 	"choices": [
@@ -314,8 +318,9 @@
 	"text": "È sera, in una strada buia incroci una mamma con un bambino. Quando ti vede, lo tira vicino a sé con sguardo preoccupato. Come reagisci?",
 	"theme": "bambino",
 	"report": {
-			"text": "Il 33,9% dei casi di discriminazione razziale pervenute all’UNAR riguarda la convivenza negli spazi pubblici.",
-			"source": "Rapporto UNAR 2012"	
+			"img":"immigrazione.png",
+			"text": "Dal 1990 al 2003 il numero di permessi di soggiorno è aumentato del 400%, mentre il numero di reati ha avuto una lieve flessione.",
+			"source": "“Immigrazione e crimine” studio pubblicato dalla Banca d’Italia e realizzato da Milo Bianchi, Paolo Buonanno e Paolo Pinotti"	
 		},
 	"choices":
 	[
@@ -366,8 +371,9 @@
 	"text": "Il posto dove lavori non rispetta le norme sulla sicurezza. Un giorno cadi e ti fai male ad una gamba. Cosa fai?",
 	"theme": "gamba",
 	"report": {
-			"text": "nel periodo gennaio-dicembre 2012 sono stati trovati al lavoro, nel corso degli accertamenti ispettivi, n. 1.601 lavoratori extracomunitari privi del permesso di soggiorno, così ripartiti: n. 622 (industria); n.544 (terziario); n.254 (edilizia); n. 181 (agricoltura). Con riferimento alla materia della salute e sicurezza sui luoghi di lavoro, si rileva un numero di  violazioni prevenzionistiche pari a n. 40.424, che appare aumentato (+ 19%) rispetto all’anno 2011",
-			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
+			"img":"infortuni.png",
+			"text": "Gli stranieri in Italia sono l'8,6 della popolazione ma sono vittime del 15,9% degli infortuni sul lavoro nel 2012.",
+			"source": "Dossier immigrazione 2012"	
 		},
 	"choices": [
 		{
@@ -416,8 +422,9 @@
 	"text": "Nel bar dove fai colazione con i colleghi, ti accorgi che sei l'unico a cui danno il cappuccino in un bicchiere di plastica invece che nella tazza. Come reagisci?",
 	"theme": "cappuccino",
 	"report": {
-			"text": "Circa il 3,2% delle segnalazioni di discriminazione razziale pervenute all’UNAR si sono verificate nell’ambito “Erogazione servizi da pubblici esercizi”",
-			"source": "Rapporto UNAR 2013"	
+			"img":"pillole.png",
+			"text": "Non ci sono differenze particolarmente significative circa le patologie riscontrate nei cittadini stranieri irregolari e nei pazienti italiani.",
+			"source": "Rapporto NAGA sulle malattie degli immigrati irregolari, ottobre 2009"	
 		},
 	"choices": [
 		{
@@ -466,6 +473,7 @@
 	"text": "Camminando per strada senti un ragazzo che insulta una donna cinese per il colore della sua pelle. Cosa fai?",
 	"theme": "cinese",
 	"report": {
+			"img":"unar.png",
 			"text": "Se sei vittima o testiomone di comportamenti discriminatori nei confronti di terzi, contatta il Numero Verde UNAR 800901010",
 			"source": "oppure visita il sito web www.unar.it"	
 		},

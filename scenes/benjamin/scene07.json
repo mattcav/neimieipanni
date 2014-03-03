@@ -3,8 +3,9 @@
 	"text": "È sera, in una strada buia incroci una mamma con un bambino. Quando ti vede, lo tira vicino a sé con sguardo preoccupato. Come reagisci?",
 	"theme": "bambino",
 	"report": {
-			"text": "Il 33,9% dei casi di discriminazione razziale pervenute all’UNAR riguarda la convivenza negli spazi pubblici.",
-			"source": "Rapporto UNAR 2012"	
+			"img":"immigrazione.png",
+			"text": "Dal 1990 al 2003 il numero di permessi di soggiorno è aumentato del 400%, mentre il numero di reati ha avuto una lieve flessione.",
+			"source": "“Immigrazione e crimine” studio pubblicato dalla Banca d’Italia e realizzato da Milo Bianchi, Paolo Buonanno e Paolo Pinotti"	
 		},
 	"choices":
 	[
