@@ -40,14 +40,14 @@ nmpConfig.constant('CHARACTERS', {
 	},
 	'irina': {
 		start: {
-			happiness: 800,
-			money: 600
+			happiness: 650,
+			money: 100
 		}
 	},
 	'zhang': {
 		start: {
-			happiness: 800,
-			money: 600
+			happiness: 100,
+			money: 650
 		}
 	}
 });
