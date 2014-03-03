@@ -11,7 +11,7 @@
 			"title": "Fingi di non aver sentito",
 			"button": "Fingi di non aver sentito",
 			"text": "Decidi controvoglia di lasciar perdere: non vuoi avere problemi.",
-			"happiness": -50,
+			"happiness": -60,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
@@ -30,7 +30,7 @@
 				"cases": [
 					{
 						"probability": 50,
-						"happiness": -100,
+						"happiness": -150,
 						"money": 0,
 						"stop": false,
 						"class":"bad",

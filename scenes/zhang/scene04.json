@@ -1,48 +1,48 @@
 {
-	"title": "L'autobus",
-	"text": "La casa che hai trovato non è molto vicina all'univeristà, quindi dovrai prendere i mezzi pubblici ogni giorno. Cosa scegli di fare?",
-	"theme": "controllore",
+	"title": "Parli bene l'italiano",
+	"text": "Hai appena conosciuto una ragazza italiana. Lei ti piace, ma dopo pochi minuti ti dice una frase che hai sentito un milione di volte: “Però, lo parli bene l’italiano!”. Come reagisci?",
+	"theme": "ragazza",
 	"report": {
-			"text": "Il 70% delle segnalazioni pervenute all’UNAR riguardano casi di discriminazione etnico-razziale avvenute nell’ambito “Trasporto pubblico”.",
-			"source": "Rapporto UNAR"	
+			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
+			"source": "Analisi ed elaborazione dati sull’immigrazione cinese"	
 		},
 	"choices": [
 		{
-			"title": "Compri la tessera mensile",
-			"button": "Compri la tessera mensile",
-			"text": "È una spesa fissa, ma puoi usare l'autobus anche per uscire la sera.",
-			"happiness": 10,
-			"money": -50,
+			"title": "Sorridi e ringrazi",
+			"button": "Sorridi e ringrazi",
+			"text": "Tu sei italiano e questo genere di cose ti hanno sempre dato fastidio. Ma la ragazza crede di farti un complimento e quindi ti fingi contento.",
+			"happiness": -50,
+			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "È una spesa consistente, ma puoi spostarti ogni volta che ti serve."
+				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace scoprire che per i tuoi coetanei non sei davvero italiano."
 			}
 		},
 		{
-			"title": "Fai una furbata",
-			"button": "Fai una furbata",
-			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
-			"happiness": -20,
-			"money": -10,
+			"title": "Rispondi ironicamente",
+			"button": "Rispondi ironicamente",
+			"text": "Non ce la fai più a sentire commenti simili. Le rispondi “Complimenti, anche tu”.",
+			"happiness": 20,
+			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Hai scelto di risparmiare, ma ora è salito il controllore...",
+				"waitingText": "Erano anni che volevi dare una risposta del genere e ti senti soddisfatto di te. Ma ora devi affrontare la reazione della ragazza...",
 				"cases": [
 					{
-						"probability": 40,
-						"happiness": -100,
-						"money": -100,
+						"probability": 50,
+						"happiness": -80,
+						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "Il controllore punta subito te per il tuo aspetto e ti trova con il biglietto non timbrato. Devi pagare 100€ di multa."
+						"text": "La ragazza ci rimane male e se ne va senza salutarti. Perdi 80 punti."
 					},
 					{
-						"probability": 60,
-						"happiness": -60,
+						"probability": 50,
+						"happiness": 30,
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Scendi dall'autobus appena in tempo. Ma  una signora ti ha visto e commenta “Gli stranieri non pagano mai”. Ti vergogni perché hai incrementato un pregiudizio, perdi 60 punti."
+						"text": "La ragazza si è messa a ridere e ti ha chiesto scusa. Poi ti ha invitato a prendere un caffè. Guadagni 30 punti."
 					}
 				]
 			}

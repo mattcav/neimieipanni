@@ -1,32 +1,50 @@
 {
-	"title": "Il casting",
-	"text": "Per avere un po’ di soldi in più fai un casting per una pubblicità. Vieni scelto, ma scopri che devi interpretare un cinese stereotipato e con un ridicolo accento.",
-	"theme": "casting",
+	"title": "Insulto a terzo",
+	"text": "Stai camminando per strada quando senti un ragazzo che insulta una donna di colore, lei si gira a guardarti per cercare sostegno.",
+	"theme": "insulto",
 	"report": {
-			"text": "Uno degli stereotipi razzisti più significativi nelle pubblicità? Quello relativo alla caratterizzazione dei Cinesi (e per estensione dela Cina) in termini di soggetti capaci solo di copiare e, possibilmente, “taroccare” (ossia spacciare le copie per originali) i prodotti creati da altri.",
-			"source": "Associna"	
+			"text": "Il decreto legislativo 215/2003 definisce come molestie “quei comportamenti indesiderati, posti in essere per motivi di razza o di origine etnica, aventi lo scopo o l’effetto di violare da dignità di una persona e di creare un clima intimidatorio, ostile, degradante, umiliante od offensivo” (art.2 comma 3)",
+			"source": "decreto legislativo 215/2003"	
 		},
 	"choices": [
 		{
-			"title": "Accetti",
-			"button": "Accetti",
-			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
-			"happiness": -100,
-			"money": 150,
-			"conseguence": {
-				"type": "normal",
-				"text": "Hai guadagnato dei soldi che ti torneranno utili. Ma i tuoi genitori ti dicono che alcuni cinesi si sono offesi per la tua ridicola interpretazione, ti senti imbarazzo."
-			}
-		},
-		{
-			"title": "Te ne vai",
-			"button": "Te ne vai",
-			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
-			"happiness": 30,
+			"title": "Tiri dritto",
+			"button": "Tiri dritto",
+			"text": "Ignori un atto di razzismo e ti volti dall’altra parte per evitare problemi",
+			"happiness": -40,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Non avrai i soldi su cui contavi, ma quando senti e leggi i commenti indignati dei cinesi per quello spot sei contento di non essere tu l’attore."
+				"text": "Hai preferito non immischiarti, ma ora ti senti in colpa per non aver difeso qualcuno che ha subito la un'ingiustizia che poteva capitare anche a te."
+			}
+		},
+		{
+			"title": "Intervieni",
+			"button": "Intervieni",
+			"text": "Ti senti parte in causa e ti fermi a difendere la donna.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Ti sei fermato e hai preso le difese della ragazza in modo energico. Sei fiero di te, ma...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"class":"bad",
+						"text": "Il ragazzo se la prende con te. Vola qualche spinta e la gente intorno vi guarda male. Senti di aver fatto la figura del violento e perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "Il ragazzo ti ha guardato minaccioso, ma poi ha incassato il colpo ed è andato via. Guadagni 10 punti."
+					}
+				]
 			}
 		}
 	]

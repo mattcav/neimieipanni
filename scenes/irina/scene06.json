@@ -3,7 +3,7 @@
 		"text": "Da quando ti sei trasferita hai dovuto lavare i panni a mano perdendo tempo e facendo fatica. Cosa fai?",
 		"theme": "lavatrice",
 		"report": {
-			"text": "Le famiglie con stranieri dispongono di beni durevoli in maniera limitata rispetto alle famiglie composte da soli italiani. Il divario è  contenuto per beni come la lavatrice di cui ne dispone il 93,2% delle famiglie (contro il 97,7% delle famiglie italiane) anche se è frequente l’utilizzo in condivisione con altre famiglie.",
+			"text": "Le famiglie con stranieri dispongono di beni durevoli in maniera limitata rispetto alle famiglie composte da soli italiani. Il divario è contenuto per beni come la lavatrice di cui ne dispone il 93,2% delle famiglie (contro il 97,7% delle famiglie italiane) anche se è frequente l’utilizzo in condivisione con altre famiglie.",
 			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
 		},
 		"choices": [
@@ -17,8 +17,8 @@
 					"text": "Trovi un'offerta con un finanziamento e una rata conveniente.",
 
 					"type": "trap",
-					"trapText": "Il commesso del negozio ti dice che la finanziaria non concede prestiti ad immigrati appena arrivati. Devi rinunciare all'acquisto.",
-					"trapHappiness": 0,
+					"trapText": "Il commesso del negozio ti dice che la finanziaria non concede prestiti ad immigrati appena arrivati. Devi rinunciare all'acquisto. Perdi 10 punti per la delusione.",
+					"trapHappiness": -10,
 					"trapMoney": 0
 				}
 			},
