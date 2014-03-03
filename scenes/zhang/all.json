@@ -104,56 +104,6 @@
 		}
 	]
 },{
-	"title": "Il capodanno cinese",
-	"text": "I tuoi genitori ti chiedono di tornare a casa per festeggiare con loro il capodanno cinese. Ma in quel week end c’è una grande festa nella tua facoltà. Cosa fai?",
-	"theme": "capodanno",
-	"report": {
-			"text": "Indagine comunità cinese di Roma: pochi cinesi riunciano a festeggiare il capodanno cinese perchè forte ricorrenza della loro cultura. La differenza sta nei festeggiamenti: in Cina la festa si trascorre in famiglia; in Italia si va al ristorante coinvolgendo anche gli amici italiani.",
-			"source": "AGICHINA 24"	
-		},
-	"choices": [
-		{
-			"title": "Torni a casa",
-			"button": "Torni a casa",
-			"text": "Compri il biglietto del treno e parti. Sai che ai tuoi farà piacere.",
-			"happiness": 20,
-			"money": -80,
-			"conseguence": {
-				"type": "normal",
-				"text": "Hai sostenuto una spesa extra, ma hai rivisto i parenti e sei stato bene con loro."
-			}
-		},
-		{
-			"title": "Rimani per la festa",
-			"button": "Rimani per la festa",
-			"text": "Decidi di restare, il capodanno cinese ti piace ma la festa è l’occasione per farsi  nuovi amici.",
-			"happiness": 40,
-			"money": 0,
-			"conseguence":  {
-				"type": "random",
-				"waitingText": "La festa sarà un momento fondamentale per socializzare all’università. Ma ora devi chiamare i tuoi genitori e dire che non andrai da loro...",
-				"cases": [
-					{
-						"probability": 50,
-						"happiness": -120,
-						"money": 0,
-						"stop": false,
-						"class":"bad",
-						"text": "I tuoi genitori sono rimasti molto delusi e non te lo nascondono. Non hai fatto nulla di male ma ti senti in colpa lo stesso. E alla festa sei l'unico che non si diverte, perdi 120 punti."
-					},
-					{
-						"probability": 50,
-						"happiness": 40,
-						"money": 0,
-						"stop": false,
-						"class":"good",
-						"text": "I tuoi genitori sono un po' dispiaciuti di non vederti, ma ci tengono che tu ti senta come gli altri ragazzi della tua età."
-					}
-				]
-			}
-		}
-	]
-},{
 	"title": "L'autobus",
 	"text": "La casa che hai trovato non è molto vicina all'univeristà, quindi dovrai prendere i mezzi pubblici ogni giorno. Cosa scegli di fare?",
 	"theme": "controllore",
@@ -204,40 +154,8 @@
 		}
 	]
 },{
-	"title": "Il casting",
-	"text": "Per avere un po’ di soldi in più fai un casting per una pubblicità. Vieni scelto, ma scopri che devi interpretare un cinese stereotipato e con un ridicolo accento.",
-	"theme": "casting",
-	"report": {
-			"text": "Uno degli stereotipi razzisti più significativi nelle pubblicità? Quello relativo alla caratterizzazione dei Cinesi (e per estensione dela Cina) in termini di soggetti capaci solo di copiare e, possibilmente, “taroccare” (ossia spacciare le copie per originali) i prodotti creati da altri.",
-			"source": "Associna"	
-		},
-	"choices": [
-		{
-			"title": "Accetti",
-			"button": "Accetti",
-			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
-			"happiness": -100,
-			"money": 150,
-			"conseguence": {
-				"type": "normal",
-				"text": "Hai guadagnato dei soldi che ti torneranno utili. Ma i tuoi genitori ti dicono che alcuni cinesi si sono offesi per la tua ridicola interpretazione, ti senti imbarazzo."
-			}
-		},
-		{
-			"title": "Te ne vai",
-			"button": "Te ne vai",
-			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
-			"happiness": 30,
-			"money": 0,
-			"conseguence": {
-				"type": "normal",
-				"text": "Non avrai i soldi su cui contavi, ma quando senti e leggi i commenti indignati dei cinesi per quello spot sei contento di non essere tu l’attore."
-			}
-		}
-	]
-},{
 	"title": "Parli bene l'italiano",
-	"text": "Hai appena conosciuto una ragazza italiana. Lei ti piace,  ma dopo pochi minuti ti dice una frase che hai sentito un milione di volte: “Però, lo parli bene l’italiano!”. Come reagisci?",
+	"text": "Hai appena conosciuto una ragazza italiana. Lei ti piace, ma dopo pochi minuti ti dice una frase che hai sentito un milione di volte: “Però, lo parli bene l’italiano!”. Come reagisci?",
 	"theme": "ragazza",
 	"report": {
 			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
@@ -280,6 +198,106 @@
 						"stop": false,
 						"class":"good",
 						"text": "La ragazza si è messa a ridere e ti ha chiesto scusa. Poi ti ha invitato a prendere un caffè. Guadagni 30 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "Insulto a terzo",
+	"text": "Stai camminando per strada quando senti un ragazzo che insulta una donna di colore, lei si gira a guardarti per cercare sostegno.",
+	"theme": "insulto",
+	"report": {
+			"text": "Il decreto legislativo 215/2003 definisce come molestie “quei comportamenti indesiderati, posti in essere per motivi di razza o di origine etnica, aventi lo scopo o l’effetto di violare da dignità di una persona e di creare un clima intimidatorio, ostile, degradante, umiliante od offensivo” (art.2 comma 3)",
+			"source": "decreto legislativo 215/2003"	
+		},
+	"choices": [
+		{
+			"title": "Tiri dritto",
+			"button": "Tiri dritto",
+			"text": "Ignori un atto di razzismo e ti volti dall’altra parte per evitare problemi",
+			"happiness": -40,
+			"money": 0,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai preferito non immischiarti, ma ora ti senti in colpa per non aver difeso qualcuno che ha subito la un'ingiustizia che poteva capitare anche a te."
+			}
+		},
+		{
+			"title": "Intervieni",
+			"button": "Intervieni",
+			"text": "Ti senti parte in causa e ti fermi a difendere la donna.",
+			"happiness": 20,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "Ti sei fermato e hai preso le difese della ragazza in modo energico. Sei fiero di te, ma...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -100,
+						"money": 0,
+						"stop": false,
+						"class":"bad",
+						"text": "Il ragazzo se la prende con te. Vola qualche spinta e la gente intorno vi guarda male. Senti di aver fatto la figura del violento e perdi 100 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "Il ragazzo ti ha guardato minaccioso, ma poi ha incassato il colpo ed è andato via. Guadagni 10 punti."
+					}
+				]
+			}
+		}
+	]
+},{
+	"title": "Il capodanno cinese",
+	"text": "I tuoi genitori ti chiedono di tornare a casa per festeggiare con loro il capodanno cinese. Ma in quel week end c’è una grande festa nella tua facoltà. Cosa fai?",
+	"theme": "capodanno",
+	"report": {
+			"text": "Indagine comunità cinese di Roma: pochi cinesi riunciano a festeggiare il capodanno cinese perchè forte ricorrenza della loro cultura. La differenza sta nei festeggiamenti: in Cina la festa si trascorre in famiglia; in Italia si va al ristorante coinvolgendo anche gli amici italiani.",
+			"source": "AGICHINA 24"	
+		},
+	"choices": [
+		{
+			"title": "Torni a casa",
+			"button": "Torni a casa",
+			"text": "Compri il biglietto del treno e parti. Sai che ai tuoi farà piacere.",
+			"happiness": 20,
+			"money": -80,
+			"conseguence": {
+				"type": "normal",
+				"text": "Hai sostenuto una spesa extra, ma hai rivisto i parenti e sei stato bene con loro."
+			}
+		},
+		{
+			"title": "Rimani per la festa",
+			"button": "Rimani per la festa",
+			"text": "Decidi di restare, il capodanno cinese ti piace ma la festa è l’occasione per farsi  nuovi amici.",
+			"happiness": 40,
+			"money": 0,
+			"conseguence":  {
+				"type": "random",
+				"waitingText": "La festa sarà un momento fondamentale per socializzare all’università. Ma ora devi chiamare i tuoi genitori e dire che non andrai da loro...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -120,
+						"money": 0,
+						"stop": false,
+						"class":"bad",
+						"text": "I tuoi genitori sono rimasti molto delusi e non te lo nascondono. Non hai fatto nulla di male ma ti senti in colpa lo stesso. E alla festa sei l'unico che non si diverte, perdi 120 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 40,
+						"money": 0,
+						"stop": false,
+						"class":"good",
+						"text": "I tuoi genitori sono un po' dispiaciuti di non vederti, ma ci tengono che tu ti senta come gli altri ragazzi della tua età."
 					}
 				]
 			}
@@ -336,52 +354,34 @@
 		}
 	]
 },{
-	"title": "Insulto a terzo",
-	"text": "Stai camminando per strada quando senti un ragazzo che insulta una donna di colore, lei si gira a guardarti per cercare sostegno.",
-	"theme": "insulto",
+	"title": "Il casting",
+	"text": "Per avere un po’ di soldi in più fai un casting per una pubblicità. Vieni scelto, ma scopri che devi interpretare un cinese stereotipato e con un ridicolo accento.",
+	"theme": "casting",
 	"report": {
-			"text": "Il decreto legislativo 215/2003 definisce come molestie “quei comportamenti indesiderati, posti in essere per motivi di razza o di origine etnica, aventi lo scopo o l’effetto di violare da dignità di una persona e di creare un clima intimidatorio, ostile, degradante, umiliante od offensivo” (art.2 comma 3)",
-			"source": "decreto legislativo 215/2003"	
+			"text": "Uno degli stereotipi razzisti più significativi nelle pubblicità? Quello relativo alla caratterizzazione dei Cinesi (e per estensione dela Cina) in termini di soggetti capaci solo di copiare e, possibilmente, “taroccare” (ossia spacciare le copie per originali) i prodotti creati da altri.",
+			"source": "Associna"	
 		},
 	"choices": [
 		{
-			"title": "Tiri dritto",
-			"button": "Tiri dritto",
-			"text": "Ignori un atto di razzismo e ti volti dall’altra parte per evitare problemi",
-			"happiness": -40,
-			"money": 0,
+			"title": "Accetti",
+			"button": "Accetti",
+			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
+			"happiness": -100,
+			"money": 150,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai preferito non immischiarti, ma ora ti senti in colpa per non aver difeso qualcuno che ha subito la un'ingiustizia che poteva capitare anche a te."
+				"text": "Hai guadagnato dei soldi che ti torneranno utili. Ma i tuoi genitori ti dicono che alcuni cinesi si sono offesi per la tua ridicola interpretazione, ti senti imbarazzo."
 			}
 		},
 		{
-			"title": "Intervieni",
-			"button": "Intervieni",
-			"text": "Ti senti parte in causa e ti fermi a difendere la donna.",
-			"happiness": 20,
+			"title": "Te ne vai",
+			"button": "Te ne vai",
+			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
+			"happiness": 30,
 			"money": 0,
-			"conseguence":  {
-				"type": "random",
-				"waitingText": "Ti sei fermato e hai preso le difese della ragazza in modo energico. Sei fiero di te, ma...",
-				"cases": [
-					{
-						"probability": 50,
-						"happiness": -100,
-						"money": 0,
-						"stop": false,
-						"class":"bad",
-						"text": "Il ragazzo se la prende con te. Vola qualche spinta e la gente intorno vi guarda male. Senti di aver fatto la figura del violento e perdi 100 punti."
-					},
-					{
-						"probability": 50,
-						"happiness": 10,
-						"money": 0,
-						"stop": false,
-						"class":"good",
-						"text": "Il ragazzo ti ha guardato minaccioso, ma poi ha incassato il colpo ed è andato via. Guadagni 10 punti."
-					}
-				]
+			"conseguence": {
+				"type": "normal",
+				"text": "Non avrai i soldi su cui contavi, ma quando senti e leggi i commenti indignati dei cinesi per quello spot sei contento di non essere tu l’attore."
 			}
 		}
 	]

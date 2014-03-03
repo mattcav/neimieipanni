@@ -1,6 +1,6 @@
 [	{
 		"title": "Il lavoro",
-		"text": "Ora che hai trovato una casa, devi cercarti un lavoro. Per cosa ti proponi?",
+		"text": "Sei appena arrivata in Italia, devi cercarti un lavoro. Per cosa ti proponi?",
 		"theme": "lavoro",
 		"report": {
 			"text": "Equivale a 540 miliardi di euro, corrispondenti a circa il 35% del Pil 'ufficiale', il valore dell'economia sommersa nel 2011. E circa 22,5 di quei miliardi arrivano dal lavoro degli immigrati. Considerando gli immigrati clandestini si stima un  sommerso di 10 miliardi e mezzo di euro.",
@@ -47,7 +47,7 @@
 		]
 	},{
 	"title": "La scelta della casa",
-	"text": "Sei appena arrivata in Italia. Come prima cosa ti serve una sistemazione. Che cosa cerchi?",
+	"text": "Ora che hai trovato un lavoro, è ti serve una giusta sistemazione. Che cosa cerchi?",
 	"theme": "casa",
 	"report": {
 		"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
@@ -342,7 +342,7 @@
 			"title": "Fingi di non aver sentito",
 			"button": "Fingi di non aver sentito",
 			"text": "Decidi controvoglia di lasciar perdere: non vuoi avere problemi.",
-			"happiness": -50,
+			"happiness": -60,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
@@ -361,7 +361,7 @@
 				"cases": [
 					{
 						"probability": 50,
-						"happiness": -100,
+						"happiness": -150,
 						"money": 0,
 						"stop": false,
 						"class":"bad",
