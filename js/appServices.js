@@ -456,3 +456,41 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 	}
 
 });
+
+
+nmpApp.factory('preloadBackgrounds', function ($q, $timeout, player, scenes) {
+	function preloadBackgrounds () {
+		if(scenes.scenesLoaded === false) {
+			$timeout(preloadBackgrounds, 100);
+			return;
+		}
+
+		function loadBackgroundLazy(url) {
+			var img,
+				defer = $q.defer();
+
+			img = new Image();
+			img.src = url;
+			img.onload = function () {
+				$timeout(defer.resolve.bind(defer), 500);
+			}
+
+			return defer.promise;
+		}
+	
+		var backgroundPath = 'images/background/' + player.getPlayer().name + '/';
+		var chain = (function () {
+			var d = $q.defer();
+			$timeout(d.resolve.bind(d), 50);
+			return d.promise;
+		})();
+
+
+		for(i in scenes.scenes) {
+			imgUrl = backgroundPath + scenes.scenes[i].theme + '.png';
+			chain = chain.then(loadBackgroundLazy.bind(null, imgUrl))
+		}
+	}
+
+	return preloadBackgrounds;
+});
