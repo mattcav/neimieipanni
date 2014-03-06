@@ -31,6 +31,12 @@ nmpApp.service('player', ['CHARACTERS', '$rootScope', '$location', function (CHA
 		return this.money < 0 || this.happiness < 0;
 	}
 
+	Player.prototype.checkGameEnd = function () {
+		if(this.isLoser())
+			window.location.href = this.name + '/lose.html';
+		return this.isLoser();
+	}
+
 	var service = {};
 	service.getPlayer = function () {
 		return service._player;
@@ -95,10 +101,8 @@ nmpApp.service('scenes', ['$http', '$rootScope', 'player', 'sceneFactory', funct
 				return;
 			}
 
-			if(player.getPlayer().isLoser()) {
-				window.location.href = player.getPlayer().name + '/lose.html';
+			if(player.getPlayer().checkGameEnd())
 				return;
-			}
 
 			service.currentIndex = index;
 			$rootScope.$broadcast('sceneUpdated');
@@ -278,7 +282,7 @@ nmpApp.service('choiceFactory', function ($rootScope, $timeout, TIMERS, player) 
 });
 
 
-nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, scenes) {
+nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, scenes, player) {
 	var $gameScope = null;
 	var gameQueue = null;
 
@@ -348,9 +352,10 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 	}
 
 	function checkStop() {
-		if($gameScope.conseguence.stop === true)
-			return backToScene();
-		else
+		if($gameScope.conseguence.stop === true) {
+			if(!player.getPlayer().checkGameEnd())
+				return backToScene();
+		} else
 			return true;
 	}
 
@@ -407,7 +412,6 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 			.then(showVariation)
 			.then(hideVariation)
 			.then(checkStop)
-			// .then(null, backToScene) // failure catch
 			.then(showReport)
 			.then(nextScene)
 	}
@@ -432,7 +436,6 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 			.then(showVariation)
 			.then(hideVariation)
 			.then(checkStop)
-			// .then(null, backToScene) // failure catch
 			.then(showReport)
 			.then(nextScene)
 	}
@@ -441,7 +444,7 @@ nmpApp.service('uiChoiceManager', function ($rootScope, $timeout, $q, TIMERS, sc
 		$gameScope = $scope;
 
 		var type = $scope.choice.conseguence.type;
-		console.log('Choice type: ' + type);
+		// console.log('Choice type: ' + type);
 		if(type === 'normal')
 			normalChoice();
 		else if(type === 'trap')
