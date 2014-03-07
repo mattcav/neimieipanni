@@ -124,7 +124,7 @@
 },{
 	"title": "La mensa",
 	"text": "Scopri che quest’anno alla mensa della scuola dei tuoi figli non è previsto un menu musulmano senza carne di maiale.",
-	"theme": "pollo",
+	"theme": "bimbo",
 	"report": {
 		"text": "stat4",
 		"source": "“stat4”"
@@ -314,7 +314,7 @@
 },{
 	"title": "La festa di compleanno",
 	"text": "Vuoi organizzare una festa per il compleanno di uno dei tuoi figli, ma un'amica ti fa notare che alcune mamme potrebbero non mandare i loro bambini in una casa di immigrati. Dove organizzi la festa?",
-	"theme": "palloncino",
+	"theme": "torta",
 	"report": {
 		"text": "stat9",
 		"source": "“stat9”"
@@ -358,7 +358,7 @@
 },{
 	"title": "La casa popolare",
 	"text": "Ti hanno detto che hai i requisiti per richiedere una casa popolare. Ti presenti in Comune, ma lì davanti noti un presidio di manifestanti con cartelli come “Basta extracomunitari” e “Le case agli italiani”.",
-	"theme": "palloncino",
+	"theme": "manifestanti",
 	"report": {
 		"text": "stat10",
 		"source": "“stat10”"
