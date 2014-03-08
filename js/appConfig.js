@@ -100,11 +100,10 @@ nmpConfig.constant('TIMERS', (function () {
 
 var nmpApp = angular.module('nmpApp', ['nmpConfiguration']);
 
-// nmpApp.config(['$routeProvider', function ($routeProvider ) {
-// }]);
-
-nmpApp.run(['$location', '$rootScope', '$filter', 'player', 'scenes', function ($location, $rootScope, $filter, player, scenes) {
+nmpApp.run(function ($location, $rootScope, $filter, player, scenes, preloadBackgrounds) {
 	player.newPlayer($location.path().substring(1));
 	$rootScope.playerName = $filter('capitalize')(player.getPlayer().name);
 	scenes.loadScenes();
-}]);
+
+	preloadBackgrounds();
+});
