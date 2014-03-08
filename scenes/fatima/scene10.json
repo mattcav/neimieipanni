@@ -1,7 +1,7 @@
 {
 	"title": "La casa popolare",
 	"text": "Ti hanno detto che hai i requisiti per richiedere una casa popolare. Ti presenti in Comune, ma lì davanti noti un presidio di manifestanti con cartelli come “Basta extracomunitari” e “Le case agli italiani”.",
-	"theme": "palloncino",
+	"theme": "manifestanti",
 	"report": {
 		"text": "stat10",
 		"source": "“stat10”"
