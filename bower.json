@@ -1,7 +1,9 @@
 {
   "name": "foundation-libsass-template",
+  "private": true,
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "angular": "~1.2.8"
+    "angular": "~1.2.8",
+    "greensock": "~1.11.5"
   }
 }

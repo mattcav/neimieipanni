@@ -11,7 +11,7 @@
 
 
   <link rel="stylesheet" href="css/app.css">  
-  <script src="bower_components/modernizr/modernizr.scegli.js"></script> 
+  <script src="bower_components/modernizr/modernizr.js"></script> 
 </head>
 
 <body class="full">
@@ -141,6 +141,21 @@
 <script src="bower_components/greensock/src/minified/TweenMax.min.js"></script>   
 
 <script>
+
+    // Running in node-webkit
+    if(process !== undefined) {
+        // Load native UI library
+        var ngui = require('nw.gui');
+
+        // Get the current window
+        var nwin = ngui.Window.get();
+
+        $(document).ready(function () {
+            nwin.show();
+            nwin.maximize();
+        });
+    }
+
     $(function() {
         Boxlayout.init();
     });

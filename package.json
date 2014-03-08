@@ -1,5 +1,6 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "nei-miei-panni",
+  "main": "index.html",
   "version": "0.0.1",
   "devDependencies": {
     "node-sass": "~0.7.0",
@@ -13,5 +14,15 @@
     "grunt-contrib-uglify": "~0.2.7",
     "grunt-contrib-imagemin": "~0.4.0",
     "grunt-uncss": "~0.1.6"
+  },
+  "window": {
+    "title": "Nei Miei Panni",
+    "toolbar": false,
+    "frame": true,
+    "width": 1024,
+    "height": 768,
+    "position": "center",
+    "min_width": 800,
+    "min_height": 600
   }
 }
