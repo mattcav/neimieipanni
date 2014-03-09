@@ -35,14 +35,47 @@ module.exports = function(grunt) {
     },
 
     concat: {
-      dist: {
+     
+      homeScript: {
         src: [
+          'js/analytics.js',
+          'bower_components/jquery/jquery.js',
+          'js/vendor/boxlayout.js',
+          'bower_components/greensock/src/minified/TweenMax.min.js',
+          'js/home-script.js'
+        ],
+        dest: 'js/build/home.js'
+      },
+
+      AppScript: {
+        src: [
+          'js/analytics.js',
+          'bower_components/jquery/jquery.js',
+          'bower_components/foundation/js/foundation.min.js',
+          'bower_components/foundation/js/foundation/foundation.offcanvas.js',
+          'bower_components/foundation/js/foundation/foundation.interchange.js',
+          'js/app.js',
+
+          'bower_components/angular/angular.min.js',
+          'js/appConfig.js',
+          'js/appServices.js',
+          'js/appControllers.js',
+          'js/appDirectives.js',
+          'js/appFilters.js'
+        ],
+        dest: 'js/build/app.js'
+      },
+
+      Static: {
+        src: [
+          'js/analytics.js',
           'bower_components/jquery/jquery.js',
           'bower_components/foundation/js/foundation.min.js',
           'js/app.js'
         ],
-        dest: 'js/build/app.js'
+        dest: 'js/build/static.js'
       },
+
       irina: {
         src: ['scenes/irina/scene*.json'],
         dest: 'scenes/irina/all.json',
@@ -82,13 +115,15 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      build: {
-        src: 'js/build/app.js',
-        dest: 'js/build/app.min.js'
+      Home: {
+        src: 'js/build/home.js',
+        dest: 'js/build/home.min.js'
+      },
+      Static: {
+        src: 'js/build/static.js',
+        dest: 'js/build/static.min.js'
       }
     },
-
-
 
     watch: {
       grunt: {
