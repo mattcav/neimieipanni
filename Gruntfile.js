@@ -39,7 +39,7 @@ module.exports = function(grunt) {
       homeScript: {
         src: [
           'js/analytics.js',
-          'bower_components/jquery/jquery.js',
+          'bower_components/jquery/dist/jquery.js',
           'js/vendor/boxlayout.js',
           'bower_components/greensock/src/minified/TweenMax.min.js',
           'js/home-script.js'
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
       AppScript: {
         src: [
           'js/analytics.js',
-          'bower_components/jquery/jquery.js',
+          'bower_components/jquery/dist/jquery.js',
           'bower_components/foundation/js/foundation.min.js',
           'bower_components/foundation/js/foundation/foundation.offcanvas.js',
           'bower_components/foundation/js/foundation/foundation.interchange.js',
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
       Static: {
         src: [
           'js/analytics.js',
-          'bower_components/jquery/jquery.js',
+          'bower_components/jquery/dist/jquery.js',
           'bower_components/foundation/js/foundation.min.js',
           'js/app.js'
         ],
