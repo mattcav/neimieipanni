@@ -122,6 +122,10 @@ module.exports = function(grunt) {
       Static: {
         src: 'js/build/static.js',
         dest: 'js/build/static.min.js'
+      },
+      Game: {
+        src: 'js/build/app.js',
+        dest: 'js/build/app.min.js'
       }
     },
 

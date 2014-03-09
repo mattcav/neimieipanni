@@ -1,25 +1,21 @@
 <!doctype html>
 <html data-ng-app="nmpApp" class="no-js" lang="it" >
-  <head>
+<head>
+    <title>Nei Miei Panni - Game</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    
-    <title>Nei Miei Panni - Game</title>
-    
-    <link rel="stylesheet" href="css/app.css" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <script src="bower_components/modernizr/modernizr.js"></script>
-   
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="js/modernizr.scegli.js"></script>
 </head>
-    
+
 <body class="step" data-ng-class="playerName.toLowerCase()">
-    
     <div class="istruzioni" data-ng-class="fadeOutClass">
         <div class="istruzioni__inner">
             <h2 class="istruzioni__title">Benvenuto!</h2>
             <p class="istruzioni__text">
-               Affronta insieme a {{ playerName }} dieci situazioni della vita di tutti i giorni.
+                Affronta insieme a {{ playerName }} dieci situazioni della vita di tutti i giorni.
             </p>
             <p class="istruzioni__text">
                 Per vincere il gioco devi tenere d'occhio due parametri: i soldi che hai in tasca e i punti che rappresentano il tuo benessere, sia fisico che psicologico. Se anche uno solo dei due parametri scende sotto lo zero, hai perso.
@@ -170,7 +166,7 @@
                 <!-- STATISTICHE block -->
                 <article id="stats" class="dialog dialog--stats" data-report>
                     <div class="dialog__inner">
-                        <img class="stat-img" src="images/stats/{{ scene.report.img }}" alt="">
+                        <img class="stat-img" data-ng-src="images/stats/{{ scene.report.img }}" alt="">
                         <p class="dialog__title dialog--stats__text">{{ scene.report.text }}</p>
                         <hr>
                         <p class="dialog--stats__src">{{ scene.report.source }}</p>
