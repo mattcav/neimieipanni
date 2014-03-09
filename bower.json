@@ -3,6 +3,8 @@
   "dependencies": {
     "foundation": "zurb/bower-foundation",
     "angular": "~1.2.8",
-    "greensock": "~1.11.5"
+    "greensock": "~1.11.5",
+    "jquery": "~2.1.0",
+    "fira": "~0.1.0"
   }
 }
