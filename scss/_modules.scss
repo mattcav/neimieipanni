@@ -278,6 +278,7 @@
        @include grid-column(
         $columns:6
         );
+       padding:0.5rem;
     }
 }
 
@@ -412,7 +413,13 @@
   }
 }
 
-
+.figure__container {
+    height: 100%;
+    overflow: hidden;
+    @include position(absolute, top 0 bottom 0 left 0 right 0);
+    width: 100%;
+    z-index: 0;
+}
 .figure {
     @include position(absolute, bottom 0 right 0);
     max-height:100%;

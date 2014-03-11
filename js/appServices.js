@@ -114,7 +114,7 @@ nmpApp.service('scenes', ['$http', '$rootScope', 'player', 'sceneFactory', funct
 			
 			// with interchange
 			$('.figure').remove();
-			$body.prepend('<img id="figure" class="figure" data-interchange="[../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (default)], [../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (large)]"> ');
+			$body.prepend('<div class="figure__container"><img id="figure" class="figure" data-interchange="[../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (default)], [../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (large)]"></div>');
 			$(document).foundation('interchange', 'reflow');
 			
 		},

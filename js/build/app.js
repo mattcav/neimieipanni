@@ -9489,8 +9489,8 @@ return jQuery;
 
 $(document).foundation();
 
- $(document).ready(function() {
-    $('html').addClass('ready');
+$(document).ready(function() {
+	$('html').addClass('ready');
 });
 /*
  AngularJS v1.2.10-build.2171+sha.79e519f
@@ -9696,114 +9696,108 @@ ngModel:de,ngList:fe,ngChange:ee,required:Nc,ngRequired:Nc,ngValue:he}).directiv
 //# sourceMappingURL=angular.min.js.map
 
 var nmpConfig = angular.module('nmpConfiguration', []);
-
 nmpConfig.constant('HELPERS', [
-	{
-		"title": "bisogno di soldi?",
-		"class": "m-add-money",
-		"text": "Chiedi un prestito ad un amico: ricevi 200 euro ma il disagio ti costerà 250 punti.",
-		"happiness": -250,
-		"money": 200,
-		"conseguence": {
-			"type": "normal",
-			"text": "Testo help ricevuto"
-		}
-	},
-	{
-		"title": "morale a terra?",
-		"class": "m-add-points",
-		"text": "Fai un regalo ai tuoi genitori: costa 250 euro, ma sentirli felici ti farà guadagnare 200 punti.",
-		"happiness": 200,
-		"money": -250,
-		"conseguence": {
-			"type": "normal",
-			"text": "Testo help2 ricevuto"
-		}
-	}
+  {
+    'title': 'bisogno di soldi?',
+    'class': 'm-add-money',
+    'text': 'Chiedi un prestito ad un amico: ricevi 200 euro ma il disagio ti coster\xe0 250 punti.',
+    'happiness': -250,
+    'money': 200,
+    'conseguence': {
+      'type': 'normal',
+      'text': 'Testo help ricevuto'
+    }
+  },
+  {
+    'title': 'morale a terra?',
+    'class': 'm-add-points',
+    'text': 'Fai un regalo ai tuoi genitori: costa 250 euro, ma sentirli felici ti far\xe0 guadagnare 200 punti.',
+    'happiness': 200,
+    'money': -250,
+    'conseguence': {
+      'type': 'normal',
+      'text': 'Testo help2 ricevuto'
+    }
+  }
 ]);
-
 nmpConfig.constant('CHARACTERS', {
-	'benjamin': {
-		start: {
-			happiness: 800,
-			money: 100
-		}
-	},
-	'fatima': {
-		start: {
-			happiness: 600,
-			money: 700
-		}
-	},
-	'irina': {
-		start: {
-			happiness: 650,
-			money: 100
-		}
-	},
-	'zhang': {
-		start: {
-			happiness: 100,
-			money: 650
-		}
-	}
+  'benjamin': {
+    start: {
+      happiness: 800,
+      money: 100
+    }
+  },
+  'fatima': {
+    start: {
+      happiness: 600,
+      money: 700
+    }
+  },
+  'irina': {
+    start: {
+      happiness: 650,
+      money: 100
+    }
+  },
+  'zhang': {
+    start: {
+      happiness: 100,
+      money: 650
+    }
+  }
 });
-
 nmpConfig.constant('transitionEndEvents', 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd');
-
-nmpConfig.constant('TIMERS', (function () {
-	var timers = {
-		scene: {
-			delay: 1500,
-			duration: 400
-		},
-		choice: {
-			duration: 300
-		},
-		variation: {
-			show: 400, // durata effetto di entrata
-			lastDelay: 3750, // delay dell'ultima variazione grafica
-			lastDuration: 500, // durata dell'ultima variazione grafica
-			hide: 400 // durata effetto di uscita
-		},
-		conseguence: {
-			delay: 500,
-			duration: 800
-		},
-		report: {
-			delay: 500,
-			duration: 500
-		},
-		risk: {
-			delay: 500,
-			duration: 500, // durata transizione
-			wait: 3000 // attesa guardando la "roulette"
-		}
-	}
-
-	timers.scene.total = timers.scene.delay + timers.scene.duration;
-	timers.choice.total = timers.choice.duration;
-	timers.variation.total = timers.variation.show + timers.variation.lastDelay + timers.variation.lastDuration;
-	timers.conseguence.total = timers.conseguence.delay + timers.conseguence.duration;
-	timers.report.total = timers.report.delay + timers.report.duration;
-	
-	timers.risk.show = timers.risk.delay + timers.risk.duration + timers.risk.wait;
-	timers.risk.hide = timers.risk.delay + timers.risk.duration;
-
-
-	return timers;
-})())
-
-
+nmpConfig.constant('TIMERS', function () {
+  var timers = {
+      scene: {
+        delay: 1500,
+        duration: 400
+      },
+      choice: { duration: 300 },
+      variation: {
+        show: 400,
+        lastDelay: 3750,
+        lastDuration: 500,
+        hide: 400
+      },
+      conseguence: {
+        delay: 500,
+        duration: 800
+      },
+      report: {
+        delay: 500,
+        duration: 500
+      },
+      risk: {
+        delay: 500,
+        duration: 500,
+        wait: 3000
+      }
+    };
+  timers.scene.total = timers.scene.delay + timers.scene.duration;
+  timers.choice.total = timers.choice.duration;
+  timers.variation.total = timers.variation.show + timers.variation.lastDelay + timers.variation.lastDuration;
+  timers.conseguence.total = timers.conseguence.delay + timers.conseguence.duration;
+  timers.report.total = timers.report.delay + timers.report.duration;
+  timers.risk.show = timers.risk.delay + timers.risk.duration + timers.risk.wait;
+  timers.risk.hide = timers.risk.delay + timers.risk.duration;
+  return timers;
+}());
 var nmpApp = angular.module('nmpApp', ['nmpConfiguration']);
-
-nmpApp.run(function ($location, $rootScope, $filter, player, scenes, preloadBackgrounds) {
-	player.newPlayer($location.path().substring(1));
-	$rootScope.playerName = $filter('capitalize')(player.getPlayer().name);
-	scenes.loadScenes();
-
-	preloadBackgrounds();
-});
+nmpApp.run([
+  '$location',
+  '$rootScope',
+  '$filter',
+  'player',
+  'scenes',
+  'preloadBackgrounds',
+  function ($location, $rootScope, $filter, player, scenes, preloadBackgrounds) {
+    player.newPlayer($location.path().substring(1));
+    $rootScope.playerName = $filter('capitalize')(player.getPlayer().name);
+    scenes.loadScenes();
+    preloadBackgrounds();
+  }
+]);
 nmpApp.service('player', ['CHARACTERS', '$rootScope', '$location', function (CHARACTERS, $rootScope, $location) {
 	// Player class
 	function Player () {
@@ -9920,7 +9914,7 @@ nmpApp.service('scenes', ['$http', '$rootScope', 'player', 'sceneFactory', funct
 			
 			// with interchange
 			$('.figure').remove();
-			$body.prepend('<img id="figure" class="figure" data-interchange="[../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (default)], [../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (large)]"> ');
+			$body.prepend('<div class="figure__container"><img id="figure" class="figure" data-interchange="[../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (default)], [../images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (large)]"></div>');
 			$(document).foundation('interchange', 'reflow');
 			
 		},
@@ -10301,379 +10295,280 @@ nmpApp.factory('preloadBackgrounds', function ($q, $timeout, player, scenes) {
 	return preloadBackgrounds;
 });
 nmpApp.controller('sidebar', function ($scope, $rootScope, player, scenes, choiceFactory, HELPERS, $q) {
-	
-	$scope.player = player.getPlayer();
-	$scope.scenes = scenes;
-
-	$scope.helpers = HELPERS;
-
-	$scope.choice = null;
-	$scope.conseguence = null;
-
-
-	$scope.openHelper = function ($index) {
-		$scope.choice = choiceFactory.new(this.helper);
-
-		function useHelp() {
-			$scope.helpers[$index].disabled = true;
-			$rootScope.$emit('helper:variation:open', $scope.choice.scelto());
-		}
-
-		$rootScope.$broadcast('helper:modal:open', $scope.choice, useHelp);
-	}
+  $scope.player = player.getPlayer();
+  $scope.scenes = scenes;
+  $scope.helpers = HELPERS;
+  $scope.choice = null;
+  $scope.conseguence = null;
+  $scope.openHelper = function ($index) {
+    $scope.choice = choiceFactory.new(this.helper);
+    function useHelp() {
+      $scope.helpers[$index].disabled = true;
+      $rootScope.$emit('helper:variation:open', $scope.choice.scelto());
+    }
+    $rootScope.$broadcast('helper:modal:open', $scope.choice, useHelp);
+  };
 });
-
-
 nmpApp.controller('game', function ($scope, $rootScope, $timeout, TIMERS, scenes, transitionEndEvents, uiChoiceManager) {
-	$scope.scene = scenes.getCurrentScene();
-	$scope.choice = null;
-	$scope.conseguence = null;
-
-	var $backToSceneContainers = $('#conseguenza, #scelta'),
-		$stats = $('#stats'),
-		$variazione = $('#variazione');
-
-	$scope.ui = {
-		showChoice: function () {
-			$scope.choice = this.choice;
-			$scope.$broadcast('choice:open');
-		},
-		closeChoice: function () {
-			$scope.$broadcast('choice:close');
-
-			$timeout(function () {
-				$scope.choice = null;
-			}, TIMERS.choice.total);
-		},
-		closeReport: function () {
-			$scope.$broadcast('report:close');
-			$scope.$broadcast('scene:open');
-		}
-	}
-
-	$scope.getConseguence = uiChoiceManager.getConseguence.bind(null, $scope);
-
-	// $scope.backToScene = function () {
-	// 	$scope.$broadcast('choice:close');
-	// 	$scope.$broadcast('report:close');
-	// 	$scope.$broadcast('scene:open');
-
-	// 	$timeout(function () {
-	// 		$scope.choice = null;
-	// 		$scope.conseguence = null;
-	// 	}, TIMERS.choice.total);
-
-	// 	// if($scope.conseguence && $scope.conseguence.stop === false)
-	// 	// 	$stats.on(transitionEndEvents, function (e) {
-	// 	// 		$scope.$apply(function () {
-	// 	// 			scenes.nextScene();
-	// 	// 		});
-
-	// 	// 		//avoid double fire
-	// 	// 		$stats.off(transitionEndEvents);
-	// 	// 	});
-	// }
-
-	// $scope.getConseguence = function () {
-	// 	$scope.conseguence = $scope.choice.scelto();
-	// 	$scope.$broadcast('choice:close');
-	// 	$scope.$broadcast('scene:close');
-		
-	// 	if($scope.choice.conseguence.type === 'random') {
-	// 		$scope.$broadcast('risk:open');
-	// 		$timeout(function () {
-	// 			$scope.$broadcast('risk:close');
-	// 			$scope.$broadcast('conseguence:open');
-	// 		}, 5*1000);
-	// 		return;
-	// 	} else {
-	// 		$scope.$broadcast('variazione:open');
-
-	// 		$variazione.find('#pt-after').one(transitionEndEvents, function (e) {
-	// 			$timeout(function () {
-	// 				$scope.$broadcast('variazione:close');
-	// 				$scope.$broadcast('conseguence:open');
-	// 			}, 2*1000); // 2 secondi dopo la fine delle transizioni
-
-	// 			$(this).off(transitionEndEvents);
-	// 		});
-	// 	}
-	// }
-
-	// $scope.getReport = function () {
-	// 	$scope.$broadcast('conseguence:close');
-	// 	if($scope.conseguence.stop === true)
-	// 		$scope.backToScene();
-	// 	else
-	// 		$scope.$broadcast('report:open');
-	// }
-
-	$rootScope.$on('sceneUpdated', function () {
-		$scope.scene = scenes.getCurrentScene();
-		$scope.$broadcast('scene:open');
-	});
-
+  $scope.scene = scenes.getCurrentScene();
+  $scope.choice = null;
+  $scope.conseguence = null;
+  var $backToSceneContainers = $('#conseguenza, #scelta'), $stats = $('#stats'), $variazione = $('#variazione');
+  $scope.ui = {
+    showChoice: function () {
+      $scope.choice = this.choice;
+      $scope.$broadcast('choice:open');
+    },
+    closeChoice: function () {
+      $scope.$broadcast('choice:close');
+      $timeout(function () {
+        $scope.choice = null;
+      }, TIMERS.choice.total);
+    },
+    closeReport: function () {
+      $scope.$broadcast('report:close');
+      $scope.$broadcast('scene:open');
+    }
+  };
+  $scope.getConseguence = uiChoiceManager.getConseguence.bind(null, $scope);
+  // $scope.backToScene = function () {
+  // 	$scope.$broadcast('choice:close');
+  // 	$scope.$broadcast('report:close');
+  // 	$scope.$broadcast('scene:open');
+  // 	$timeout(function () {
+  // 		$scope.choice = null;
+  // 		$scope.conseguence = null;
+  // 	}, TIMERS.choice.total);
+  // 	// if($scope.conseguence && $scope.conseguence.stop === false)
+  // 	// 	$stats.on(transitionEndEvents, function (e) {
+  // 	// 		$scope.$apply(function () {
+  // 	// 			scenes.nextScene();
+  // 	// 		});
+  // 	// 		//avoid double fire
+  // 	// 		$stats.off(transitionEndEvents);
+  // 	// 	});
+  // }
+  // $scope.getConseguence = function () {
+  // 	$scope.conseguence = $scope.choice.scelto();
+  // 	$scope.$broadcast('choice:close');
+  // 	$scope.$broadcast('scene:close');
+  // 	if($scope.choice.conseguence.type === 'random') {
+  // 		$scope.$broadcast('risk:open');
+  // 		$timeout(function () {
+  // 			$scope.$broadcast('risk:close');
+  // 			$scope.$broadcast('conseguence:open');
+  // 		}, 5*1000);
+  // 		return;
+  // 	} else {
+  // 		$scope.$broadcast('variazione:open');
+  // 		$variazione.find('#pt-after').one(transitionEndEvents, function (e) {
+  // 			$timeout(function () {
+  // 				$scope.$broadcast('variazione:close');
+  // 				$scope.$broadcast('conseguence:open');
+  // 			}, 2*1000); // 2 secondi dopo la fine delle transizioni
+  // 			$(this).off(transitionEndEvents);
+  // 		});
+  // 	}
+  // }
+  // $scope.getReport = function () {
+  // 	$scope.$broadcast('conseguence:close');
+  // 	if($scope.conseguence.stop === true)
+  // 		$scope.backToScene();
+  // 	else
+  // 		$scope.$broadcast('report:open');
+  // }
+  $rootScope.$on('sceneUpdated', function () {
+    $scope.scene = scenes.getCurrentScene();
+    $scope.$broadcast('scene:open');
+  });
 });
 nmpApp.directive('scene', [function () {
-	return {
-		restrict: 'A',
-		link: function (scope, element, attrs, controller) {
-
-			function open () {
-				element.addClass('show').removeClass('leave');
-			}
-
-			function close () {
-				element.addClass('leave').removeClass('show');
-			}
-
-
-			scope.$on('scene:open', open);
-			scope.$on('scene:close', close);
-
-		}
-	};
-}]);
-
+    return {
+      restrict: 'A',
+      link: function (scope, element, attrs, controller) {
+        function open() {
+          element.addClass('show').removeClass('leave');
+        }
+        function close() {
+          element.addClass('leave').removeClass('show');
+        }
+        scope.$on('scene:open', open);
+        scope.$on('scene:close', close);
+      }
+    };
+  }]);
 nmpApp.directive('choice', [function () {
-	return {
-		restrict: 'A',
-		link: function (scope, element, attrs, controller) {
-
-			function open() {
-				element.addClass('md-show');
-				$('.md-overlay').addClass('show');
-			}
-
-			function close() {
-				element.removeClass('md-show');
-				$('.md-overlay').removeClass('show');
-			}
-
-			scope.$on('choice:open', open);
-			scope.$on('choice:close', close);
-		}
-	};
-}]);
-
+    return {
+      restrict: 'A',
+      link: function (scope, element, attrs, controller) {
+        function open() {
+          element.addClass('md-show');
+          $('.md-overlay').addClass('show');
+        }
+        function close() {
+          element.removeClass('md-show');
+          $('.md-overlay').removeClass('show');
+        }
+        scope.$on('choice:open', open);
+        scope.$on('choice:close', close);
+      }
+    };
+  }]);
 nmpApp.directive('conseguence', [function () {
-	return {
-		restrict: 'A',
-		link: function (scope, element, attrs, controller) {
-
-			function open() {
-				element.addClass('show');
-			}
-
-			function close() {
-				element.removeClass('show');
-			}
-
-			scope.$on('conseguence:open', open);
-			scope.$on('conseguence:close', close);
-		}
-	};
-}]);
-
+    return {
+      restrict: 'A',
+      link: function (scope, element, attrs, controller) {
+        function open() {
+          element.addClass('show');
+        }
+        function close() {
+          element.removeClass('show');
+        }
+        scope.$on('conseguence:open', open);
+        scope.$on('conseguence:close', close);
+      }
+    };
+  }]);
 nmpApp.directive('report', [function () {
-	return {
-		restrict: 'A',
-		link: function (scope, element, attrs, controller) {
-
-			function open() {
-				element
-					.addClass('show')
-					.removeClass('leave');
-			}
-
-			function close() {
-				element
-					.removeClass('show')
-					.addClass('leave');
-			}
-
-			scope.$on('report:open', open);
-			scope.$on('report:close', close);
-		}
-	};
-}]);
-
+    return {
+      restrict: 'A',
+      link: function (scope, element, attrs, controller) {
+        function open() {
+          element.addClass('show').removeClass('leave');
+        }
+        function close() {
+          element.removeClass('show').addClass('leave');
+        }
+        scope.$on('report:open', open);
+        scope.$on('report:close', close);
+      }
+    };
+  }]);
 nmpApp.directive('risk', [function () {
-	return {
-		restrict: 'A',
-		link: function (scope, element, attrs, controller) {
-
-			function open() {
-				element
-					.addClass('show')
-					.removeClass('leave');
-			}
-
-			function close() {
-				element
-					.removeClass('show')
-					.addClass('leave');
-			}
-
-			scope.$on('risk:open', open);
-			scope.$on('risk:close', close);
-		}
-	};
-}]);
-
+    return {
+      restrict: 'A',
+      link: function (scope, element, attrs, controller) {
+        function open() {
+          element.addClass('show').removeClass('leave');
+        }
+        function close() {
+          element.removeClass('show').addClass('leave');
+        }
+        scope.$on('risk:open', open);
+        scope.$on('risk:close', close);
+      }
+    };
+  }]);
 nmpApp.directive('variazione', function ($timeout, TIMERS, player) {
-
-	var eVar = $('#e-variazione');
-	var hVar = $('#pt-variazione');
-
-	return {
-		restrict: 'A',
-		link: function (scope, element, attrs, controller) {
-
-			function open(event, dH, dM) {
-				if(dH === undefined && dM === undefined) {
-					dH = scope.conseguence.happiness;
-					dM = scope.conseguence.money;
-				}
-
-				console.log("Delta: ", dH, dM);
-
-				scope.variazione = {
-					happiness: {
-						attuale: player.getPlayer().happiness,
-						delta: dH > 0 ? '+' + dH : dH,
-						prima: player.getPlayer().happiness - dH
-					},
-					money: {
-						attuale: player.getPlayer().money,
-						delta: dM > 0 ? '+' + dM : dM,
-						prima: player.getPlayer().money - dM
-					}
-				};
-
-				if(scope.variazione.money.delta != 0)
-					eVar.addClass('go-variazione');
-
-				if(scope.variazione.happiness.delta != 0)
-					hVar.addClass('go-variazione');
-
-				// console.log(scope.variazione);
-
-				element
-					.addClass('show')
-					.removeClass('leave');
-			}
-
-			function close() {
-				element
-					.removeClass('show')
-					.addClass('leave');
-
-				$timeout(function () {
-					eVar.removeClass('go-variazione');
-					hVar.removeClass('go-variazione');
-				}, TIMERS.variation.hide);
-					
-			}
-
-			scope.$on('variazione:open', open);
-			scope.$on('variazione:close', close);
-		}
-	};
+  var eVar = $('#e-variazione');
+  var hVar = $('#pt-variazione');
+  return {
+    restrict: 'A',
+    link: function (scope, element, attrs, controller) {
+      function open(event, dH, dM) {
+        if (dH === undefined && dM === undefined) {
+          dH = scope.conseguence.happiness;
+          dM = scope.conseguence.money;
+        }
+        console.log('Delta: ', dH, dM);
+        scope.variazione = {
+          happiness: {
+            attuale: player.getPlayer().happiness,
+            delta: dH > 0 ? '+' + dH : dH,
+            prima: player.getPlayer().happiness - dH
+          },
+          money: {
+            attuale: player.getPlayer().money,
+            delta: dM > 0 ? '+' + dM : dM,
+            prima: player.getPlayer().money - dM
+          }
+        };
+        if (scope.variazione.money.delta != 0)
+          eVar.addClass('go-variazione');
+        if (scope.variazione.happiness.delta != 0)
+          hVar.addClass('go-variazione');
+        // console.log(scope.variazione);
+        element.addClass('show').removeClass('leave');
+      }
+      function close() {
+        element.removeClass('show').addClass('leave');
+        $timeout(function () {
+          eVar.removeClass('go-variazione');
+          hVar.removeClass('go-variazione');
+        }, TIMERS.variation.hide);
+      }
+      scope.$on('variazione:open', open);
+      scope.$on('variazione:close', close);
+    }
+  };
 });
-
-
 nmpApp.directive('helper', function ($rootScope, $timeout, TIMERS, player) {
-	return {
-		restrict: 'A',
-		link: function (scope, element, attrs, controller) {
-			var $modal = angular.element(element.children()[0]),
-				$variation = angular.element(element.children()[1]);
-
-			function openModal(event, data, useHelp, closeHelp) {
-				scope.help = data;
-
-				scope.useHelp = function () {
-					(useHelp || angular.noop)();
-					$rootScope.$emit('helper:modal:close', false);
-				};
-
-				scope.closeHelp = function () {
-					(closeHelp || angular.noop)();
-					$rootScope.$emit('helper:modal:close', true);
-				}
-
-				$modal.addClass('md-show')
-				$('.md-overlay').addClass('show');
-			}
-
-			function closeModal(event, closeOverlay) {
-				$modal.removeClass('md-show');
-				if(closeOverlay === true)
-					$('.md-overlay').removeClass('show');
-			}
-
-			// function openConseguence(event, cons) {
-			// 	scope.conseguence = cons;
-			// 	scope.closeCons = $rootScope.$emit.bind($rootScope, 'helper:variation:open');
-
-			// 	$('.md-overlay').addClass('show');
-			// }
-
-			function openVariation(event, cons) {
-				scope.conseguence = cons;
-				var dH = scope.conseguence.happiness,
-					dM = scope.conseguence.money;
-
-				scope.conseguence.applicaVariazione();
-
-				scope.variazione = {
-					happiness: {
-						attuale: player.getPlayer().happiness,
-						delta: dH > 0 ? '+' + dH : dH,
-						prima: player.getPlayer().happiness - dH
-					},
-					money: {
-						attuale: player.getPlayer().money,
-						delta: dM > 0 ? '+' + dM : dM,
-						prima: player.getPlayer().money - dM
-					}
-				};
-
-				if(scope.variazione.money.delta != 0)
-					$('#h-e-variazione').addClass('go-variazione');
-
-				if(scope.variazione.happiness.delta != 0)
-					$('#h-pt-variazione').addClass('go-variazione');
-
-
-				$variation
-					.addClass('show')
-					.removeClass('leave');
-
-				$timeout(function () {
-					$rootScope.$broadcast('helper:variation:close');
-				}, TIMERS.variation.total);
-			}
-
-			function closeVariation() {
-				$variation
-					.addClass('leave')
-					.removeClass('show');
-				$('#h-e-variazione, #h-pt-variazione').removeClass('go-variazione');
-			 	$('.md-overlay').removeClass('show');
-			}
-
-			$rootScope.$on('helper:modal:open', openModal);
-			$rootScope.$on('helper:modal:close', closeModal);
-
-			$rootScope.$on('helper:variation:open', openVariation);
-			$rootScope.$on('helper:variation:close', closeVariation);
-		}
-	};
+  return {
+    restrict: 'A',
+    link: function (scope, element, attrs, controller) {
+      var $modal = angular.element(element.children()[0]), $variation = angular.element(element.children()[1]);
+      function openModal(event, data, useHelp, closeHelp) {
+        scope.help = data;
+        scope.useHelp = function () {
+          (useHelp || angular.noop)();
+          $rootScope.$emit('helper:modal:close', false);
+        };
+        scope.closeHelp = function () {
+          (closeHelp || angular.noop)();
+          $rootScope.$emit('helper:modal:close', true);
+        };
+        $modal.addClass('md-show');
+        $('.md-overlay').addClass('show');
+      }
+      function closeModal(event, closeOverlay) {
+        $modal.removeClass('md-show');
+        if (closeOverlay === true)
+          $('.md-overlay').removeClass('show');
+      }
+      // function openConseguence(event, cons) {
+      // 	scope.conseguence = cons;
+      // 	scope.closeCons = $rootScope.$emit.bind($rootScope, 'helper:variation:open');
+      // 	$('.md-overlay').addClass('show');
+      // }
+      function openVariation(event, cons) {
+        scope.conseguence = cons;
+        var dH = scope.conseguence.happiness, dM = scope.conseguence.money;
+        scope.conseguence.applicaVariazione();
+        scope.variazione = {
+          happiness: {
+            attuale: player.getPlayer().happiness,
+            delta: dH > 0 ? '+' + dH : dH,
+            prima: player.getPlayer().happiness - dH
+          },
+          money: {
+            attuale: player.getPlayer().money,
+            delta: dM > 0 ? '+' + dM : dM,
+            prima: player.getPlayer().money - dM
+          }
+        };
+        if (scope.variazione.money.delta != 0)
+          $('#h-e-variazione').addClass('go-variazione');
+        if (scope.variazione.happiness.delta != 0)
+          $('#h-pt-variazione').addClass('go-variazione');
+        $variation.addClass('show').removeClass('leave');
+        $timeout(function () {
+          $rootScope.$broadcast('helper:variation:close');
+        }, TIMERS.variation.total);
+      }
+      function closeVariation() {
+        $variation.addClass('leave').removeClass('show');
+        $('#h-e-variazione, #h-pt-variazione').removeClass('go-variazione');
+        $('.md-overlay').removeClass('show');
+      }
+      $rootScope.$on('helper:modal:open', openModal);
+      $rootScope.$on('helper:modal:close', closeModal);
+      $rootScope.$on('helper:variation:open', openVariation);
+      $rootScope.$on('helper:variation:close', closeVariation);
+    }
+  };
 });
 nmpApp.filter('capitalize', function () {
-	return function (input) {
-	    return input.charAt(0).toUpperCase() + input.slice(1);
-	}
-})
+  return function (input) {
+    return input.charAt(0).toUpperCase() + input.slice(1);
+  };
+});

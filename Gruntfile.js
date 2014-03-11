@@ -129,6 +129,25 @@ module.exports = function(grunt) {
       }
     },
 
+    cmq: {
+      options: {
+        log: false
+      },
+      your_target: {
+        files: {
+          'css/cmd': ['css/*.css']
+        }
+      }
+    },
+
+    uncss: {
+      dist: {
+        files: {
+          'css/uncss/app.css': ['index.html','game.html', 'zhang/win.html']
+          }
+        }
+    },
+
     watch: {
       grunt: {
         files: ['Gruntfile.js']
@@ -152,8 +171,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-combine-media-queries');
+  grunt.loadNpmTasks('grunt-uncss');
 
-
+  grunt.registerTask('clear', ['uncss', 'cmq']);
   grunt.registerTask('build', ['sass', 'autoprefixer', 'connect', 'concat', 'uglify']);
   grunt.registerTask('default', ['build', 'watch']);
 }
