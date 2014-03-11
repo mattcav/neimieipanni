@@ -1,44 +1,51 @@
 [{
-	"title": "Il lavoro",
-	"text": "Non riesci a trovare un impiego in regola con cui potresti rinnovare il permesso di soggiorno. Ma hai bisogno di soldi e decidi di accettare un lavoro in nero. Cosa scegli?",
-	"theme": "lavoro",
+	"title": "La mazzetta",
+	"text": "Il tuo superiore ti chiede 50€ per metterti sotto la sua ala protettiva. Cosa fai?",
+	"theme": "mazzetta",
 	"report": {
-		"img": "lavoro.png",
-		"text": "Circa il 35% (540 miliardi) del PIL italiano è il valore dell'economia sommersa. 22,5 di quei miliardi arrivano dal lavoro degli immigrati clandestini.",
-		"source": "'L'Italia  in nero', Rapporto sull'economia sommersa realizzato dall'Eurispes  e dall'Istituto San Pio V di Roma"	
+		"img": "mazzetta.png",
+		"text": "A partire dal settembre 2011 è stato introdotto nel codice penale italiano il nuovo reato di intermediazione illecita e sfruttamento del lavoro. Le pene previste per i cosiddetti “caporali” sono la reclusione da cinque a otto anni e una multa da 1.000 a 2.000 € per ogni lavoratore coinvolto.",
+		"source": "Codice Penale"	
 	},
 	"choices": [
 		{
-			"title": "Lavapiatti",
-			"button": "Lavapiatti",
-			"text": "La paga è bassa, ma il lavoro è poco faticoso e ti lascia il tempo di cercare un impiego in regola.",
-			"happiness": -500,
-			"money": 400,
+			"title": "Paghi",
+			"button": "Paghi",
+			"text": "Cedi a malincuore, perché lo temi.",
+			"happiness": -50,
+			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai scelto il lavoro che ti porta via meno tempo ma hai paura che i soldi non ti basteranno."
+				"text": "Ottieni subito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
 			}
 		},
 		{
-			"title": "Facchino",
-			"button": "Facchino",
-			"text": "È una mansione abbastanza pesante, ma la paga è discreta.",
-			"happiness": -550,
-			"money": 500,
+			"title": "Ti rifiuti",
+			"button": "Ti rifiuti",
+			"text": "Non vuoi cedere al ricatto, e rifiuti orgogliosamente.",
+			"happiness": 10,
+			"money": 0,
 			"conseguence": {
-				"type": "normal",
-				"text": "Hai cercato di fare una scelta equilibrata, trovando una via di mezzo tra guadagno e fatica."
-			}
-		},
-		{
-			"title": "Manovale",
-			"button": "Manovale",
-			"text": "Tra i mestieri che puoi trovare è quello pagato meglio ma è faticoso e pericoloso.",
-			"happiness": -600,
-			"money": 600,
-			"conseguence": {
-				"type": "normal",
-				"text": "Il lavoro è pagato meglio degli altri, ma il cantiere non rispetta le norme di sicurezza e sei sempre preoccupato di farti male."
+				"type": "random",
+				"waitingText": "Non sai se la tua azione porterà delle conseguenze...",
+				"cases": [
+					{
+						"probability": 50,
+						"happiness": -130,
+						"money": 0,
+						"stop": false,
+						"class": "bad",
+						"text": "L'uomo che non hai pagato riesce a danneggiarti. Ti mette i turni peggiori. Perdi 130 punti."
+					},
+					{
+						"probability": 50,
+						"happiness": 10,
+						"money": 0,
+						"stop": false,
+						"class": "good",
+						"text": "Il suo era solo un bluff. Sei contento di non esserti fatto intimidire, e guadagni altri 10 punti."
+					}
+				]
 			}
 		}
 	]

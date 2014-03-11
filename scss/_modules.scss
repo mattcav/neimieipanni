@@ -451,6 +451,7 @@
         $columns:12, 
         $center:true
         );
+    padding:0 1rem;
     max-width: 26rem;
 
     @media #{$medium-up} {
