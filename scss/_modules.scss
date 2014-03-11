@@ -354,7 +354,7 @@
     max-width: 30rem;
 
     @extend .text-center;
-    @extend %white;
+    color:$white;
     @include grid-column(
         $columns:12,
         $center:true
@@ -368,7 +368,7 @@
 }
 
 .page__title {
-    @extend %white;
+    color:$white;
     font-weight:500;
     text-transform: uppercase;
     letter-spacing: 1px;

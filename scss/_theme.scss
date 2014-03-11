@@ -67,7 +67,7 @@
 }
 
 
-%white {
+.white {
     color:$white;
     @include headings(1) {
         color:$white;
