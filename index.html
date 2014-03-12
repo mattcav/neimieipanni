@@ -87,8 +87,56 @@
                         </div>
 
                     </div>
+<<<<<<< HEAD
+        
+                </div>
+                <span class="bl-icon bl-close bl-icon-close"></span>
+            </section>
+
+        </div>
+</div><!-- /container -->
+        
+
+
+
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="js/vendor/boxlayout.js"></script>
+<script src="bower_components/greensock/src/minified/TweenMax.min.js"></script>   
+
+<script>
+
+    // Running in node-webkit
+    if(process !== undefined) {
+        // Load native UI library
+        var ngui = require('nw.gui');
+
+        // Get the current window
+        var nwin = ngui.Window.get();
+
+        $(document).ready(function () {
+            nwin.show();
+            nwin.maximize();
+        });
+    }
+
+    $(function() {
+        Boxlayout.init();
+    });
+
+    $(document).ready(function() {
+        $('body').addClass('ready');
+    });
+
+    // Tweens
+    var cover = $("#start"),
+        square = $(".square"),
+        btn = $("#go-to-select");
+
+    //animate squares
+=======
                     <span class="bl-icon bl-icon-close bl-close"></span>
                 </section>
+>>>>>>> 9227b23b0b3078ab53787aedde722708f7d0a7d2
 
                 <section class="irina">
                     <div class="bl-box">
