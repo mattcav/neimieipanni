@@ -3,8 +3,9 @@
 	"text": "Hai trovato un impiego di un giorno come hostess. Ma la responsabile dello stand manda via una delle altre ragazze perché è nera, dicendo che non vuole lavorare con le immigrate. Cosa fai?",
 	"theme": "hostess",
 	"report": {
-			"text": "Gli stranieri testimoni di episodi discriminatori risultano essere nati principalmente in Romania, Marocco e Perù (11,8% dei segnalanti testimoni totali)",
-			"source": "Rapporto UNAR"	
+			"img":"postodilavoro.png",
+			"text": "Il 17% degli stranieri subiscono discriminazioni sul posto di lavoro. I casi più diffusi sono ostilità dall'ambiente di lavoro, retribuzione inferiore a quella prevista e carichi di lavoro eccessivo.",
+			"source": "Indagine ISTAT “Condizione e integrazione sociale in un’ottica di genere dei cittadini stranieri” 2012"	
 		},
 	"choices": [
 		{

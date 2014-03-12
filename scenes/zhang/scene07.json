@@ -1,10 +1,11 @@
 {
-	"title": "Il nome sbagliato",
+	"title": "Il nome pronunciato male",
 	"text": "Per mantenerti all'università hai trovato un lavoretto. Ma il capo trova il tuo nome troppo complicato e lo storpia sempre. Come reagisci?",
 	"theme": "boss",
 	"report": {
-			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
-			"source": "Analisi ed elaborazione dati sull’immigrazione cinese"	
+			"img":"nome.png",
+			"text": "Il Nome proprio è  qualcosa di irrinunciabile che ci definisce e ci rappresenta: non a caso anche all'articolo 6 del Codice Civile si ricorda che “Ogni persona ha diritto al nome che le è per legge attribuito. Nel nome si comprendono il prenome e il cognome. Non sono ammessi cambiamenti, aggiunte o rettifiche al nome, se non nei casi e con le formalità dalla legge indicati”.",
+			"source": "Art. 6 Codice Civile"	
 		},
 	"choices": [
 		{
@@ -26,7 +27,7 @@
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Prendere posizione ti rende più fiero i te e delle tue origini, ma la reazione del capo è un rischio...",
+				"waitingText": "Prendere posizione ti rende più fiero di te e delle tue origini, ma la reazione del capo è un rischio...",
 				"cases": [
 					{
 						"probability": 50,

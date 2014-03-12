@@ -3,8 +3,9 @@
 	"text": "Un amico ti vorrebbe regalare l'auto che non usa più. Ti basterà trasferire l'assicurazione a tuo nome. Cosa fai?",
 	"theme": "automobile",
 	"report": {
-		"text": "stat3",
-		"source": "“stat3”"
+		"img":"assicurazioni.png",
+		"text": "Nel corso di un'indagine svolta dall'Associazione Cospe, è emerso che numerose compagnie assicurative (26 sulle 40 prese in considerazione) propongono preventivi più alti per i cittadini provenienti da paesi come Romania, Bulgaria e Marocco (fino al 100% di spesa).",
+		"source": "Monitoraggio Polizze RC auto Cospe, Cooperazione per lo sviluppo di paesi emergenti."
 	},
 	"choices": [{
 		"title": "Accetti",

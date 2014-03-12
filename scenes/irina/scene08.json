@@ -3,8 +3,9 @@
 	"text": "Mentre stai lavorando senti il tuo capo che fa una battuta razzista. Cosa fai?",
 	"theme": "boss",
 	"report": {
-			"text": "Nell’ambito del lavoro iI 12,5 % dei casi di discriminazione razziale ha riguardato le relazioni con i colleghi e il 2,5% il mobbing con aggravante razziale.",
-			"source": "Rapporto UNAR"	
+			"img":"battuta.png",
+			"text": "Al primo posto tra le cause di discriminazione sul lavoro degli stranieri (con il 46% dei casi) c’è il clima ostile, ovvero un trattamento discriminatorio da parte di colleghi e superiori.",
+			"source": "Istat, Indagine “Condizione e integrazione sociale in un’ottica di genere dei cittadini stranieri”, 2012"	
 		},
 	"choices": [
 		{

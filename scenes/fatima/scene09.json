@@ -3,8 +3,9 @@
 	"text": "Vuoi organizzare una festa per il compleanno di uno dei tuoi figli, ma un'amica ti fa notare che alcune mamme potrebbero non mandare i loro bambini in una casa di immigrati. Dove organizzi la festa?",
 	"theme": "torta",
 	"report": {
-		"text": "stat9",
-		"source": "“stat9”"
+		"img":"vicino.png",
+		"text": "I pregiudizi verso gli stranieri sono ancora un forte ostacolo all’integrazione. Il 68,4% degli italiani non vorrebbe avere come vicino di casa un Rom/Sinti. Al secondo e al terzo posto tra i vicini meno graditi si collocano i romeni (indicati dal 25,6%) e gli albanesi (24,8%). ",
+		"source": "ISTAT 2011"
 	},
 	"choices": [{
 		"title": "A casa tua",

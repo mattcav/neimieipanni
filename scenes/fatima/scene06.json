@@ -3,8 +3,9 @@
 	"text": "Mentre accompagni uno dei tuoi figli a scuola, senti un bambino che fa una battuta razzista sul colore della sua pelle. Cosa fai?",
 	"theme": "bambino",
 	"report": {
-			"text": "stat6",
-			"source": "“stat6”"
+			"img":"unar.png",
+			"text": "Se sei vittima o testimone di comportamenti discriminatori, contatta il Numero Verde UNAR 800901010. È importante per studiare ed arginare questo fenomeno.",
+			"source": "oppure visita il sito web www.unar.it"
 		},
 	"choices": [
 		{

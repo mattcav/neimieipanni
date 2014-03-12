@@ -3,8 +3,8 @@
 	"text": "Il proprietario di un ristorante cinese sotto casa tua ti ha preso in simpatia e spesso ti offre la cena. Ma ogni volta ti parla male degli italiani. Cosa fai?",
 	"theme": "ristorante",
 	"report": {
-			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
-			"source": "ORAC (2013)"	
+			"text": "stat-mancante",
+			"source": "stat-mancante"	
 		},
 	"choices": [
 		{

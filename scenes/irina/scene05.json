@@ -3,8 +3,9 @@
 	"text": "Mentre sei al lavoro, cadi e ti fai male ad una gamba. Cosa fai?",
 	"theme": "infortunio",
 	"report": {
-			"text": "il 16,6 % degli incidenti sul lavoro denunciati e il 31,2% dei casi mortali hanno coinvolto lavoratori nati in Romania (nazione prima in graduatoria sia per le denunce che per i decessi). Inoltre, il 10% dei lavoratori rumeni iscritti all’INAIL risulta essersi ammalato a causa del lavoro. Un’analisi per settore di attività mostra che il 94,3% degli infortuni dei lavoratori nati all’estero si verifica nell’Industria e servizi.",
-			"source": "Dossier Statistico Immigrazione Caritas e Migrantes 2012"	
+			"img":"mortali.png",
+			"text": "Dal 2010 al 2011 gli infortuni mortali sul lavoro degli italiani sono scesi del 10%, quelli degli stranieri sono aumentati dell’1,4%.",
+			"source": "Ministero del lavoro e delle Politiche Sociali, III Rapporto Annuale “Immigrati nel mercato del lavoro in Italia” 2013"	
 		},
 	"choices": [
 		{

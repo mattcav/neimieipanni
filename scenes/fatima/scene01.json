@@ -3,8 +3,9 @@
 	"text": "I tuoi bambini stanno crescendo, servirebbe un appartamento più grande, invece di quello dove vivete con i genitori di tuo marito. Che casa cerchi?",
 	"theme": "casa",
 	"report": {
-		"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
-		"source": "Rapporto UNAR"
+		"img":"proprieta.png",
+		"text": "Essere uno straniero ed avere una casa di proprietà è ancora molto difficile in Italia. Solo due stranieri su dieci ci riescono, mentre per gli italiani l’accesso alla proprietà di una casa è molto più diffuso (otto italiani su dieci vivono in una casa di proprietà).",
+		"source": "Censimento Istat 2011"
 	},
 	"choices": [{
 		"title": "Più vicina alla scuola",

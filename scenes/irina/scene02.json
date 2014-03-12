@@ -3,8 +3,9 @@
 	"text": "Ora che hai trovato un lavoro, è ti serve una giusta sistemazione. Che cosa cerchi?",
 	"theme": "casa",
 	"report": {
-		"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
-		"source": "Rapporto UNAR"	
+		"img":"casa.png",
+		"text": "Una persona straniera che affitta una casa viene discriminata una volta su cinque. Spesso attraverso condizioni peggiori di quelle proposte agli italiani, o direttamente con il rifiuto.",
+		"source": " Contact Center Unar 2012"	
 	},
 	"choices": [
 		{
