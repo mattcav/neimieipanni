@@ -3,8 +3,9 @@
 	"text": "Arrivi in stazione con un grosso borsone. C'è un posto di controllo delle forze dell'ordine e tu sei l'unica a cui viene chiesto di aprire il bagaglio. Cosa fai?",
 	"theme": "borsone",
 	"report": {
-			"text": "stat7",
-			"source": "“stat7”"
+			"img":"controlli.png",
+			"text": "I controlli delle forze dell'ordine sui cittadini italiani avvengono quasi sempre quando sono alla guida dell'automobile, ovvero in modo casuale. Ma se consideriamo i controlli di  persone a piedi, scopriamo che nove volte su dieci  riguardano gli stranieri, soprattutto nordafricani e romeni.",
+			"source": "Rapporto “Police stops and Minorities” 2010 dell’Agenzia Europea per i Diritti Fondamentali (FRA)"
 		},
 	"choices": [
 		{

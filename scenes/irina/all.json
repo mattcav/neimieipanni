@@ -3,8 +3,9 @@
 		"text": "Sei appena arrivata in Italia, devi cercarti un lavoro. Per cosa ti proponi?",
 		"theme": "lavoro",
 		"report": {
-			"text": "Equivale a 540 miliardi di euro, corrispondenti a circa il 35% del Pil 'ufficiale', il valore dell'economia sommersa nel 2011. E circa 22,5 di quei miliardi arrivano dal lavoro degli immigrati. Considerando gli immigrati clandestini si stima un  sommerso di 10 miliardi e mezzo di euro.",
-			"source": "'L'Italia  in nero', Rapporto sull'economia sommersa realizzato dall'Eurispes  e dall'Istituto San Pio V di Roma"	
+			"img": "sovraistruito.png",
+			"text": "Un lavoratore è “sovraistruito” quando ha un titolo di studio più alto di quello richiesto per il lavoro che svolge. Questa condizione riguarda circa il 20% dei lavoratori italiani e il 40% degli stranieri.",
+			"source": "Istat, Rilevazione sulle forze di lavoro 2012"	
 		},
 		"choices": [
 			{
@@ -50,8 +51,9 @@
 	"text": "Ora che hai trovato un lavoro, è ti serve una giusta sistemazione. Che cosa cerchi?",
 	"theme": "casa",
 	"report": {
-		"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
-		"source": "Rapporto UNAR"	
+		"img":"casa.png",
+		"text": "Una persona straniera che affitta una casa viene discriminata una volta su cinque. Spesso attraverso condizioni peggiori di quelle proposte agli italiani, o direttamente con il rifiuto.",
+		"source": " Contact Center Unar 2012"	
 	},
 	"choices": [
 		{
@@ -105,8 +107,9 @@
 	"text": "Il colloquio per il lavoro è andato bene ma lo stipendio ti sembra un po’ basso. Per chiedere un aumento potresti usare i tuoi studi. Che fai?",
 	"theme": "boss",
 	"report": {
-			"text": "Solo il 4,5% degli immigrati con cittadinanza romena svolge professioni qualificate (dirigenti, imprenditori, tecnici)",
-			"source": "“Relazione sulle forze lavoro”, Anno 2011, ISTAT"	
+			"img":"stipendio.png",
+			"text": "A parità di lavoro svolto, uno straniero viene pagato in media il 25% in meno di un italiano. Nel Sud Italia, il dato arriva fino al 34%.",
+			"source": "Istat, Rilevazione sulle forze di lavoro anno 2012"	
 		},
 	"choices": [
 		{
@@ -150,13 +153,14 @@
 			}
 		}
 	]
-},{
+}, {
 	"title": "Il corso d'italiano",
 	"text": "Il tuo italiano è ancora scarso e hai difficoltà a parlare con le persone. Decidi di seguire un corso di lingua. Quale scegli?",
 	"theme": "italiano",
 	"report": {
-			"text": "L’integrazione linguistica degli stranieri in Italia è stata “istituzionalizzata” dapprima mediante il Decreto del 4 giugno 2010 ( che ha inserito la conoscenza della lingua italiana tra i requisiti necessari per l’ottenimento dell’ambita Carta di soggiorno CE per soggiornanti di lungo periodo) a cui è seguito, il 28 luglio del 2011, il Regolamento attuativo dell’Accordo di integrazione. Stando ai soli aspiranti alla Carta di soggiorno CE, nei primi 6 mesi del 2011 le domande pervenute per accedere al test sono state, in Italia, oltre 51.000: una cifra pari ad appena il 12%  circa dei 400.000 soggiornanti che, a giugno dello stesso anno, risultavano aver maturato i requisiti per richiedere la Carta. L’esito è stato generalmente confortante, avendolo superato l’87% di quanti l’hanno sostenuto.",
-			"source": "“Immigrati e integrazione”, Centro Studi e Ricerche Idos"	
+			"img":"italiano.png",
+			"text": "Dal 2010 la conoscenza della lingua italiana è un requisito essenziale per richiedere il Permesso di Soggiorno CE per i residenti di lungo periodo. Nel 2011 l'87% di quelli che hanno sostenuto il test di verifica della lingua l'ha superato, ma solo il 12% degli immigrati che ne avevano diritto ha chiesto di sostenerlo.",
+			"source": "IX Rapporto CNEL - Indici di integrazione degli immigrati in Italia, 2013"	
 		},
 	"choices": [
 		{
@@ -187,8 +191,9 @@
 	"text": "Mentre sei al lavoro, cadi e ti fai male ad una gamba. Cosa fai?",
 	"theme": "infortunio",
 	"report": {
-			"text": "il 16,6 % degli incidenti sul lavoro denunciati e il 31,2% dei casi mortali hanno coinvolto lavoratori nati in Romania (nazione prima in graduatoria sia per le denunce che per i decessi). Inoltre, il 10% dei lavoratori rumeni iscritti all’INAIL risulta essersi ammalato a causa del lavoro. Un’analisi per settore di attività mostra che il 94,3% degli infortuni dei lavoratori nati all’estero si verifica nell’Industria e servizi.",
-			"source": "Dossier Statistico Immigrazione Caritas e Migrantes 2012"	
+			"img":"mortali.png",
+			"text": "Dal 2010 al 2011 gli infortuni mortali sul lavoro degli italiani sono scesi del 10%, quelli degli stranieri sono aumentati dell’1,4%.",
+			"source": "Ministero del lavoro e delle Politiche Sociali, III Rapporto Annuale “Immigrati nel mercato del lavoro in Italia” 2013"	
 		},
 	"choices": [
 		{
@@ -237,8 +242,9 @@
 		"text": "Da quando ti sei trasferita hai dovuto lavare i panni a mano perdendo tempo e facendo fatica. Cosa fai?",
 		"theme": "lavatrice",
 		"report": {
-			"text": "Le famiglie con stranieri dispongono di beni durevoli in maniera limitata rispetto alle famiglie composte da soli italiani. Il divario è contenuto per beni come la lavatrice di cui ne dispone il 93,2% delle famiglie (contro il 97,7% delle famiglie italiane) anche se è frequente l’utilizzo in condivisione con altre famiglie.",
-			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
+			"img": "lavatrice.png",
+			"text": "Anche se molte famiglie immigrate la usano in comune con altre, la lavatrice è uno dei pochi beni durevoli diffuso allo stesso modo tra stranieri e italiani. Lo stesso non può dirsi per beni come l’automobile, il computer o la connessione ad internet.",
+			"source": "Istat, “Le famiglie con stranieri: indicatori di disagio economico”, 2009."	
 		},
 		"choices": [
 			{
@@ -284,8 +290,9 @@
 	"text": "Per strada un gruppo di ragazzi, credendoti italiana, ti porge un volantino con scritto “basta immigrati”.",
 	"theme": "volantino",
 	"report": {
-			"text": "le segnalazioni riguardanti scritte razziste su muri, manifesti e altri spazi raccolgono invece il 7,1% dei casi di discriminazione razziale totali pervenuti nel 2012. ",
-			"source": "Rapporto UNAR 2012"	
+			"img":"volantino.png",
+			"text": "Il 65% degli italiani pensa che gli immigrati siano “troppi”.  Ma in Italia sono il 7,4% della popolazione: meno che in altri paesi europei, come il Lussemburgo (43%), la Germania (9%), il Belgio e la Spagna (oltre il 10%).",
+			"source": "Eurostat dati 2012"	
 		},
 	"choices": [
 		{
@@ -334,8 +341,9 @@
 	"text": "Mentre stai lavorando senti il tuo capo che fa una battuta razzista. Cosa fai?",
 	"theme": "boss",
 	"report": {
-			"text": "Nell’ambito del lavoro iI 12,5 % dei casi di discriminazione razziale ha riguardato le relazioni con i colleghi e il 2,5% il mobbing con aggravante razziale.",
-			"source": "Rapporto UNAR"	
+			"img":"battuta.png",
+			"text": "Al primo posto tra le cause di discriminazione sul lavoro degli stranieri (con il 46% dei casi) c’è il clima ostile, ovvero un trattamento discriminatorio da parte di colleghi e superiori.",
+			"source": "Istat, Indagine “Condizione e integrazione sociale in un’ottica di genere dei cittadini stranieri”, 2012"	
 		},
 	"choices": [
 		{
@@ -384,8 +392,9 @@
 	"text": "Vedi un uomo cadere dal motorino. Ti avvicini e capisci che si è lussato la spalla. Sai come rimettergliela a posto, ma lui sente il tuo accento straniero e non si fida. Cosa fai?",
 	"theme": "incidente",
 	"report": {
-			"text": "l’88,7% degli intervistati ritiene che non sia affatto giustificabile trattare meno bene un lavoratore “perchè immigrato” e il 71,7% ritiene che non sia giusto non assumere un dipendente con le qualifiche richieste solo perchè straniero. Inoltre, il comportamento degli italiani nei confronti degli immigrati risulta essere diffidente (60,1%), non apertamente ostile (6,9%) o indifferente (15,8%)",
-			"source": "“I migranti visti dai cittandini italiani”, Anno 2011, ISTAT"	
+			"img":"dottori.png",
+			"text": "Sono oltre 15mila i medici stranieri iscritti all'Ordine dei Medici Chirurghi e Odontoiatri nel nostro Paese (le donne rappresentano il 42,3% del totale).",
+			"source": "Primo rapporto Emn (European migration network) Italia"	
 		},
 	"choices": [
 		{
@@ -434,8 +443,9 @@
 	"text": "Hai trovato un impiego di un giorno come hostess. Ma la responsabile dello stand manda via una delle altre ragazze perché è nera, dicendo che non vuole lavorare con le immigrate. Cosa fai?",
 	"theme": "hostess",
 	"report": {
-			"text": "Gli stranieri testimoni di episodi discriminatori risultano essere nati principalmente in Romania, Marocco e Perù (11,8% dei segnalanti testimoni totali)",
-			"source": "Rapporto UNAR"	
+			"img":"postodilavoro.png",
+			"text": "Il 17% degli stranieri subiscono discriminazioni sul posto di lavoro. I casi più diffusi sono ostilità dall'ambiente di lavoro, retribuzione inferiore a quella prevista e carichi di lavoro eccessivo.",
+			"source": "Indagine ISTAT “Condizione e integrazione sociale in un’ottica di genere dei cittadini stranieri” 2012"	
 		},
 	"choices": [
 		{

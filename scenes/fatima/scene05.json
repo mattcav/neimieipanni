@@ -3,8 +3,9 @@
 	"text": "Tua madre viene a trovarti. Ma il giorno prima qualcuno fa una scritta a fianco al tuo portone che minaccia quelli della tua religione. Cosa fai?",
 	"theme": "writers",
 	"report": {
-		"text": "stat5",
-		"source": "“stat5”"
+		"img":"condomini.png",
+		"text": "Secondo il Rapporto Unar 2012, oltre il 55% delle segnalazioni di discriminazioni riguardano l'ambito “Condomini e vicini”. Un altro 12,1% riguarda inoltre scritte xenofobe su muri, manifesti e altri spazi.",
+		"source": "Contact Center Unar"
 	},
 	"choices": [{
 		"title": "La fai cancellare subito",

@@ -3,8 +3,9 @@
 	"text": "Hai appena conosciuto una ragazza italiana. Lei ti piace, ma dopo pochi minuti ti dice una frase che hai sentito un milione di volte: “Però, lo parli bene l’italiano!”. Come reagisci?",
 	"theme": "ragazza",
 	"report": {
-			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
-			"source": "Analisi ed elaborazione dati sull’immigrazione cinese"	
+			"img":"scuola.png",
+			"text": "Nuovo fortissimo incremento delle iscrizioni di studenti cinesi nelle università italiane per l'anno accademico 2012-2013, in linea con il trend di questi ultimi anni, attraverso i programmi Marco Polo e Turandot. Le iscrizioni hanno raggiunto la cifra record di 2489 studenti con un incremento del 46% rispetto all'anno precedente.",
+			"source": "Farnesina"	
 		},
 	"choices": [
 		{

@@ -3,8 +3,9 @@
 		"text": "Per frequentare l’università hai cambiato città, ora ti serve un posto dove stare. Cosa cerchi?",
 		"theme": "casa",
 		"report": {
-			"text": "Il 16,7% degli episodi di discriminazione etnico-razziale in ambito casa riguardano le condizioni di affitto.",
-			"source": "Rapporto UNAR 2013"	
+			"img": "casa.png",
+			"text": "Due ricercatori dell’Università di Modena e Reggio Emilia si sono finti stranieri per cercare una casa in affitto. Così facendo, un proprietario su cinque si è rifiutato di affittargli casa.",
+			"source": "Ethnic discrimination in the Italian rental housing market, Massimo Baldini e Marta Federici, CAPP, 2010"
 		},
 		"choices": [
 			{
@@ -58,8 +59,9 @@
 	"text": "Nell’atrio dell’università un ragazzo, pensando che tu non capisca l’italiano, dice a un altro che invece che lì dovresti stare a cucinare gatti fingendo che siano pollo. Come reagisci?",
 	"theme": "bulli",
 	"report": {
-			"text": "Il 59% delle discriminazioni subite dalla comunità cinese è legato alle informazioni diffamatorie sulla cultura cinese diffuse quotidianamente.",
-			"source": "Indagine “AssoChina”"	
+			"img":"cibo.png",
+			"text": "Conoscete anche voi la storia del cliente di un ristorante cinese che si ritrova in una pietanza a base di carne un microchip? Basta digitare su Google il quartetto di parole “cane microchip ristorante cinese” e compare la stessa leggenda metropolitana, semplicemente con uno sfondo diverso: in un caso è ambientata a Perugia, in un altro a Vicenza e in un altro ancora a Milano.",
+			"source": "UNAR"	
 		},
 	"choices": [
 		{
@@ -108,8 +110,9 @@
 	"text": "La casa che hai trovato non è molto vicina all'univeristà, quindi dovrai prendere i mezzi pubblici ogni giorno. Cosa scegli di fare?",
 	"theme": "controllore",
 	"report": {
-			"text": "Il 70% delle segnalazioni pervenute all’UNAR riguardano casi di discriminazione etnico-razziale avvenute nell’ambito “Trasporto pubblico”.",
-			"source": "Rapporto UNAR"	
+			"img":"autobus.png",
+			"text": "Le famiglie con stranieri che non hanno denaro a sufficienza per i trasporti, sono quasi il doppio di quelle composte da soli italiani: 15,3% contro l’8,1%.",
+			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
 		},
 	"choices": [
 		{
@@ -158,8 +161,9 @@
 	"text": "Hai appena conosciuto una ragazza italiana. Lei ti piace, ma dopo pochi minuti ti dice una frase che hai sentito un milione di volte: “Però, lo parli bene l’italiano!”. Come reagisci?",
 	"theme": "ragazza",
 	"report": {
-			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
-			"source": "Analisi ed elaborazione dati sull’immigrazione cinese"	
+			"img":"scuola.png",
+			"text": "Nuovo fortissimo incremento delle iscrizioni di studenti cinesi nelle università italiane per l'anno accademico 2012-2013, in linea con il trend di questi ultimi anni, attraverso i programmi Marco Polo e Turandot. Le iscrizioni hanno raggiunto la cifra record di 2489 studenti con un incremento del 46% rispetto all'anno precedente.",
+			"source": "Farnesina"	
 		},
 	"choices": [
 		{
@@ -208,8 +212,9 @@
 	"text": "Stai camminando per strada quando senti un ragazzo che insulta una donna di colore, lei si gira a guardarti per cercare sostegno.",
 	"theme": "insulto",
 	"report": {
-			"text": "Il decreto legislativo 215/2003 definisce come molestie “quei comportamenti indesiderati, posti in essere per motivi di razza o di origine etnica, aventi lo scopo o l’effetto di violare da dignità di una persona e di creare un clima intimidatorio, ostile, degradante, umiliante od offensivo” (art.2 comma 3)",
-			"source": "decreto legislativo 215/2003"	
+			"img":"unar.png",
+			"text": "Se sei vittima o testiomone di comportamenti discriminatori nei confronti di terzi, contatta il Numero Verde UNAR 800901010",
+			"source": "oppure visita il sito web www.unar.it"	
 		},
 	"choices": [
 		{
@@ -258,8 +263,9 @@
 	"text": "I tuoi genitori ti chiedono di tornare a casa per festeggiare con loro il capodanno cinese. Ma in quel week end c’è una grande festa nella tua facoltà. Cosa fai?",
 	"theme": "capodanno",
 	"report": {
-			"text": "Indagine comunità cinese di Roma: pochi cinesi riunciano a festeggiare il capodanno cinese perchè forte ricorrenza della loro cultura. La differenza sta nei festeggiamenti: in Cina la festa si trascorre in famiglia; in Italia si va al ristorante coinvolgendo anche gli amici italiani.",
-			"source": "AGICHINA 24"	
+			"img":"drago.png",
+			"text": "Il capodanno cinese è la festa più importante per le comunità cinesi che osservano gli stessi rituali da oltre 4.700 anni. I festeggiamenti  durano tutta una settimana durante la quale vengono costruiti grossi draghi (il drago è simbolo della pioggia e quindi della prosperità, della fertilità)  di carta o di stoffa – che poi sfileranno per le strade,  si cucinano cibi particolari, così come avviene anche da noi (ad es. le lenticchie), tra i quali gli “involtini primavera”. La casa è piena di fiori e strisce di carta rossa con scritte augurali.",
+			"source": "ChinaItaly.info"	
 		},
 	"choices": [
 		{
@@ -304,12 +310,13 @@
 		}
 	]
 },{
-	"title": "Il nome sbagliato",
+	"title": "Il nome pronunciato male",
 	"text": "Per mantenerti all'università hai trovato un lavoretto. Ma il capo trova il tuo nome troppo complicato e lo storpia sempre. Come reagisci?",
 	"theme": "boss",
 	"report": {
-			"text": "I dati mostrano che iniziare le scuole italiane da piccoli, quando non sono stati frequentati corsi in Cina aumenta la probabilità di raggiungere il diploma in Italia, migliora l’integrazione con gli italiani e la probabilità di successo negli affari.",
-			"source": "Analisi ed elaborazione dati sull’immigrazione cinese"	
+			"img":"nome.png",
+			"text": "Il Nome proprio è  qualcosa di irrinunciabile che ci definisce e ci rappresenta: non a caso anche all'articolo 6 del Codice Civile si ricorda che “Ogni persona ha diritto al nome che le è per legge attribuito. Nel nome si comprendono il prenome e il cognome. Non sono ammessi cambiamenti, aggiunte o rettifiche al nome, se non nei casi e con le formalità dalla legge indicati”.",
+			"source": "Art. 6 Codice Civile"	
 		},
 	"choices": [
 		{
@@ -331,7 +338,7 @@
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Prendere posizione ti rende più fiero i te e delle tue origini, ma la reazione del capo è un rischio...",
+				"waitingText": "Prendere posizione ti rende più fiero di te e delle tue origini, ma la reazione del capo è un rischio...",
 				"cases": [
 					{
 						"probability": 50,
@@ -358,8 +365,8 @@
 	"text": "Per avere un po’ di soldi in più fai un casting per una pubblicità. Vieni scelto, ma scopri che devi interpretare un cinese stereotipato e con un ridicolo accento.",
 	"theme": "casting",
 	"report": {
-			"text": "Uno degli stereotipi razzisti più significativi nelle pubblicità? Quello relativo alla caratterizzazione dei Cinesi (e per estensione dela Cina) in termini di soggetti capaci solo di copiare e, possibilmente, “taroccare” (ossia spacciare le copie per originali) i prodotti creati da altri.",
-			"source": "Associna"	
+			"text": "stat-mancante",
+			"source": "stat-mancante"	
 		},
 	"choices": [
 		{
@@ -390,8 +397,9 @@
 	"text": "Nella città dove vivi arriva la nazionale: vai allo stadio a vederla. Ma, pur essendo in un settore tranquillo, vicino a te un uomo inveisce contro i giocatori italiani di colore. Cosa fai?",
 	"theme": "partita",
 	"report": {
-			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
-			"source": "ORAC (2013)"	
+			"img":"tifosi.png",
+			"text": "Discriminazione e razzismo nel calcio. Nelle ultime tre stagioni calcistiche (2010/11, 2011/12, 2012/13) ci sono stati 168 Episodi di discriminazione razziale, per un ammontare di relative ammende di Euro 1.162.650 emanante dal giudice sportivo e 82 tifoserie coinvolte.",
+			"source": "Osservatorio sul Razzismo e l’Antirazzismo nel Calcio (Orac)"	
 		},
 	"choices": [
 		{
@@ -440,8 +448,8 @@
 	"text": "Il proprietario di un ristorante cinese sotto casa tua ti ha preso in simpatia e spesso ti offre la cena. Ma ogni volta ti parla male degli italiani. Cosa fai?",
 	"theme": "ristorante",
 	"report": {
-			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
-			"source": "ORAC (2013)"	
+			"text": "stat-mancante",
+			"source": "stat-mancante"	
 		},
 	"choices": [
 		{
