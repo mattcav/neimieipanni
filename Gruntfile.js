@@ -38,6 +38,7 @@ module.exports = function(grunt) {
      
       homeScript: {
         src: [
+          'js/vendor/modernizr.custom.js',
           'js/analytics.js',
           'bower_components/jquery/dist/jquery.js',
           'js/vendor/boxlayout.js',
