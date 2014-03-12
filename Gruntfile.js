@@ -145,7 +145,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'css/cmq',
         src: ['*.css', '!*.min.css'],
-        dest: 'css/build/',
+        dest: 'css/',
         ext: '.min.css'
       }
     },
