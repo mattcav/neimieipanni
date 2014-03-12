@@ -3,8 +3,9 @@
 	"text": "Stai camminando per strada quando senti un ragazzo che insulta una donna di colore, lei si gira a guardarti per cercare sostegno.",
 	"theme": "insulto",
 	"report": {
-			"text": "Il decreto legislativo 215/2003 definisce come molestie “quei comportamenti indesiderati, posti in essere per motivi di razza o di origine etnica, aventi lo scopo o l’effetto di violare da dignità di una persona e di creare un clima intimidatorio, ostile, degradante, umiliante od offensivo” (art.2 comma 3)",
-			"source": "decreto legislativo 215/2003"	
+			"img":"unar.png",
+			"text": "Se sei vittima o testiomone di comportamenti discriminatori nei confronti di terzi, contatta il Numero Verde UNAR 800901010",
+			"source": "oppure visita il sito web www.unar.it"	
 		},
 	"choices": [
 		{

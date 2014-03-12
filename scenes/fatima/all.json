@@ -3,8 +3,9 @@
 	"text": "I tuoi bambini stanno crescendo, servirebbe un appartamento più grande, invece di quello dove vivete con i genitori di tuo marito. Che casa cerchi?",
 	"theme": "casa",
 	"report": {
-		"text": "Il 7,3% degli episodi di discriminazione etnico-razziale trattati dall’UNAR riguarda l’ambito “CASA” in cui il 16,7% delle segnalazioni riguardano le condizioni di affitto.",
-		"source": "Rapporto UNAR"
+		"img":"proprieta.png",
+		"text": "Essere uno straniero ed avere una casa di proprietà è ancora molto difficile in Italia. Solo due stranieri su dieci ci riescono, mentre per gli italiani l’accesso alla proprietà di una casa è molto più diffuso (otto italiani su dieci vivono in una casa di proprietà).",
+		"source": "Censimento Istat 2011"
 	},
 	"choices": [{
 		"title": "Più vicina alla scuola",
@@ -50,8 +51,9 @@
 	"text": "Un'amica ti propone di lavorare insieme a lei per un giorno in uno stand, ma il capo ti dice di toglierti il velo. Come reagisci?",
 	"theme": "amica",
 	"report": {
-		"text": "stat2",
-		"source": "“stat2”"
+		"img":"liberta.png",
+		"text": "Ogni individuo ha diritto alla libertà di pensiero, di coscienza e di religione; tale diritto include la libertà di cambiare di religione o di credo, e la libertà di manifestare, isolatamente o in comune, e sia in pubblico che in privato, la propria religione o il proprio credo nell'insegnamento, nelle pratiche, nel culto e nell'osservanza dei riti.",
+		"source": "Dichiarazione Universale dei Diritti Umani"
 	},
 	"choices": [{
 		"title": "Protesti",
@@ -94,8 +96,9 @@
 	"text": "Un amico ti vorrebbe regalare l'auto che non usa più. Ti basterà trasferire l'assicurazione a tuo nome. Cosa fai?",
 	"theme": "automobile",
 	"report": {
-		"text": "stat3",
-		"source": "“stat3”"
+		"img":"assicurazioni.png",
+		"text": "Nel corso di un'indagine svolta dall'Associazione Cospe, è emerso che numerose compagnie assicurative (26 sulle 40 prese in considerazione) propongono preventivi più alti per i cittadini provenienti da paesi come Romania, Bulgaria e Marocco (fino al 100% di spesa).",
+		"source": "Monitoraggio Polizze RC auto Cospe, Cooperazione per lo sviluppo di paesi emergenti."
 	},
 	"choices": [{
 		"title": "Accetti",
@@ -126,8 +129,9 @@
 	"text": "Scopri che quest’anno alla mensa della scuola dei tuoi figli non è previsto un menu musulmano senza carne di maiale.",
 	"theme": "bimbo",
 	"report": {
-		"text": "stat4",
-		"source": "“stat4”"
+		"img":"mensa.png",
+		"text": "In Italia ci sono circa 1.700.000 cittadini stranieri di religione musulmana. Le scuole, in base alle direttive del Ministero della Salute, devono garantire la sostituzione degli alimenti per motivi religiosi o culturali senza richiedere nessun certificato medico, basta una semplice richiesta dei genitori dello studente.",
+		"source": "Dossier Immigrazione 2013 Idos-Unar"
 	},
 	"choices": [{
 		"title": "Chiedi un certificato medico",
@@ -155,8 +159,9 @@
 	"text": "Tua madre viene a trovarti. Ma il giorno prima qualcuno fa una scritta a fianco al tuo portone che minaccia quelli della tua religione. Cosa fai?",
 	"theme": "writers",
 	"report": {
-		"text": "stat5",
-		"source": "“stat5”"
+		"img":"condomini.png",
+		"text": "Secondo il Rapporto Unar 2012, oltre il 55% delle segnalazioni di discriminazioni riguardano l'ambito “Condomini e vicini”. Un altro 12,1% riguarda inoltre scritte xenofobe su muri, manifesti e altri spazi.",
+		"source": "Contact Center Unar"
 	},
 	"choices": [{
 		"title": "La fai cancellare subito",
@@ -184,8 +189,9 @@
 	"text": "Mentre accompagni uno dei tuoi figli a scuola, senti un bambino che fa una battuta razzista sul colore della sua pelle. Cosa fai?",
 	"theme": "bambino",
 	"report": {
-			"text": "stat6",
-			"source": "“stat6”"
+			"img":"unar.png",
+			"text": "Se sei vittima o testimone di comportamenti discriminatori, contatta il Numero Verde UNAR 800901010. È importante per studiare ed arginare questo fenomeno.",
+			"source": "oppure visita il sito web www.unar.it"
 		},
 	"choices": [
 		{
@@ -234,8 +240,9 @@
 	"text": "Arrivi in stazione con un grosso borsone. C'è un posto di controllo delle forze dell'ordine e tu sei l'unica a cui viene chiesto di aprire il bagaglio. Cosa fai?",
 	"theme": "borsone",
 	"report": {
-			"text": "stat7",
-			"source": "“stat7”"
+			"img":"controlli.png",
+			"text": "I controlli delle forze dell'ordine sui cittadini italiani avvengono quasi sempre quando sono alla guida dell'automobile, ovvero in modo casuale. Ma se consideriamo i controlli di  persone a piedi, scopriamo che nove volte su dieci  riguardano gli stranieri, soprattutto nordafricani e romeni.",
+			"source": "Rapporto “Police stops and Minorities” 2010 dell’Agenzia Europea per i Diritti Fondamentali (FRA)"
 		},
 	"choices": [
 		{
@@ -284,8 +291,9 @@
 	"text": "Mentre stai facendo acquisti in un negozio dove vai spesso, vedi il gestore che caccia via una ragazza Rom. Cosa fai?",
 	"theme": "negoziante",
 	"report": {
-			"text": "stat8",
-			"source": "“stat8”"
+			"img":"bimbo.png",
+			"text": "Lo stereotipo  più diffuso nei confronti delle persone rom è quello  dei “rom che rubano i bambini” In Italia – come dimostrato da uno studio del 2008 dell’Università di Verona – dal 1986 al 2007 non si è mai verificato un caso di presunto “rapimento” di bambini da parte dei rom.",
+			"source": "“La Zingara Rapitrice” Università di Verona 2008"
 		},
 	"choices": [
 		{
@@ -316,8 +324,9 @@
 	"text": "Vuoi organizzare una festa per il compleanno di uno dei tuoi figli, ma un'amica ti fa notare che alcune mamme potrebbero non mandare i loro bambini in una casa di immigrati. Dove organizzi la festa?",
 	"theme": "torta",
 	"report": {
-		"text": "stat9",
-		"source": "“stat9”"
+		"img":"vicino.png",
+		"text": "I pregiudizi verso gli stranieri sono ancora un forte ostacolo all’integrazione. Il 68,4% degli italiani non vorrebbe avere come vicino di casa un Rom/Sinti. Al secondo e al terzo posto tra i vicini meno graditi si collocano i romeni (indicati dal 25,6%) e gli albanesi (24,8%). ",
+		"source": "ISTAT 2011"
 	},
 	"choices": [{
 		"title": "A casa tua",
@@ -360,8 +369,9 @@
 	"text": "Ti hanno detto che hai i requisiti per richiedere una casa popolare. Ti presenti in Comune, ma lì davanti noti un presidio di manifestanti con cartelli come “Basta extracomunitari” e “Le case agli italiani”.",
 	"theme": "manifestanti",
 	"report": {
-		"text": "stat10",
-		"source": "“stat10”"
+		"img":"casapopolare.png",
+		"text": "Gli immigrati fanno domanda di alloggio popolare più degli italiani (oltre il 50% delle domande), ma ottengono la casa in percentuali molto minori (circa il 12%). Questo perché esistono diverse forme di discriminazione istituzionale che  penalizzano gli stranieri nel possesso dei requisiti per ottenere le case popolari.",
+		"source": "Dossier Immigrazione 2013 Idos-Unar"
 	},
 	"choices": [{
 		"title": "Entri con decisione",

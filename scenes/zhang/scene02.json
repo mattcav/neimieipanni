@@ -3,8 +3,9 @@
 	"text": "Nell’atrio dell’università un ragazzo, pensando che tu non capisca l’italiano, dice a un altro che invece che lì dovresti stare a cucinare gatti fingendo che siano pollo. Come reagisci?",
 	"theme": "bulli",
 	"report": {
-			"text": "Il 59% delle discriminazioni subite dalla comunità cinese è legato alle informazioni diffamatorie sulla cultura cinese diffuse quotidianamente.",
-			"source": "Indagine “AssoChina”"	
+			"img":"cibo.png",
+			"text": "Conoscete anche voi la storia del cliente di un ristorante cinese che si ritrova in una pietanza a base di carne un microchip? Basta digitare su Google il quartetto di parole “cane microchip ristorante cinese” e compare la stessa leggenda metropolitana, semplicemente con uno sfondo diverso: in un caso è ambientata a Perugia, in un altro a Vicenza e in un altro ancora a Milano.",
+			"source": "UNAR"	
 		},
 	"choices": [
 		{

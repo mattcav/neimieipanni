@@ -3,8 +3,9 @@
 	"text": "Vedi un uomo cadere dal motorino. Ti avvicini e capisci che si è lussato la spalla. Sai come rimettergliela a posto, ma lui sente il tuo accento straniero e non si fida. Cosa fai?",
 	"theme": "incidente",
 	"report": {
-			"text": "l’88,7% degli intervistati ritiene che non sia affatto giustificabile trattare meno bene un lavoratore “perchè immigrato” e il 71,7% ritiene che non sia giusto non assumere un dipendente con le qualifiche richieste solo perchè straniero. Inoltre, il comportamento degli italiani nei confronti degli immigrati risulta essere diffidente (60,1%), non apertamente ostile (6,9%) o indifferente (15,8%)",
-			"source": "“I migranti visti dai cittandini italiani”, Anno 2011, ISTAT"	
+			"img":"dottori.png",
+			"text": "Sono oltre 15mila i medici stranieri iscritti all'Ordine dei Medici Chirurghi e Odontoiatri nel nostro Paese (le donne rappresentano il 42,3% del totale).",
+			"source": "Primo rapporto Emn (European migration network) Italia"	
 		},
 	"choices": [
 		{

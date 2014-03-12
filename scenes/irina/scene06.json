@@ -3,8 +3,9 @@
 		"text": "Da quando ti sei trasferita hai dovuto lavare i panni a mano perdendo tempo e facendo fatica. Cosa fai?",
 		"theme": "lavatrice",
 		"report": {
-			"text": "Le famiglie con stranieri dispongono di beni durevoli in maniera limitata rispetto alle famiglie composte da soli italiani. Il divario è contenuto per beni come la lavatrice di cui ne dispone il 93,2% delle famiglie (contro il 97,7% delle famiglie italiane) anche se è frequente l’utilizzo in condivisione con altre famiglie.",
-			"source": "“Le famiglie con stranieri: indicatori di disagio economico”, 2009, ISTAT"	
+			"img": "lavatrice.png",
+			"text": "Anche se molte famiglie immigrate la usano in comune con altre, la lavatrice è uno dei pochi beni durevoli diffuso allo stesso modo tra stranieri e italiani. Lo stesso non può dirsi per beni come l’automobile, il computer o la connessione ad internet.",
+			"source": "Istat, “Le famiglie con stranieri: indicatori di disagio economico”, 2009."	
 		},
 		"choices": [
 			{

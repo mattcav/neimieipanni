@@ -3,8 +3,9 @@
 	"text": "Ti hanno detto che hai i requisiti per richiedere una casa popolare. Ti presenti in Comune, ma lì davanti noti un presidio di manifestanti con cartelli come “Basta extracomunitari” e “Le case agli italiani”.",
 	"theme": "manifestanti",
 	"report": {
-		"text": "stat10",
-		"source": "“stat10”"
+		"img":"casapopolare.png",
+		"text": "Gli immigrati fanno domanda di alloggio popolare più degli italiani (oltre il 50% delle domande), ma ottengono la casa in percentuali molto minori (circa il 12%). Questo perché esistono diverse forme di discriminazione istituzionale che  penalizzano gli stranieri nel possesso dei requisiti per ottenere le case popolari.",
+		"source": "Dossier Immigrazione 2013 Idos-Unar"
 	},
 	"choices": [{
 		"title": "Entri con decisione",
@@ -21,7 +22,7 @@
 				"money": 0,
 				"stop": false,
 				"class": "bad",
-				"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 100 punti. Perdi 50 punti."
+				"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 50 punti."
 			}, {
 				"probability": 50,
 				"happiness": 50,

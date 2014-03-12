@@ -3,8 +3,9 @@
 	"text": "Scopri che quest’anno alla mensa della scuola dei tuoi figli non è previsto un menu musulmano senza carne di maiale.",
 	"theme": "bimbo",
 	"report": {
-		"text": "stat4",
-		"source": "“stat4”"
+		"img":"mensa.png",
+		"text": "In Italia ci sono circa 1.700.000 cittadini stranieri di religione musulmana. Le scuole, in base alle direttive del Ministero della Salute, devono garantire la sostituzione degli alimenti per motivi religiosi o culturali senza richiedere nessun certificato medico, basta una semplice richiesta dei genitori dello studente.",
+		"source": "Dossier Immigrazione 2013 Idos-Unar"
 	},
 	"choices": [{
 		"title": "Chiedi un certificato medico",

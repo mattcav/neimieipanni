@@ -3,8 +3,9 @@
 	"text": "I tuoi genitori ti chiedono di tornare a casa per festeggiare con loro il capodanno cinese. Ma in quel week end c’è una grande festa nella tua facoltà. Cosa fai?",
 	"theme": "capodanno",
 	"report": {
-			"text": "Indagine comunità cinese di Roma: pochi cinesi riunciano a festeggiare il capodanno cinese perchè forte ricorrenza della loro cultura. La differenza sta nei festeggiamenti: in Cina la festa si trascorre in famiglia; in Italia si va al ristorante coinvolgendo anche gli amici italiani.",
-			"source": "AGICHINA 24"	
+			"img":"drago.png",
+			"text": "Il capodanno cinese è la festa più importante per le comunità cinesi che osservano gli stessi rituali da oltre 4.700 anni. I festeggiamenti  durano tutta una settimana durante la quale vengono costruiti grossi draghi (il drago è simbolo della pioggia e quindi della prosperità, della fertilità)  di carta o di stoffa – che poi sfileranno per le strade,  si cucinano cibi particolari, così come avviene anche da noi (ad es. le lenticchie), tra i quali gli “involtini primavera”. La casa è piena di fiori e strisce di carta rossa con scritte augurali.",
+			"source": "ChinaItaly.info"	
 		},
 	"choices": [
 		{

@@ -3,8 +3,9 @@
 	"text": "Il colloquio per il lavoro è andato bene ma lo stipendio ti sembra un po’ basso. Per chiedere un aumento potresti usare i tuoi studi. Che fai?",
 	"theme": "boss",
 	"report": {
-			"text": "Solo il 4,5% degli immigrati con cittadinanza romena svolge professioni qualificate (dirigenti, imprenditori, tecnici)",
-			"source": "“Relazione sulle forze lavoro”, Anno 2011, ISTAT"	
+			"img":"stipendio.png",
+			"text": "A parità di lavoro svolto, uno straniero viene pagato in media il 25% in meno di un italiano. Nel Sud Italia, il dato arriva fino al 34%.",
+			"source": "Istat, Rilevazione sulle forze di lavoro anno 2012"	
 		},
 	"choices": [
 		{

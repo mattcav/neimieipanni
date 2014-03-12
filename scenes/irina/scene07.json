@@ -3,8 +3,9 @@
 	"text": "Per strada un gruppo di ragazzi, credendoti italiana, ti porge un volantino con scritto “basta immigrati”.",
 	"theme": "volantino",
 	"report": {
-			"text": "le segnalazioni riguardanti scritte razziste su muri, manifesti e altri spazi raccolgono invece il 7,1% dei casi di discriminazione razziale totali pervenuti nel 2012. ",
-			"source": "Rapporto UNAR 2012"	
+			"img":"volantino.png",
+			"text": "Il 65% degli italiani pensa che gli immigrati siano “troppi”.  Ma in Italia sono il 7,4% della popolazione: meno che in altri paesi europei, come il Lussemburgo (43%), la Germania (9%), il Belgio e la Spagna (oltre il 10%).",
+			"source": "Eurostat dati 2012"	
 		},
 	"choices": [
 		{

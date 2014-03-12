@@ -3,8 +3,9 @@
 		"text": "Per frequentare l’università hai cambiato città, ora ti serve un posto dove stare. Cosa cerchi?",
 		"theme": "casa",
 		"report": {
-			"text": "Il 16,7% degli episodi di discriminazione etnico-razziale in ambito casa riguardano le condizioni di affitto.",
-			"source": "Rapporto UNAR 2013"	
+			"img": "casa.png",
+			"text": "Due ricercatori dell’Università di Modena e Reggio Emilia si sono finti stranieri per cercare una casa in affitto. Così facendo, un proprietario su cinque si è rifiutato di affittargli casa.",
+			"source": "Ethnic discrimination in the Italian rental housing market, Massimo Baldini e Marta Federici, CAPP, 2010"
 		},
 		"choices": [
 			{

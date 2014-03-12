@@ -3,8 +3,9 @@
 	"text": "Nella città dove vivi arriva la nazionale: vai allo stadio a vederla. Ma, pur essendo in un settore tranquillo, vicino a te un uomo inveisce contro i giocatori italiani di colore. Cosa fai?",
 	"theme": "partita",
 	"report": {
-			"text": "Dati stagione calcistica 2012-2013 dicono che negli stadi si sono registrati 61 episodi di discriminazione razziale negli stadi (58 cori, 2 offese tra calciatori e 1 personale stadio)",
-			"source": "ORAC (2013)"	
+			"img":"tifosi.png",
+			"text": "Discriminazione e razzismo nel calcio. Nelle ultime tre stagioni calcistiche (2010/11, 2011/12, 2012/13) ci sono stati 168 Episodi di discriminazione razziale, per un ammontare di relative ammende di Euro 1.162.650 emanante dal giudice sportivo e 82 tifoserie coinvolte.",
+			"source": "Osservatorio sul Razzismo e l’Antirazzismo nel Calcio (Orac)"	
 		},
 	"choices": [
 		{

@@ -3,8 +3,9 @@
 	"text": "La casa che hai trovato non è molto vicina all'univeristà, quindi dovrai prendere i mezzi pubblici ogni giorno. Cosa scegli di fare?",
 	"theme": "controllore",
 	"report": {
-			"text": "Il 70% delle segnalazioni pervenute all’UNAR riguardano casi di discriminazione etnico-razziale avvenute nell’ambito “Trasporto pubblico”.",
-			"source": "Rapporto UNAR"	
+			"img":"autobus.png",
+			"text": "Le famiglie con stranieri che non hanno denaro a sufficienza per i trasporti, sono quasi il doppio di quelle composte da soli italiani: 15,3% contro l’8,1%.",
+			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
 		},
 	"choices": [
 		{

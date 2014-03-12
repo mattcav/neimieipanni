@@ -3,8 +3,9 @@
 	"text": "Mentre stai facendo acquisti in un negozio dove vai spesso, vedi il gestore che caccia via una ragazza Rom. Cosa fai?",
 	"theme": "negoziante",
 	"report": {
-			"text": "stat8",
-			"source": "“stat8”"
+			"img":"bimbo.png",
+			"text": "Lo stereotipo  più diffuso nei confronti delle persone rom è quello  dei “rom che rubano i bambini” In Italia – come dimostrato da uno studio del 2008 dell’Università di Verona – dal 1986 al 2007 non si è mai verificato un caso di presunto “rapimento” di bambini da parte dei rom.",
+			"source": "“La Zingara Rapitrice” Università di Verona 2008"
 		},
 	"choices": [
 		{
