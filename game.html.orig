@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <link rel="stylesheet" href="css/build/app.min.css" />
+    <link rel="stylesheet" href="/css/build/app.min.css" />
 
 </head>
 
@@ -244,8 +244,6 @@
             </div>
         </article> 
     </div>
-
-
 
 
     <script src="js/build/app.js"></script>
