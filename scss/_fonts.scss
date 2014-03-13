@@ -2,110 +2,110 @@
 
 @font-face{
     font-family: 'Fira Sans';
-    src: url('/bower_components/fira/eot/FiraSans-Light.eot');
+    src: url('../bower_components/fira/eot/FiraSans-Light.eot');
     src: local('Fira Sans Light'),
-         url('/bower_components/fira/eot/FiraSans-Light.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraSans-Light.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraSans-Light.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraSans-Light.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraSans-Light.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraSans-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Fira Sans';
-    src: url('/bower_components/fira/eot/FiraSans-LightItalic.eot');
+    src: url('../bower_components/fira/eot/FiraSans-LightItalic.eot');
     src: local('Fira Sans Light Italic'),
-         url('/bower_components/fira/eot/FiraSans-LightItalic.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraSans-LightItalic.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraSans-LightItalic.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraSans-LightItalic.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraSans-LightItalic.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraSans-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Fira Sans';
-    src: url('/bower_components/fira/eot/FiraSans-Regular.eot');
+    src: url('../bower_components/fira/eot/FiraSans-Regular.eot');
     src: local('Fira Sans Regular'),
-         url('/bower_components/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraSans-Regular.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraSans-Regular.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraSans-Regular.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Fira Sans';
-    src: url('/bower_components/fira/eot/FiraSans-RegularItalic.eot');
+    src: url('../bower_components/fira/eot/FiraSans-RegularItalic.eot');
     src: local('Fira Sans Regular Italic'),
-         url('/bower_components/fira/eot/FiraSans-RegularItalic.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraSans-RegularItalic.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraSans-RegularItalic.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraSans-RegularItalic.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraSans-RegularItalic.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraSans-RegularItalic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Fira Sans';
-    src: url('/bower_components/fira/eot/FiraSans-Medium.eot');
+    src: url('../bower_components/fira/eot/FiraSans-Medium.eot');
     src: local('Fira Sans Medium'),
-         url('/bower_components/fira/eot/FiraSans-Medium.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraSans-Medium.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraSans-Medium.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraSans-Medium.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraSans-Medium.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraSans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Fira Sans';
-    src: url('/bower_components/fira/eot/FiraSans-MediumItalic.eot');
+    src: url('../bower_components/fira/eot/FiraSans-MediumItalic.eot');
     src: local('Fira Sans Medium Italic'),
-         url('/bower_components/fira/eot/FiraSans-MediumItalic.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraSans-MediumItalic.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraSans-MediumItalic.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraSans-MediumItalic.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraSans-MediumItalic.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraSans-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Fira Sans';
-    src: url('/bower_components/fira/eot/FiraSans-Bold.eot');
+    src: url('../bower_components/fira/eot/FiraSans-Bold.eot');
     src: local('Fira Sans Bold'),
-         url('/bower_components/fira/eot/FiraSans-Bold.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraSans-Bold.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraSans-Bold.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraSans-Bold.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraSans-Bold.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraSans-Bold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Fira Sans';
-    src: url('/bower_components/fira/eot/FiraSans-BoldItalic.eot');
+    src: url('../bower_components/fira/eot/FiraSans-BoldItalic.eot');
     src: local('Fira Sans Bold Italic'),
-         url('/bower_components/fira/eot/FiraSans-BoldItalic.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraSans-BoldItalic.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraSans-BoldItalic.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraSans-BoldItalic.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraSans-BoldItalic.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraSans-BoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face{
     font-family: 'Fira Mono';
-    src: url('/bower_components/fira/eot/FiraMono-Regular.eot');
+    src: url('../bower_components/fira/eot/FiraMono-Regular.eot');
     src: local('Fira Mono'),
-         url('/bower_components/fira/eot/FiraMono-Regular.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraMono-Regular.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraMono-Regular.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraMono-Regular.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraMono-Regular.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraMono-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Fira Mono';
-    src: url('/bower_components/fira/eot/FiraMono-Bold.eot');
+    src: url('../bower_components/fira/eot/FiraMono-Bold.eot');
     src: local('Fira Mono Bold'),
-         url('/bower_components/fira/eot/FiraMono-Bold.eot') format('embedded-opentype'),
-         url('/bower_components/fira/woff/FiraMono-Bold.woff') format('woff'),
-         url('/bower_components/fira/ttf/FiraMono-Bold.ttf') format('truetype');
+         url('../bower_components/fira/eot/FiraMono-Bold.eot') format('embedded-opentype'),
+         url('../bower_components/fira/woff/FiraMono-Bold.woff') format('woff'),
+         url('../bower_components/fira/ttf/FiraMono-Bold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -114,11 +114,11 @@
 // icons
 @font-face {
     font-family: 'icomoon';
-    src:url('/fonts/icons/fonts/icomoon.eot');
-    src:url('/fonts/icons/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/icons/fonts/icomoon.woff') format('woff'),
-        url('/fonts/icons/fonts/icomoon.ttf') format('truetype'),
-        url('/fonts/icons/fonts/icomoon.svg#icomoon') format('svg');
+    src:url('../fonts/icons/fonts/icomoon.eot');
+    src:url('../fonts/icons/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icons/fonts/icomoon.woff') format('woff'),
+        url('../fonts/icons/fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icons/fonts/icomoon.svg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }

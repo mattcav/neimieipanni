@@ -21,7 +21,8 @@
   },
   "window": {
     "title": "Nei Miei Panni",
-    "toolbar": false,
+    "icon": "link.png",
+    "toolbar": true,
     "frame": true,
     "width": 1024,
     "height": 768,
