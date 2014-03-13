@@ -13,7 +13,7 @@ function dl {
 	dl_filename=$(basename "$dl_url")
 
 	echo "Downloading $dl_platform ..."
-	wget $dl_url -O /tmp/$dl_filename
+	curl $dl_url -o /tmp/$dl_filename
 
 	echo "Extracting ..."
 	rm -rf ./$dl_platform

@@ -4,3 +4,8 @@
 /bower_components/*
 /node_modules/*
 .sass-cache
+/nw/linux32
+/nw/linux64
+/nw/mac
+/nw/windows
+/nw/app.nw
