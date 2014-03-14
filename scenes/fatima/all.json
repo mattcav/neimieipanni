@@ -388,7 +388,7 @@
 				"money": 0,
 				"stop": false,
 				"class": "bad",
-				"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 100 punti. Perdi 50 punti."
+				"text": "Alcuni manifestanti inveiscono contro di te e ti provocano. Il tuo bambino si spaventa e si mette a piangere. Ti allontani arrabbiata e offesa. Perdi 50 punti."
 			}, {
 				"probability": 50,
 				"happiness": 50,

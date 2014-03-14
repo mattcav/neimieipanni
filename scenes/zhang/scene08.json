@@ -3,8 +3,9 @@
 	"text": "Per avere un po’ di soldi in più fai un casting per una pubblicità. Vieni scelto, ma scopri che devi interpretare un cinese stereotipato e con un ridicolo accento.",
 	"theme": "casting",
 	"report": {
-			"text": "stat-mancante",
-			"source": "stat-mancante"	
+			"img":"tornare.png",
+			"text": "In Italia sono diffusi molti falsi stereotipi sui cinesi. Per esempio, il basso numero di decessi che alcuni spiegano con la presunta pratica di non denunciare le morti per riutilizzare i documenti dei defunti, deriva in realtà dall'abitudine degli immigrati cinesi di tornare in patria dopo i 50 anni.",
+			"source": "Ricerca ‘Analisi ed elaborazione dati sull’immigrazione cinese in Italia’ dell'OIM"	
 		},
 	"choices": [
 		{

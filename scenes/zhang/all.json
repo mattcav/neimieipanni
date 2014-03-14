@@ -264,7 +264,7 @@
 	"theme": "capodanno",
 	"report": {
 			"img":"drago.png",
-			"text": "Il capodanno cinese è la festa più importante per le comunità cinesi  che osservano gli stessi rituali da oltre 4.700 anni. I festeggiamenti  durano tutta una settimana durante la quale vengono costruiti grossi draghi (il drago è simbolo della pioggia e quindi della prosperità, della fertilità)  di carta o di stoffa – che poi sfileranno per le strade,  si cucinano cibi particolari, così come avviene anche da noi (ad es. le lenticchie), tra i quali gli “involtini primavera”. La casa è piena di fiori e strisce di carta rossa con scritte augurali.",
+			"text": "Il capodanno cinese è la festa più importante per le comunità cinesi che osservano gli stessi rituali da oltre 4.700 anni. I festeggiamenti  durano tutta una settimana durante la quale vengono costruiti grossi draghi (il drago è simbolo della pioggia e quindi della prosperità, della fertilità)  di carta o di stoffa – che poi sfileranno per le strade,  si cucinano cibi particolari, così come avviene anche da noi (ad es. le lenticchie), tra i quali gli “involtini primavera”. La casa è piena di fiori e strisce di carta rossa con scritte augurali.",
 			"source": "ChinaItaly.info"	
 		},
 	"choices": [
@@ -315,8 +315,8 @@
 	"theme": "boss",
 	"report": {
 			"img":"nome.png",
-			"text": "Il Nome proprio è  qualcosa di irrinunciabile che ci definisce e ci rappresenta, a meno che non venga sostituito, quando e se ciò possa accadere, da “mamma” e/o “papà”, da “nonno/a”, da “zio” o “zia”. Non a caso anche nel nostro codice civile all’articolo 6 si ricorda che  “Ogni persona ha diritto al nome che le è per legge attribuito. Nel nome si comprendono il prenome e il cognome. Non sono ammessi cambiamenti, aggiunte o rettifiche al nome, se non nei casi e con le formalità dalla legge indicati”.",
-			"source": "codice civile all’articolo 6"	
+			"text": "Il Nome proprio è  qualcosa di irrinunciabile che ci definisce e ci rappresenta: non a caso anche all'articolo 6 del Codice Civile si ricorda che “Ogni persona ha diritto al nome che le è per legge attribuito. Nel nome si comprendono il prenome e il cognome. Non sono ammessi cambiamenti, aggiunte o rettifiche al nome, se non nei casi e con le formalità dalla legge indicati”.",
+			"source": "Art. 6 Codice Civile"	
 		},
 	"choices": [
 		{
@@ -338,7 +338,7 @@
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Prendere posizione ti rende più fiero i te e delle tue origini, ma la reazione del capo è un rischio...",
+				"waitingText": "Prendere posizione ti rende più fiero di te e delle tue origini, ma la reazione del capo è un rischio...",
 				"cases": [
 					{
 						"probability": 50,
