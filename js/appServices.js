@@ -491,7 +491,5 @@ nmpApp.factory('preloadBackgrounds', function ($q, $timeout, player, scenes) {
 			chain = chain.then(loadBackgroundLazy.bind(null, imgUrl))
 		}
 	}
-	if ($(window).width() > 640) {
-		return preloadBackgrounds;
-	}
+	return preloadBackgrounds;
 });

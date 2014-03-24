@@ -10311,7 +10311,6 @@ nmpApp.factory('preloadBackgrounds', function ($q, $timeout, player, scenes) {
 			chain = chain.then(loadBackgroundLazy.bind(null, imgUrl))
 		}
 	}
-
 	return preloadBackgrounds;
 });
 nmpApp.controller('sidebar', function ($scope, $rootScope, player, scenes, choiceFactory, HELPERS, $q) {
