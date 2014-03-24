@@ -1,0 +1,134 @@
+// end game
+
+.page {
+    color:$white;
+    position:relative;
+    z-index: 100;
+
+}
+.page__article {
+    margin-top:1em;
+   max-width: 30rem;
+
+    @extend .text-center;
+    color:$white;
+    @include grid-column(
+        $columns:12,
+        $center:true
+    );
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:6,
+            $center:true
+        );
+        margin-top:3rem;
+    }
+}
+
+
+.page__aside {
+    @extend .page;
+    @extend .text-center;
+    margin:5rem auto 5rem;
+
+    @include grid-column(
+        $columns:12,
+        $center:true
+    );
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:12,
+            $center:false,
+            $float:right
+        );
+    }
+}
+
+.page--section {
+    @include grid-column(
+        $columns:12,
+        $center:true
+    );
+    @media #{$medium-up} {
+        @include grid-column(
+            $columns:6,
+            $center:false
+        );
+        max-width:25rem;
+    }
+}
+.section--playagain {
+    @media #{$medium-up} {
+        float:right;
+    }
+}
+
+.page__footer {
+     @include grid-column(
+        $columns:12
+    );
+    text-align: center;
+}
+
+.page__title {
+    color:$white;
+    font-weight:500;
+    letter-spacing: 1px;
+    font-size:rem-calc(23);
+}
+
+.page--maintitle {
+    text-transform: uppercase;
+    font-size:rem-calc(27);
+}
+
+.page__text {
+    //font-size:rem-calc(27);
+    font-size:rem-calc(18);
+    font-weight: 300;
+}
+
+
+.title--pagesection {
+    font-size:rem-calc(23);
+    color:$white;
+    border-bottom:1px solid $lightGrey;
+}
+
+.playagain__link {
+    color:$white;
+    border-bottom:2px solid $red;
+    padding:0.5rem 0.3rem;
+    display: inline-block;
+    margin-top:0.5rem;
+
+    &:hover, &:active {
+        background:$white;
+        color:$red;
+    }
+}
+
+
+.share__inner {
+    margin-top:1rem;
+}
+
+.sharer-link {
+    display: block;
+    float:none;
+    margin:0 auto 0.25rem;
+    width:rem-calc(50);
+    height:rem-calc(50);
+    background:$white;
+    padding:0.25rem;
+    border-radius:2px;
+}
+
+.share__buttons {
+    max-width:rem-calc(235);
+    margin:0 auto;
+}
+
+.credits__link {
+    @extend %monospace-text;
+}

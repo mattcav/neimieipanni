@@ -22,12 +22,12 @@
   "window": {
     "title": "Nei Miei Panni",
     "icon": "link.png",
-    "toolbar": true,
+    "toolbar": false,
     "frame": true,
     "width": 1024,
     "height": 768,
     "position": "center",
-    "min_width": 800,
-    "min_height": 600
+    "min_width": 320,
+    "min_height": 480
   }
 }
