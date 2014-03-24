@@ -3,8 +3,9 @@
 	"text": "Il proprietario di un ristorante cinese sotto casa tua ti ha preso in simpatia e spesso ti offre la cena. Ma ogni volta ti parla male degli italiani. Cosa fai?",
 	"theme": "ristorante",
 	"report": {
-			"text": "stat-mancante",
-			"source": "stat-mancante"	
+			"img":"idea.png",
+			"text": "Rispetto a quanto si crede, la comunità cinese è meno chiusa e più ben disposta verso l'Italia, il cui nome si traduce letteralmente come “il Paese dove le grandi idee sono un profitto”",
+			"source": "Ricerca ‘Analisi ed elaborazione dati sull’immigrazione cinese in Italia’ dell'OIM"	
 		},
 	"choices": [
 		{
