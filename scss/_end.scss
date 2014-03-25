@@ -7,7 +7,7 @@
 
 }
 .page__article {
-    margin-top:1em;
+   margin-top:3em;
    max-width: 30rem;
 
     @extend .text-center;
@@ -44,17 +44,20 @@
     }
 }
 
-.page--section {
+.page__section {
     @include grid-column(
         $columns:12,
         $center:true
     );
+    //max-width:20rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+
     @media #{$medium-up} {
         @include grid-column(
             $columns:6,
             $center:false
         );
-        max-width:25rem;
     }
 }
 .section--playagain {
@@ -114,18 +117,16 @@
 }
 
 .sharer-link {
-    display: block;
-    float:none;
-    margin:0 auto 0.25rem;
-    width:rem-calc(50);
-    height:rem-calc(50);
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
     background:$white;
     padding:0.25rem;
     border-radius:2px;
 }
 
 .share__buttons {
-    max-width:rem-calc(235);
+   //   max-width:rem-calc(235);
     margin:0 auto;
 }
 
