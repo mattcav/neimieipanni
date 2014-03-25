@@ -32,7 +32,7 @@
     <!-- Startup Image iPhone (320x460) -->
     <link rel="apple-touch-startup-image" href="images/devices/load.png" media="screen and (max-device-width: 320px)" />
     
-    <link rel="stylesheet" href="css/app.min.css">  
+    <link rel="stylesheet" href="css/app.css">  
 
 </head>
 
@@ -131,8 +131,8 @@
                 </article>
 
                 <!-- scelta modal -->
-                <div id="scelta" class="scelta md-modal md-effect-1" data-ng-class="{'alert-risk': choice.conseguence.type === 'random'}" data-choice>
-                        <div class="scelta__inner md-content">
+                <div id="scelta" class="scelta" data-ng-class="{'alert-risk': choice.conseguence.type === 'random'}" data-choice>
+                        <div class="scelta__inner">
                             <h2 class="scelta__title">{{ choice.title }}</h2>
                             <p class="scelta__text">{{ choice.text }}</p>
 
@@ -225,8 +225,8 @@
 
     <div data-helper>
         <!-- helper modal choice -->
-        <div id="helper" class="scelta scelta--helper md-modal md-effect-8">
-            <div class="scelta__inner md-content">
+        <div id="helper" class="scelta scelta--helper">
+            <div class="scelta__inner scelta__inner--helper">
                 <h2 class="scelta__title">{{ help.title }}</h2>
                 <p class="scelta__text">{{ help.text }}</p>
 

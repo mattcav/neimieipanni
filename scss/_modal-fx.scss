@@ -5,23 +5,7 @@ Styles for the html/body for special modal where we want 3d effects
 Note that we need a container wrapping all content on the page for the 
 perspective effects (not including the modals and the overlay).
 */
-.md-perspective,
-.md-perspective body {
-    height: 100%;
-    overflow: hidden;
-}
 
-.md-perspective body  {
-    background: #222;
-    -webkit-perspective: 600px;
-    -moz-perspective: 600px;
-    perspective: 600px;
-}
-
-.container {
-    background: #333;
-    min-height: 100%;
-}
 
 .md-modal {
     position: fixed;
@@ -90,57 +74,5 @@ perspective effects (not including the modals and the overlay).
 }
 
 
-
-/* Individual modal styles with animations/transitions */
-
-/* Effect 1: Fade in and scale up */
-
-.md-effect-1 .md-content {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7);
-    opacity: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.md-show.md-effect-1 .md-content {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-}
-
-/* Effect 8: 3D flip horizontal */
-.md-effect-8.md-modal {
-    -webkit-perspective: 1300px;
-    -moz-perspective: 1300px;
-    perspective: 1300px;
-}
-
-.md-effect-8 .md-content {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform: rotateY(-70deg);
-    -moz-transform: rotateY(-70deg);
-    -ms-transform: rotateY(-70deg);
-    transform: rotateY(-70deg);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    opacity: 0;
-}
-
-.md-show.md-effect-8 .md-content {
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    opacity: 1;
-}
 
 

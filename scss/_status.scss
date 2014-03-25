@@ -252,6 +252,53 @@ a, button {
     animation-play-state:running;
     animation-fill-mode:forwards;
 }
+// scelta
+
+.scelta { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: rem-calc(630);
+    min-width: rem-calc(320);
+    height: auto;
+    z-index: 2000;
+    visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transform: translateX(-50%) translateY(-50%) translateZ(0);
+
+    &.md-show {
+       visibility: visible; 
+       .scelta__inner {
+        opacity: 1;
+        transform: translateY(0px);
+       }
+    }
+}
+
+.scelta__inner {
+    opacity: 0;
+    transform: translateZ(0) translateY(20%);
+    transition: all 0.3s ease 0s;
+    backface-visibility: hidden;
+}
+
+.scelta--helper {
+     //perspective: 1300px;
+     &.md-show {
+        .scelta__inner--helper {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+     }
+}
+.scelta__inner--helper {
+    opacity: 0;
+    transform: rotateY(-70deg);
+    transform-style: preserve-3d;
+    transition: all 0.3s ease 0s;
+}
 
 
 // ready

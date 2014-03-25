@@ -314,8 +314,13 @@
 .scelta {
     @extend .text-center;
 }
+.scelta__inner {
+    background: $white;
+    padding:1.5rem 2rem;
+}
 .scelta__title {
     @extend %bottom-line;
+    line-height: 1;
 }
 .scelta__values {
     font-size:rem-calc(18);
