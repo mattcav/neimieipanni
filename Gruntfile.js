@@ -72,6 +72,7 @@ module.exports = function(grunt) {
           'js/analytics.js',
           'bower_components/jquery/dist/jquery.js',
           'bower_components/foundation/js/foundation.min.js',
+          'js/modal.js',
           'js/app.js'
         ],
         dest: 'js/build/static.js'

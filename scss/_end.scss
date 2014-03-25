@@ -128,12 +128,13 @@
 }
 
 .sharer-link {
-    display: flex;
+    display: flex !important;
     align-items:center;
     justify-content:space-around;
     padding:0.25rem;
     border-radius:2px;
     color:$white;
+    width:100%;
 
      &:active, &:focus, &:hover  {
         color:$white;
@@ -186,6 +187,7 @@
 
 .credits__inner {
     @extend .scelta__inner;
+    -webkit-font-smoothing: subpixel-antialiased;
     opacity: 0;
     transform: translateY(100%) rotateX(90deg);
     transform-origin: 0 100% 0;
@@ -195,5 +197,6 @@
 
 .credits__title {
     font-size:rem-calc(27);
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
