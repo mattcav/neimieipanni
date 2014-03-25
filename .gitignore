@@ -1,9 +1,6 @@
 *.DS_Store
 css/*
-js/build/app.js                           
-js/build/app.min.js                        
-js/build/home.min.js                       
-js/build/static.min.js 
+js/build/*                          
 scenes/benjamin/all.json
 scenes/irina/all.json
 scenes/fatima/all.json

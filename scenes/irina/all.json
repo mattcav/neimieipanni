@@ -215,7 +215,7 @@
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Un giorno di riposo ti ha fatto guarire, ma ora ricevi una telefonata...",
+				"waitingText": "Un giorno di riposo ti ha fatto guarire, ma ora ricevi una telefonata dal tuo capo...",
 				"cases": [
 					{
 						"probability": 50,

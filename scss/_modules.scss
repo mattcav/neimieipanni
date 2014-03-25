@@ -316,11 +316,20 @@
 }
 .scelta__inner {
     background: $white;
-    padding:1.5rem 2rem;
+    padding:2rem;
+    @media #{$large-up} {
+        padding:2rem;
+    }
 }
 .scelta__title {
     @extend %bottom-line;
-    line-height: 1;
+    line-height: 1.2;
+    margin-bottom:1rem;
+}
+.scelta__text {
+    max-width: 25rem;
+    display: block;
+    margin: 1rem auto 1rem;
 }
 .scelta__values {
     font-size:rem-calc(18);

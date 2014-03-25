@@ -38,9 +38,6 @@
 </head>
 
   <body class="benjamin win">
- <!--   <div class="figure__container">
-    <img src="../images/avatar/benjamin.png" alt="benjamin" class="figure figure--page">
-  </div> -->
       <div class="row page">
           <article class="page__content">
               <header class="page__header">
@@ -99,19 +96,42 @@
                 gioca ancora
               </h2>
               <a href="/" class="button bl-button playagain__link">
-                scegli un personaggio&nbsp;→
+                Scegli un personaggio&nbsp;→
               </a>
             </section>
 
           </aside>
+
       </div>
 
       <footer class="page__footer">
-          <p class="credits__text">Nei Miei Panni è un progetto di UNAR - Ufficio Nazionale Antidiscriminazioni Razziali. || <a class="credits__link" href="#">credits</a></p>
+          <p class="credits__text">Nei Miei Panni è un progetto di UNAR - Ufficio Nazionale Antidiscriminazioni Razziali. || <a class="credits__link open-modal" href="#">credits</a></p>
       </footer>
 
+      <div id="credits" class="scelta credits modal">
+          <div class="scelta__inner credits__inner">
+              <h2 class="scelta__title credits__title">NEI MIEI PANNI</h2>
+                    <p class="credits__content">
+                      <strong>Coordinamento progetto:</strong> Paola Di Lazzaro (UNAR)<br>
+                      <strong>Statistiche e fonti ufficiali:</strong> Monica D'Arcangelis, Roberta Cocchioni, Cristiana Russo.<br>
+                    </p>
+                    <p class="credits__content">
+                      Progettato e realizzato da <a href="http://mced.it/" class="mced-link"><strong>MCED - magic codes elegant design</strong></a> insieme ad Achille Corea, Fulvio Di Meo, Matteo Manchi, Susanna Cirillo.
+                    </p>
+                    <p class="credits__content">
+                      Scrivi a nei miei panni: <a href="mailto:p.dilazzaro@palazzochigi.it" class="mail-link"><strong>p.dilazzaro@palazzochigi.it</strong></a>
+                    </p>
+              <a class="md-close">&#215;</a>
+          </div>
+      </div>
+      <div class="md-overlay"></div>
+
     <script src='http://platform.twitter.com/widgets.js' type='text/javascript'></script>
-    <script src="../js/build/static.min.js"></script>
+    <!-- <script src="../js/build/static.min.js"></script> -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/foundation/js/foundation.min.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/app.js"></script>
 
   </body>
 </html>
