@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'nested'
         },
         files: {
           'css/app.css': 'scss/app.scss'
@@ -38,6 +38,7 @@ module.exports = function(grunt) {
      
       homeScript: {
         src: [
+          'js/vendor/modernizr.custom.js',
           'js/analytics.js',
           'bower_components/jquery/dist/jquery.js',
           'js/vendor/boxlayout.js',
@@ -135,17 +136,19 @@ module.exports = function(grunt) {
       },
       your_target: {
         files: {
-          'css/cmd': ['css/*.css']
+          'css/cmq': ['css/*.css']
         }
       }
     },
 
-    uncss: {
-      dist: {
-        files: {
-          'css/uncss/app.css': ['index.html','game.html', 'zhang/win.html']
-          }
-        }
+    cssmin: {
+      minify: {
+        expand: true,
+        cwd: 'css/cmq',
+        src: ['*.css', '!*.min.css'],
+        dest: 'css/',
+        ext: '.min.css'
+      }
     },
 
     watch: {
@@ -172,9 +175,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-combine-media-queries');
-  grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('clear', ['uncss', 'cmq']);
+  grunt.registerTask('clean', ['cmq', 'cssmin']);
   grunt.registerTask('build', ['sass', 'autoprefixer', 'connect', 'concat', 'uglify']);
   grunt.registerTask('default', ['build', 'watch']);
 }

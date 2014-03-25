@@ -141,12 +141,16 @@ div.bl-panel-items > div > div {
     pointer-events: none;
     position: absolute;
     top: 60px;
-    left: 30px;
+    left: 0px;
     right: 30px;
     bottom: 30px;
     padding: 0 20px;
     overflow: hidden;
     overflow-y: auto;
+
+    @media #{$medium-up} {
+        left: 30px;
+    }
 }
 
 /* Custom content */
