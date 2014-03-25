@@ -47,7 +47,8 @@
 .page__section {
     @include grid-column(
         $columns:12,
-        $center:true
+        $center:true,
+        $collapse:true
     );
     //max-width:20rem;
     margin-top:1rem;
@@ -99,16 +100,7 @@
 }
 
 .playagain__link {
-    color:$white;
-    border-bottom:2px solid $red;
-    padding:0.5rem 0.3rem;
-    display: inline-block;
-    margin-top:0.5rem;
-
-    &:hover, &:active {
-        background:$white;
-        color:$red;
-    }
+    text-transform: lowercase;
 }
 
 
@@ -120,14 +112,34 @@
     display: flex;
     align-items:center;
     justify-content:space-around;
-    background:$white;
     padding:0.25rem;
     border-radius:2px;
+    color:$white;
+
+     &:active, &:focus, &:hover  {
+        color:$white;
+        box-shadow:0px 1px 0px darken($red, 50%) inset;
+        background:$red;
+    }
+}
+
+.facebook--sharer {
+    background: #3B5999;
+    //box-shadow:0px 1px 0px darken(#3B5999, 50%) inset;
+}
+
+.twitter--sharer {
+    background: #55ACEE;
+    //box-shadow:0px 1px 0px darken(#55ACEE, 50%) inset;
 }
 
 .share__buttons {
    //   max-width:rem-calc(235);
     margin:0 auto;
+    @include block-grid(
+        $per-row:2,
+        $spacing:1rem
+        );    
 }
 
 .credits__link {
