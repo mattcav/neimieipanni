@@ -4,9 +4,9 @@
     color:$white;
     position:relative;
     z-index: 100;
-
+    min-height:100vh;
 }
-.page__article {
+.page__content {
    margin-top:3em;
    max-width: 30rem;
 
@@ -26,10 +26,14 @@
 }
 
 
-.page__aside {
-    @extend .page;
+.page--actions {
+    color:$white;
+    position:relative;
+    z-index: 100;
     @extend .text-center;
     margin:5rem auto 5rem;
+    max-width:45rem;
+    overflow: hidden;
 
     @include grid-column(
         $columns:12,
@@ -50,7 +54,7 @@
         $center:true,
         $collapse:true
     );
-    //max-width:20rem;
+    max-width:25rem;
     margin-top:1rem;
     margin-bottom:1rem;
 
@@ -72,6 +76,10 @@
         $columns:12
     );
     text-align: center;
+    padding-top:1rem;
+    background:$black;
+    color:$white;
+    @include position(absolute, bottom 0 left 0 right 0);
 }
 
 .page__title {
@@ -101,6 +109,10 @@
 
 .playagain__link {
     text-transform: lowercase;
+    margin-right:0;
+    margin-top:0.5rem;
+    padding: 1em 1.5em 1em;
+    border-radius:2px;
 }
 
 
@@ -142,6 +154,11 @@
         );    
 }
 
-.credits__link {
-    @extend %monospace-text;
+.credits__text {
+    max-width: 25rem;
+    display:block;
+    margin:0 auto 1rem;
+    @media #{$large-up} {
+        max-width: 45rem;
+    }
 }
