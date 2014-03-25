@@ -225,7 +225,7 @@
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Puoi camminare a testa alta, hai saputo reagire con carattere.<br>Ma i tuo capo ti convoca nel suo ufficio...",
+				"waitingText": "Puoi camminare a testa alta, hai saputo reagire con carattere. Ma i tuo capo ti convoca nel suo ufficio...",
 				"cases": [
 					{
 						"probability": 40,
@@ -369,7 +369,7 @@
 },{
 	"title": "L'infortunio sul lavoro",
 	"text": "Il posto dove lavori non rispetta le norme sulla sicurezza. Un giorno cadi e ti fai male ad una gamba. Cosa fai?",
-	"theme": "gamba",
+	"theme": "infortunio",
 	"report": {
 			"img":"infortuni.png",
 			"text": "Gli stranieri in Italia sono l'8,6 della popolazione ma sono vittime del 15,9% degli infortuni sul lavoro nel 2012.",
