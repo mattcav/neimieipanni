@@ -114,7 +114,7 @@ nmpApp.service('scenes', ['$http', '$rootScope', 'player', 'sceneFactory', funct
 			
 			// with interchange
 			$('.figure').remove();
-			$body.prepend('<div class="figure__container"><img id="figure" class="figure" data-interchange="[images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (default)], [images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (large)]"></div>');
+			$body.prepend('<div class="figure__container"><img id="figure" class="figure" data-interchange="[images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'_s.png, (default)], [images/background/'+player.getPlayer().name+'/'+service.getCurrentScene().theme+'.png, (large)]"></div>');
 			$(document).foundation('interchange', 'reflow');
 			
 		},
@@ -492,4 +492,41 @@ nmpApp.factory('preloadBackgrounds', function ($q, $timeout, player, scenes) {
 		}
 	}
 	return preloadBackgrounds;
+});
+
+// preload smaller images for mobile
+nmpApp.factory('smallPreloadBackgrounds', function ($q, $timeout, player, scenes) {
+	function smallPreloadBackgrounds () {
+		if(scenes.scenesLoaded === false) {
+			$timeout(smallPreloadBackgrounds, 100);
+			return;
+		}
+
+		function loadBackgroundLazy(url) {
+			var img,
+				defer = $q.defer();
+
+			img = new Image();
+			img.src = url;
+			img.onload = function () {
+				$timeout(defer.resolve.bind(defer), 500);
+			}
+
+			return defer.promise;
+		}
+	
+		var backgroundPath = 'images/background/' + player.getPlayer().name + '/';
+		var chain = (function () {
+			var d = $q.defer();
+			$timeout(d.resolve.bind(d), 50);
+			return d.promise;
+		})();
+
+
+		for(i in scenes.scenes) {
+			imgUrl = backgroundPath + scenes.scenes[i].theme + '_s.png';
+			chain = chain.then(loadBackgroundLazy.bind(null, imgUrl))
+		}
+	}
+	return smallPreloadBackgrounds;
 });

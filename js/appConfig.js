@@ -87,17 +87,37 @@ nmpConfig.constant('TIMERS', function () {
   return timers;
 }());
 var nmpApp = angular.module('nmpApp', ['nmpConfiguration']);
-nmpApp.run([
-  '$location',
-  '$rootScope',
-  '$filter',
-  'player',
-  'scenes',
-  'preloadBackgrounds',
-  function ($location, $rootScope, $filter, player, scenes, preloadBackgrounds) {
-    player.newPlayer($location.path().substring(1));
-    $rootScope.playerName = $filter('capitalize')(player.getPlayer().name);
-    scenes.loadScenes();
-    preloadBackgrounds();
-  }
-]);
+
+// different run for different screen size
+
+if (window.matchMedia("(max-width: 640px)").matches) {
+  nmpApp.run([
+    '$location',
+    '$rootScope',
+    '$filter',
+    'player',
+    'scenes',
+    'smallPreloadBackgrounds',
+    function ($location, $rootScope, $filter, player, scenes, smallPreloadBackgrounds) {
+      player.newPlayer($location.path().substring(1));
+      $rootScope.playerName = $filter('capitalize')(player.getPlayer().name);
+      scenes.loadScenes();
+      smallPreloadBackgrounds();
+    }
+  ]);
+} else {
+  nmpApp.run([
+    '$location',
+    '$rootScope',
+    '$filter',
+    'player',
+    'scenes',
+    'preloadBackgrounds',
+    function ($location, $rootScope, $filter, player, scenes, preloadBackgrounds) {
+      player.newPlayer($location.path().substring(1));
+      $rootScope.playerName = $filter('capitalize')(player.getPlayer().name);
+      scenes.loadScenes();
+      preloadBackgrounds();
+    }
+  ]);
+}
