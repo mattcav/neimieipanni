@@ -1,0 +1,49 @@
+{
+	"title": "a new house",
+	"text": "Your children are growing up, so you would need a bigger apartment, instead of the one where you live with the parents of your husband. Which house are looking for?",
+	"theme": "casa",
+	"report": {
+		"img":"proprieta.png",
+		"text": "Being a foreigner and have home ownership is still very difficult in Italy. Only two foreigners out of ten do that, while Italians access to home ownership is much more common (eight out of ten Italians living in a house owned).",
+		"source": "ISTAT Census 2011"
+	},
+	"choices": [{
+		"title": "the nearest one from school",
+		"button": "the nearest one from school",
+		"text": "It's a high cost , but your life will improve a lot.",
+		"happiness": 500,
+		"money": -600,
+		"conseguence": {
+			"text": "The new home you really like and the kids are happy. 'll feel satisfied even if the expense is felt.",
+
+			"type": "trap",
+			"trapText": "The real estate agent submit your application to the owners, but the condo has decided not to rent to immigrants. 'll feel discriminated against , but you can not argue anything , you lose 20 points.",
+			"trapHappiness": -20,
+			"trapMoney": 0
+		}
+	}, {
+		"title": "Bigger but peripheral",
+		"button": "Bigger but peripheral",
+		"text": "It's a sustainable spending , you have more space, but you lose more time to move .",
+		"happiness": 280,
+		"money": -400,
+		"conseguence": {
+			"text": "The new house is cute even if you have to face some difficulties. But for now it's okay.",
+
+			"type": "trap",
+			"trapText": "The real estate agent submit your application to the owners, but the condo has decided not to rent to immigrants. 'll feel discriminated against , but you can not argue anything , you lose 20 points.",
+			"trapHappiness": -20,
+			"trapMoney": 0
+		}
+	}, {
+		"title": "Remains in the in-laws",
+		"button": "Remains in the in-laws",
+		"text": "It is the most economical choice, but you do not have a home weighs only yours.",
+		"happiness": -150,
+		"money": 0,
+		"conseguence": {
+			"type": "normal",
+			"text": "For fear of not succeeding with the money you had to postpone your project to be independent.' you feel very unsatisfied, you lose 150 points."
+		}
+	}]
+}

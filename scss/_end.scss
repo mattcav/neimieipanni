@@ -85,8 +85,7 @@
     padding-top:1rem;
     background:$black;
     color:$white;
-    @include position(absolute, bottom 0 left 0 right 0);
-    z-index:999;
+    
 }
 
 .page__title {
@@ -177,6 +176,8 @@
 .credits {
     @extend .scelta;
     perspective: 1300px;
+    max-height:100vh;
+    overflow:auto;
     &.md-show {
         .credits__inner {
             opacity: 1;

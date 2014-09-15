@@ -67,6 +67,25 @@ module.exports = function(grunt) {
         dest: 'js/build/app.js'
       },
 
+      AppScriptAnnotated: {
+        src: [
+          'js/analytics.js',
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/foundation/js/foundation.min.js',
+          'bower_components/foundation/js/foundation/foundation.offcanvas.js',
+          'bower_components/foundation/js/foundation/foundation.interchange.js',
+          'js/app.js',
+
+          'bower_components/angular/angular.min.js',
+          'js/appConfig.annotate.js',
+          'js/appServices.annotate.js',
+          'js/appControllers.annotate.js',
+          'js/appDirectives.annotate.js',
+          'js/appFilters.annotate.js'
+        ],
+        dest: 'js/build/app.anno.js'
+      },
+
       Static: {
         src: [
           'js/analytics.js',
@@ -128,6 +147,10 @@ module.exports = function(grunt) {
       Game: {
         src: 'js/build/app.js',
         dest: 'js/build/app.min.js'
+      },
+      App: {
+        src: 'js/build/app.anno.js',
+        dest: 'js/build/app.anno.min.js'
       }
     },
 
@@ -135,7 +158,7 @@ module.exports = function(grunt) {
       options: {
         log: false
       },
-      your_target: {
+      appCmq: {
         files: {
           'css/cmq': ['css/*.css']
         }
@@ -150,6 +173,21 @@ module.exports = function(grunt) {
         dest: 'css/',
         ext: '.min.css'
       }
+    },
+
+    ngAnnotate: {
+        options: {
+          singleQuotes: true,
+        },
+        nmpApp: {
+            files: {
+                'js/appConfig.annotate.js': ['js/appConfig.js'],
+                'js/appServices.annotate.js': ['js/appServices.js'],
+                'js/appControllers.annotate.js': ['js/appControllers.js'],
+                'js/appDirectives.annotate.js': ['js/appDirectives.js'],
+                'js/appFilters.annotate.js': ['js/appFilters.js'],
+            },
+        },
     },
 
     watch: {
@@ -177,8 +215,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-combine-media-queries');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-ng-annotate');
 
   grunt.registerTask('clean', ['cmq', 'cssmin']);
   grunt.registerTask('build', ['sass', 'autoprefixer', 'connect', 'concat', 'uglify']);
+  grunt.registerTask('angularmin', ['ngAnnotate', 'concat', 'uglify' ]);
   grunt.registerTask('default', ['build', 'watch']);
 }

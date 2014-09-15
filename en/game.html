@@ -1,0 +1,292 @@
+<!doctype html>
+<html data-ng-app="nmpApp" class="no-js" lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta property="og:title" content="Nei Miei Panni - A cura di UNAR - Ufficio Nazionale Antidiscriminazioni Razziali">
+    <meta property="og:url" content="http://www.giocaneimieipanni.it/">
+     <meta property="og:description" content="Gioca nei panni di Benjamin, Fatima, Irina e Zhang per provare a vivere come uno straniero in Italia, sulla base delle ricerche di UNAR - Ufficio Nazionale Antidisriminazioni Razziali"/>
+     <meta property="og:image" content=""/>
+
+
+    <title>Nei miei panni - Play</title>
+
+        <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../images/devices/favicon.png">
+
+    
+    <!--  iPhone Web App Home Screen Icon -->
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/devices/nmp-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/devices/nmp-icon-retina.png" />
+    <link rel="apple-touch-icon" href="../images/devices/icon.png" />
+
+
+    <!-- Startup Image iPad Landscape (748x1024) -->
+    <link rel="apple-touch-startup-image" href="../images/devices/nmp-load-ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+    <!-- Startup Image iPad Portrait (768x1004) -->
+    <link rel="apple-touch-startup-image" href="../images/devices/nmp-load-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+    <!-- Startup Image iPhone (320x460) -->
+    <link rel="apple-touch-startup-image" href="../images/devices/load.png" media="screen and (max-device-width: 320px)" />
+    
+    <link rel="stylesheet" href="../css/app.min.css">  
+
+</head>
+
+<body class="step" data-ng-class="playerName.toLowerCase()">
+    <div class="istruzioni" data-ng-class="fadeOutClass">
+        <div class="istruzioni__inner">
+            <h2 class="istruzioni__title">Welcome!</h2>
+            <p class="istruzioni__text">
+                Play with {{ playerName }} ten dieci situazioni della vita di tutti i giorni.
+            </p>
+            <p class="istruzioni__text">
+                Per vincere il gioco devi tenere d'occhio due parametri: i soldi che hai in tasca e i punti che rappresentano il tuo benessere, sia fisico che psicologico. Se anche uno solo dei due parametri scende sotto lo zero, hai perso.
+            </p>
+            <button id="go-to-game" class="istruzioni__button" data-ng-click="fadeOutClass='fade-out'">ok, let's start!</button>
+        </div>
+    </div>
+    <img class="figure" alt="sfondo" data-interchange="[../images/background/benjamin/lavoro_s.png, (default)]">
+
+    <div class="off-canvas-wrap">
+        <div class="inner-wrap">
+            
+            <!-- aside -->
+            <aside id="sidebar" class="sidebar-section player left-off-canvas-menu" role="complementary" data-ng-controller="sidebar">
+
+                <h1 class="player-title">{{ playerName }}</h1>    
+                
+                <img class="player__img" data-ng-src="../images/avatar/{{playerName.toLowerCase()}}.png" alt="{{ playerName }}">
+                    
+                <section class="player-metrics">
+                    <div class="player-metric player-metric--step">
+                        <section class="player-metric__inner ng-binding">
+                            <i aria-hidden="true" class="player__icon icon-time"></i>
+                            <span class="player__value">[{{ scenes.currentIndex+1 }}/{{ scenes.scenes.length }}]</span>
+                        </section>
+                    </div>
+
+                    <div class="player-metric player-metric--money">
+                        <section class="player-metric__inner ng-binding">
+                            <i aria-hidden="true" class="player__icon icon-money"></i>
+                            <span class="player__value">&euro; {{ player.money }}</span>
+                        </section>
+                    </div>
+
+                    <div class="player-metric player-metric--points">
+                        <section class="player-metric__inner ng-binding">
+                             <i aria-hidden="true" class="player__icon icon-happy"></i>   
+                            <span class="player__value">pt {{ player.happiness }}</span> 
+                        </section>
+                    </div>
+                </section>
+
+                <section class="helper-buttons">
+
+                    <div class="helper-money" data-ng-repeat="helper in helpers" data-ng-class="helper.class">
+                        <h3 class="helper-buttons__title ng-binding">{{ helper.title }}</h3>
+                        
+                        <p class="helper-buttons__text ng-binding">{{ helper.text }}</p>
+                        
+                        <button class="helper-buttons__button" data-ng-disabled="helper.disabled" data-ng-click="openHelper($index)" id="helper-1-call">
+                            <span class="show-for-small-only">DAI</span>
+                            <span class="hide-for-small-only ng-binding">{{ helper.title }}</span>
+                        </button>
+                    </div>
+                </section>
+
+                <footer class="unar">
+                    <img class="unar__img" alt="UNAR - Ufficio Nazionale Antidiscriminazioni Razziali" src="../images/unar.png">
+                </footer>
+
+
+                <!-- overlay for modals -->
+                <div class="md-overlay"></div>
+            </aside>
+
+            <!-- main section-->
+            <section id="main" role="main" class="main-section" data-ng-controller="game">
+             
+
+                <!-- nav trigger 4 small --> 
+                <nav class="tab-bar hide-for-large-up">
+                  <section class="left-small">
+                    <a href="#" class="left-off-canvas-toggle menu-icon"><span></span></a>
+                  </section>
+                    <h1 class="title text-center">{{ playerName }}</h1>
+                </nav>
+
+                <!-- INTRODUZIONE block -->
+                <article id="introduzione" class="show dialog dialog--introduzione" data-scene>
+                    <div class="dialog__inner">
+                        <h2 class="dialog__title">{{ scene.title }}</h2>
+                        <p class="dialog__text">{{ scene.text }}</p>
+                        <section id="introduzione-buttons" class="dialog__buttons">
+                           <button ng-repeat="choice in scene.choices" data-ng-click="ui.showChoice.call(this)" ng-disabled="!choice.enabled">{{ choice.button }}</button>
+                        </section>
+                    </div>
+                </article>
+
+                <!-- scelta modal -->
+                <div id="scelta" class="scelta" data-ng-class="{'alert-risk': choice.conseguence.type === 'random'}" data-choice>
+                        <div class="scelta__inner">
+                            <h2 class="scelta__title">{{ choice.title }}</h2>
+                            <p class="scelta__text">{{ choice.text }}</p>
+
+                            <section class="scelta__values">
+                                <span>
+                                    <i class="icon-euro" aria-hidden="true"></i> {{ choice.money }}€
+                                </span>
+                                <span>
+                                    <i class="icon-smile" aria-hidden="true"></i> {{ choice.happiness }}pt
+                                </span>
+                            </section>
+
+                            <section id="scelta-buttons" class="scelta__buttons">
+
+                                <button class="back-to-scena" data-ng-click="ui.closeChoice()">Indietro</button>
+                                <button id="go-thru" data-ng-click="getConseguence()">OK</button>
+                            </section>
+
+                            <a class="md-close" data-ng-click="ui.closeChoice()">&#215;</a>
+                        </div>
+                </div>
+
+                <!-- CONSEGUENZA block -->
+                <article id="conseguenza" class="dialog dialog--conseguenza" data-conseguence data-ng-class="conseguence.class"><!-- aggiungere classi good/mid/bad a seconda del random-->
+                    <div class="dialog__inner">
+                        <h2 class="dialog__title">{{ conseguence.title }}</h2>
+                        <p class="dialog__text">{{ conseguence.text }}</p>
+
+                        <section class="dialog__buttons">
+                            <button data-ng-click="ui.showReport()"><i class="icon-arrow-rt" aria-hidden="true"></i></button>
+                        </section>
+                    </div>
+                </article>
+
+                <!-- VARIAZIONE block -->
+                <article id="variazione" class="dialog dialog--variazione" data-variazione>
+                    <div class="dialog__inner dialog--variazione__inner">
+                        <h2 class="dialog__title">I tuoi punteggi</h2>
+                        <div class="variazione__block">
+                            <section id="e-variazione" class="variazione__cube">
+                                <span id="e-fattore" class="variazione__item fattore">{{ variazione.money.delta }}</span>
+                                <span id="e-before" class="variazione__item before">€ {{ variazione.money.prima }}</span> 
+                                <span id="e-after" class="variazione__item after">€ {{ variazione.money.attuale }}</span> 
+                            </section>
+                        </div>
+                        <div class="variazione__block">
+                            <section id="pt-variazione" class="variazione__cube variazione__cube--pt">
+                                <span id="pt-fattore" class="variazione__item variation-pt fattore">{{ variazione.happiness.delta }}</span>
+                                <span id="pt-before" class="variazione__item variation-pt before">pt {{ variazione.happiness.prima }}</span> 
+                                <span id="pt-after" class="variazione__item variation-pt after">pt {{ variazione.happiness.attuale }}</span> 
+                            </section>
+                        </div>
+                    </div>
+                </article> 
+
+                <!-- STATISTICHE block -->
+                <article id="stats" class="dialog dialog--stats" data-report>
+                    <div class="dialog__inner">
+                        <img class="stat-img" data-ng-src="../images/stats/{{ scene.report.img }}" alt="">
+                        <p class="dialog__title dialog--stats__text">{{ scene.report.text }}</p>
+                        <hr>
+                        <p class="dialog--stats__src">{{ scene.report.source }}</p>
+
+                        <section class="dialog__buttons">
+                            <button data-ng-click="ui.next()"><i class="icon-arrow-rt" aria-hidden="true"></i></button>
+                        </section>
+                    </div>
+                </article>   
+
+                <!-- RISK message block -->
+                <article id="risk" class="dialog dialog--risk" data-risk>
+                    <div class="dialog__inner dialog__inner--risk">
+                        <h2 class="dialog__title">Rischio!</h2>
+
+                        <p class="dialog__text">{{ conseguence.waitingText }}</p>
+
+                        <div id="spinner" class="spinner" data-ng-class="conseguence.class"></div>
+                    </div>
+                </article>  
+               
+
+        </section> <!-- end #main -->
+
+        <!-- overlay for modals -->
+        <div class="md-overlay"></div>
+
+        </div>
+    </div>
+
+
+    <div data-helper>
+        <!-- helper modal choice -->
+        <div id="helper" class="scelta scelta--helper">
+            <div class="scelta__inner scelta__inner--helper">
+                <h2 class="scelta__title">{{ help.title }}</h2>
+                <p class="scelta__text">{{ help.text }}</p>
+
+                <section class="scelta__values">
+                    <span>
+                        <i class="icon-euro" aria-hidden="true"></i> {{ help.money }}€
+                    </span>
+                    <span>
+                        <i class="icon-smile" aria-hidden="true"></i> {{ help.happiness }}pt
+                    </span>
+                </section>
+
+                <section class="scelta__buttons">
+                    
+                    <button class="helper__back back-to-scena" data-ng-click="closeHelp()"> indietro</button>
+                    <button class="helper__go" id="go-thru-1" data-ng-click="useHelp()">ok</button>
+                </section>
+                
+                <a class="md-close" data-ng-click="closeHelp()">&#215;</a>
+            </div>
+        </div>
+
+        <!-- helper modal variation -->
+        <article id="h-variazione" class="dialog dialog--variazione dialog--variazione-help">
+            <div class="dialog__inner dialog--variazione__inner dialog--variazione-help__inner">
+                <h2 class="dialog__title">I tuoi punteggi</h2>
+                <div class="variazione__block">
+                    <section id="h-e-variazione" class="variazione__cube">
+                        <span id="h-e-fattore" class="variazione__item fattore">{{ variazione.money.delta }}</span>
+                        <span id="h-e-before" class="variazione__item before">€ {{ variazione.money.prima }}</span> 
+                        <span id="h-e-after" class="variazione__item after">€ {{ variazione.money.attuale }}</span> 
+                    </section>
+                </div>
+                <div class="variazione__block">
+                    <section id="h-pt-variazione" class="variazione__cube variazione__cube--pt">
+                        <span id="h-pt-fattore" class="variazione__item variation-pt fattore">{{ variazione.happiness.delta }}</span>
+                        <span id="h-pt-before" class="variazione__item variation-pt before">pt {{ variazione.happiness.prima }}</span> 
+                        <span id="h-pt-after" class="variazione__item variation-pt after">pt {{ variazione.happiness.attuale }}</span> 
+                    </section>
+                </div>
+            </div>
+        </article> 
+    </div>
+
+
+
+      <!-- <script src="../js/analytics.js"></script>
+      <script src="../bower_components/jquery/dist/jquery.js"></script>
+      <script src="../bower_components/foundation/js/foundation.min.js"></script>
+      <script src="../bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+      <script src="../bower_components/foundation/js/foundation/foundation.interchange.js"></script>
+      <script src="../js/app.js"></script>
+
+      <script src="../bower_components/angular/angular.min.js"></script>
+      <script src="../js/appConfig.js"></script>
+      <script src="../js/appServices.js"></script>
+      <script src="../js/appControllers.js"></script>
+      <script src="../js/appDirectives.js"></script>
+      <script src="../js/appFilters.js"></script> -->
+     <script src="../js/build/app.anno.min.js"></script> 
+
+</body>
+</html>
