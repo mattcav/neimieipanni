@@ -1,126 +1,126 @@
 [	{
-		"title": "Il lavoro",
-		"text": "Sei appena arrivata in Italia, devi cercarti un lavoro. Per cosa ti proponi?",
+		"title": "Job seeking",
+		"text": "You have just arrived in Italy; you have to look for a job. To which one do you step forward?",
 		"theme": "lavoro",
 		"report": {
 			"img": "sovraistruito.png",
-			"text": "Un lavoratore è “sovraistruito” quando ha un titolo di studio più alto di quello richiesto per il lavoro che svolge. Questa condizione riguarda circa il 20% dei lavoratori italiani e il 40% degli stranieri.",
-			"source": "Istat, Rilevazione sulle forze di lavoro 2012"	
+			"text": "A worker is overqualified “when he has a degree higher than that required for the job he does. This condition affects about 20% of Italian workers and 40% of foreigners.",
+			"source": "Istat Labour Force Survey 2012"	
 		},
 		"choices": [
 			{
-				"title": "Infermiera professionale",
-				"button": "Infermiera professionale",
-				"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
+				"title": "Professional Nurse",
+				"button": "Professional Nurse",
+				"text": "You have a qualification as a nurse; it's the job you've always dreamed of. Stress/Strain will be rewarded with satisfaction.",
 				"happiness": -300,
 				"money": 1000,
 				"conseguence": {
-					"text": "Hai un titolo di studio come infermiera, è il lavoro che hai sempre sognato. La fatica verrà ripagata dalla soddisfazione.",
+					"text": "You have a qualification as a nurse; it's the job you've always dreamed of. Stress/Strain will be rewardedwith satisfaction.",
 
 					"type": "trap",
-					"trapText": "Al colloquio ti dicono che per rendere validi i tuoi titoli di studio in Italia c'è una lunga trafila. Nel frattempo non possono darti il posto. Ti sembra un'ingiustizia, ma non puoi farci niente.",
+					"trapText": "At the interview they tell you that, in Italy, a long procedure makes your qualification effective. Meanwhile, they can’t give you the job that’s seems to you an injustice, but you can’t do anything about it.",
 					"trapHappiness": -50,
 					"trapMoney": 0
 				}
 			},
 			{
-				"title": "Commessa in una parafarmacia",
-				"button": "Commessa in una parafarmacia",
-				"text": "È un lavoro che hai già fatto e che ti piace, ma non è quello per cui hai studiato.",
+				"title": "Pharmacy shop assistant",
+				"button": "Pharmacy shop assistant",
+				"text": "It's a job that you've done and you like, but it isn’t what you have studied for",
 				"happiness": -500,
 				"money": 800,
 				"conseguence": {
 					"type": "normal",
-					"text": "Si tratta di un buon impiego, ma ti sembra che le tue competenze vengano sprecate, e questo ti dispiace."
+					"text": "It is a good job, but you feel that your skills are wasted, and you feel sorry."
 				}
 			},
 			{
-				"title": "Badante",
-				"button": "Badante",
-				"text": "Il lavoro è richiesto e lo stipendio è buono, ma è molto pesante e poco stimolante.",
+				"title": "Caregiver",
+				"button": "Caregiver",
+				"text": "The work is required and the salary is good, but it’s very heavy and not very inspiring job.",
 				"happiness": -550,
 				"money": 900,
 				"conseguence": {
 					"type": "normal",
-					"text": "Per avere un lavoro fisso hai accettato un posto molto impegnativo in cui le tue competenze non sono riconosciute e ti rimane poco tempo libero per te stessa."
+					"text": "In order to get a steady job you have accepted a very challenging place where your skills are not recognized and you have little free time left for yourself."
 				}
 			}
 		]
 	},{
-	"title": "La scelta della casa",
-	"text": "Ora che hai trovato un lavoro, è ti serve una giusta sistemazione. Che cosa cerchi?",
+	"title": "Choose your accommodation",
+	"text": "Now that you have found a job, you'll need a proper accommodation. What are you looking for?",
 	"theme": "casa",
 	"report": {
 		"img":"casa.png",
-		"text": "Una persona straniera che affitta una casa viene discriminata una volta su cinque. Spesso attraverso condizioni peggiori di quelle proposte agli italiani, o direttamente con il rifiuto.",
+		"text": "A foreign person who rents a house is discriminated against once out of five times. That happens often foreigners are offered worse conditions than those proposed to Italians or directly been rejected.",
 		"source": " Contact Center Unar 2012"	
 	},
 	"choices": [
 		{
-			"title": "Monolocale",
-			"button": "Monolocale",
-			"text": "La spesa è consistente, ma sei indipendente.",
+			"title": "Studio flat",
+			"button": "Studio flat",
+			"text": "Expense is consistent, but you're independent.",
 			"happiness": 500,
 			"money": -600,
 			"conseguence": {
-				"text": "Dovrai stare molto attento ai soldi, ma sei contentissimo di vivere da solo.",
+				"text": "You'll have to be very careful with money, but you're happy to live on your own.",
 
 				"type": "trap",
-				"trapText": "Il proprietario ti incontra e ti dice che preferisce non affitare agli extracomunitari. Gli spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapText": "The owner meets you and tells you that he prefers not to rent to immigrants. You explain that as a citizen of the Romanian community you are an EU citizen, but the man doesn’t listen to your reasons. You feel humiliated and insulted. Lose 50 points.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
 		},
 		{
-			"title": "Stanza singola",
-			"button": "Stanza singola",
-			"text": "Spendi una cifra più abbordabile, ma hai comunque un spazio tutto tuo.",
+			"title": "Single Room",
+			"button": "Single Room",
+			"text": "Spend an amount more affordable, but you still have a space of your own.",
 			"happiness": 280,
 			"money": -400,
 			"conseguence": {
-				"text": "È comunque una bella soddisfazione avere una stanza tutta per te, anche se vivrai con degli estranei.",
+				"text": "It is a great satisfaction to have a room on your own, even if you shared the apartment with strangers.",
 
 				"type": "trap",
-				"trapText": "Il proprietario ti incontra e ti dice che preferisce non affitare agli extracomunitari. Gli spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapText": "The owner meets you and tells you that he prefers not to rent to immigrants. You explain that as a citizen of the Romanian community you are an EU citizen, but the man doesn’t listen to your reasons. You feel humiliated and insulted. Lose 50 points.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
 		},
 		{
-			"title": "Stanza condivisa",
-			"button": "Stanza condivisa",
-			"text": "Fai la scelta più economica, rinunciando a spazi e indipendenza.",
+			"title": "Shared room",
+			"button": "Shared room",
+			"text": "Make the most economical choice, giving up space and independence.",
 			"happiness": 100,
 			"money": -250,
 			"conseguence": {
-				"text": "Hai risolto il problema dell'alloggio con la spesa più bassa, ma ora dovrai affrontare qualche difficoltà nella convivenza.",
+				"text": "You have solved accommodation problem by spending lower, but now you will face some difficulties in sharing the room with strangers.",
 
 				"type": "trap",
-				"trapText": "Il proprietario ti incontra e ti dice che preferisce non affitare agli extracomunitari. Gli spieghi che come cittadina rumena sei comunitaria, ma l’uomo non sente ragioni. Ti senti umiliata e offesa. Perdi 50 punti.",
+				"trapText": "The owner meets you and tells you that he prefer not to rent to immigrants. You explain that as a citizen of the Romanian community that is a Eu member, but the man does not listen to reason. You feel humiliated and insulted. Lose 50 points.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
 		}
 	]
 },{
-	"title": "L'aumento",
-	"text": "Il colloquio per il lavoro è andato bene ma lo stipendio ti sembra un po’ basso. Per chiedere un aumento potresti usare i tuoi studi. Che fai?",
+	"title": "Pay rise",
+	"text": "The interview for the job succeeded but the relative wage is a bit 'low. To raise the wage, you could use your studies. What're you doing?",
 	"theme": "boss",
 	"report": {
 			"img":"stipendio.png",
-			"text": "A parità di lavoro svolto, uno straniero viene pagato in media il 25% in meno di un italiano. Nel Sud Italia, il dato arriva fino al 34%.",
-			"source": "Istat, Rilevazione sulle forze di lavoro anno 2012"	
+			"text": "On equal terms, a foreigner is paid on average 25% less than an Italian. In Southern Italy, the figure goes up to 34%.",
+			"source": "Istat Labour Force - Year 2012"	
 		},
 	"choices": [
 		{
-			"title": "Chiedi l'aumento",
-			"button": "Chiedi l'aumento",
-			"text": "Sei un'infermiera diplomata e ne sei fiera. Decidi di farlo presente perché hai nozioni che possono essere utili.",
+			"title": "Ask a pay rise",
+			"button": "Ask a pay rise",
+			"text": "As you are a registered as nurse and you are proud of it, decide to do this because you have knowledge that can be useful.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Esponi il tuo titolo di studio e spieghi che secondo te meriti di più. Sei contenta di averlo fatto, ma ora tutto dipende dalla reazione del datore di lavoro...",
+				"waitingText": "You tells about your qualification and explain that you think you deserve a better wage. You are glad that you did, but now everything depends on the reaction of the employer...",
 				"cases": [
 					{
 						"probability": 20,
@@ -128,7 +128,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "I datori di lavoro dicono che non possono permettersi uno stipendio più alto, ma ora che sanno delle tue competenze ti affideranno mansioni più delicate. Perdi 100 punti."
+						"text": "Employer says they can’t afford a higher wage, but now that they know about your skills you will do more delicate tasks. Lose 100 points."
 					},
 					{
 						"probability": 80,
@@ -136,86 +136,86 @@
 						"money": 100,
 						"stop": false,
 						"class":"good",
-						"text": "I datori di lavoro riconoscono l'importanza delle tue competenze, ottieni un aumento di 100 euro."
+						"text": "Employer recognize the importance of your skills; you get an increase of 100 Euros."
 					}
 				]
 			}
 		},
 		{
-			"title": "Accetti senza discutere",
-			"button": "Accetti senza discutere",
-			"text": "Stai nascondendo la cosa di cui vai più fiera, ma preferisci non tirare troppo la corda.",
+			"title": "Accept without question",
+			"button": "Accept without question",
+			"text": "You're hiding what are you most proud of, but prefer not to take things too far.",
 			"happiness": -20,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Sei così contenta di aver trovato lavoro che non hai voluto sollevare questioni. Ma, ripensandoci a mente fredda, ti sembra di esserti svilita da sola."
+				"text": "You're so happy to have found a job that you prefer not to raise questions. But, looking back with a cool head, you seem to signing debased by it."
 			}
 		}
 	]
 }, {
-	"title": "Il corso d'italiano",
-	"text": "Il tuo italiano è ancora scarso e hai difficoltà a parlare con le persone. Decidi di seguire un corso di lingua. Quale scegli?",
+	"title": "The Italian language course",
+	"text": "Your Italian is still poor and you have trouble talking to people. So you decide to follow a language course. Which do you choose?",
 	"theme": "italiano",
 	"report": {
 			"img":"italiano.png",
-			"text": "Dal 2010 la conoscenza della lingua italiana è un requisito essenziale per richiedere il Permesso di Soggiorno CE per i residenti di lungo periodo. Nel 2011 l'87% di quelli che hanno sostenuto il test di verifica della lingua l'ha superato, ma solo il 12% degli immigrati che ne avevano diritto ha chiesto di sostenerlo.",
-			"source": "IX Rapporto CNEL - Indici di integrazione degli immigrati in Italia, 2013"	
+			"text": "Since 2010, the Italian language is an essential requirement to apply for the residence permit for EC long-term residents. In 2011, 87% of those who supported the criteria of the language have exceeded, but only 12% of immigrants who were entitled asked to support it.",
+			"source": "IX CNEL Report - Indicators for the integration of immigrants in Italy, 2013"	
 		},
 	"choices": [
 		{
-			"title": "Un corso gratuito",
-			"button": "Un corso gratuito",
-			"text": "Non spendi nulla, ma la scuola è lontana e ti crea problemi con gli orari e gli spostamenti.",
+			"title": "A free language course",
+			"button": "A free language course",
+			"text": "You don’t spend anything, but the school is far away and you have some difficulties with the schedule and shifts.",
 			"happiness": -100,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Il tuo italiano migliora velocemente: ti senti più integrata ed è più facile conoscere nuove persone. Purtroppo gli orari sono scomodi e non puoi seguire tutte le lezioni."
+				"text": "Your Italian improves quickly: you feel more integrated and it’s easier to meet new people. Unfortunately times are uncomfortable and you can’t follow all the lessons."
 			}
 		},
 		{
-			"title": "Un corso a pagamento",
-			"button": "Un corso a pagamento",
-			"text": "Il costo non è basso, ma la scuola è proprio dietro casa e gli orari sono flessibili: puoi seguire le lezioni senza difficoltà.",
+			"title": "Pay a language course",
+			"button": "Pay a language course",
+			"text": "The cost is not low, but the school is just nearby the house and course timetable is flexible: you can follow the lessons without difficulty.",
 			"happiness": 20,
 			"money": -120,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai dovuto spendere dei soldi, ma il tuo italiano migliora velocemente: ti senti più integrata ed è più facile conoscere nuove persone."
+				"text": "You have to spend some money, but you will quickly improve your Italian: you feel more integrated and it is easier to meet new people."
 			}
 		}
 	]
 },{
-	"title": "L'infortunio sul lavoro",
-	"text": "Mentre sei al lavoro, cadi e ti fai male ad una gamba. Cosa fai?",
+	"title": "On-the-job injury",
+	"text": "While you're at work, you fall and your leg hurts. What do you do?",
 	"theme": "infortunio",
 	"report": {
 			"img":"mortali.png",
-			"text": "Dal 2010 al 2011 gli infortuni mortali sul lavoro degli italiani sono scesi del 10%, quelli degli stranieri sono aumentati dell’1,4%.",
-			"source": "Ministero del lavoro e delle Politiche Sociali, III Rapporto Annuale “Immigrati nel mercato del lavoro in Italia” 2013"	
+			"text": "From 2010 to 2011 fatalities of the Italians at workplace were down 10%, those of foreigners increased by 1.4%.",
+			"source": "Ministry of Labour and Social Policy, III Annual Report “Immigrants in the labour market in Italy” 2013"	
 		},
 	"choices": [
 		{
-			"title": "Continui a lavorare",
-			"button": "Continui a lavorare",
-			"text": "Fai finta di niente per non sembrare una che crea problemi e sopporti il dolore.",
+			"title": "Keep on working",
+			"button": "Keep on working",
+			"text": "You don’t mention it cause you don’t want to look like a troublemaker and bear the pain.",
 			"happiness": -80,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Avresti avuto diritto a stare a casa, ma per troppa paura di perdere il lavoro non hai voluto correre nessun rischio."
+				"text": "You have the right to stay at home in order to recover, but are too afraid of losing your job and don’t want to take any risks."
 			}
 		},
 		{
-			"title": "Vai a casa",
-			"button": "Vai a casa",
-			"text": "Il permesso per malattia è un tuo diritto e intendi esercitarlo.",
+			"title": "Go home",
+			"button": "Go home",
+			"text": "You are elegible for a Sick leave is your right and you intend to take it.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Un giorno di riposo ti ha fatto guarire, ma ora ricevi una telefonata dal tuo capo...",
+				"waitingText": "A day of rest made you heal, but now you get a call from your boss...",
 				"cases": [
 					{
 						"probability": 50,
@@ -223,7 +223,7 @@
 						"money": -100,
 						"stop": false,
 						"class":"bad",
-						"text": "L’uomo ti dice che la tua assenza è stata un problema e ti tratterrà 100 euro dallo stipendio. Sai che non è giusto, ma sai anche che non riuscirai a riavere quei soldi..."
+						"text": "The man tells you that your absence was a problem and we will withhold 100 Euros from your salary. You know that is not right, but you also know you will not be able to get back that money..."
 					},
 					{
 						"probability": 50,
@@ -231,90 +231,90 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "L’uomo ti chiede come stai ed è contento di sapere che sei guarita. Le sue parole ti fanno sentire apprezzata e guadagni 20 punti."
+						"text": "Your employer asks you how you are and is glad to know that you recovered. His words make you feel appreciated and you earn 20 points."
 					}
 				]
 			}
 		}
 	]
 },{
-		"title": "La lavatrice",
-		"text": "Da quando ti sei trasferita hai dovuto lavare i panni a mano perdendo tempo e facendo fatica. Cosa fai?",
+		"title": "The washing machine",
+		"text": "Since you moved you had to wash clothes by hand and having a hard time losing. What do you do?",
 		"theme": "lavatrice",
 		"report": {
 			"img": "lavatrice.png",
-			"text": "Anche se molte famiglie immigrate la usano in comune con altre, la lavatrice è uno dei pochi beni durevoli diffuso allo stesso modo tra stranieri e italiani. Lo stesso non può dirsi per beni come l’automobile, il computer o la connessione ad internet.",
-			"source": "Istat, “Le famiglie con stranieri: indicatori di disagio economico”, 2009."	
+			"text": "Although many immigrant families, the use is in common with others, the washing machine is one of the few durable goods spread in the same way between foreigners and Italians. The same cannot be said for goods such as automobile, computer, or the Internet connection.",
+			"source": "Istat, “Families with foreigners: indicators of economic hardship”, 2009."	
 		},
 		"choices": [
 			{
-				"title": "Compri una lavatrice",
-				"button": "Compri una lavatrice",
-				"text": "Trovi un'offerta con un finanziamento e una rata conveniente.",
+				"title": "Buy a washing machine",
+				"button": "Buy a washing machine",
+				"text": "Find an offer with a financing and a convenient installment.",
 				"happiness": 100,
 				"money": -60,
 				"conseguence": {
-					"text": "Trovi un'offerta con un finanziamento e una rata conveniente.",
+					"text": "Find an offer with a financing and a convenient installment.",
 
 					"type": "trap",
-					"trapText": "Il commesso del negozio ti dice che la finanziaria non concede prestiti ad immigrati appena arrivati. Devi rinunciare all'acquisto. Perdi 10 punti per la delusione.",
+					"trapText": "The shop assistant tells you that the budget does not grant loans to newly arrived immigrants.  You have to give up the purchase. Lose 10 points for the disappointment.",
 					"trapHappiness": -10,
 					"trapMoney": 0
 				}
 			},
 			{
-				"title": "Vai in una lavanderia a gettoni",
-				"button": "Vai in una lavanderia a gettoni",
-				"text": "La spesa è contenuta e ti risparmia la fatica, ma ti porta via tempo.",
+				"title": "Go to a laundromat",
+				"button": "Go to a laundromat",
+				"text": "The expense is moderate and spares you the trouble, but it takes you time.",
 				"happiness": -30,
 				"money": -30,
 				"conseguence": {
 					"type": "normal",
-					"text": "Hai scelto un compromesso tra risparmio e comodità. Speri che in futuro potrai permetterti qualche lusso in più."
+					"text": "You have chosen a compromise between cost savings and convenience. Hope that in future you can afford some luxury."
 				}
 			},
 			{
-				"title": "Continui a lavarli a casa",
-				"button": "Continui a lavarli a casa",
-				"text": "Non spendi nulla, ma hai meno tempo ed energie per tutto il resto.",
+				"title": "Continue to wash them at home",
+				"button": "Continue to wash them at home",
+				"text": "Do not spend anything, but you have less time and energy for everything else.",
 				"happiness": -70,
 				"money": 0,
 				"conseguence": {
 					"type": "normal",
-					"text": "Hai scelto di non spendere nulla, ma da questo punto di vista, la tua vita è peggiore di quando eri in Romania."
+					"text": "You have chosen not to spend any money, but from this point of view, your life is worse than when you lived in Romania."
 				}
 			}
 		]
 	},{
-	"title": "Il volantino razzista",
-	"text": "Per strada un gruppo di ragazzi, credendoti italiana, ti porge un volantino con scritto “basta immigrati”.",
+	"title": "The racist flyer",
+	"text": "On the way home, a group of boys, believing that you are Italian, give you a flyer that says “stop immigrants”.",
 	"theme": "volantino",
 	"report": {
 			"img":"volantino.png",
-			"text": "Il 65% degli italiani pensa che gli immigrati siano “troppi”.  Ma in Italia sono il 7,4% della popolazione: meno che in altri paesi europei, come il Lussemburgo (43%), la Germania (9%), il Belgio e la Spagna (oltre il 10%).",
-			"source": "Eurostat dati 2012"	
+			"text": "65% of Italians think that immigrants are *too many*. But in Italy are 7.4% of the population, less than in other European countries, such as Luxembourg (43%), Germany (9 %), Belgium and Spain (over 10%).",
+			"source": "Eurostat data 2012"	
 		},
 	"choices": [
 		{
-			"title": "Lo prendi",
-			"button": "Lo prendi",
-			"text": "Hai paura di quei ragazzi, per evitare problemi lo prendi e te ne vai senza dire una parola.",
+			"title": "You take it",
+			"button": "You take it",
+			"text": "You are afraid of those guys and in order to avoid problems you take it and you go without saying a word.",
 			"happiness": -70,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Sei stata zitta. ma ora ti vergogni perché senti di aver mancato di rispetto a te stessa e agli altri immigrati..."
+				"text": "You have been silent, but now you feel ashamed because he had been disrespectful towards you and other immigrants..."
 			}
 		},
 		{
-			"title": "Lo rifiuti",
-			"button": "Lo rifiuti",
-			"text": "Hai uno scatto di orgoglio e rispondi, con il tuo accento straniero, che sei un'immigrata anche tu.",
+			"title": "You turn down",
+			"button": "You turn down",
+			"text": "You have a burst of pride and you answer, with your accent, you're an immigrant too.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Hai detto quello che pensavi: quel volantino è pieno di stupidi pregiudizi. Ma ora i ragazzi potrebbero reagire.",
+				"waitingText": "You have spoken your mind: that flyer is full of stupid prejudices. But now the guys might react.",
 				"cases": [
 					{
 						"probability": 50,
@@ -322,7 +322,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "I ragazzi si sono avvicinati minacciosi. Ma si sono limitati a guardarti male e a mormorare qualcosa prima di andarsene."
+						"text": "The boys have approached threatening, but you are just watching evil and mutter something before you leave."
 					},
 					{
 						"probability": 50,
@@ -330,42 +330,42 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "I ragazzi si sono avvicinati minacciosi. Indietreggiando per la paura sei caduta e ti sei fatta male. Perdi 150 punti."
+						"text": "The boys have approached threatening. Backing for fear, you fell and hurt yourself. Lose 150 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "Battuta razzista",
-	"text": "Mentre stai lavorando senti il tuo capo che fa una battuta razzista. Cosa fai?",
+	"title": "The racist joke",
+	"text": "While you are working you feel that your boss makes a racist joke. What do you do?",
 	"theme": "boss",
 	"report": {
 			"img":"battuta.png",
-			"text": "Al primo posto tra le cause di discriminazione sul lavoro degli stranieri (con il 46% dei casi) c’è il clima ostile, ovvero un trattamento discriminatorio da parte di colleghi e superiori.",
-			"source": "Istat, Indagine “Condizione e integrazione sociale in un’ottica di genere dei cittadini stranieri”, 2012"	
+			"text": "Among the causes of discrimination in the foreigners’ employment a hostile work environment or discriminatory treatment by colleagues and superiors are at the first place with 46% of cases.",
+			"source": "Istat, Survey “Condition and social integration of foreign nationals in a gender perspective”, 2012"	
 		},
 	"choices": [
 		{
-			"title": "Fingi di non aver sentito",
-			"button": "Fingi di non aver sentito",
-			"text": "Decidi controvoglia di lasciar perdere: non vuoi avere problemi.",
+			"title": "Pretend you did not hear",
+			"button": "Pretend you did not hear",
+			"text": "Reluctantly you decide to let it go: you do not want to have problems.",
 			"happiness": -60,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Sei stata zitta come se niente fosse, ma ti senti profondamente umiliata."
+				"text": "You kept silent as if nothing had happened, but you feel deeply humiliated."
 			}
 		},
 		{
-			"title": "Protesti",
-			"button": "Protesti",
-			"text": "Fai valere le tue ragioni per fargli capire come ti senti.",
+			"title": "Protest",
+			"button": "Protest",
+			"text": "You assert your reasons to let him know how you feel.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Hai protestato e sei contenta di averlo fatto. Ma ora il capo vuole parlarti nel suo ufficio...",
+				"waitingText": "You have complained and are you glad you did, But now the boss wants to talk to you in his office...",
 				"cases": [
 					{
 						"probability": 50,
@@ -373,7 +373,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "Il tuo capo ti chiede scusa controvoglia ma nei giorni seguenti noti che ti vengono assegnti i compiti più faticosi. Perdi 100 punti."
+						"text": "Your boss unwillingly apologizes but in the following days you notice that you are given more stressful and hard tasks. Lose 100 points."
 					},
 					{
 						"probability": 50,
@@ -381,42 +381,42 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "l tuo capo ti chiede scusa con convinzione. Senti di aver fatto qualcosa di buono non solo per te, ma anche per lui. Guadagni 20 punti."
+						"text": "The boss firmly apologises to you. You feel you have done something good not only for yourself but also for him. Earn 20 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "L'incidente stradale",
-	"text": "Vedi un uomo cadere dal motorino. Ti avvicini e capisci che si è lussato la spalla. Sai come rimettergliela a posto, ma lui sente il tuo accento straniero e non si fida. Cosa fai?",
+	"title": "The accident",
+	"text": "You see a man fallen from the scooter. You come closer and see that he has dislocated his shoulder. You know how to fix it, but he hears your foreign accent and dosen’t trust. What do you do?",
 	"theme": "incidente",
 	"report": {
 			"img":"dottori.png",
-			"text": "Sono oltre 15mila i medici stranieri iscritti all'Ordine dei Medici Chirurghi e Odontoiatri nel nostro Paese (le donne rappresentano il 42,3% del totale).",
-			"source": "Primo rapporto Emn (European migration network) Italia"	
+			"text": "Over 15 thousand foreign doctors are registered with the Physicians and Dentists in our country (women account for 42.3% of the total).",
+			"source": "First Report Emn (European migration network) Italy"	
 		},
 	"choices": [
 		{
-			"title": "Te ne vai",
-			"button": "Te ne vai",
-			"text": "Non vuoi avere problemi, quindi lo lasci stare, ma ti senti in colpa per non aver fatto il tuo dovere.",
+			"title": "Walk away",
+			"button": "Walk away",
+			"text": "I do not want to have problems, and then let him stay, but you feel guilty for not doing your duty.",
 			"happiness": -60,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Evidentemente ci sono ancora persone per cui un accento straniero vale più di anni di studio. Torni a casa con questa consapevolezza e ti senti triste e sminuita."
+				"text": "Evidently there are still people for whom a foreign accent is worth more than years of study. Back home with this awareness, you feel sad and belittled."
 			}
 		},
 		{
-			"title": "Insisti",
-			"button": "Insisti",
+			"title": "Insist",
+			"button": "Insist",
 			"text": "Hai uno scatto di orgoglio. Questo è il tuo mestiere e lo sai fare: gli dici di stare fermo e fidarsi di te.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Sei intervenuta perché sei qualificata e senti di aver fatto il tuo dovere, ma ora devi affrontare la reazione dell'uomo...",
+				"waitingText": "You have a burst of pride. This is your job and you know what to do you tell him to sit still and trust you....",
 				"cases": [
 					{
 						"probability": 50,
@@ -424,7 +424,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "L'uomo si arrabbia e ti allontana a male parole. Ti senti umiliata, volevi solo essere utile. Perdi 100 punti."
+						"text": "You stepped in because you're qualified and you feel you've done your duty, but now you have to deal with the man reaction."
 					},
 					{
 						"probability": 50,
@@ -432,42 +432,42 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "L'uomo si lascia aiutare e gli rimetti a posto la spalla. Lui ti ringrazia e riconosce che il suo era solo uno stupido pregiudizio. Torni a casa felice. Guadagni 30 punti."
+						"text": "The man gets angry and chase you away from him, swearing. You feel humiliated; you just wanted to be helpful. Lose 100 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "Il secondo lavoro",
-	"text": "Hai trovato un impiego di un giorno come hostess. Ma la responsabile dello stand manda via una delle altre ragazze perché è nera, dicendo che non vuole lavorare con le immigrate. Cosa fai?",
+	"title": "The second job",
+	"text": "You have found a job as a day hostess. But the stand manager sends off one of the other girls because he is black, saying he did not want to work with immigrants. What do you do?",
 	"theme": "hostess",
 	"report": {
 			"img":"postodilavoro.png",
-			"text": "Il 17% degli stranieri subiscono discriminazioni sul posto di lavoro. I casi più diffusi sono ostilità dall'ambiente di lavoro, retribuzione inferiore a quella prevista e carichi di lavoro eccessivo.",
-			"source": "Indagine ISTAT “Condizione e integrazione sociale in un’ottica di genere dei cittadini stranieri” 2012"	
+			"text": "17% of foreigners are discriminated against in the workplace. Hostile work environment; inferior wages than expected and excessive workloads are the most common cases.",
+			"source": "ISTAT Survey “Condition and social integration in a gender perspective of foreign citizens” 2012"	
 		},
 	"choices": [
 		{
-			"title": "Non dici niente",
-			"button": "Non dici niente",
-			"text": "Hai proprio bisogno di questo guadagno extra anche se ti senti in colpa.",
+			"title": "Do not say anything",
+			"button": "Do not say anything",
+			"text": "You really need this extra income even if you feel guilty.",
 			"happiness": -100,
 			"money": 100,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai guadagnato dei soldi, ma hai dovuto sorridere tutto il tempo a quella donna razzista. Ti senti quasi peggiore di lei."
+				"text": "You have earned some money, but you had to smile all the time to that racist woman and you feel almost worse than her."
 			}
 		},
 		{
-			"title": "Te ne vai anche tu",
-			"button": "Te ne vai anche tu",
-			"text": "Non vuoi avere nulla a che fare con queste persone e dici che sei immigrata anche tu: meglio rinunciare ai soldi ma rimanere fedele ai tuoi principi.",
+			"title": "I'll go too",
+			"button": "I'll go too",
+			"text": "You do not want to have anything to do with these people and say you're an immigrant too: it’s better to lose the money and to be faithful to your principles.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai perso un facile guadagno, ma hai detto a quella donna razzista cosa pensi di lei. Dentro di te sai di aver fatto la scelta giusta."
+				"text": "You have lost an easy gain, but you said to that racist woman what you think of her. You know you've made the right choice."
 			}
 		}
 	]

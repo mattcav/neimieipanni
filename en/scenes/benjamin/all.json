@@ -1,133 +1,133 @@
 [{
-	"title": "Il lavoro",
-	"text": "Non riesci a trovare un impiego in regola con cui potresti rinnovare il permesso di soggiorno. Ma hai bisogno di soldi e decidi di accettare un lavoro in nero. Cosa scegli?",
+	"title": "The Job",
+	"text": "You cannot find a regular job with which you may renew the permit of stay. But you need money and you decide to take a black market job, which one do you choose?",
 	"theme": "lavoro",
 	"report": {
 		"img": "lavoro.png",
-		"text": "Circa il 35% (540 miliardi) del PIL italiano è il valore dell'economia sommersa. 22,5 di quei miliardi arrivano dal lavoro degli immigrati clandestini.",
-		"source": "'L'Italia  in nero', Rapporto sull'economia sommersa realizzato dall'Eurispes  e dall'Istituto San Pio V di Roma"	
+		"text": "The value of the underground economy account  approximately for 35% (540 billion) of the Italian GDP . of that 22.5 billion comes from the illegal immigrants’ labour.",
+		"source": "'L’italia in nero', Report on the underground economy created by the Eurispes and San Pio V in Rome"	
 	},
 	"choices": [
 		{
-			"title": "Lavapiatti",
-			"button": "Lavapiatti",
-			"text": "La paga è bassa, ma il lavoro è poco faticoso e ti lascia il tempo di cercare un impiego in regola.",
+			"title": "Dish washer",
+			"button": "Dish washer",
+			"text": "The pay is low, but the work isn’t hard and leaves you little time to look for a regular job.",
 			"happiness": -500,
 			"money": 400,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai scelto il lavoro che ti porta via meno tempo ma hai paura che i soldi non ti basteranno."
+				"text": "You chose the job that takes you away less time but you are afraid that the money will not be enough."
 			}
 		},
 		{
-			"title": "Facchino",
-			"button": "Facchino",
-			"text": "È una mansione abbastanza pesante, ma la paga è discreta.",
+			"title": "Porter",
+			"button": "Porter",
+			"text": "It is a pretty heavy task but the wage is fair.",
 			"happiness": -550,
 			"money": 500,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai cercato di fare una scelta equilibrata, trovando una via di mezzo tra guadagno e fatica."
+				"text": "You tried to do a balanced choice between earnings and labour."
 			}
 		},
 		{
-			"title": "Manovale",
-			"button": "Manovale",
-			"text": "Tra i mestieri che puoi trovare è quello pagato meglio ma è faticoso e pericoloso.",
+			"title": "Manual worker",
+			"button": "Manual worker",
+			"text": "Among the jobs that you can find is that paid better but it is hard and dangerous.",
 			"happiness": -600,
 			"money": 600,
 			"conseguence": {
 				"type": "normal",
-				"text": "Il lavoro è pagato meglio degli altri, ma il cantiere non rispetta le norme di sicurezza e sei sempre preoccupato di farti male."
+				"text": "The work is paid better than others, but the site does not comply with the safety rules and you're always worried about hurting yourself."
 			}
 		}
 	]
 },{
-	"title": "La scelta della casa",
-	"text": "Devi trovare un posto dove vivere nella nuova città . Che soluzione scegli?",
+	"title": "House rental choice",
+	"text": "You have to find a place to live in the new city. Which solution you choose?",
 	"theme": "casa",
 	"report": {
 			"img": "casa.png",
-			"text": "Due ricercatori dell’Università di Modena e Reggio Emilia si sono finti stranieri per cercare una casa in affitto. Così facendo, un proprietario su cinque si è rifiutato di affittargli casa.",
+			"text": "Two researchers at the University of Modena and Reggio Emilia pretended to be foreigners to look for a house for rent. In so doing, an owner out of five refused to rent them  the house.",
 			"source": "Ethnic discrimination in the Italian rental housing market, Massimo Baldini e Marta Federici, CAPP, 2010"	
 		},
 	"choices":
 	[
 		{
-			"title": "Stanza singola",
-			"button": "Una stanza singola",
-			"text": "È una spesa consistente e dovrai dividere la casa, ma avrai la tua indipendenza.",
+			"title": "Single room",
+			"button": "A single room",
+			"text": "It is a large expense, and you will need to share the house, but you will have your freedom.",
 			"happiness": 350,
 			"money": -400,
 			"conseguence": {
-				"text": "Hai una stanza tutta tua e sei felice. Ma ora dovrai stare molto attento ai soldi.",
+				"text": "You have your own room and you are happy. But now you will have to be very careful of money.",
 
 				"type": "trap",
-				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ora devi trovare un'altra sistemazione, ma ti arrabbi per questa ingiustizia. Perdi 50 punti.",
+				"trapText": "When you phone to ask questions, they hear your accent and tell you that they do not intend to rent to immigrants. Now you have to find another place, but you get angry at this injustice. Lose 50 points.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
 		},
 		{
-			"title": "Stanza condivisa",
-			"button": "Una stanza condivisa",
-			"text": "Scegli il posto meno caro, ma dovrai dividere i tuoi spazi.",
+			"title": "Shared room",
+			"button": "A shared room",
+			"text": "You choose the cheapest place but you have to share your space.",
 			"happiness": 150,
 			"money": -250,
 			"conseguence": {
-				"text": "Hai scelto di spendere meno: lo spazio è limitato ma i coinquilini sono simpatici.",
+				"text": "You chose to spend less: space is limited but roommates are nice.",
 
 				"type": "trap",
-				"trapText": "Quando telefoni per chiedere informazioni, sentono il tuo accento straniero e ti dicono che non intendono affittare a extracomunitari. Ora devi trovare un'altra sistemazione, ma ti arrabbi per questa ingiustizia. Perdi 50 punti.",
+				"trapText": "When you phone to ask questions, they hear your accent and tell you that they do not intend to rent to immigrants. Now you have to find another place, but you get angry at this injustice. Lose 50 points.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
 		},
 		{
-			"title": "Ospite da un amico",
-			"button": "Ospite da un amico",
-			"text": "Non paghi l’affitto, ma ti dispiace dipendere dalla generosità di un altro.",
+			"title": "At friends’ home",
+			"button": "At friends’ home",
+			"text": "You do not pay the rent, but you mind depend on the generosity of another",
 			"happiness": -150,
 			"money": 0,
 			"conseguence": {
-				"text": "Paghi solo le spese, ma ti senti comunque un peso.",
+				"text": "You bear only the expenses but you feel like a burden.",
 				"type": "trap",
-				"trapText": "Il padrone di casa non vuole extracomunitari e si lamenta con il tuo amico, che a malincuore ti chiede di andare via. Ora devi trovare un'altra sistemazione, ma ti arrabbi per questa ingiustizia. Perdi 50 punti.",
+				"trapText": "The house owner does not want Non- EU nationals and complains with your friend, who reluctantly asks you to leave. Now you have to find another place, but you get angry about this injustice. Lose 50 points.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
 		}
 	]
 },{
-	"title": "La mazzetta",
-	"text": "Il tuo superiore ti chiede 50€ per metterti sotto la sua ala protettiva. Cosa fai?",
+	"title": "Bribe",
+	"text": "Your boss asks you 50 Euros in order to put you under his protective wing, what do you do?",
 	"theme": "mazzetta",
 	"report": {
 		"img": "mazzetta.png",
-		"text": "A partire dal settembre 2011 è stato introdotto nel codice penale italiano il nuovo reato di intermediazione illecita e sfruttamento del lavoro. Le pene previste per i cosiddetti “caporali” sono la reclusione da cinque a otto anni e una multa da 1.000 a 2.000 € per ogni lavoratore coinvolto.",
-		"source": "Codice Penale"	
+		"text": "Starting in September 2011, it was introduced in the Italian penal code  a new illicit brokering and labour exploitation crime. Penalties provided for so-called *bosses* are imprisonment from five to eight years and a fine ranging from 1,000 to 2,000 € per every worker involved.",
+		"source": "Italian penal code"	
 	},
 	"choices": [
 		{
-			"title": "Paghi",
-			"button": "Paghi",
-			"text": "Cedi a malincuore, perché lo temi.",
+			"title": "Pay",
+			"button": "Pay",
+			"text": "You give up to his behaviour because you’re afraid of him.",
 			"happiness": -50,
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "Ottieni subito l'impiego che ti serve, ma hai dovuto sacrificare la tua dignità di lavoratore."
+				"text": "You get immediately what you need, but you had to sacrifice your dignity as a worker."
 			}
 		},
 		{
-			"title": "Ti rifiuti",
-			"button": "Ti rifiuti",
-			"text": "Non vuoi cedere al ricatto, e rifiuti orgogliosamente.",
+			"title": "Refuse",
+			"button": "Refuse",
+			"text": "You don’t want to surrender to his blackmail and you proudly refuse.",
 			"happiness": 10,
 			"money": 0,
 			"conseguence": {
 				"type": "random",
-				"waitingText": "Non sai se la tua azione porterà delle conseguenze...",
+				"waitingText": "You don’t know if your action would bring consequences...",
 				"cases": [
 					{
 						"probability": 50,
@@ -135,7 +135,7 @@
 						"money": 0,
 						"stop": false,
 						"class": "bad",
-						"text": "L'uomo che non hai pagato riesce a danneggiarti. Ti mette i turni peggiori. Perdi 130 punti."
+						"text": "The man you didn’t pay manages to put you in the worst shifts. You lose 130 points."
 					},
 					{
 						"probability": 50,
@@ -143,89 +143,89 @@
 						"money": 0,
 						"stop": false,
 						"class": "good",
-						"text": "Il suo era solo un bluff. Sei contento di non esserti fatto intimidire, e guadagni altri 10 punti."
+						"text": "His request was just a bluff. You are glad you did not get intimidated, and gain another 10 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "Chiama i tuoi",
-	"text": "Quando eri a casa di tua sorella chiamavate i vostri genitori in Nigeria dal telefono di casa. Come comunichi ora?",
+	"title": "Call your parents",
+	"text": "When you were at your sister's house, you called your parents in Nigeria from your home phone. How do you communicate now?",
 	"theme": "nostalgia",
 	"report": {
 			"img": "telefono.png",
-			"text": "Per l'economia italiana, il mercato della telefonia rivolta a stranieri, vale oltre un miliardo di euro all'anno.",
+			"text": "For the Italian economy, the phone market aimed at foreigners is worth more than a billion Euros a year.",
 			"source": "Il Sole 24 ore, 2010"	
 		},
 	"choices":
 	[
 		{
-			"title": "Cellulare e SIM card",
-			"button": "Cellulare e SIM card",
-			"text": "È una spesa alta, ma puoi sentire i tuoi ogni volta che vuoi.",
+			"title": "Mobile phone and simcard",
+			"button": "Mobile phone and simcard",
+			"text": "It’s a high expense but you can call your parents anytime you want.",
 			"happiness": 200,
 			"money": -200,
 			"conseguence": {
 				"type": "trap",
-				"trapText": "Non avendo il permesso di soggiorno, non hai i documenti per fare un contratto telefonico. La sensazione di ingiustizia ti fa perdere 50 punti.",
+				"trapText": "You don’t have a permit of stay, so you do not have the documents to make a phone contract. The feeling of injustice makes you lose 50 points.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
 		},
 		{
-			"title": "Scheda Telefonica",
-			"button": "Scheda telefonica",
-			"text": "La spesa è limitata, ma non riesci a parlare con i parenti quanto vorresti...",
+			"title": "International phone card",
+			"button": "International phone card",
+			"text": "The expense is limited, but you can’t talk with relatives as much as you would...",
 			"happiness": 40,
 			"money": -120,
 			"conseguence": {
 				"type": "normal",
-				"text": "Risparmi un po', ma ti dispiace non essere sempre raggiungibile dai tuoi genitori."
+				"text": "You save a bit', but would you’re sorry for not always be reachable from your parents."
 			}
 		},
 		{
 			"title": "Call center",
 			"button": "Call Center",
-			"text": "La spesa è ridotta al minimo, ma anche i contatti con i tuoi.",
+			"text": "The expense is reduced to a minimum, but also the contacts with your family.",
 			"happiness": -50,
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "La spesa è minima, ma riesci a chiamare raramente i tuoi e per questo ti senti in colpa."
+				"text": "The expense is reduced to a minimum but you rarely manage to call your parents and you feel guilty about it."
 			}
 		}
 	]
 },{
-	"title": "Battuta razzista",
-	"text": "Al lavoro il tuo capo ti chiama usando un nomignolo razzista. Cosa fai?",
+	"title": "The racist joke",
+	"text": "At work, your boss calls you using a racist epithet. What do you do?",
 	"theme": "boss",
 	"report": {
 			"img": "battuta.png",
-			"text": "Commette discriminazione […] Il datore di lavoro che [compie] qualsiasi atto o comportamento che produca un effetto pregiudizievole discriminando anche indirettamente i lavoratori in ragione della loro appartenenza a una razza.",
-			"source": "art 43 comma 2e Dlgs 286/1998"	
+			"text": "According to Italian laws, commits discrimination [...] the employer that [carries] any act or conduct which produces a harmful effect even indirectly discriminating against workers because of their belonging to a race.",
+			"source": "Second paragraph of Article 43 of Legislative Decree 286/1998"	
 		},
 	"choices": [
 		{
-			"title": "Fai finta di niente",
-			"button": "Fai finta di niente",
-			"text": "Preferisci non avere problemi col tuo capo, ma sei ferito nell'orgoglio.",
+			"title": "Acts as nothing happened",
+			"button": "Acts as nothing happened",
+			"text": "You prefer not to have problems with your boss, but you're wounded pride.",
 			"happiness": -60,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "La giornata lavorativa si conclude come tutte le altre. Ma quell'insulto ti rimane dentro e non aver reagito ti avvilisce."
+				"text": "The workday ends as all the others. But the insult is still there and not having react make you get depressed."
 			}
 		},
 		{
-			"title": "Lo affronti",
-			"button": "Lo affronti",
-			"text": "Prendere posizione ti rende più orgoglioso di te.",
+			"title": "Face him",
+			"button": "Face him",
+			"text": "Taking a stand on this makes you proud.",
 			"happiness": 30,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Puoi camminare a testa alta, hai saputo reagire con carattere. Ma i tuo capo ti convoca nel suo ufficio...",
+				"waitingText": "You can walk with your head held high; you are able to react with character. But your boss calls you into his office...",
 				"cases": [
 					{
 						"probability": 40,
@@ -233,7 +233,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "Il capo non vuole passare per razzista. Ma se la lega al dito e da quel momento comincia ad assegnarti i compiti più faticosi. Perdi 80 punti."
+						"text": "The boss doesn’t want to be taken for a racist/ to be called racist. But he bears a grudge against you and from that moment begins to assign you the hardest tasks. Lose 80 points."
 					},
 					{
 						"probability": 60,
@@ -241,45 +241,45 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Il capo ti capisce e si scusa sinceramente. Guadagni 10 punti."
+						"text": "The boss understands you and apologises sincerely. Earn 10 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "L'autobus",
-	"text": "Il lavoro che hai trovato è lontano da casa e devi prendere l'autobus. Cosa scegli di fare?",
+	"title": "The bus",
+	"text": "The work that you got is far from home and you have to take the bus. What do you choose to do?",
 	"theme": "controllore",
 	"report": {
 			"img":"autobus.png",
-			"text": "Le famiglie con stranieri che non hanno denaro a sufficienza per i trasporti, sono quasi il doppio di quelle composte da soli italiani: 15,3% contro l’8,1%.",
-			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
+			"text": "Families with foreigners who do not have enough money for transport, are almost double compared to those made ​​up of only Italians: 15.3% VS 8.1%.",
+			"source": "The families with foreigners: indicators of economic hardship, 2009 ISTAT"	
 		},
 	"choices": [
 		{
-			"title": "Fai l'abbonamento",
-			"button": "Fai l'abbonamento",
-			"text": "È una spesa fissa, ma puoi usare l'autobus anche per uscire la sera.",
+			"title": "You get a public transport pass",
+			"button": "You get a public transport pass",
+			"text": "It is a fixed fee, but you can also use the bus to go out at night.",
 			"happiness": 100,
 			"money": -50,
 			"conseguence": {
-				"text": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai. La sensazione di ingiustizia ti fa perdere 50 punti.",
+				"text": "In order to get the public transport pass you’re asked for the documents and you don’t have them as illegal immigrant. The feeling of injustice makes you lose 50 points.",
 				"type": "trap",
-				"trapText": "Per fare l'abbonamento ti chiedono i documenti e tu come clandestino non li hai. La sensazione di ingiustizia ti fa perdere 50 punti.",
+				"trapText": "In order to get the public transport pass you’re asked for the documents and you don’t have them as illegal immigrant. The feeling of injustice makes you lose 50 points.",
 				"trapHappiness": -50,
 				"trapMoney": 0
 			}
 		},
 		{
-			"title": "Usi un trucco",
-			"button": "Usi un trucco",
-			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri anche se ti senti in colpa.",
+			"title": "Use a trick",
+			"button": "Use a trick",
+			"text": "You buy some bus tickets but, as you see others doing, you not always stamp it even if you feel guilty.",
 			"happiness": -20,
 			"money": 20,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "È salito il controllore!",
+				"waitingText": "Ticket inspector is on the bus!",
 
 				"cases": [
 					{
@@ -288,7 +288,7 @@
 						"money": -100,
 						"stop": false,
 						"class": "bad",
-						"text": "È salito il controllore che punta subito te per il tuo aspetto. Ti fa la multa di 100euro."
+						"text": "The inspector is on the bus and immediately point at you because of your appearance and give you a 100 euro fee."
 					},
 					{
 						"probability": 70,
@@ -296,54 +296,54 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "È salito il controllore ma riesci a scendere dall'autobus appena in tempo. Una signora ti ha visto e commenta «Gli stranieri non pagano mai». Ti vergogni di aver avvalorato un pregiudizio e perdi 10 punti."
+						"text": "The inspector is on the bus but you can get off just in time. A lady see you and says —Foreigners never pay. You feel ashamed to have confirm a prejudice and you lose 10 points."
 					}
 				]
 			}
 		},	
 		{
-			"title": "Compri i biglietti",
-			"button": "Compri i biglietti",
-			"text": "Spendi molto, ma sei sicuro.",
+			"title": "Buy bus tickets",
+			"button": "Buy bus tickets",
+			"text": "You spend a lot, but you are safe.",
 			"happiness": 0,
 			"money": -80,
 			"conseguence": {
 				"type": "normal",
-				"text": "L'acquisto di tutti quei biglietti col tempo si fa sentire sul tuo budget."
+				"text": "The purchase of all those tickets in time is getting more and more heavy on your budget."
 			}
 		}
 	]
 },{
-	"title": "La mamma preoccupata",
-	"text": "È sera, in una strada buia incroci una mamma con un bambino. Quando ti vede, lo tira vicino a sé con sguardo preoccupato. Come reagisci?",
+	"title": "The worried mother",
+	"text": "It is night, in dark street you come across a mother with a child. When she sees you, she pulls her child close with a worried look. How do you react?",
 	"theme": "bambino",
 	"report": {
 			"img":"immigrazione.png",
-			"text": "Dal 1990 al 2003 il numero di permessi di soggiorno è aumentato del 400%, mentre il numero di reati ha avuto una lieve flessione.",
-			"source": "“Immigrazione e crimine” studio pubblicato dalla Banca d’Italia e realizzato da Milo Bianchi, Paolo Buonanno e Paolo Pinotti"	
+			"text": "From 1990 to 2003, the number of permits stay has increased by 400%, while the number of crimes has been a slight decline.",
+			"source": "“Immigration and Crime” study published by the Bank of Italy and produced by Milo Bianchi, Paolo Buonanno and Paolo Pinotti"	
 		},
 	"choices":
 	[
 		{
-			"title": "Prosegui",
-			"button": "Prosegui",
-			"text": "Fai finta di niente per evitare discussioni",
+			"title": "Go on",
+			"button": "Go on",
+			"text": "You act as nothing happened",
 			"happiness": -50,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Ti ha fatto male sentirti giudicato male solo perchè sei di colore, soprattutto perchè pensi che anche il bambino crescerà  con gli stessi pregiudizi."
+				"text": "To be treated in that way just because of your skin colour hurts your feeling especially because you think that the child will grow up with the same prejudice."
 			}
 		},
 		{
-			"title": "Ti fermi a parlarle",
-			"button": "Ti fermi a parlarle",
-			"text": "Le spieghi orgogliosamente che che non sei un criminale solo per il colore della tua pelle.",
+			"title": "You stay and speak to her",
+			"button": "Speak to her",
+			"text": "You proudly explain to her that you're not a criminal just for the colour of your skin.",
 			"happiness": 10,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "La donna ti lancia uno sguardo preoccupato...",
+				"waitingText": "The woman casts you a worried glance...",
 
 				"cases": [
 					{
@@ -352,7 +352,7 @@
 						"money": -70,
 						"stop": false,
 						"class": "bad",
-						"text": "Appena hai aperto bocca, la donna si è spaventata e ti ha spruzzato con uno spray al peperoncino. Il giorno dopo non sei riuscito ad andare a lavoro. Perdi 70€."
+						"text": "As soon as you open your mouth, the woman frightened  shots pepper spray in your eyes . The next day you're not able to go to work. Lose € 70."
 					},
 					{
 						"probability": 30,
@@ -360,42 +360,42 @@
 						"money": 0,
 						"stop": false,
 						"class": "good",
-						"text": "La donna ti ha ascoltato e si è scusata. Senti di aver fatto qualcosa di buono per tutti gli stranieri. Guadagni 20 punti."
+						"text": "The woman listens to you and apologises. You feel you have done something good for all foreigners and earn 20 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "L'infortunio sul lavoro",
-	"text": "Il posto dove lavori non rispetta le norme sulla sicurezza. Un giorno cadi e ti fai male ad una gamba. Cosa fai?",
+	"title": "The job injury ",
+	"text": "The place where you work does not comply with safety regulations. One day you fall and come to a grief in the leg. What do you do?",
 	"theme": "infortunio",
 	"report": {
 			"img":"infortuni.png",
-			"text": "Gli stranieri in Italia sono l'8,6 della popolazione ma sono vittime del 15,9% degli infortuni sul lavoro nel 2012.",
+			"text": " Foreigners in Italy are 8.6% of the population but 15.9% are victims of workplace accidents in 2012.",
 			"source": "Dossier immigrazione 2012"	
 		},
 	"choices": [
 		{
-			"title": "Continui a lavorare",
-			"button": "Continui a lavorare",
-			"text": "Fai finta di niente per non sembrare uno che crea problemi, ma devi sopportare il dolore.",
+			"title": "Keep on working",
+			"button": "Keep on working",
+			"text": "You act as nothing happens in order to avoid being a troublemaker, but you have to bear the pain.",
 			"happiness": -70,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai continuato a lavorare nonostante il dolore per non correre rischi, ma avresti preferito stare a casa."
+				"text": "You have continued to work despite the pain not to take risks, but you'd rather stay at home."
 			}
 		},
 		{
-			"title": "Vai a casa",
-			"button": "Vai a casa",
-			"text": "Salti un giorno di lavoro: basterà a farti passare il dolore.",
+			"title": "Go home",
+			"button": "Go home",
+			"text": "Missing a day of work will be enough to get you through the pain.",
 			"happiness": 10,
 			"money": 0,
 			"conseguence":{
 				"type": "random",
-				"waitingText": "Quando torni, il capo manda a chiamare...",
+				"waitingText": "When you come back, the boss asks for you...",
 				"cases": [
 					{
 						"probability": 50,
@@ -403,7 +403,7 @@
 						"money": -100,
 						"stop": false,
 						"class":"bad",
-						"text": "Il capo ti dice che la tua assenza è stata un problema e ti tratterrà 100 euro dallo stipendio. Sai che è contro la legge, ma come clandestino non sei tutelato."
+						"text": "The boss tells you that your absence was a problem and we will hold 100 Euros from the salary. You know it's against the law, but you are not protected."
 					},
 					{
 						"probability": 50,
@@ -411,42 +411,42 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Il tuo datore di lavoro ti chiede come stai ed è contento di sapere che sei guarito. Le sue parole ti fanno sentire apprezzato e guadagni 20 punti."
+						"text": "Your employer asks you how you are and is glad to know that you recovered . His words make you feel appreciated and you earn 20 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "Colazione al bar",
-	"text": "Nel bar dove fai colazione con i colleghi, ti accorgi che sei l'unico a cui danno il cappuccino in un bicchiere di plastica invece che nella tazza. Come reagisci?",
+	"title": "Breakfast at the coffee shop",
+	"text": "At the coffee shop where you have breakfast with your colleagues, you realize that you're the only one who receives a cappuccino in a plastic glass. How do you react?",
 	"theme": "cappuccino",
 	"report": {
 			"img":"pillole.png",
-			"text": "Non ci sono differenze particolarmente significative circa le patologie riscontrate nei cittadini stranieri irregolari e nei pazienti italiani.",
-			"source": "Rapporto NAGA sulle malattie degli immigrati irregolari, ottobre 2009"	
+			"text": "There are no particularly significant differences about the diseases found between the Italian citizens and irregular foreigners.",
+			"source": "NAGA Report on diseases of irregular migrants, October 2009"	
 		},
 	"choices": [
 		{
-			"title": "Fai finta di niente",
-			"button": "Fai finta di niente",
-			"text": "È il bar più economico e il più vicino al lavoro: non vuoi avere problemi ma ti senti diverso dagli altri.",
+			"title": "Act as if nothing happened",
+			"button": "Act as if nothing happened",
+			"text": "It's the cheapest coffee shop and closer one to work: you do not want to have problems but you feel to be different from others.",
 			"happiness": -60,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Sei stato zitto, ma ogni giorno, quel cappuccino ha il sapore della discriminazione."
+				"text": "You’ve been quiet, but every day, the cappuccino has the discrimination flavour."
 			}
 		},
 		{
-			"title": "Protesti",
-			"button": "Protesti",
-			"text": "Alzi la voce e chiedi di essere trattato come tutti.",
+			"title": "Protest",
+			"button": "Protest",
+			"text": "You loudly ask to be treated like others.",
 			"happiness": 10,
 			"money": 0,
 			"conseguence": {
 				"type": "random",
-				"waiting text": "Ora devi affrontare la sua reazione...", 
+				"waiting text": "Now you have to face his reaction...", 
 				"cases": [
 					{
 						"probability": 70,
@@ -454,7 +454,7 @@
 						"money": -50,
 						"stop": false,
 						"class":"bad",
-						"text": "Il proprietario si arrabbia e ti caccia. Vorresti denunciarlo ma come clandestino non puoi. Da oggi dovrai andare in un altro bar più caro, più lontano e da solo. Perdi 50€ e 50 punti."
+						"text": "The owner gets angry and chases you away. You would like to denounce him but as a illegal immigrant, you can’t. From now on you will need to go by yourself to a more expensive coffee shop, far from your workplace. You lose € 50 and 50 points."
 					},
 					{
 						"probability": 30,
@@ -462,37 +462,37 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Il proprietario rimprovera il barista e si scusa con te. Da oggi sarai servito come gli altri."
+						"text": "The owner scolds the bartender and apologises to you. From today you will be served like any other."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "L'insulto ad un altro",
-	"text": "Camminando per strada senti un ragazzo che insulta una donna cinese per il colore della sua pelle. Cosa fai?",
+	"title": "The insult to another",
+	"text": "Walking on the street you hear a guy who insults a Chinese woman by the colour of his skin. What do you do?",
 	"theme": "cinese",
 	"report": {
 			"img":"unar.png",
-			"text": "Se sei vittima o testiomone di comportamenti discriminatori nei confronti di terzi, contatta il Numero Verde UNAR 800901010",
-			"source": "oppure visita il sito web www.unar.it"	
+			"text": "If you are a victim or witness discriminatory conduct against third parties, please contact our toll free UNAR 800901010",
+			"source": "or visit the website www.unar.it"	
 		},
 	"choices": [
 		{
-			"title": "Tiri dritto",
-			"button": "Tiri dritto",
-			"text": "Non vuoi avere rogne, ma così volti le spalle a chi ha i tuoi stessi problemi.",
+			"title": "Go on",
+			"button": "Go on",
+			"text": "You do not want trouble, but in doing so you turn you’re back to those who have your same problems.",
 			"happiness": -50,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "La tua giornata scorre tranquilla, ma lo sguardo della donna che non ti sei fermato ad aiutare ti rimane dentro e ti fa sentire in colpa."
+				"text": "Your day goes on quietly, but you cannot forget the look of the woman that you didn’t help and that makes you feel guilty."
 			}
 		},
 		{
-			"title": "Intervieni",
-			"button": "Intervieni",
-			"text": "Ti fermi e lo affronti, vuoi difendere chi è nella tua stessa condizione.",
+			"title": "Stop and speak to him",
+			"button": "Stop and speak to him",
+			"text": "You stop and confront him; you want to defend those who are in your same condition.",
 			"happiness": 10,
 			"money": 0,
 			"conseguence": {
@@ -504,7 +504,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Il ragazzo abbassa lo sguardo e se ne va. La donna cinese ti sorride e ti ringrazia. Guadagni 20 punti"
+						"text": "The boy looks down and goes away. The Chinese woman smiles at you and thanks you. Earn 20 points."
 					},
 					{
 						"probability": 30,
@@ -512,7 +512,7 @@
 						"money": -1000,
 						"stop": true,
 						"class":"bad",
-						"text": "Il ragazzo insulta anche te e cominciate a litigare. Le urla attirano l'attenzione di una pattuglia. Vieni identificato come clandestino e espulso dall'Italia."
+						"text": "The boy also insults you and you begin to quarrel. The screams attract the attention of a patrol. You are identified as irregular immigrant and expelled from Italy."
 					}
 				]
 			}

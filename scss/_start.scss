@@ -66,6 +66,16 @@
     }
 }
 
+.init-logo {
+    display:none;
+    @media #{$medium-up} {
+        display:block;
+        width:rem-calc(150);
+        position:absolute;
+        bottom:1rem;
+        right:1rem;
+    }
+}
 
 
 

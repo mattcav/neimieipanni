@@ -13,7 +13,7 @@
      <meta property="og:image" content=""/>
 
 
-    <title>Nei miei panni - Play</title>
+    <title>Nei miei panni - In my shoes - Play</title>
 
         <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="../images/devices/favicon.png">
@@ -41,12 +41,12 @@
         <div class="istruzioni__inner">
             <h2 class="istruzioni__title">Welcome!</h2>
             <p class="istruzioni__text">
-                Play with {{ playerName }} ten dieci situazioni della vita di tutti i giorni.
+                Play with {{ playerName }} ten situations of everyday life.
             </p>
             <p class="istruzioni__text">
-                Per vincere il gioco devi tenere d'occhio due parametri: i soldi che hai in tasca e i punti che rappresentano il tuo benessere, sia fisico che psicologico. Se anche uno solo dei due parametri scende sotto lo zero, hai perso.
+                To win the game you have to keep an eye on two parameters: the money you have in your pocket and the points that represent your well-being, both physical and psychological. If even one of the two parameters falls below zero, you lose. 
             </p>
-            <button id="go-to-game" class="istruzioni__button" data-ng-click="fadeOutClass='fade-out'">ok, let's start!</button>
+            <button id="go-to-game" class="istruzioni__button" data-ng-click="fadeOutClass='fade-out'">Ok, let's start!</button>
         </div>
     </div>
     <img class="figure" alt="sfondo" data-interchange="[../images/background/benjamin/lavoro_s.png, (default)]">
@@ -92,7 +92,7 @@
                         <p class="helper-buttons__text ng-binding">{{ helper.text }}</p>
                         
                         <button class="helper-buttons__button" data-ng-disabled="helper.disabled" data-ng-click="openHelper($index)" id="helper-1-call">
-                            <span class="show-for-small-only">DAI</span>
+                            <span class="show-for-small-only">GIVE</span>
                             <span class="hide-for-small-only ng-binding">{{ helper.title }}</span>
                         </button>
                     </div>
@@ -147,7 +147,7 @@
 
                             <section id="scelta-buttons" class="scelta__buttons">
 
-                                <button class="back-to-scena" data-ng-click="ui.closeChoice()">Indietro</button>
+                                <button class="back-to-scena" data-ng-click="ui.closeChoice()">Back</button>
                                 <button id="go-thru" data-ng-click="getConseguence()">OK</button>
                             </section>
 
@@ -170,7 +170,7 @@
                 <!-- VARIAZIONE block -->
                 <article id="variazione" class="dialog dialog--variazione" data-variazione>
                     <div class="dialog__inner dialog--variazione__inner">
-                        <h2 class="dialog__title">I tuoi punteggi</h2>
+                        <h2 class="dialog__title">Your scores</h2>
                         <div class="variazione__block">
                             <section id="e-variazione" class="variazione__cube">
                                 <span id="e-fattore" class="variazione__item fattore">{{ variazione.money.delta }}</span>
@@ -191,7 +191,7 @@
                 <!-- STATISTICHE block -->
                 <article id="stats" class="dialog dialog--stats" data-report>
                     <div class="dialog__inner">
-                        <img class="stat-img" data-ng-src="../images/stats/{{ scene.report.img }}" alt="">
+                        <img class="stat-img" data-ng-src="/en/images/stats/{{ scene.report.img }}" alt="">
                         <p class="dialog__title dialog--stats__text">{{ scene.report.text }}</p>
                         <hr>
                         <p class="dialog--stats__src">{{ scene.report.source }}</p>
@@ -205,7 +205,7 @@
                 <!-- RISK message block -->
                 <article id="risk" class="dialog dialog--risk" data-risk>
                     <div class="dialog__inner dialog__inner--risk">
-                        <h2 class="dialog__title">Rischio!</h2>
+                        <h2 class="dialog__title">Risk!</h2>
 
                         <p class="dialog__text">{{ conseguence.waitingText }}</p>
 
@@ -241,7 +241,7 @@
 
                 <section class="scelta__buttons">
                     
-                    <button class="helper__back back-to-scena" data-ng-click="closeHelp()"> indietro</button>
+                    <button class="helper__back back-to-scena" data-ng-click="closeHelp()"> back</button>
                     <button class="helper__go" id="go-thru-1" data-ng-click="useHelp()">ok</button>
                 </section>
                 
@@ -252,7 +252,7 @@
         <!-- helper modal variation -->
         <article id="h-variazione" class="dialog dialog--variazione dialog--variazione-help">
             <div class="dialog__inner dialog--variazione__inner dialog--variazione-help__inner">
-                <h2 class="dialog__title">I tuoi punteggi</h2>
+                <h2 class="dialog__title">Your scores</h2>
                 <div class="variazione__block">
                     <section id="h-e-variazione" class="variazione__cube">
                         <span id="h-e-fattore" class="variazione__item fattore">{{ variazione.money.delta }}</span>
@@ -271,22 +271,7 @@
         </article> 
     </div>
 
-
-
-      <!-- <script src="../js/analytics.js"></script>
-      <script src="../bower_components/jquery/dist/jquery.js"></script>
-      <script src="../bower_components/foundation/js/foundation.min.js"></script>
-      <script src="../bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
-      <script src="../bower_components/foundation/js/foundation/foundation.interchange.js"></script>
-      <script src="../js/app.js"></script>
-
-      <script src="../bower_components/angular/angular.min.js"></script>
-      <script src="../js/appConfig.js"></script>
-      <script src="../js/appServices.js"></script>
-      <script src="../js/appControllers.js"></script>
-      <script src="../js/appDirectives.js"></script>
-      <script src="../js/appFilters.js"></script> -->
-     <script src="../js/build/app.anno.min.js"></script> 
+    <script src="../js/build/en-app.anno.min.js"></script> 
 
 </body>
 </html>

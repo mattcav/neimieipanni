@@ -1,89 +1,89 @@
 [	{
-		"title": "La scelta della casa",
-		"text": "Per frequentare l’università hai cambiato città, ora ti serve un posto dove stare. Cosa cerchi?",
+		"title": "House rental choice",
+		"text": "To attend college in town, you need a place to stay. What are you looking for?",
 		"theme": "casa",
 		"report": {
 			"img": "casa.png",
-			"text": "Due ricercatori dell’Università di Modena e Reggio Emilia si sono finti stranieri per cercare una casa in affitto. Così facendo, un proprietario su cinque si è rifiutato di affittargli casa.",
+			"text": "Two researchers at the University of Modena and Reggio Emilia pretended to be foreigners to look for a house for rent. In so doing, an owner out of five refused to rent them  the house.",
 			"source": "Ethnic discrimination in the Italian rental housing market, Massimo Baldini e Marta Federici, CAPP, 2010"
 		},
 		"choices": [
 			{
-				"title": "Monolocale",
-				"button": "Monolocale",
-				"text": "È sempre stato il tuo sogno essere indipendente, ma è la scelta più cara.",
+				"title": "Studio",
+				"button": "Studio",
+				"text": "It's always been your dream to be independent, but it is the most expensive option.",
 				"happiness": 500,
 				"money": -600,
 				"conseguence": {
-					"text": "Dovrai stare molto attento ai soldi, ma sei contentissimo di vivere da solo.",
+					"text": "You'll have to be very careful with money, but you're happy to live by yourself.",
 
 					"type": "trap",
-					"trapText": "L'agente immobiliare, che al telefono era gentilissimo, quando ti vede arrivare cambia espressione e dice che preferisce presentare ai proprietari “inquilini italiani”. Ti senti discriminato, e perdi 50 punti.",
+					"trapText": "The real estate agent that at the phone was very kind, in seeing you coming changes his expression and says he prefers to present to the owners, Italian tenants only. You feel discriminated against, and you lose 50 points.",
 					"trapHappiness": -50,
 					"trapMoney": 0
 				}
 			},
 			{
-				"title": "Stanza singola",
-				"button": "Stanza singola",
-				"text": "Risparmi qualcosa rispetto al monolocale, ma hai comunque uno spazio tuo.",
+				"title": "Single Room",
+				"button": "Single Room",
+				"text": "You manage to save something compared to the studio, but you still have your space.",
 				"happiness": 280,
 				"money": -400,
 				"conseguence": {
-					"text": "È comunque una bella soddisfazione avere una stanza tutta per te, anche se vivrai con degli estranei.",
+					"text": "It is a great satisfaction to have a room by yourself, even if you live with strangers.",
 
 					"type": "trap",
-					"trapText": "L'agente immobiliare, che al telefono era gentilissimo, quando ti vede arrivare cambia espressione e dice che preferisce presentare ai proprietari “inquilini italiani”. Ti senti discriminato, e perdi 50 punti.",
+					"trapText": "The real estate agent that at the phone was very kind, when sees you coming changes expression and says he prefers to present to the owners, Italian tenants only. You feel discriminated against, and you lose 50 points.",
 					"trapHappiness": -50,
 					"trapMoney": 0
 				}
 			},
 			{
-				"title": "Stanza condivisa",
-				"button": "Stanza condivisa",
-				"text": "Hai scelto di risparmiare, ma non sarai davvero indipendente e dovrai convivere con degli estranei.",
+				"title": "Shared Room",
+				"button": "Shared Room",
+				"text": "You have chosen to save money, but you will not be truly independent and will have to live with strangers.",
 				"happiness": 100,
 				"money": -250,
 				"conseguence": {
-					"text": "Hai risolto il problema dell'alloggio con la spesa più bassa, ma ora dovrai affrontare qualche difficoltà nella convivenza.",
+					"text": "You have solved the housing problem with spending lower, but now you will face some difficulties in living together.",
 
 					"type": "trap",
-					"trapText": "L'agente immobiliare, che al telefono era gentilissimo, quando ti vede arrivare cambia espressione e dice che preferisce presentare ai proprietari “inquilini italiani”. Ti senti discriminato, e perdi 50 punti.",
+					"trapText": "The real estate agent that at the phone was very kind, when sees you coming changes expression and says he prefers to present to the owners, Italian tenants only. You feel discriminated against, and you lose 50 points.",
 					"trapHappiness": -50,
 					"trapMoney": 0
 				}
 			}
 		]
 },{
-	"title": "Battuta razzista",
-	"text": "Nell’atrio dell’università un ragazzo, pensando che tu non capisca l’italiano, dice ad una ragazza che invece che lì dovresti stare a cucinare gatti fingendo che siano pollo. Come reagisci?",
+	"title": "The racist joke",
+	"text": "In the hall of the university a boy, thinking that you do not understand Italian, tells a girl that instead of being at university you should cook cats pretending they are chicken. How do you react?",
 	"theme": "bulli",
 	"report": {
 			"img":"cibo.png",
-			"text": "Conoscete anche voi la storia del cliente di un ristorante cinese che si ritrova in una pietanza a base di carne un microchip? Basta digitare su Google il quartetto di parole “cane microchip ristorante cinese” e compare la stessa leggenda metropolitana, semplicemente con uno sfondo diverso: in un caso è ambientata a Perugia, in un altro a Vicenza e in un altro ancora a Milano.",
+			"text": "You also know the story of a Chinese restaurant client that is found in a dish a microchip? If you Just type on Google the words *dog microchip Chinese restaurant* it appears the same urban legend, just with a different background: a case takes place in Perugia, another in Vicenza and yet another in Milan.",
 			"source": "UNAR"	
 		},
 	"choices": [
 		{
-			"title": "Fingi di non aver sentito",
-			"button": "Fingi di non aver sentito",
-			"text": "Eviti problemi, ma non fai niente per fermare gli stereotipi e il razzismo.",
+			"title": "Pretend not to hear",
+			"button": "Pretend not to hear",
+			"text": "You avoid problems, but don’t do anything to stop stereotyping and racism.",
 			"happiness": -60,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "La tua giornata scorre tranquilla, ma quell'insulto ti risuona nella testa. Non hai fatto nulla per difendere le tue origini e la tua cultura. "
+				"text": "Your day goes quiet, but the insult echoes in your head. But you did not do anything to defend your origins and your culture."
 			}
 		},
 		{
-			"title": "Ti fermi e lo affronti",
-			"button": "Ti fermi e lo affronti",
-			"text": "Rispondi alla loro battuta dicendogli che se non sa distinguere un gatto da un pollo è lui che forse non dovrebbe stare all’università. ",
+			"title": "Stop and confront him",
+			"button": "Stop and confront him",
+			"text": "Answer the joke saying that if they cannot distinguish a cat from a chicken it means that maybe they shouldn’t be in college.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Sei fiero di te: hai rivelato di essere italiano, ma anche di tenere alle tue origini. Ma ora devi scoprire la reazione dei ragazzi...",
+				"waitingText": "You are proud of yourself: you revealed to be Italian, but also to give value to your origins, but now you have to find out kids’ reaction...",
 				"cases": [
 					{
 						"probability": 40,
@@ -91,7 +91,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "I ragazzi non la prendono bene, ti dicono che è meglio se impari a stare zitto e  ti minacciano. La preoccupazione ti fa perdere 100 punti."
+						"text": "The boys got upset, threaten you and say it is better for you to learn to shut up . Worries make you lose 100 points."
 					},
 					{
 						"probability": 60,
@@ -99,42 +99,42 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Stupiti dal tuo italiano perfetto e dalla tua battuta i ragazzi rimangono muti e imbarazzati. Guadagni altri 20 punti."
+						"text": "Amazed by your perfect Italian and by your smart reaction the boys stay silent and embarrassed. You earn 20 more points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "L'autobus",
-	"text": "La casa che hai trovato non è molto vicina all'univeristà, quindi dovrai prendere i mezzi pubblici ogni giorno. Cosa scegli di fare?",
+	"title": "The Bus",
+	"text": "The house that you are getting is not very close from university, and you need to take public transportation every day. What do you choose to do?",
 	"theme": "controllore",
 	"report": {
 			"img":"autobus.png",
-			"text": "Le famiglie con stranieri che non hanno denaro a sufficienza per i trasporti, sono quasi il doppio di quelle composte da soli italiani: 15,3% contro l’8,1%.",
-			"source": "Le famiglie con stranieri: indicatori di disagio economico, 2009, ISTAT"	
+			"text": "Families with foreigners who do not have enough money for transport, are almost double those made up of only Italian: 15.3% vs. 8.1%",
+			"source": "The families with foreigners: indicators of economic hardship, 2009 ISTAT"	
 		},
 	"choices": [
 		{
-			"title": "Compri la tessera mensile",
-			"button": "Compri la tessera mensile",
-			"text": "È una spesa fissa, ma puoi usare l'autobus anche per uscire la sera.",
+			"title": "You buy the monthly card",
+			"button": "You buy the monthly card",
+			"text": "This is a fixed fee, but you can also use the bus to go out at night.",
 			"happiness": 10,
 			"money": -50,
 			"conseguence": {
 				"type": "normal",
-				"text": "È una spesa consistente, ma puoi spostarti ogni volta che ti serve."
+				"text": "It is a large expense, but you can move whenever you need."
 			}
 		},
 		{
-			"title": "Fai una furbata",
-			"button": "Fai una furbata",
-			"text": "Compri qualche biglietto dell'autobus ma, come vedi fare da altri, non sempre lo timbri.",
+			"title": "Try to fool the controls",
+			"button": "Try to fool the controls",
+			"text": "Buy some bus tickets but, as you often see others doing, you do not always stamp it.",
 			"happiness": -20,
 			"money": -10,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Hai scelto di risparmiare, ma ora è salito il controllore...",
+				"waitingText": "You have chosen to save money, but now the controller gets on the bus...",
 				"cases": [
 					{
 						"probability": 40,
@@ -142,7 +142,7 @@
 						"money": -100,
 						"stop": false,
 						"class":"bad",
-						"text": "Il controllore punta subito te per il tuo aspetto e ti trova con il biglietto non timbrato. Devi pagare 100€ di multa."
+						"text": "The bus controller immediately approaches you for your appearance founding out that your ticket is not stamped. You have to pay a € 100 fine."
 					},
 					{
 						"probability": 60,
@@ -150,42 +150,42 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Scendi dall'autobus appena in tempo. Ma  una signora ti ha visto e commenta “Gli stranieri non pagano mai”. Ti vergogni perché hai incrementato un pregiudizio, perdi 60 punti."
+						"text": "You get off the bus just in time. But you see a lady that says —Foreigners never pay. You are ashamed because you have confirmed a prejudice, you lose 60 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "Parli bene l'italiano",
-	"text": "Hai appena conosciuto una ragazza italiana. Lei ti piace, ma dopo pochi minuti ti dice una frase che hai sentito un milione di volte: “Però, lo parli bene l’italiano!”. Come reagisci?",
+	"title": "You speak fluent Italian",
+	"text": "You have just met an Italian girl. You like her, but after a few minutes she says a phrase that you've heard a million times: —But you speak Italian well. How do you react?",
 	"theme": "ragazza",
 	"report": {
 			"img":"scuola.png",
-			"text": "Nuovo fortissimo incremento delle iscrizioni di studenti cinesi nelle università italiane per l'anno accademico 2012-2013, in linea con il trend di questi ultimi anni, attraverso i programmi Marco Polo e Turandot. Le iscrizioni hanno raggiunto la cifra record di 2489 studenti con un incremento del 46% rispetto all'anno precedente.",
+			"text": "New strong growth in enrollments of Chinese students in Italian universities for the 2012-2013 academic years, in line with the trend of recent years, through the Marco Polo and Turandot programmes. Registrations have reached a record of 2489 students, an increase of 46% over the previous year.",
 			"source": "Farnesina"	
 		},
 	"choices": [
 		{
-			"title": "Sorridi e ringrazi",
-			"button": "Sorridi e ringrazi",
-			"text": "Tu sei italiano e questo genere di cose ti hanno sempre dato fastidio. Ma la ragazza crede di farti un complimento e quindi ti fingi contento.",
+			"title": "Smile and thank",
+			"button": "Smile and thank",
+			"text": "You're Italian and that kind of things have always bothered you. But the girl wanted to congratulate you and then you pretend you happy.",
 			"happiness": -50,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "La ragazza non si è nemmeno resa conto di averti offeso, ma a te dispiace scoprire che per i tuoi coetanei non sei davvero italiano."
+				"text": "The girl did not even realize how much offended you have been, but finding out that you’re not Italian for your peers makes you sad"
 			}
 		},
 		{
-			"title": "Rispondi ironicamente",
-			"button": "Rispondi ironicamente",
-			"text": "Non ce la fai più a sentire commenti simili. Le rispondi “Complimenti, anche tu”.",
+			"title": "Reply ironically",
+			"button": "Reply ironically",
+			"text": "You cannot stand similar comments no more. You answer “Thank you, you too!”",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Erano anni che volevi dare una risposta del genere e ti senti soddisfatto di te. Ma ora devi affrontare la reazione della ragazza...",
+				"waitingText": "It had been years that you wanted to give an answer like that and you feel satisfied. But now you have to deal with the girl’s reaction...",
 				"cases": [
 					{
 						"probability": 50,
@@ -193,7 +193,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "La ragazza ci rimane male e se ne va senza salutarti. Perdi 80 punti."
+						"text": "The girl gets upset and goes away without saying goodbye. Lose 80 points."
 					},
 					{
 						"probability": 50,
@@ -201,42 +201,42 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "La ragazza si è messa a ridere e ti ha chiesto scusa. Poi ti ha invitato a prendere un caffè. Guadagni 30 punti."
+						"text": "The girl laughs and apologises, and then she invites you to take a coffee with her. Earn 30 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "Insulto a terzo",
-	"text": "Stai camminando per strada quando senti un ragazzo che insulta una donna di colore, lei si gira a guardarti per cercare sostegno.",
+	"title": "The insult to another",
+	"text": "You're walking down the street when you hear a guy who insults a black woman she turns to look at you seeking support.",
 	"theme": "insulto",
 	"report": {
 			"img":"unar.png",
-			"text": "Se sei vittima o testiomone di comportamenti discriminatori nei confronti di terzi, contatta il Numero Verde UNAR 800901010",
-			"source": "oppure visita il sito web www.unar.it"	
+			"text": "If you are a victim or witness discriminatory conduct against third parties, please contact our toll free UNAR 800901010",
+			"source": "or visit the website www.unar.it"	
 		},
 	"choices": [
 		{
-			"title": "Tiri dritto",
-			"button": "Tiri dritto",
-			"text": "Ignori un atto di razzismo e ti volti dall’altra parte per evitare problemi",
+			"title": "Go on",
+			"button": "Go on",
+			"text": "You ignore an act of racism, and you turn your back to avoid problems.",
 			"happiness": -40,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai preferito non immischiarti, ma ora ti senti in colpa per non aver difeso qualcuno che ha subito la un'ingiustizia che poteva capitare anche a te."
+				"text": "You have preferred not to get involved, but now you feel guilty for not having defended someone who has suffered the injustice that could happen to you too."
 			}
 		},
 		{
-			"title": "Intervieni",
-			"button": "Intervieni",
-			"text": "Ti senti parte in causa e ti fermi a difendere la donna.",
+			"title": "Stop and intervene",
+			"button": "Stop and intervene",
+			"text": "Do you feel to be on the woman side and you stop to defend her.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Ti sei fermato e hai preso le difese della ragazza in modo energico. Sei fiero di te, ma...",
+				"waitingText": "You stopped and strongly took the girl side.'you re Proud of yourself, but...",
 				"cases": [
 					{
 						"probability": 50,
@@ -244,7 +244,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "Il ragazzo se la prende con te. Vola qualche spinta e la gente intorno vi guarda male. Senti di aver fatto la figura del violento e perdi 100 punti."
+						"text": "The boy is angry with you. You both starts to shove each other and the people around look badly at you. It looks like you made the figure of the violent, and you lose 100 points."
 					},
 					{
 						"probability": 50,
@@ -252,42 +252,42 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Il ragazzo ti ha guardato minaccioso, ma poi ha incassato il colpo ed è andato via. Guadagni 10 punti."
+						"text": "The guy give a threatening look at you, but then take your lamps and walk away. Earn 10 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "Il capodanno cinese",
-	"text": "I tuoi genitori ti chiedono di tornare a casa per festeggiare con loro il capodanno cinese. Ma in quel week end c’è una grande festa nella tua facoltà. Cosa fai?",
+	"title": "Chinese New Year Eve",
+	"text": "Your parents ask you to return home to celebrate the Chinese New Year with them. But at the weekend there is a big party in your faculty. What do you do?",
 	"theme": "capodanno",
 	"report": {
 			"img":"drago.png",
-			"text": "Il capodanno cinese è la festa più importante per le comunità cinesi che osservano gli stessi rituali da oltre 4.700 anni. I festeggiamenti  durano tutta una settimana durante la quale vengono costruiti grossi draghi (il drago è simbolo della pioggia e quindi della prosperità, della fertilità)  di carta o di stoffa – che poi sfileranno per le strade,  si cucinano cibi particolari, così come avviene anche da noi (ad es. le lenticchie), tra i quali gli “involtini primavera”. La casa è piena di fiori e strisce di carta rossa con scritte augurali.",
+			"text": "The Chinese New Year is the most important festival for the Chinese community who observe the same ritual over 4,700 years. Celebrations last a whole week during which they are built big dragon (the dragon is a symbol of rain and then the prosperity, fertility) of paper or cloth - then parade through the streets, they cook special foods, as is the case here too (eg. lentils), including the spring rolls. The house is full of flowers and stripes of red paper with good wishes.",
 			"source": "ChinaItaly.info"	
 		},
 	"choices": [
 		{
-			"title": "Torni a casa",
-			"button": "Torni a casa",
-			"text": "Compri il biglietto del treno e parti. Sai che ai tuoi farà piacere.",
+			"title": "Go home",
+			"button": "Go home",
+			"text": "Buy your train ticket and leave. You know that you parents will be glad of it.",
 			"happiness": 20,
 			"money": -80,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai sostenuto una spesa extra, ma hai rivisto i parenti e sei stato bene con loro."
+				"text": "You have incurred an extra expense, but have revised the family and you have been fine with them."
 			}
 		},
 		{
-			"title": "Rimani per la festa",
-			"button": "Rimani per la festa",
-			"text": "Decidi di restare, il capodanno cinese ti piace ma la festa è l’occasione per farsi  nuovi amici.",
+			"title": "Stay for the party",
+			"button": "Stay for the party",
+			"text": "You decide to stay, but you like the Chinese New Year festival is an opportunity to make new friends.",
 			"happiness": 40,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "La festa sarà un momento fondamentale per socializzare all’università. Ma ora devi chiamare i tuoi genitori e dire che non andrai da loro...",
+				"waitingText": "The party will be a key moment to socialize at the university. But now you have to call your parents and tell them that you will not get...",
 				"cases": [
 					{
 						"probability": 50,
@@ -295,7 +295,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "I tuoi genitori sono rimasti molto delusi e non te lo nascondono. Non hai fatto nulla di male ma ti senti in colpa lo stesso. E alla festa sei l'unico che non si diverte, perdi 120 punti."
+						"text": "Your parents were very disappointed and you will not hide. Did not do anything wrong but you feel guilty all the same. At the party are the you are only one who is not having fun, you lose 120 points."
 					},
 					{
 						"probability": 50,
@@ -303,42 +303,42 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "I tuoi genitori sono un po' dispiaciuti di non vederti, ma ci tengono che tu ti senta come gli altri ragazzi della tua età."
+						"text": "Your parents are a bit 'sorry not to see you, but we take you to feel like the other kids your age."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "Il nome pronunciato male",
-	"text": "Per mantenerti all'università hai trovato un lavoretto. Ma il capo trova il tuo nome troppo complicato e lo storpia sempre. Come reagisci?",
+	"title": "The mispronounced name",
+	"text": "To keep on the university you have found a job. But your name is too complicated for your boss and he always distort/mispronounced it. How do you react?",
 	"theme": "boss",
 	"report": {
 			"img":"nome.png",
-			"text": "Il Nome proprio è  qualcosa di irrinunciabile che ci definisce e ci rappresenta: non a caso anche all'articolo 6 del Codice Civile si ricorda che “Ogni persona ha diritto al nome che le è per legge attribuito. Nel nome si comprendono il prenome e il cognome. Non sono ammessi cambiamenti, aggiunte o rettifiche al nome, se non nei casi e con le formalità dalla legge indicati”.",
-			"source": "Art. 6 Codice Civile"	
+			"text": "The name is just something essential that defines us and it is not casual. See also to Article 6 of the Civil Code, please note that *Everyone has the right to a name that is assigned by law. In the name you include the first name and last name and are not permitted changes, additions or corrections to the name, except for  the cases and with the formalities set out by the law.*",
+			"source": "Art. 6 Civil Code"	
 		},
 	"choices": [
 		{
-			"title": "Fai finta di niente",
-			"button": "Fai finta di niente",
-			"text": "Questa situazione ti infastidisce, ma è il tuo capo e non vuoi problemi.",
+			"title": "Act as nothing has happened",
+			"button": "Act as nothing has happened",
+			"text": "This situation bothers you, but it's your boss and you do not want any problems.",
 			"happiness": -40,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai scelto di non reagire, ma ogni volta che senti quel nome sbagliato ti ricordi che non sei accettato per quello che sei."
+				"text": "You have chosen not to react, but every time you hear that name wrong you remember that you are not accepted for who you are."
 			}
 		},
 		{
-			"title": "Ti impunti",
-			"button": "Ti impunti",
-			"text": "Al tuo nome ci tieni, questo scatto d’orgoglio ti fa stare meglio.",
+			"title": "Dig your heels in",
+			"button": "Dig your heels in",
+			"text": "In your name we hold, this burst of pride makes you feel better.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Prendere posizione ti rende più fiero di te e delle tue origini, ma la reazione del capo è un rischio...",
+				"waitingText": "Take a position makes you more proud of yourself and your origins, but the reaction of the head is a risk...",
 				"cases": [
 					{
 						"probability": 50,
@@ -346,7 +346,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "Il capo si arrabbia, ma non vuole passare per razzista. Da quel momento però comincia ad assegnarti i compiti più noiosi e faticosi. Perdi 80 punti."
+						"text": "The boss gets angry, but does not want to spend a racist. Since then, however, he begins to assign you tasks more tedious and tiring. Lose 80 points."
 					},
 					{
 						"probability": 50,
@@ -354,64 +354,64 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "Il capo accetta la tua critica e si scusa. D'ora in poi ti chiamerà con il tuo vero nome, guadagni altri 10 punti."
+						"text": "The boss accepts your criticism and apologized. Henceforth will call you with your real name, you gain an additional 10 points."
 					}
 				]
 			}
 		}
 	]
 },{
-	"title": "Il casting",
-	"text": "Per avere un po’ di soldi in più fai un casting per una pubblicità. Vieni scelto, ma scopri che devi interpretare un cinese stereotipato e con un ridicolo accento.",
+	"title": "Casting",
+	"text": "o have a little 'more money doing a casting for a commercial. Come chosen, but you discover that you have to play a stereotypical Chinese and with a ridiculous accent.",
 	"theme": "casting",
 	"report": {
 			"img":"tornare.png",
-			"text": "In Italia sono diffusi molti falsi stereotipi sui cinesi. Per esempio, il basso numero di decessi che alcuni spiegano con la presunta pratica di non denunciare le morti per riutilizzare i documenti dei defunti, deriva in realtà dall'abitudine degli immigrati cinesi di tornare in patria dopo i 50 anni.",
-			"source": "Ricerca ‘Analisi ed elaborazione dati sull’immigrazione cinese in Italia’ dell'OIM"	
+			"text": "In Italy there are many common false stereotypes about the Chinese., For example, the low number of deaths that explain some of the alleged practice of not reporting the deaths to reuse the documents of the deceased, actually comes from the habit of immigrants Chinese to return home after 50 years.",
+			"source": "Search ‘Analysis and Data Processing Chinese immigration in Italy’ IOM"	
 		},
 	"choices": [
 		{
-			"title": "Accetti",
-			"button": "Accetti",
-			"text": "Ti senti davvero stupido, ma un po' di soldi extra ti fanno comodo",
+			"title": "Accept",
+			"button": "Accept",
+			"text": "You feel really stupid, but a little extra money make you comfortable",
 			"happiness": -100,
 			"money": 150,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai guadagnato dei soldi che ti torneranno utili. Ma i tuoi genitori ti dicono che alcuni cinesi si sono offesi per la tua ridicola interpretazione, ti senti imbarazzo."
+				"text": "You have earned the money that will come in handy. But your parents tell you that some Chinese were offended by your ridiculous interpretation, you feel embarrassed."
 			}
 		},
 		{
-			"title": "Te ne vai",
-			"button": "Te ne vai",
-			"text": "Rinunci al lavoro e ai soldi. Ma la dignità non ha prezzo.",
+			"title": "Leave",
+			"button": "Leave",
+			"text": "Quit the job and the money. But dignity is priceless.",
 			"happiness": 30,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Non avrai i soldi su cui contavi, ma quando senti e leggi i commenti indignati dei cinesi per quello spot sei contento di non essere tu l’attore."
+				"text": "You will not have the money you were relying on, but when you hear and read reviews outraged the Chinese for that spot you're happy not to be an actor."
 			}
 		}
 	]
 },{
-	"title": "La partita  della nazionale",
-	"text": "Nella città dove vivi arriva la nazionale: vai allo stadio a vederla. Ma, pur essendo in un settore tranquillo, vicino a te un uomo inveisce contro i giocatori italiani di colore. Cosa fai?",
+	"title": "Football national team match",
+	"text": "In the city where you live comes the national football team and you go to the stadium to see it. But, while being in a quiet area, close to you a man rails against a dark skinned Italian players. What do you do?",
 	"theme": "partita",
 	"report": {
 			"img":"tifosi.png",
-			"text": "Discriminazione e razzismo nel calcio. Nelle ultime tre stagioni calcistiche (2010/11, 2011/12, 2012/13) ci sono stati 168 Episodi di discriminazione razziale, per un ammontare di relative ammende di Euro 1.162.650 emanante dal giudice sportivo e 82 tifoserie coinvolte.",
-			"source": "Osservatorio sul Razzismo e l’Antirazzismo nel Calcio (Orac)"	
+			"text": "Discrimination and racism in football. In the Italian football championship of  the last three seasons (2010/11 2011/12 2012/13) there were 168 episodes of racial discrimination, amounting to about 1.16265 million Euro fines emanating sports court and 82 fans involved.",
+			"source": "Observatory on Racism and Anti-Racism in Football (Orac)"	
 		},
 	"choices": [
 		{
-			"title": "Ti mostri infastidito",
-			"button": "Ti mostri infastidito",
-			"text": "Fai notare all'uomo che anche con la pelle di un colore diverso si può essere italiani.",
+			"title": "Show yourself annoyed",
+			"button": "Show yourself annoyed",
+			"text": "You point out that even a man with the skin of a different colour can be Italian.",
 			"happiness": 20,
 			"money": 0,
 			"conseguence":  {
 				"type": "random",
-				"waitingText": "Da italiano di origine straniera ti senti soddisfatto di averle cantate al tipo, ma ora c'è la sua reazione.",
+				"waitingText": "From Italian of foreign origin you feel satisfied to say frankly to the guy what you think , but now there is a reaction.",
 				"cases": [
 					{
 						"probability": 50,
@@ -419,7 +419,7 @@
 						"money": 0,
 						"stop": false,
 						"class":"bad",
-						"text": "L'uomo ti aggredisce verbalmente, tra l'indifferenza dei presenti. Ti allontani arrabbiato, non hai perso solo la partita, ma hai anche la sensazione di essere straniero nella tua nazione. Perdi 70 punti."
+						"text": "The man attacks you verbally, amid the indifference of those present. You walk away angry, you have not only lost the chance to see the  game, but you also have the feeling of being a foreigner in your country. Lose 70 points."
 					},
 					{
 						"probability": 50,
@@ -427,53 +427,53 @@
 						"money": 0,
 						"stop": false,
 						"class":"good",
-						"text": "L'uomo prova a reagire, ma altri presenti lo zittiscono, schierandosi dalla tua parte e incitando i giocatori di origine straniera che giocano in nazionale. Rimani sorridente al tuo posto, ti senti a casa. Guadagni 20 punti"
+						"text": "Man tries to react, but others present keep him silent, siding on your side and encouraging the players of foreign origin who play in the national team. You stay in your place smiling, you feel at home. Earn 20 points."
 					}
 				]
 			}
 		},
 		{
-			"title": "Ti sposti",
-			"button": "Ti sposti",
-			"text": "Ti sposti per non affrontarlo, ma trovi spazio solo dove hai una visuale peggiore.",
+			"title": "Move to another place",
+			"button": "Move to another place",
+			"text": "You move so as not to deal with it, but you just find a sit with the worst view.",
 			"happiness": -40,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Non hai voluto creare tensione ma la partita non te la riesci a gustare. Continui a guardare verso il posto che occupavi precedentemente, e ti dispiace non aver reagito."
+				"text": "You did not want to create tension but you can’t enjoy the game . Keep on looking to the place you previously were, and you regret not having reacted."
 			}
 		}
 	]
 },{
-	"title": "Al ristorante cinese",
-	"text": "Il proprietario di un ristorante cinese sotto casa tua ti ha preso in simpatia e spesso ti offre la cena. Ma ogni volta ti parla male degli italiani. Cosa fai?",
+	"title": "Chinese Restaurant",
+	"text": "The owner of a Chinese restaurant  near to your house to, and often gives dinner. But every time you speak ill of the Italians. What do you do?",
 	"theme": "ristorante",
 	"report": {
 			"img":"idea.png",
-			"text": "Rispetto a quanto si crede, la comunità cinese è meno chiusa e più ben disposta verso l'Italia, il cui nome si traduce letteralmente come “il Paese dove le grandi idee sono un profitto”",
-			"source": "Ricerca ‘Analisi ed elaborazione dati sull’immigrazione cinese in Italia’ dell'OIM"	
+			"text": "Compared to what is believed, the Chinese community is less closed and more well-disposed towards Italy, whose name literally translates as “the country where the big ideas are a profit”",
+			"source": "Search ‘Analysis and Data Processing Chinese immigration in Italy’ IOM"	
 		},
 	"choices": [
 		{
-			"title": "Fingi di essere d'accordo",
-			"button": "Fingi di essere d'accordo",
-			"text": "Risparmi un po' di soldi ma rinunci a difendere il tuo paese.",
+			"title": "Pretend to agree",
+			"button": "Pretend to agree",
+			"text": "You save a bit 'of money but decide not to defend your country.",
 			"happiness": -50,
 			"money": 30,
 			"conseguence": {
 				"type": "normal",
-				"text": "Il trattamento di favore ti fa comodo, ma ti senti in colpa per essere stato zitto."
+				"text": "The special treatment makes you comfortable, but you feel guilty for being quiet."
 			}
 		},
 		{
-			"title": "Smetti di andarci",
-			"button": "Smetti di andarci",
-			"text": "Qualche pasto gratis ti faceva comodo, ma la dignità non ha prezzo.",
+			"title": "Stop going there",
+			"button": "Stop going there",
+			"text": "Any free meal made you comfortable, but dignity is priceless.",
 			"happiness": 30,
 			"money": 0,
 			"conseguence": {
 				"type": "normal",
-				"text": "Hai dovuto rinunciare al trattamento di favore, ma almeno non dovrai più ascoltare discorsi che ti infastidiscono."
+				"text": "You had to give up a favourable treatment, but at least you will not have to listen to annoying speeches."
 			}
 		}
 	]

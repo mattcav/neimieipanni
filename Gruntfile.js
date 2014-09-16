@@ -86,6 +86,25 @@ module.exports = function(grunt) {
         dest: 'js/build/app.anno.js'
       },
 
+      AppScriptAnnotatedEn: {
+        src: [
+          'js/analytics.js',
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/foundation/js/foundation.min.js',
+          'bower_components/foundation/js/foundation/foundation.offcanvas.js',
+          'bower_components/foundation/js/foundation/foundation.interchange.js',
+          'js/app.js',
+
+          'bower_components/angular/angular.min.js',
+          'js/appConfig.annotate-en.js',
+          'js/appServices.annotate.js',
+          'js/appControllers.annotate.js',
+          'js/appDirectives.annotate.js',
+          'js/appFilters.annotate.js'
+        ],
+        dest: 'js/build/en-app.anno.js'
+      },
+
       Static: {
         src: [
           'js/analytics.js',
@@ -151,6 +170,10 @@ module.exports = function(grunt) {
       App: {
         src: 'js/build/app.anno.js',
         dest: 'js/build/app.anno.min.js'
+      },
+      AppEn: {
+        src: 'js/build/en-app.anno.js',
+        dest: 'js/build/en-app.anno.min.js'
       }
     },
 
@@ -182,6 +205,7 @@ module.exports = function(grunt) {
         nmpApp: {
             files: {
                 'js/appConfig.annotate.js': ['js/appConfig.js'],
+                'js/appConfig.annotate-en.js': ['js/appConfig-en.js'],
                 'js/appServices.annotate.js': ['js/appServices.js'],
                 'js/appControllers.annotate.js': ['js/appControllers.js'],
                 'js/appDirectives.annotate.js': ['js/appDirectives.js'],
